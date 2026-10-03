@@ -1,0 +1,32 @@
+{
+  "target": "MovementMessageNewPath",
+  "stringRVA": "0x191c128",
+  "ripLEAReferences": [
+    {
+      "referenceRVA": "0xf586a",
+      "functionStartRVA": "0xf5850",
+      "functionEndRVA": "0xf58dd"
+    },
+    {
+      "referenceRVA": "0x6b95ea",
+      "functionStartRVA": "0x6b8fa0",
+      "functionEndRVA": "0x6b9ec8"
+    },
+    {
+      "referenceRVA": "0x6b96b7",
+      "functionStartRVA": "0x6b8fa0",
+      "functionEndRVA": "0x6b9ec8"
+    },
+    {
+      "referenceRVA": "0x797bda",
+      "functionStartRVA": "0x797b70",
+      "functionEndRVA": "0x797c52"
+    },
+    {
+      "referenceRVA": "0x11d5d41",
+      "functionStartRVA": "0x11d5d30",
+      "functionEndRVA": "0x11d5d5f"
+    }
+  ],
+  "limitation": "Verified RIP-relative LEA references only; not a complete cross-reference index."
+}

@@ -1,0 +1,24 @@
+{
+  "Status": "complete",
+  "GameDirectory": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition",
+  "SourceDirectory": "C:\\SkyrimMulticoreResearch\\artifacts\\render-worker-bridge-v8",
+  "Kind": "actual-indexed-draw-worker-bridge",
+  "LiveOffloadVerified": false,
+  "DisabledProbe": null,
+  "Files": [
+    {
+      "File": "RenderWorkerBridge.dll",
+      "Target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\SKSE\\Plugins\\RenderWorkerBridge.dll",
+      "Backup": "C:\\SkyrimMulticoreResearch\\measurements\\bridge-installation-20261003-150331-337\\backup\\RenderWorkerBridge.dll",
+      "SourceHash": "D15A6E5D6CA0CDD0A87AA3A7C93B2784CDC59B0486CDAC6C5AE2F2F350A6C5B2",
+      "Installed": true
+    },
+    {
+      "File": "RenderWorkerBridge.ini",
+      "Target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\SKSE\\Plugins\\RenderWorkerBridge.ini",
+      "Backup": "C:\\SkyrimMulticoreResearch\\measurements\\bridge-installation-20261003-150331-337\\backup\\RenderWorkerBridge.ini",
+      "SourceHash": "97D4E67BE6C919CC51E7F27C8BE644E88E2B234AFD2AF304E14BE6340B385053",
+      "Installed": true
+    }
+  ]
+}

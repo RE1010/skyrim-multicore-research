@@ -1,0 +1,61 @@
+{
+  "kind": "skyrim-render-worker-live-capture",
+  "mode": "parallel",
+  "processId": 38920,
+  "actualEngineWorkOffloadedDuringCapture": true,
+  "visualVerification": {
+    "Status": "not-verified"
+  },
+  "acceptedAsCorrectOptimization": false,
+  "counterDelta": {
+    "renderPassCalls": 77518,
+    "drawIndexedCalls": 2175143,
+    "replacedDraws": 1807184,
+    "workerRecordedDraws": 1557962,
+    "serialRecordedDraws": 249406,
+    "originalDraws": 367959,
+    "batches": 95862,
+    "errors": 0,
+    "foreignContextCalls": 0,
+    "recordingBindings": 10474672,
+    "recordingBindingsSkipped": 22057952,
+    "snapshotGroupCopies": 2711836,
+    "snapshotGroupReuses": 20781556
+  },
+  "workerIds": [
+    12820,
+    1852,
+    37628,
+    49296
+  ],
+  "observations": 16,
+  "frameRows": 638,
+  "averagePresentsPerSecond": 42.69123483439888,
+  "frameTimes": {
+    "samples": 638,
+    "meanMs": 23.424012068965506,
+    "medianMs": 23.2157,
+    "p95Ms": 26.227965,
+    "p99Ms": 29.247201999999998
+  },
+  "gpuBusy": {
+    "samples": 638,
+    "meanMs": 7.103155956112843,
+    "medianMs": 7.23695,
+    "p95Ms": 9.230295,
+    "p99Ms": 9.917192
+  },
+  "cpuBusy": {
+    "samples": 638,
+    "meanMs": 23.34664059561127,
+    "medianMs": 23.147199999999998,
+    "p95Ms": 26.134165,
+    "p99Ms": 29.153444999999998
+  },
+  "limitations": [
+    "Original mode retains adapter forwarding/upload observation.",
+    "Camera/readiness supplied by user.",
+    "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+    "Frame result alone is not a multicore performance comparison."
+  ]
+}

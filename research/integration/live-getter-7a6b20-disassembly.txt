@@ -1,0 +1,59 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  00000001407A6B20: 48 83 EC 38        sub         rsp,38h
+  00000001407A6B24: 48 C7 44 24 20 FE  mov         qword ptr [rsp+20h],0FFFFFFFFFFFFFFFEh
+                    FF FF FF
+  00000001407A6B2D: 8B 0D 45 37 EF 02  mov         ecx,dword ptr [000000014369A278h]
+  00000001407A6B33: 65 48 8B 04 25 58  mov         rax,qword ptr gs:[0000000000000058h]
+                    00 00 00
+  00000001407A6B3C: BA 08 2A 00 00     mov         edx,2A08h
+  00000001407A6B41: 48 8B 0C C8        mov         rcx,qword ptr [rax+rcx*8]
+  00000001407A6B45: 8B 04 0A           mov         eax,dword ptr [rdx+rcx]
+  00000001407A6B48: 39 05 AE 92 AA 02  cmp         dword ptr [000000014324FDFCh],eax
+  00000001407A6B4E: 7F 0B              jg          00000001407A6B5B
+  00000001407A6B50: 8B 05 A2 92 AA 02  mov         eax,dword ptr [000000014324FDF8h]
+  00000001407A6B56: 48 83 C4 38        add         rsp,38h
+  00000001407A6B5A: C3                 ret
+  00000001407A6B5B: 48 8D 0D 9A 92 AA  lea         rcx,[000000014324FDFCh]
+                    02
+  00000001407A6B62: E8 A5 11 E0 00     call        00000001415A7D0C
+  00000001407A6B67: 83 3D 8E 92 AA 02  cmp         dword ptr [000000014324FDFCh],0FFFFFFFFh
+                    FF
+  00000001407A6B6E: 75 E0              jne         00000001407A6B50
+  00000001407A6B70: 45 33 C0           xor         r8d,r8d
+  00000001407A6B73: 48 8D 15 06 A4 18  lea         rdx,[0000000141930F80h]
+                    01
+  00000001407A6B7A: 48 8D 0D 77 92 AA  lea         rcx,[000000014324FDF8h]
+                    02
+  00000001407A6B81: E8 BA B6 53 00     call        0000000140CE2240
+  00000001407A6B86: 89 05 6C 92 AA 02  mov         dword ptr [000000014324FDF8h],eax
+  00000001407A6B8C: 48 8D 0D 69 92 AA  lea         rcx,[000000014324FDFCh]
+                    02
+  00000001407A6B93: E8 14 11 E0 00     call        00000001415A7CAC
+  00000001407A6B98: 8B 05 5A 92 AA 02  mov         eax,dword ptr [000000014324FDF8h]
+  00000001407A6B9E: 48 83 C4 38        add         rsp,38h
+  00000001407A6BA2: C3                 ret
+  00000001407A6BA3: CC                 int         3
+  00000001407A6BA4: CC                 int         3
+  00000001407A6BA5: CC                 int         3
+  00000001407A6BA6: CC                 int         3
+  00000001407A6BA7: CC                 int         3
+  00000001407A6BA8: CC                 int         3
+  00000001407A6BA9: CC                 int         3
+  00000001407A6BAA: CC                 int         3
+  00000001407A6BAB: CC                 int         3
+  00000001407A6BAC: CC                 int         3
+  00000001407A6BAD: CC                 int         3
+  00000001407A6BAE: CC                 int         3
+  00000001407A6BAF: CC                 int         3
+  00000001407A6BB0: C2
+
+  Summary
+
+     17C7000 .text

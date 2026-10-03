@@ -1,0 +1,79 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000141009F70: 48 83 EC 48        sub         rsp,48h
+  0000000141009F74: B9 01 00 00 00     mov         ecx,1
+  0000000141009F79: E8 22 A9 58 00     call        00000001415948A0
+  0000000141009F7E: 80 3D 7B 62 0C 01  cmp         byte ptr [00000001420D0200h],0
+                    00
+  0000000141009F85: 74 70              je          0000000141009FF7
+  0000000141009F87: 0F 29 74 24 30     movaps      xmmword ptr [rsp+30h],xmm6
+  0000000141009F8C: F3 0F 10 35 44 2B  movss       xmm6,dword ptr [00000001420CCAD8h]
+                    0C 01
+  0000000141009F94: 0F 29 7C 24 20     movaps      xmmword ptr [rsp+20h],xmm7
+  0000000141009F99: E8 32 A4 CD FF     call        0000000140CE43D0
+  0000000141009F9E: 48 2B 05 D3 A7 32  sub         rax,qword ptr [0000000143334778h]
+                    02
+  0000000141009FA5: 0F 57 C0           xorps       xmm0,xmm0
+  0000000141009FA8: F3 0F 10 3D D8 A4  movss       xmm7,dword ptr [0000000141A74488h]
+                    A6 00
+  0000000141009FB0: F3 48 0F 2A C0     cvtsi2ss    xmm0,rax
+  0000000141009FB5: F3 0F 59 C6        mulss       xmm0,xmm6
+  0000000141009FB9: 0F 2F C7           comiss      xmm0,xmm7
+  0000000141009FBC: 73 2F              jae         0000000141009FED
+  0000000141009FBE: 66 90              nop
+  0000000141009FC0: 33 C9              xor         ecx,ecx
+  0000000141009FC2: FF 15 80 E4 7B 00  call        qword ptr [00000001417C8448h]
+  0000000141009FC8: F3 0F 10 35 08 2B  movss       xmm6,dword ptr [00000001420CCAD8h]
+                    0C 01
+  0000000141009FD0: E8 FB A3 CD FF     call        0000000140CE43D0
+  0000000141009FD5: 48 2B 05 9C A7 32  sub         rax,qword ptr [0000000143334778h]
+                    02
+  0000000141009FDC: 0F 57 C0           xorps       xmm0,xmm0
+  0000000141009FDF: F3 48 0F 2A C0     cvtsi2ss    xmm0,rax
+  0000000141009FE4: F3 0F 59 C6        mulss       xmm0,xmm6
+  0000000141009FE8: 0F 2F C7           comiss      xmm0,xmm7
+  0000000141009FEB: 72 D3              jb          0000000141009FC0
+  0000000141009FED: 0F 28 74 24 30     movaps      xmm6,xmmword ptr [rsp+30h]
+  0000000141009FF2: 0F 28 7C 24 20     movaps      xmm7,xmmword ptr [rsp+20h]
+  0000000141009FF7: 48 8B 05 9A 61 32  mov         rax,qword ptr [0000000143330198h]
+                    02
+  0000000141009FFE: 45 33 C0           xor         r8d,r8d
+  000000014100A001: 48 8B 48 18        mov         rcx,qword ptr [rax+18h]
+  000000014100A005: 48 8B 05 7C 61 32  mov         rax,qword ptr [0000000143330188h]
+                    02
+  000000014100A00C: 4C 8B 09           mov         r9,qword ptr [rcx]
+  000000014100A00F: 8B 50 30           mov         edx,dword ptr [rax+30h]
+  000000014100A012: 41 FF 51 40        call        qword ptr [r9+40h]
+  000000014100A016: 80 3D E3 61 0C 01  cmp         byte ptr [00000001420D0200h],0
+                    00
+  000000014100A01D: 74 0C              je          000000014100A02B
+  000000014100A01F: E8 AC A3 CD FF     call        0000000140CE43D0
+  000000014100A024: 48 89 05 4D A7 32  mov         qword ptr [0000000143334778h],rax
+                    02
+  000000014100A02B: FF 05 C3 C3 32 02  inc         dword ptr [00000001433363F4h]
+  000000014100A031: B9 01 00 00 00     mov         ecx,1
+  000000014100A036: C6 05 C3 C3 32 02  mov         byte ptr [0000000143336400h],0
+                    00
+  000000014100A03D: 48 83 C4 48        add         rsp,48h
+  000000014100A041: E9 0A A8 58 00     jmp         0000000141594850
+  000000014100A046: CC                 int         3
+  000000014100A047: CC                 int         3
+  000000014100A048: CC                 int         3
+  000000014100A049: CC                 int         3
+  000000014100A04A: CC                 int         3
+  000000014100A04B: CC                 int         3
+  000000014100A04C: CC                 int         3
+  000000014100A04D: CC                 int         3
+  000000014100A04E: CC                 int         3
+  000000014100A04F: CC                 int         3
+  000000014100A050: 4C
+
+  Summary
+
+     17C7000 .text

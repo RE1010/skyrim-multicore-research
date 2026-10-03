@@ -1,0 +1,24 @@
+Number of Processors : 16
+CPU Speed            : 2496 MHz
+OS Version           : 10.00.00.00
+OS Build Number      : 26300
+Clock type           : PerfCounter
+Boot time            : 2026/10/02:07:12:12.5000000
+Native Pointer Size  : 8 (64bit)
+Start time (UTC)     : 2026/10/03:13:12:54.2329878
+End time (UTC)       : 2026/10/03:13:13:09.9986450  (+         0:00:00:15.7656572)
+Total # Lost Buffers : 0
+Total # Lost Events  : 0
+
+Number of Traces     : 1
+
+Trace name: measurements/20261003-151242-144-baseline/cpu.etl
+    Log file mode        : Sequential Relogged
+    Pointer size         : 8 (64bit)
+    Start time (UTC)     : 2026/10/03:13:12:54.2329878
+    End time (UTC)       : 2026/10/03:13:13:09.9986450  (+         0:00:00:15.7656572)
+    Start time (Local)   : 2026/10/03:15:12:54.2329878
+    End time (Local)     : 2026/10/03:15:13:09.9986450
+    # Lost Buffers       : 0
+    # Lost Events        : 0
+

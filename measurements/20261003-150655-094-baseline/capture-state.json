@@ -1,0 +1,631 @@
+{
+  "schemaVersion": 1,
+  "scene": "Version 8 vor Weisslauf Tor und Mauer feste Ansicht Originalreferenz",
+  "processId": 38920,
+  "processStartUtc": "2026-10-03T13:03:31.5800952Z",
+  "gamePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\SkyrimSE.exe",
+  "gameVersion": "1.7.104.0",
+  "gameSha256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "modules": [
+    {
+      "name": "SkyrimSE.exe",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\SkyrimSE.exe",
+      "baseAddress": "0x7FF61FCE0000"
+    },
+    {
+      "name": "ntdll.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+      "baseAddress": "0x7FFC4C160000"
+    },
+    {
+      "name": "KERNEL32.DLL",
+      "path": "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+      "baseAddress": "0x7FFC4AA50000"
+    },
+    {
+      "name": "KERNELBASE.dll",
+      "path": "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+      "baseAddress": "0x7FFC49700000"
+    },
+    {
+      "name": "USER32.dll",
+      "path": "C:\\WINDOWS\\System32\\USER32.dll",
+      "baseAddress": "0x7FFC4BD10000"
+    },
+    {
+      "name": "win32u.dll",
+      "path": "C:\\WINDOWS\\System32\\win32u.dll",
+      "baseAddress": "0x7FFC49D00000"
+    },
+    {
+      "name": "steam_api64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\steam_api64.dll",
+      "baseAddress": "0x7FFBEFF10000"
+    },
+    {
+      "name": "GDI32.dll",
+      "path": "C:\\WINDOWS\\System32\\GDI32.dll",
+      "baseAddress": "0x7FFC4C040000"
+    },
+    {
+      "name": "gdi32full.dll",
+      "path": "C:\\WINDOWS\\System32\\gdi32full.dll",
+      "baseAddress": "0x7FFC49B10000"
+    },
+    {
+      "name": "ADVAPI32.dll",
+      "path": "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+      "baseAddress": "0x7FFC4BF70000"
+    },
+    {
+      "name": "msvcrt.dll",
+      "path": "C:\\WINDOWS\\System32\\msvcrt.dll",
+      "baseAddress": "0x7FFC4C070000"
+    },
+    {
+      "name": "msvcp_win.dll",
+      "path": "C:\\WINDOWS\\System32\\msvcp_win.dll",
+      "baseAddress": "0x7FFC49650000"
+    },
+    {
+      "name": "sechost.dll",
+      "path": "C:\\WINDOWS\\System32\\sechost.dll",
+      "baseAddress": "0x7FFC4A4A0000"
+    },
+    {
+      "name": "ucrtbase.dll",
+      "path": "C:\\WINDOWS\\System32\\ucrtbase.dll",
+      "baseAddress": "0x7FFC49360000"
+    },
+    {
+      "name": "RPCRT4.dll",
+      "path": "C:\\WINDOWS\\System32\\RPCRT4.dll",
+      "baseAddress": "0x7FFC4A5C0000"
+    },
+    {
+      "name": "SHELL32.dll",
+      "path": "C:\\WINDOWS\\System32\\SHELL32.dll",
+      "baseAddress": "0x7FFC4B550000"
+    },
+    {
+      "name": "ole32.dll",
+      "path": "C:\\WINDOWS\\System32\\ole32.dll",
+      "baseAddress": "0x7FFC4A6E0000"
+    },
+    {
+      "name": "combase.dll",
+      "path": "C:\\WINDOWS\\System32\\combase.dll",
+      "baseAddress": "0x7FFC49EC0000"
+    },
+    {
+      "name": "WS2_32.dll",
+      "path": "C:\\WINDOWS\\System32\\WS2_32.dll",
+      "baseAddress": "0x7FFC4AD30000"
+    },
+    {
+      "name": "CRYPT32.dll",
+      "path": "C:\\WINDOWS\\System32\\CRYPT32.dll",
+      "baseAddress": "0x7FFC494C0000"
+    },
+    {
+      "name": "SETUPAPI.dll",
+      "path": "C:\\WINDOWS\\System32\\SETUPAPI.dll",
+      "baseAddress": "0x7FFC4ADC0000"
+    },
+    {
+      "name": "XINPUT1_3.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\XINPUT1_3.dll",
+      "baseAddress": "0x7FFBF2C50000"
+    },
+    {
+      "name": "X3DAudio1_7.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\X3DAudio1_7.dll",
+      "baseAddress": "0x77E40000"
+    },
+    {
+      "name": "DINPUT8.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\DINPUT8.dll",
+      "baseAddress": "0x7FFBCA260000"
+    },
+    {
+      "name": "bink2w64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\bink2w64.dll",
+      "baseAddress": "0x7FFBED1A0000"
+    },
+    {
+      "name": "WINHTTP.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\WINHTTP.dll",
+      "baseAddress": "0x7FFC42F00000"
+    },
+    {
+      "name": "MSVCP140.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\MSVCP140.dll",
+      "baseAddress": "0x7FFC2DC00000"
+    },
+    {
+      "name": "VCRUNTIME140.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\VCRUNTIME140.dll",
+      "baseAddress": "0x7FFC2E5C0000"
+    },
+    {
+      "name": "d3dx9_42.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\d3dx9_42.dll",
+      "baseAddress": "0x7FFBAF460000"
+    },
+    {
+      "name": "HID.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\HID.DLL",
+      "baseAddress": "0x7FFC47660000"
+    },
+    {
+      "name": "WINMM.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+      "baseAddress": "0x7FFC40840000"
+    },
+    {
+      "name": "d3d11.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\d3d11.dll",
+      "baseAddress": "0x7FFC44FF0000"
+    },
+    {
+      "name": "dxgi.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\dxgi.dll",
+      "baseAddress": "0x7FFC46570000"
+    },
+    {
+      "name": "VCRUNTIME140_1.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\VCRUNTIME140_1.dll",
+      "baseAddress": "0x7FFC2EAC0000"
+    },
+    {
+      "name": "powrprof.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+      "baseAddress": "0x7FFC49000000"
+    },
+    {
+      "name": "IMM32.DLL",
+      "path": "C:\\WINDOWS\\System32\\IMM32.DLL",
+      "baseAddress": "0x7FFC49E80000"
+    },
+    {
+      "name": "UMPDC.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+      "baseAddress": "0x7FFC48FE0000"
+    },
+    {
+      "name": "skse64_1_7_104.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\skse64_1_7_104.dll",
+      "baseAddress": "0x7FFBAF330000"
+    },
+    {
+      "name": "windows.storage.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\windows.storage.dll",
+      "baseAddress": "0x7FFC46DA0000"
+    },
+    {
+      "name": "inputhost.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\inputhost.dll",
+      "baseAddress": "0x7FFC298C0000"
+    },
+    {
+      "name": "CoreMessaging.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\CoreMessaging.dll",
+      "baseAddress": "0x7FFC45490000"
+    },
+    {
+      "name": "SHCORE.dll",
+      "path": "C:\\WINDOWS\\System32\\SHCORE.dll",
+      "baseAddress": "0x7FFC4B440000"
+    },
+    {
+      "name": "shlwapi.dll",
+      "path": "C:\\WINDOWS\\System32\\shlwapi.dll",
+      "baseAddress": "0x7FFC4A550000"
+    },
+    {
+      "name": "bcryptPrimitives.dll",
+      "path": "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+      "baseAddress": "0x7FFC49C40000"
+    },
+    {
+      "name": "profapi.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\profapi.dll",
+      "baseAddress": "0x7FFC49280000"
+    },
+    {
+      "name": "CRYPTBASE.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+      "baseAddress": "0x7FFC488F0000"
+    },
+    {
+      "name": "kernel.appcore.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+      "baseAddress": "0x7FFC48000000"
+    },
+    {
+      "name": "steamclient64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamclient64.dll",
+      "baseAddress": "0x7FFBB0E60000"
+    },
+    {
+      "name": "OLEAUT32.dll",
+      "path": "C:\\WINDOWS\\System32\\OLEAUT32.dll",
+      "baseAddress": "0x7FFC4A250000"
+    },
+    {
+      "name": "imagehlp.dll",
+      "path": "C:\\WINDOWS\\System32\\imagehlp.dll",
+      "baseAddress": "0x7FFC4AA20000"
+    },
+    {
+      "name": "PSAPI.DLL",
+      "path": "C:\\WINDOWS\\System32\\PSAPI.DLL",
+      "baseAddress": "0x7FFC4A980000"
+    },
+    {
+      "name": "IPHLPAPI.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+      "baseAddress": "0x7FFC479A0000"
+    },
+    {
+      "name": "vstdlib_s64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\vstdlib_s64.dll",
+      "baseAddress": "0x7FFBB8F80000"
+    },
+    {
+      "name": "tier0_s64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\tier0_s64.dll",
+      "baseAddress": "0x7FFBB6AD0000"
+    },
+    {
+      "name": "MSWSOCK.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\MSWSOCK.dll",
+      "baseAddress": "0x7FFC485A0000"
+    },
+    {
+      "name": "VERSION.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\VERSION.dll",
+      "baseAddress": "0x7FFC428A0000"
+    },
+    {
+      "name": "bcrypt.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+      "baseAddress": "0x7FFC49250000"
+    },
+    {
+      "name": "Secur32.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\Secur32.dll",
+      "baseAddress": "0x7FFC46260000"
+    },
+    {
+      "name": "cfgmgr32.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\cfgmgr32.DLL",
+      "baseAddress": "0x7FFC48F30000"
+    },
+    {
+      "name": "SSPICLI.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\SSPICLI.DLL",
+      "baseAddress": "0x7FFC482C0000"
+    },
+    {
+      "name": "MovementMessageProbe.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\SKSE\\Plugins\\MovementMessageProbe.dll",
+      "baseAddress": "0x7FFBED040000"
+    },
+    {
+      "name": "MSVCP140_ATOMIC_WAIT.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\MSVCP140_ATOMIC_WAIT.dll",
+      "baseAddress": "0x7FFC2A2A0000"
+    },
+    {
+      "name": "RenderWorkerBridge.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\SKSE\\Plugins\\RenderWorkerBridge.dll",
+      "baseAddress": "0x7FFBF2380000"
+    },
+    {
+      "name": "UncappedBenchmark.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\SKSE\\Plugins\\UncappedBenchmark.dll",
+      "baseAddress": "0x7FFC17380000"
+    },
+    {
+      "name": "uxtheme.dll",
+      "path": "C:\\WINDOWS\\system32\\uxtheme.dll",
+      "baseAddress": "0x7FFC46420000"
+    },
+    {
+      "name": "clbcatq.dll",
+      "path": "C:\\WINDOWS\\System32\\clbcatq.dll",
+      "baseAddress": "0x7FFC4A3E0000"
+    },
+    {
+      "name": "netprofm.dll",
+      "path": "C:\\WINDOWS\\System32\\netprofm.dll",
+      "baseAddress": "0x7FFC43BC0000"
+    },
+    {
+      "name": "npmproxy.dll",
+      "path": "C:\\WINDOWS\\System32\\npmproxy.dll",
+      "baseAddress": "0x7FFC40690000"
+    },
+    {
+      "name": "gameoverlayrenderer64.dll",
+      "path": "C:\\Program Files (x86)\\Steam\\gameoverlayrenderer64.dll",
+      "baseAddress": "0x25315400000"
+    },
+    {
+      "name": "MSCTF.dll",
+      "path": "C:\\WINDOWS\\System32\\MSCTF.dll",
+      "baseAddress": "0x7FFC4B2E0000"
+    },
+    {
+      "name": "textinputframework.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\textinputframework.dll",
+      "baseAddress": "0x7FFC23860000"
+    },
+    {
+      "name": "CoreUIComponents.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\CoreUIComponents.dll",
+      "baseAddress": "0x7FFC428B0000"
+    },
+    {
+      "name": "wintypes.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\wintypes.dll",
+      "baseAddress": "0x7FFC432D0000"
+    },
+    {
+      "name": "dxcore.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\dxcore.dll",
+      "baseAddress": "0x7FFC46520000"
+    },
+    {
+      "name": "directxdatabasehelper.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\directxdatabasehelper.dll",
+      "baseAddress": "0x7FFC43030000"
+    },
+    {
+      "name": "nvldumdx.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\nvldumdx.dll",
+      "baseAddress": "0x7FFC40740000"
+    },
+    {
+      "name": "msasn1.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\msasn1.dll",
+      "baseAddress": "0x7FFC48A20000"
+    },
+    {
+      "name": "cryptnet.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\cryptnet.dll",
+      "baseAddress": "0x7FFC427A0000"
+    },
+    {
+      "name": "wldp.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\wldp.dll",
+      "baseAddress": "0x7FFC489B0000"
+    },
+    {
+      "name": "drvstore.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\drvstore.dll",
+      "baseAddress": "0x7FFC42150000"
+    },
+    {
+      "name": "devobj.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\devobj.dll",
+      "baseAddress": "0x7FFC48EE0000"
+    },
+    {
+      "name": "wintrust.dll",
+      "path": "C:\\WINDOWS\\System32\\wintrust.dll",
+      "baseAddress": "0x7FFC49D30000"
+    },
+    {
+      "name": "CRYPTSP.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\CRYPTSP.dll",
+      "baseAddress": "0x7FFC488D0000"
+    },
+    {
+      "name": "rsaenh.dll",
+      "path": "C:\\WINDOWS\\system32\\rsaenh.dll",
+      "baseAddress": "0x7FFC47F50000"
+    },
+    {
+      "name": "nvgpucomp64.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\nvgpucomp64.dll",
+      "baseAddress": "0x7FFC39140000"
+    },
+    {
+      "name": "NvMessageBus.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\Display.NvContainer\\NvMessageBus.dll",
+      "baseAddress": "0x7FFC2E250000"
+    },
+    {
+      "name": "NvMemMapStoragex.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\NvMemMapStoragex.dll",
+      "baseAddress": "0x7FFC37C20000"
+    },
+    {
+      "name": "nvwgf2umx.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\nvwgf2umx.dll",
+      "baseAddress": "0x7FFC30080000"
+    },
+    {
+      "name": "nvspcap64.dll",
+      "path": "C:\\WINDOWS\\system32\\nvspcap64.dll",
+      "baseAddress": "0x7FFBE3FB0000"
+    },
+    {
+      "name": "ntmarta.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\ntmarta.dll",
+      "baseAddress": "0x7FFC48130000"
+    },
+    {
+      "name": "nvppex.dll",
+      "path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_ba34f758deb2a7d2\\nvppex.dll",
+      "baseAddress": "0x7FFBC8950000"
+    },
+    {
+      "name": "dcomp.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\dcomp.dll",
+      "baseAddress": "0x7FFC45260000"
+    },
+    {
+      "name": "Microsoft.Internal.WarpPal.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\Microsoft.Internal.WarpPal.dll",
+      "baseAddress": "0x7FFC44050000"
+    },
+    {
+      "name": "dwmapi.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\dwmapi.dll",
+      "baseAddress": "0x7FFC466D0000"
+    },
+    {
+      "name": "xinput1_4.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\xinput1_4.dll",
+      "baseAddress": "0x7FFBE3650000"
+    },
+    {
+      "name": "XAudio2_7.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\XAudio2_7.dll",
+      "baseAddress": "0x7FFBAFAF0000"
+    },
+    {
+      "name": "MMDevApi.dll",
+      "path": "C:\\WINDOWS\\System32\\MMDevApi.dll",
+      "baseAddress": "0x7FFC38460000"
+    },
+    {
+      "name": "resourcepolicyclient.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\resourcepolicyclient.dll",
+      "baseAddress": "0x7FFC46A50000"
+    },
+    {
+      "name": "AUDIOSES.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\AUDIOSES.DLL",
+      "baseAddress": "0x7FFC2FE60000"
+    },
+    {
+      "name": "Windows.UI.dll",
+      "path": "C:\\Windows\\System32\\Windows.UI.dll",
+      "baseAddress": "0x7FFC2E0F0000"
+    },
+    {
+      "name": "avrt.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\avrt.dll",
+      "baseAddress": "0x7FFC42E90000"
+    },
+    {
+      "name": "DSOUND.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\DSOUND.DLL",
+      "baseAddress": "0x7FFBE4630000"
+    },
+    {
+      "name": "winmmbase.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+      "baseAddress": "0x7FFBE4440000"
+    },
+    {
+      "name": "ResampleDmo.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\ResampleDmo.DLL",
+      "baseAddress": "0x7FFBE4480000"
+    },
+    {
+      "name": "msdmo.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\msdmo.dll",
+      "baseAddress": "0x7FFC2EB40000"
+    },
+    {
+      "name": "webio.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\webio.dll",
+      "baseAddress": "0x7FFC23050000"
+    },
+    {
+      "name": "WINNSI.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\WINNSI.DLL",
+      "baseAddress": "0x7FFC463B0000"
+    },
+    {
+      "name": "NSI.dll",
+      "path": "C:\\WINDOWS\\System32\\NSI.dll",
+      "baseAddress": "0x7FFC4AB40000"
+    },
+    {
+      "name": "DNSAPI.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+      "baseAddress": "0x7FFC47A30000"
+    },
+    {
+      "name": "DSPARSE.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\DSPARSE.dll",
+      "baseAddress": "0x7FFC483A0000"
+    },
+    {
+      "name": "rasadhlp.dll",
+      "path": "C:\\Windows\\System32\\rasadhlp.dll",
+      "baseAddress": "0x7FFC2F210000"
+    },
+    {
+      "name": "fwpuclnt.dll",
+      "path": "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+      "baseAddress": "0x7FFC41360000"
+    },
+    {
+      "name": "schannel.DLL",
+      "path": "C:\\WINDOWS\\system32\\schannel.DLL",
+      "baseAddress": "0x7FFC47E20000"
+    },
+    {
+      "name": "ncrypt.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\ncrypt.dll",
+      "baseAddress": "0x7FFC48B10000"
+    },
+    {
+      "name": "NTASN1.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\NTASN1.dll",
+      "baseAddress": "0x7FFC48AC0000"
+    },
+    {
+      "name": "ncryptsslp.dll",
+      "path": "C:\\WINDOWS\\system32\\ncryptsslp.dll",
+      "baseAddress": "0x7FFC04EC0000"
+    },
+    {
+      "name": "DPAPI.DLL",
+      "path": "C:\\WINDOWS\\SYSTEM32\\DPAPI.DLL",
+      "baseAddress": "0x7FFC48F90000"
+    },
+    {
+      "name": "uiautomationcore.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\uiautomationcore.dll",
+      "baseAddress": "0x7FFC128F0000"
+    },
+    {
+      "name": "OLEACC.dll",
+      "path": "C:\\WINDOWS\\SYSTEM32\\OLEACC.dll",
+      "baseAddress": "0x7FFC45FD0000"
+    },
+    {
+      "name": "threadpoolwinrt.dll",
+      "path": "C:\\Windows\\System32\\threadpoolwinrt.dll",
+      "baseAddress": "0x7FFC138A0000"
+    }
+  ],
+  "presentMonVersion": "2.6.0",
+  "presentMonSha256": "B2A706BC6AD475749E3B7E3409263AA1E6906D45BDCF993F6DBC0F660188F1AF",
+  "durationSeconds": 15,
+  "focusDelaySeconds": 8,
+  "recorderInstance": "SkyrimResearch_4dec7e577ebf4a7cb2bb1d5937fde05b",
+  "status": "captured",
+  "requestedAt": "2026-10-03T15:06:58.5769367+02:00",
+  "recorderProfile": "SkyrimCPU",
+  "recorderProfileSha256": "CB19A96406D24D477D5E410808117D908E1F7C617B258565D3C8DB6C05D10D3B",
+  "traceQuality": "not checked",
+  "schedulingStacks": false,
+  "sampledCpuStacks": true,
+  "limitation": "Scene readiness is supplied by the user; this script does not identify menus, loading screens or camera movement.",
+  "requireUncapped": true,
+  "bridgeMode": "off",
+  "recordingStartedAt": "2026-10-03T15:07:07.1171783+02:00",
+  "presentMonExitCode": 0,
+  "frameRecordingFinishedAt": "2026-10-03T15:07:22.2615383+02:00",
+  "wprStopExitCode": 0,
+  "finishedAt": "2026-10-03T15:07:34.7649746+02:00"
+}

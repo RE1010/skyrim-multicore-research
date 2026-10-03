@@ -1,0 +1,57 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000140797C60: 40 57              push        rdi
+  0000000140797C62: 48 83 EC 30        sub         rsp,30h
+  0000000140797C66: 48 C7 44 24 20 FE  mov         qword ptr [rsp+20h],0FFFFFFFFFFFFFFFEh
+                    FF FF FF
+  0000000140797C6F: 48 89 5C 24 48     mov         qword ptr [rsp+48h],rbx
+  0000000140797C74: 8B FA              mov         edi,edx
+  0000000140797C76: 48 8B D9           mov         rbx,rcx
+  0000000140797C79: 48 8D 91 50 01 00  lea         rdx,[rcx+0000000000000150h]
+                    00
+  0000000140797C80: 48 8D 4C 24 40     lea         rcx,[rsp+40h]
+  0000000140797C85: E8 16 23 A0 FF     call        0000000140199FA0
+  0000000140797C8A: 90                 nop
+  0000000140797C8B: 4C 8D 83 70 01 00  lea         r8,[rbx+0000000000000170h]
+                    00
+  0000000140797C92: 48 8D 8B 58 01 00  lea         rcx,[rbx+0000000000000158h]
+                    00
+  0000000140797C99: 8B D7              mov         edx,edi
+  0000000140797C9B: E8 40 21 00 00     call        0000000140799DE0
+  0000000140797CA0: 0F B6 F8           movzx       edi,al
+  0000000140797CA3: 48 8B 5C 24 40     mov         rbx,qword ptr [rsp+40h]
+  0000000140797CA8: 48 85 DB           test        rbx,rbx
+  0000000140797CAB: 74 37              je          0000000140797CE4
+  0000000140797CAD: 0F AE E8           lfence
+  0000000140797CB0: FF 15 8A 07 03 01  call        qword ptr [00000001417C8440h]
+  0000000140797CB6: 39 03              cmp         dword ptr [rbx],eax
+  0000000140797CB8: 75 2A              jne         0000000140797CE4
+  0000000140797CBA: 83 7B 04 01        cmp         dword ptr [rbx+4],1
+  0000000140797CBE: 75 20              jne         0000000140797CE0
+  0000000140797CC0: 33 C9              xor         ecx,ecx
+  0000000140797CC2: 89 0B              mov         dword ptr [rbx],ecx
+  0000000140797CC4: 0F AE F0           mfence
+  0000000140797CC7: B8 01 00 00 00     mov         eax,1
+  0000000140797CCC: F0 0F B1 4B 04     lock cmpxchg dword ptr [rbx+4],ecx
+  0000000140797CD1: 40 0F B6 C7        movzx       eax,dil
+  0000000140797CD5: 48 8B 5C 24 48     mov         rbx,qword ptr [rsp+48h]
+  0000000140797CDA: 48 83 C4 30        add         rsp,30h
+  0000000140797CDE: 5F                 pop         rdi
+  0000000140797CDF: C3                 ret
+  0000000140797CE0: F0 FF 4B 04        lock dec    dword ptr [rbx+4]
+  0000000140797CE4: 40 0F B6 C7        movzx       eax,dil
+  0000000140797CE8: 48 8B 5C 24 48     mov         rbx,qword ptr [rsp+48h]
+  0000000140797CED: 48 83 C4 30        add         rsp,30h
+  0000000140797CF1: 5F                 pop         rdi
+  0000000140797CF2: C3                 ret
+  0000000140797CF3: CC                 int         3
+
+  Summary
+
+     17C7000 .text

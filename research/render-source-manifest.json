@@ -1,0 +1,64 @@
+[
+  {
+    "URL": "https://raw.githubusercontent.com/community-shaders/skyrim-community-shaders/7109b526082f392385b30a4258f73418a7fa102e/src/Hooks.cpp",
+    "Status": "fetched",
+    "SHA256": "753EF1F392030C7F8106E915A3D380EB43B40F2AB06A70CA852B5FDE086E0638",
+    "Repository": "community-shaders/skyrim-community-shaders",
+    "Source": "src/Hooks.cpp",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\skyrim-community-shaders-7109b526082f\\src\\Hooks.cpp",
+    "Commit": "7109b526082f392385b30a4258f73418a7fa102e"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/community-shaders/skyrim-community-shaders/7109b526082f392385b30a4258f73418a7fa102e/src/State.cpp",
+    "Status": "fetched",
+    "SHA256": "07468DCD4595F5B2A817E9CA64BC00FA60F2A6E2EF272D0E5E87BA6A5EC3908D",
+    "Repository": "community-shaders/skyrim-community-shaders",
+    "Source": "src/State.cpp",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\skyrim-community-shaders-7109b526082f\\src\\State.cpp",
+    "Commit": "7109b526082f392385b30a4258f73418a7fa102e"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/community-shaders/skyrim-community-shaders/7109b526082f392385b30a4258f73418a7fa102e/src/ShaderCache.cpp",
+    "Status": "fetched",
+    "SHA256": "3626EB0EF2A1A1151B777A1B960E5D2FCF6651E61F7AB5BE31276A59936F98C7",
+    "Repository": "community-shaders/skyrim-community-shaders",
+    "Source": "src/ShaderCache.cpp",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\skyrim-community-shaders-7109b526082f\\src\\ShaderCache.cpp",
+    "Commit": "7109b526082f392385b30a4258f73418a7fa102e"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/community-shaders/skyrim-community-shaders/7109b526082f392385b30a4258f73418a7fa102e/src/Features/PerformanceOverlay.cpp",
+    "Status": "fetched",
+    "SHA256": "F90712A000639EEEE70E500BFCBC8E0CF2B06B266D174D5879F09B5B7DF775E9",
+    "Repository": "community-shaders/skyrim-community-shaders",
+    "Source": "src/Features/PerformanceOverlay.cpp",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\skyrim-community-shaders-7109b526082f\\src\\Features\\PerformanceOverlay.cpp",
+    "Commit": "7109b526082f392385b30a4258f73418a7fa102e"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/aers/EngineFixesSkyrim64/b289e3deae71ce3915bb19c5faeeda8bf6c6a25c/src/patches/form_caching.h",
+    "Status": "fetched",
+    "SHA256": "713ED6754BCF23A51BA2FDB508D70CEB63253DFA64EDA07B92EF8A8EC7F83B4B",
+    "Repository": "aers/EngineFixesSkyrim64",
+    "Source": "src/patches/form_caching.h",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\EngineFixesSkyrim64-b289e3deae71\\src\\patches\\form_caching.h",
+    "Commit": "b289e3deae71ce3915bb19c5faeeda8bf6c6a25c"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/aers/EngineFixesSkyrim64/b289e3deae71ce3915bb19c5faeeda8bf6c6a25c/src/patches/tree_lod_reference_caching.cpp",
+    "Status": "fetched",
+    "SHA256": "8B179470A53098148054841EA6C23E02218D656AF61126F0D13239CA330747E2",
+    "Repository": "aers/EngineFixesSkyrim64",
+    "Source": "src/patches/tree_lod_reference_caching.cpp",
+    "LocalPath": "C:\\SkyrimMulticoreResearch\\vendor\\render-research\\EngineFixesSkyrim64-b289e3deae71\\src\\patches\\tree_lod_reference_caching.cpp",
+    "Commit": "b289e3deae71ce3915bb19c5faeeda8bf6c6a25c"
+  },
+  {
+    "URL": "https://raw.githubusercontent.com/aers/EngineFixesSkyrim64/b289e3deae71ce3915bb19c5faeeda8bf6c6a25c/src/patches/memorymanager.cpp",
+    "Status": "unavailable",
+    "Repository": "aers/EngineFixesSkyrim64",
+    "Source": "src/patches/memorymanager.cpp",
+    "Reason": "Response status code does not indicate success: 404 (Not Found).",
+    "Commit": "b289e3deae71ce3915bb19c5faeeda8bf6c6a25c"
+  }
+]

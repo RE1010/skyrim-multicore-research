@@ -1,0 +1,72 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  00000001415A7CAC: 40 53              push        rbx
+  00000001415A7CAE: 48 83 EC 20        sub         rsp,20h
+  00000001415A7CB2: 48 8B D9           mov         rbx,rcx
+  00000001415A7CB5: 48 8D 0D 74 25 0F  lea         rcx,[000000014369A230h]
+                    02
+  00000001415A7CBC: FF 15 96 05 22 00  call        qword ptr [00000001417C8258h]
+  00000001415A7CC2: 8B 05 9C 27 B3 00  mov         eax,dword ptr [00000001420DA464h]
+  00000001415A7CC8: 48 8D 0D 61 25 0F  lea         rcx,[000000014369A230h]
+                    02
+  00000001415A7CCF: 8B 15 A3 25 0F 02  mov         edx,dword ptr [000000014369A278h]
+  00000001415A7CD5: FF C0              inc         eax
+  00000001415A7CD7: 89 05 87 27 B3 00  mov         dword ptr [00000001420DA464h],eax
+  00000001415A7CDD: 89 03              mov         dword ptr [rbx],eax
+  00000001415A7CDF: 65 48 8B 04 25 58  mov         rax,qword ptr gs:[0000000000000058h]
+                    00 00 00
+  00000001415A7CE8: 41 B9 08 2A 00 00  mov         r9d,2A08h
+  00000001415A7CEE: 4C 8B 04 D0        mov         r8,qword ptr [rax+rdx*8]
+  00000001415A7CF2: 8B 05 6C 27 B3 00  mov         eax,dword ptr [00000001420DA464h]
+  00000001415A7CF8: 43 89 04 01        mov         dword ptr [r9+r8],eax
+  00000001415A7CFC: FF 15 4E 05 22 00  call        qword ptr [00000001417C8250h]
+  00000001415A7D02: 48 83 C4 20        add         rsp,20h
+  00000001415A7D06: 5B                 pop         rbx
+  00000001415A7D07: E9 78 00 00 00     jmp         00000001415A7D84
+  00000001415A7D0C: 40 53              push        rbx
+  00000001415A7D0E: 48 83 EC 20        sub         rsp,20h
+  00000001415A7D12: 48 8B D9           mov         rbx,rcx
+  00000001415A7D15: 48 8D 0D 14 25 0F  lea         rcx,[000000014369A230h]
+                    02
+  00000001415A7D1C: FF 15 36 05 22 00  call        qword ptr [00000001417C8258h]
+  00000001415A7D22: 83 3B 00           cmp         dword ptr [rbx],0
+  00000001415A7D25: 75 11              jne         00000001415A7D38
+  00000001415A7D27: 83 0B FF           or          dword ptr [rbx],0FFFFFFFFh
+  00000001415A7D2A: EB 34              jmp         00000001415A7D60
+  00000001415A7D2C: B9 64 00 00 00     mov         ecx,64h
+  00000001415A7D31: E8 AE 00 00 00     call        00000001415A7DE4
+  00000001415A7D36: EB EA              jmp         00000001415A7D22
+  00000001415A7D38: 83 3B FF           cmp         dword ptr [rbx],0FFFFFFFFh
+  00000001415A7D3B: 74 EF              je          00000001415A7D2C
+  00000001415A7D3D: 65 48 8B 04 25 58  mov         rax,qword ptr gs:[0000000000000058h]
+                    00 00 00
+  00000001415A7D46: 8B 0D 2C 25 0F 02  mov         ecx,dword ptr [000000014369A278h]
+  00000001415A7D4C: 41 B8 08 2A 00 00  mov         r8d,2A08h
+  00000001415A7D52: 48 8B 14 C8        mov         rdx,qword ptr [rax+rcx*8]
+  00000001415A7D56: 8B 05 08 27 B3 00  mov         eax,dword ptr [00000001420DA464h]
+  00000001415A7D5C: 41 89 04 10        mov         dword ptr [r8+rdx],eax
+  00000001415A7D60: 48 8D 0D C9 24 0F  lea         rcx,[000000014369A230h]
+                    02
+  00000001415A7D67: 48 83 C4 20        add         rsp,20h
+  00000001415A7D6B: 5B                 pop         rbx
+  00000001415A7D6C: 48 FF 25 DD 04 22  jmp         qword ptr [00000001417C8250h]
+                    00
+  00000001415A7D73: CC                 int         3
+  00000001415A7D74: 48 8D 0D B5 24 0F  lea         rcx,[000000014369A230h]
+                    02
+  00000001415A7D7B: 48 FF 25 D6 04 22  jmp         qword ptr [00000001417C8258h]
+                    00
+  00000001415A7D82: CC                 int         3
+  00000001415A7D83: CC                 int         3
+  00000001415A7D84: 48
+  00000001415A7D85: 83
+
+  Summary
+
+     17C7000 .text

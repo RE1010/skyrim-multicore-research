@@ -1,0 +1,18 @@
+{
+  "pluginVersion": 8,
+  "installed": true,
+  "installationManifest": "measurements/bridge-installation-20261003-150331-337/manifest.json",
+  "liveComparison": "measurements/20261003-v8-live-comparison/analysis.json",
+  "meanRateGainPercentWithinV8WorkerPath": 25.66000876993224,
+  "overallPerformanceGain": false,
+  "acceptedAsCorrectOptimization": false,
+  "finalState": {
+    "processId": 38920,
+    "requestedMode": "off",
+    "enabled": false,
+    "worldLoaded": true,
+    "errors": 0
+  },
+  "creationManifestUnchanged": true,
+  "userReportedNoFlickerDuringMovement": true
+}

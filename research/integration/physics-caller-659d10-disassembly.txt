@@ -1,0 +1,70 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000140659D10: 48 83 EC 28        sub         rsp,28h
+  0000000140659D14: 0F B6 05 8D BE A5  movzx       eax,byte ptr [00000001420B5BA8h]
+                    01
+  0000000140659D1B: 48 8D 0D CE B8 C1  lea         rcx,[00000001432755F0h]
+                    02
+  0000000140659D22: 33 D2              xor         edx,edx
+  0000000140659D24: 88 05 00 B9 C1 02  mov         byte ptr [000000014327562Ah],al
+  0000000140659D2A: 38 15 00 BB A5 01  cmp         byte ptr [00000001420B5830h],dl
+  0000000140659D30: 0F 45 15 11 BB A5  cmovne      edx,dword ptr [00000001420B5848h]
+                    01
+  0000000140659D37: E8 D4 9D 68 00     call        0000000140CE3B10
+  0000000140659D3C: 80 3D 70 66 BD 02  cmp         byte ptr [00000001432303B3h],0
+                    00
+  0000000140659D43: 75 05              jne         0000000140659D4A
+  0000000140659D45: E8 86 9C 68 00     call        0000000140CE39D0
+  0000000140659D4A: 48 8D 0D 9F B8 C1  lea         rcx,[00000001432755F0h]
+                    02
+  0000000140659D51: E8 DA E6 68 00     call        0000000140CE8430
+  0000000140659D56: 48 2B 05 9B B8 C1  sub         rax,qword ptr [00000001432755F8h]
+                    02
+  0000000140659D5D: 48 8D 0D 8C B8 C1  lea         rcx,[00000001432755F0h]
+                    02
+  0000000140659D64: F3 0F 10 05 74 B8  movss       xmm0,dword ptr [00000001432755E0h]
+                    C1 02
+  0000000140659D6C: 0F 57 C9           xorps       xmm1,xmm1
+  0000000140659D6F: 0F 5A C0           cvtps2pd    xmm0,xmm0
+  0000000140659D72: F2 48 0F 2A C8     cvtsi2sd    xmm1,rax
+  0000000140659D77: F2 0F 5E C8        divsd       xmm1,xmm0
+  0000000140659D7B: F2 48 0F 2C D1     cvttsd2si   rdx,xmm1
+  0000000140659D80: E8 2B 99 68 00     call        0000000140CE36B0
+  0000000140659D85: F3 0F 10 05 8B C3  movss       xmm0,dword ptr [00000001420B6118h]
+                    A5 01
+  0000000140659D8D: 48 8B 05 8C B9 B4  mov         rax,qword ptr [00000001431A5720h]
+                    02
+  0000000140659D94: F3 0F 11 05 D4 79  movss       dword ptr [00000001420D1770h],xmm0
+                    A7 01
+  0000000140659D9C: F3 0F 10 05 64 B8  movss       xmm0,dword ptr [0000000143275608h]
+                    C1 02
+  0000000140659DA4: 83 78 20 04        cmp         dword ptr [rax+20h],4
+  0000000140659DA8: 41 0F 94 C0        sete        r8b
+  0000000140659DAC: 83 3D 79 66 BD 02  cmp         dword ptr [000000014323042Ch],0
+                    00
+  0000000140659DB3: 0F 95 C2           setne       dl
+  0000000140659DB6: E8 B5 0D 9F 00     call        000000014104AB70
+  0000000140659DBB: 80 3D F1 65 BD 02  cmp         byte ptr [00000001432303B3h],0
+                    00
+  0000000140659DC2: 74 10              je          0000000140659DD4
+  0000000140659DC4: 0F 57 C0           xorps       xmm0,xmm0
+  0000000140659DC7: F3 0F 11 05 55 67  movss       dword ptr [0000000143230524h],xmm0
+                    BD 02
+  0000000140659DCF: 48 83 C4 28        add         rsp,28h
+  0000000140659DD3: C3                 ret
+  0000000140659DD4: F3 0F 10 05 2C B8  movss       xmm0,dword ptr [0000000143275608h]
+                    C1 02
+  0000000140659DDC: F3 0F 11 05 40 67  movss       dword ptr [0000000143230524h],xmm0
+                    BD 02
+  0000000140659DE4: 48 83 C4 28        add         rsp,28h
+  0000000140659DE8: C3                 ret
+
+  Summary
+
+     17C7000 .text

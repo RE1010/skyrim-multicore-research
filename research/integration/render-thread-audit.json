@@ -1,0 +1,373 @@
+{
+  "exeSHA256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "importCallCandidates": [
+    {
+      "callRVA": "0xab36b8",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0xab3680",
+      "containingFunctionEndRVA": "0xab3716"
+    },
+    {
+      "callRVA": "0xab37ec",
+      "importRVA": "0x17c8208",
+      "target": "KERNEL32.dll!GetSystemInfo",
+      "containingFunctionStartRVA": "0xab37d0",
+      "containingFunctionEndRVA": "0xab3823"
+    },
+    {
+      "callRVA": "0xce4127",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0xce40a0",
+      "containingFunctionEndRVA": "0xce4188"
+    },
+    {
+      "callRVA": "0xe14389",
+      "importRVA": "0x17c8208",
+      "target": "KERNEL32.dll!GetSystemInfo",
+      "containingFunctionStartRVA": "0xe14380",
+      "containingFunctionEndRVA": "0xe14398"
+    },
+    {
+      "callRVA": "0xeada4a",
+      "importRVA": "0x17c8208",
+      "target": "KERNEL32.dll!GetSystemInfo",
+      "containingFunctionStartRVA": "0xeada00",
+      "containingFunctionEndRVA": "0xeada8e"
+    },
+    {
+      "callRVA": "0xeadace",
+      "importRVA": "0x17c8208",
+      "target": "KERNEL32.dll!GetSystemInfo",
+      "containingFunctionStartRVA": "0xeadac0",
+      "containingFunctionEndRVA": "0xeadafd"
+    },
+    {
+      "callRVA": "0xeaedb0",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0xeaed80",
+      "containingFunctionEndRVA": "0xeaeddd"
+    },
+    {
+      "callRVA": "0xec51d5",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0xec4f30",
+      "containingFunctionEndRVA": "0xec523c"
+    },
+    {
+      "callRVA": "0xec521a",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0xec4f30",
+      "containingFunctionEndRVA": "0xec523c"
+    },
+    {
+      "callRVA": "0x10e5174",
+      "importRVA": "0x17c8208",
+      "target": "KERNEL32.dll!GetSystemInfo",
+      "containingFunctionStartRVA": "0x10e5130",
+      "containingFunctionEndRVA": "0x10e51bb"
+    },
+    {
+      "callRVA": "0x11b25d0",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0x11b2560",
+      "containingFunctionEndRVA": "0x11b263b"
+    },
+    {
+      "callRVA": "0x11b281d",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0x11b27f0",
+      "containingFunctionEndRVA": "0x11b2847"
+    },
+    {
+      "callRVA": "0x1385753",
+      "importRVA": "0x17c81f8",
+      "target": "KERNEL32.dll!CreateThread",
+      "containingFunctionStartRVA": "0x1385700",
+      "containingFunctionEndRVA": "0x1385958"
+    },
+    {
+      "callRVA": "0x1012320",
+      "importRVA": "0x17c92e0",
+      "importThunkRVA": "0x15b9412",
+      "target": "d3d11.dll!D3D11CreateDeviceAndSwapChain",
+      "containingFunctionStartRVA": "0x1012060",
+      "containingFunctionEndRVA": "0x1012478"
+    }
+  ],
+  "renderFunctionStartRVA": "0x1560340",
+  "renderFunctionEndRVA": "0x15606a1",
+  "mainThreadSamples": 16932,
+  "renderFunctionExclusiveSamples": 2630,
+  "renderFunctionExclusivePercent": 15.53271911174108,
+  "exclusiveModules": [
+    {
+      "module": "TESV.exe",
+      "exclusiveSamples": 9938,
+      "percent": 58.69359792109615
+    },
+    {
+      "module": "D3D11.dll",
+      "exclusiveSamples": 1559,
+      "percent": 9.207417906921805
+    },
+    {
+      "module": "nvwgf2um.dll",
+      "exclusiveSamples": 1433,
+      "percent": 8.46326482400189
+    },
+    {
+      "module": "ntkrnlmp.exe",
+      "exclusiveSamples": 1346,
+      "percent": 7.949444838176234
+    },
+    {
+      "module": "ntdll.dll",
+      "exclusiveSamples": 1177,
+      "percent": 6.951334750767776
+    },
+    {
+      "module": "vcruntime140.dll",
+      "exclusiveSamples": 1074,
+      "percent": 6.343019135364989
+    },
+    {
+      "module": "nvlddmkm.sys",
+      "exclusiveSamples": 123,
+      "percent": 0.7264351523742026
+    },
+    {
+      "module": "D3DX9D.dll",
+      "exclusiveSamples": 116,
+      "percent": 0.6850933144342074
+    },
+    {
+      "module": "Kernelbase.dll",
+      "exclusiveSamples": 47,
+      "percent": 0.2775809118828254
+    },
+    {
+      "module": "kernel32.dll",
+      "exclusiveSamples": 37,
+      "percent": 0.21852114339711787
+    },
+    {
+      "module": "GameOverlayRenderer.dll",
+      "exclusiveSamples": 12,
+      "percent": 0.07087172218284904
+    },
+    {
+      "module": "dxgi.dll",
+      "exclusiveSamples": 11,
+      "percent": 0.06496574533427829
+    },
+    {
+      "module": "ucrtbase.dll",
+      "exclusiveSamples": 11,
+      "percent": 0.06496574533427829
+    },
+    {
+      "module": "dxgkrnl.sys",
+      "exclusiveSamples": 8,
+      "percent": 0.04724781478856603
+    },
+    {
+      "module": "dxgmms2.sys",
+      "exclusiveSamples": 8,
+      "percent": 0.04724781478856603
+    },
+    {
+      "module": "***unknown***",
+      "exclusiveSamples": 6,
+      "percent": 0.03543586109142452
+    },
+    {
+      "module": "Win32u.DLL",
+      "exclusiveSamples": 5,
+      "percent": 0.029529884242853768
+    },
+    {
+      "module": "user32.dll",
+      "exclusiveSamples": 4,
+      "percent": 0.023623907394283016
+    },
+    {
+      "module": "Steamclient.dll",
+      "exclusiveSamples": 4,
+      "percent": 0.023623907394283016
+    },
+    {
+      "module": "fltMgr.sys",
+      "exclusiveSamples": 3,
+      "percent": 0.01771793054571226
+    },
+    {
+      "module": "win32k.sys",
+      "exclusiveSamples": 2,
+      "percent": 0.011811953697141508
+    },
+    {
+      "module": "gdi32.dll",
+      "exclusiveSamples": 2,
+      "percent": 0.011811953697141508
+    },
+    {
+      "module": "steam_api.dll",
+      "exclusiveSamples": 2,
+      "percent": 0.011811953697141508
+    },
+    {
+      "module": "watchdog.sys",
+      "exclusiveSamples": 1,
+      "percent": 0.005905976848570754
+    },
+    {
+      "module": "WppRecorder.sys",
+      "exclusiveSamples": 1,
+      "percent": 0.005905976848570754
+    },
+    {
+      "module": "win32kfull.sys",
+      "exclusiveSamples": 1,
+      "percent": 0.005905976848570754
+    },
+    {
+      "module": "skse64_1_7_104.dll",
+      "exclusiveSamples": 1,
+      "percent": 0.005905976848570754
+    }
+  ],
+  "topExclusive": [
+    {
+      "function": "vcruntime140.dll!MoveSmall4",
+      "rva": "0x0001cc5a",
+      "samples": 958,
+      "percent": 5.657925820930783
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x003059c3",
+      "samples": 950,
+      "percent": 5.610678006142216
+    },
+    {
+      "function": "ntkrnlmp.exe!KiSystemServiceUser",
+      "rva": "0x006c1ae2",
+      "samples": 946,
+      "percent": 5.587054098747933
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x015603ef",
+      "samples": 933,
+      "percent": 5.510276399716513
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x01560377",
+      "samples": 866,
+      "percent": 5.114575950862273
+    },
+    {
+      "function": "ntdll.dll!NtDelayExecution",
+      "rva": "0x00161430",
+      "samples": 702,
+      "percent": 4.145995747696669
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x00ee0f37",
+      "samples": 620,
+      "percent": 3.6617056461138673
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x01549aca",
+      "samples": 336,
+      "percent": 1.984408221119773
+    },
+    {
+      "function": "nvwgf2um.dll!***unknown***",
+      "rva": "0x0093093d",
+      "samples": 295,
+      "percent": 1.7422631703283724
+    },
+    {
+      "function": "D3D11.dll!CResource::Map<0,5>",
+      "rva": "0x001664a0",
+      "samples": 253,
+      "percent": 1.4942121426884007
+    },
+    {
+      "function": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+      "rva": "0x0017a950",
+      "samples": 242,
+      "percent": 1.4292463973541223
+    },
+    {
+      "function": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+      "rva": "0x0017a740",
+      "samples": 215,
+      "percent": 1.269785022442712
+    },
+    {
+      "function": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+      "rva": "0x0015af10",
+      "samples": 213,
+      "percent": 1.2579730687455706
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x0156058e",
+      "samples": 210,
+      "percent": 1.2402551381998583
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x01560511",
+      "samples": 202,
+      "percent": 1.1930073234112923
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x014e7a94",
+      "samples": 202,
+      "percent": 1.1930073234112923
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x00ee2d1b",
+      "samples": 198,
+      "percent": 1.1693834160170093
+    },
+    {
+      "function": "TESV.exe!***unknown***",
+      "rva": "0x0156042d",
+      "samples": 196,
+      "percent": 1.1575714623198678
+    },
+    {
+      "function": "nvwgf2um.dll!***unknown***",
+      "rva": "0x0044a279",
+      "samples": 181,
+      "percent": 1.0689818095913064
+    },
+    {
+      "function": "ntdll.dll!RtlQueryPerformanceCounter",
+      "rva": "0x0006ba90",
+      "samples": 172,
+      "percent": 1.0158280179541697
+    }
+  ],
+  "limitations": [
+    "Raw opcode matches must be checked in disassembly before they are hook candidates.",
+    "Exclusive CPU samples are running CPU work, not elapsed frame stage or blocked wait durations.",
+    "A function range and code writes do not establish a complete thread-safety or data-dependency proof."
+  ]
+}

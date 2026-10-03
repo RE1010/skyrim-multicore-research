@@ -1,0 +1,96 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  000000014104AB40: 8B D8              mov         ebx,eax
+  000000014104AB42: 48 85 C0           test        rax,rax
+  000000014104AB45: 74 1D              je          000000014104AB64
+  000000014104AB47: 48 8B 88 D8 00 00  mov         rcx,qword ptr [rax+00000000000000D8h]
+                    00
+  000000014104AB4E: E8 3D 3A BE FF     call        0000000140C2E590
+  000000014104AB53: 48 8B 8B D8 00 00  mov         rcx,qword ptr [rbx+00000000000000D8h]
+                    00
+  000000014104AB5A: 48 83 C4 20        add         rsp,20h
+  000000014104AB5E: 5B                 pop         rbx
+  000000014104AB5F: E9 FC 08 C3 FF     jmp         0000000140C7B460
+  000000014104AB64: 48 83 C4 20        add         rsp,20h
+  000000014104AB68: 5B                 pop         rbx
+  000000014104AB69: C3                 ret
+  000000014104AB6A: CC                 int         3
+  000000014104AB6B: CC                 int         3
+  000000014104AB6C: CC                 int         3
+  000000014104AB6D: CC                 int         3
+  000000014104AB6E: CC                 int         3
+  000000014104AB6F: CC                 int         3
+  000000014104AB70: 0F 28 D8           movaps      xmm3,xmm0
+  000000014104AB73: 0F 57 D2           xorps       xmm2,xmm2
+  000000014104AB76: F3 0F 11 1D CE 6B  movss       dword ptr [00000001420D174Ch],xmm3
+                    08 01
+  000000014104AB7E: 84 D2              test        dl,dl
+  000000014104AB80: 75 29              jne         000000014104ABAB
+  000000014104AB82: 8B 05 60 6D 08 01  mov         eax,dword ptr [00000001420D18E8h]
+  000000014104AB88: F3 0F 10 0D F0 6B  movss       xmm1,dword ptr [00000001420D1780h]
+                    08 01
+  000000014104AB90: F3 0F 59 0D 30 1F  mulss       xmm1,dword ptr [00000001420CCAC8h]
+                    08 01
+  000000014104AB98: F3 48 0F 2A D0     cvtsi2ss    xmm2,rax
+  000000014104AB9D: F3 0F 11 0D AB 6B  movss       dword ptr [00000001420D1750h],xmm1
+                    08 01
+  000000014104ABA5: F3 0F 59 D1        mulss       xmm2,xmm1
+  000000014104ABA9: EB 27              jmp         000000014104ABD2
+  000000014104ABAB: 8B 05 4F 6D 08 01  mov         eax,dword ptr [00000001420D1900h]
+  000000014104ABB1: F3 0F 10 05 5F 6D  movss       xmm0,dword ptr [00000001420D1918h]
+                    08 01
+  000000014104ABB9: F3 0F 59 05 07 1F  mulss       xmm0,dword ptr [00000001420CCAC8h]
+                    08 01
+  000000014104ABC1: F3 48 0F 2A D0     cvtsi2ss    xmm2,rax
+  000000014104ABC6: F3 0F 11 05 82 6B  movss       dword ptr [00000001420D1750h],xmm0
+                    08 01
+  000000014104ABCE: F3 0F 59 D0        mulss       xmm2,xmm0
+  000000014104ABD2: F3 0F 10 0D 3E B9  movss       xmm1,dword ptr [0000000143336518h]
+                    2E 02
+  000000014104ABDA: 0F 28 C1           movaps      xmm0,xmm1
+  000000014104ABDD: F3 0F 58 C3        addss       xmm0,xmm3
+  000000014104ABE1: F3 0F 5D C2        minss       xmm0,xmm2
+  000000014104ABE5: 0F 2F 05 D8 11 B1  comiss      xmm0,dword ptr [0000000141B5BDC4h]
+                    00
+  000000014104ABEC: 73 18              jae         000000014104AC06
+  000000014104ABEE: F3 0F 58 C8        addss       xmm1,xmm0
+  000000014104ABF2: 0F 57 C0           xorps       xmm0,xmm0
+  000000014104ABF5: F3 0F 11 05 4B 6B  movss       dword ptr [00000001420D1748h],xmm0
+                    08 01
+  000000014104ABFD: F3 0F 11 0D 13 B9  movss       dword ptr [0000000143336518h],xmm1
+                    2E 02
+  000000014104AC05: C3                 ret
+  000000014104AC06: F3 0F 5C D8        subss       xmm3,xmm0
+  000000014104AC0A: F3 0F 11 05 36 6B  movss       dword ptr [00000001420D1748h],xmm0
+                    08 01
+  000000014104AC12: F3 0F 58 D9        addss       xmm3,xmm1
+  000000014104AC16: F3 0F 11 1D FA B8  movss       dword ptr [0000000143336518h],xmm3
+                    2E 02
+  000000014104AC1E: C3                 ret
+  000000014104AC1F: CC                 int         3
+  000000014104AC20: CC                 int         3
+  000000014104AC21: CC                 int         3
+  000000014104AC22: CC                 int         3
+  000000014104AC23: CC                 int         3
+  000000014104AC24: CC                 int         3
+  000000014104AC25: CC                 int         3
+  000000014104AC26: CC                 int         3
+  000000014104AC27: CC                 int         3
+  000000014104AC28: CC                 int         3
+  000000014104AC29: CC                 int         3
+  000000014104AC2A: CC                 int         3
+  000000014104AC2B: CC                 int         3
+  000000014104AC2C: CC                 int         3
+  000000014104AC2D: CC                 int         3
+  000000014104AC2E: CC                 int         3
+  000000014104AC2F: CC                 int         3
+
+  Summary
+
+     17C7000 .text

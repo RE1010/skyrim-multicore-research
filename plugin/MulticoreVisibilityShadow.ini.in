@@ -1,0 +1,2 @@
+[Diagnostics]
+OutputDirectory=@CMAKE_SOURCE_DIR@/measurements/live-culling

@@ -1,0 +1,243 @@
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000140FEDA70: 48 89 5C 24 18     mov         qword ptr [rsp+18h],rbx
+  0000000140FEDA75: 48 89 74 24 20     mov         qword ptr [rsp+20h],rsi
+  0000000140FEDA7A: 57                 push        rdi
+  0000000140FEDA7B: 48 81 EC 20 04 00  sub         rsp,420h
+                    00
+  0000000140FEDA82: 83 BA F0 00 00 00  cmp         dword ptr [rdx+00000000000000F0h],0
+                    00
+  0000000140FEDA89: 41 8B F0           mov         esi,r8d
+  0000000140FEDA8C: 48 8B DA           mov         rbx,rdx
+  0000000140FEDA8F: 48 8B F9           mov         rdi,rcx
+  0000000140FEDA92: 75 11              jne         0000000140FEDAA5
+  0000000140FEDA94: 8B 82 F4 00 00 00  mov         eax,dword ptr [rdx+00000000000000F4h]
+  0000000140FEDA9A: C1 E8 0B           shr         eax,0Bh
+  0000000140FEDA9D: A8 01              test        al,1
+  0000000140FEDA9F: 0F 84 A1 02 00 00  je          0000000140FEDD46
+  0000000140FEDAA5: 8B 91 98 01 03 00  mov         edx,dword ptr [rcx+0000000000030198h]
+  0000000140FEDAAB: 48 89 AC 24 30 04  mov         qword ptr [rsp+0000000000000430h],rbp
+                    00 00
+  0000000140FEDAB3: 0F B6 A9 D4 01 03  movzx       ebp,byte ptr [rcx+00000000000301D4h]
+                    00
+  0000000140FEDABA: 83 FA 02           cmp         edx,2
+  0000000140FEDABD: 0F 84 63 02 00 00  je          0000000140FEDD26
+  0000000140FEDAC3: 83 FA 01           cmp         edx,1
+  0000000140FEDAC6: 0F 84 23 02 00 00  je          0000000140FEDCEF
+  0000000140FEDACC: 8B 8B F4 00 00 00  mov         ecx,dword ptr [rbx+00000000000000F4h]
+  0000000140FEDAD2: 8B C1              mov         eax,ecx
+  0000000140FEDAD4: C1 E8 0C           shr         eax,0Ch
+  0000000140FEDAD7: A8 01              test        al,1
+  0000000140FEDAD9: 74 5A              je          0000000140FEDB35
+  0000000140FEDADB: 80 BF 1E 01 00 00  cmp         byte ptr [rdi+000000000000011Eh],0
+                    00
+  0000000140FEDAE2: 75 51              jne         0000000140FEDB35
+  0000000140FEDAE4: 83 FA 04           cmp         edx,4
+  0000000140FEDAE7: 74 4C              je          0000000140FEDB35
+  0000000140FEDAE9: 8B C1              mov         eax,ecx
+  0000000140FEDAEB: C1 E8 14           shr         eax,14h
+  0000000140FEDAEE: 24 01              and         al,1
+  0000000140FEDAF0: 40 84 ED           test        bpl,bpl
+  0000000140FEDAF3: 75 1C              jne         0000000140FEDB11
+  0000000140FEDAF5: 84 C0              test        al,al
+  0000000140FEDAF7: 0F 85 41 02 00 00  jne         0000000140FEDD3E
+  0000000140FEDAFD: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDB00: 48 8B D3           mov         rdx,rbx
+  0000000140FEDB03: 48 8B CF           mov         rcx,rdi
+  0000000140FEDB06: FF 90 C0 00 00 00  call        qword ptr [rax+00000000000000C0h]
+  0000000140FEDB0C: E9 2D 02 00 00     jmp         0000000140FEDD3E
+  0000000140FEDB11: 84 C0              test        al,al
+  0000000140FEDB13: 0F 84 E9 01 00 00  je          0000000140FEDD02
+  0000000140FEDB19: 80 BF 1D 01 00 00  cmp         byte ptr [rdi+000000000000011Dh],0
+                    00
+  0000000140FEDB20: 0F 84 18 02 00 00  je          0000000140FEDD3E
+  0000000140FEDB26: 0F BA F1 1A        btr         ecx,1Ah
+  0000000140FEDB2A: 89 8B F4 00 00 00  mov         dword ptr [rbx+00000000000000F4h],ecx
+  0000000140FEDB30: E9 09 02 00 00     jmp         0000000140FEDD3E
+  0000000140FEDB35: 48 8B 87 A0 01 03  mov         rax,qword ptr [rdi+00000000000301A0h]
+                    00
+  0000000140FEDB3C: 48 85 C0           test        rax,rax
+  0000000140FEDB3F: 0F 84 4D 01 00 00  je          0000000140FEDC92
+  0000000140FEDB45: 83 B8 BC 00 00 00  cmp         dword ptr [rax+00000000000000BCh],0
+                    00
+  0000000140FEDB4C: 0F 84 40 01 00 00  je          0000000140FEDC92
+  0000000140FEDB52: 83 FA 03           cmp         edx,3
+  0000000140FEDB55: 0F 84 37 01 00 00  je          0000000140FEDC92
+  0000000140FEDB5B: C1 E9 0B           shr         ecx,0Bh
+  0000000140FEDB5E: F6 C1 01           test        cl,1
+  0000000140FEDB61: 0F 85 0E 01 00 00  jne         0000000140FEDC75
+  0000000140FEDB67: 41 B8 00 01 00 00  mov         r8d,100h
+  0000000140FEDB6D: 4C 89 B4 24 38 04  mov         qword ptr [rsp+0000000000000438h],r14
+                    00 00
+  0000000140FEDB75: 48 8D 54 24 20     lea         rdx,[rsp+20h]
+  0000000140FEDB7A: 48 8B C8           mov         rcx,rax
+  0000000140FEDB7D: E8 5E B6 00 00     call        0000000140FF91E0
+  0000000140FEDB82: 48 8B 87 A0 01 03  mov         rax,qword ptr [rdi+00000000000301A0h]
+                    00
+  0000000140FEDB89: 44 8B B7 9C 00 00  mov         r14d,dword ptr [rdi+000000000000009Ch]
+                    00
+  0000000140FEDB90: 0F B6 88 C4 00 00  movzx       ecx,byte ptr [rax+00000000000000C4h]
+                    00
+  0000000140FEDB97: 40 84 ED           test        bpl,bpl
+  0000000140FEDB9A: 75 46              jne         0000000140FEDBE2
+  0000000140FEDB9C: 84 C9              test        cl,cl
+  0000000140FEDB9E: 75 1B              jne         0000000140FEDBBB
+  0000000140FEDBA0: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDBA3: 48 8D 93 E4 00 00  lea         rdx,[rbx+00000000000000E4h]
+                    00
+  0000000140FEDBAA: 48 8B CF           mov         rcx,rdi
+  0000000140FEDBAD: FF 90 E0 00 00 00  call        qword ptr [rax+00000000000000E0h]
+  0000000140FEDBB3: 84 C0              test        al,al
+  0000000140FEDBB5: 0F 84 8F 00 00 00  je          0000000140FEDC4A
+  0000000140FEDBBB: 48 8B 8F A0 01 03  mov         rcx,qword ptr [rdi+00000000000301A0h]
+                    00
+  0000000140FEDBC2: 48 8B D3           mov         rdx,rbx
+  0000000140FEDBC5: E8 C6 9B 00 00     call        0000000140FF7790
+  0000000140FEDBCA: 84 C0              test        al,al
+  0000000140FEDBCC: 74 7C              je          0000000140FEDC4A
+  0000000140FEDBCE: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDBD1: 44 8B C6           mov         r8d,esi
+  0000000140FEDBD4: 48 8B D3           mov         rdx,rbx
+  0000000140FEDBD7: 48 8B CF           mov         rcx,rdi
+  0000000140FEDBDA: FF 90 C0 00 00 00  call        qword ptr [rax+00000000000000C0h]
+  0000000140FEDBE0: EB 68              jmp         0000000140FEDC4A
+  0000000140FEDBE2: 84 C9              test        cl,cl
+  0000000140FEDBE4: 75 17              jne         0000000140FEDBFD
+  0000000140FEDBE6: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDBE9: 48 8D 93 E4 00 00  lea         rdx,[rbx+00000000000000E4h]
+                    00
+  0000000140FEDBF0: 48 8B CF           mov         rcx,rdi
+  0000000140FEDBF3: FF 90 E0 00 00 00  call        qword ptr [rax+00000000000000E0h]
+  0000000140FEDBF9: 84 C0              test        al,al
+  0000000140FEDBFB: 74 3A              je          0000000140FEDC37
+  0000000140FEDBFD: 48 8B 8F A0 01 03  mov         rcx,qword ptr [rdi+00000000000301A0h]
+                    00
+  0000000140FEDC04: 48 8B D3           mov         rdx,rbx
+  0000000140FEDC07: E8 84 9B 00 00     call        0000000140FF7790
+  0000000140FEDC0C: 84 C0              test        al,al
+  0000000140FEDC0E: 74 27              je          0000000140FEDC37
+  0000000140FEDC10: 48 8B 03           mov         rax,qword ptr [rbx]
+  0000000140FEDC13: 44 8B C6           mov         r8d,esi
+  0000000140FEDC16: 48 8B D7           mov         rdx,rdi
+  0000000140FEDC19: 48 8B CB           mov         rcx,rbx
+  0000000140FEDC1C: FF 90 A0 01 00 00  call        qword ptr [rax+00000000000001A0h]
+  0000000140FEDC22: 80 BF 1D 01 00 00  cmp         byte ptr [rdi+000000000000011Dh],0
+                    00
+  0000000140FEDC29: 74 1F              je          0000000140FEDC4A
+  0000000140FEDC2B: 81 8B F4 00 00 00  or          dword ptr [rbx+00000000000000F4h],4000000h
+                    00 00 00 04
+  0000000140FEDC35: EB 13              jmp         0000000140FEDC4A
+  0000000140FEDC37: 80 BF 1D 01 00 00  cmp         byte ptr [rdi+000000000000011Dh],0
+                    00
+  0000000140FEDC3E: 74 0A              je          0000000140FEDC4A
+  0000000140FEDC40: 81 A3 F4 00 00 00  and         dword ptr [rbx+00000000000000F4h],0FBFFFFFFh
+                    FF FF FF FB
+  0000000140FEDC4A: 48 8B 8F A0 01 03  mov         rcx,qword ptr [rdi+00000000000301A0h]
+                    00
+  0000000140FEDC51: 48 8D 54 24 20     lea         rdx,[rsp+20h]
+  0000000140FEDC56: 41 B8 00 01 00 00  mov         r8d,100h
+  0000000140FEDC5C: E8 CF B5 00 00     call        0000000140FF9230
+  0000000140FEDC61: 44 89 B7 9C 00 00  mov         dword ptr [rdi+000000000000009Ch],r14d
+                    00
+  0000000140FEDC68: 4C 8B B4 24 38 04  mov         r14,qword ptr [rsp+0000000000000438h]
+                    00 00
+  0000000140FEDC70: E9 C9 00 00 00     jmp         0000000140FEDD3E
+  0000000140FEDC75: 40 84 ED           test        bpl,bpl
+  0000000140FEDC78: 0F 85 84 00 00 00  jne         0000000140FEDD02
+  0000000140FEDC7E: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDC81: 48 8B D3           mov         rdx,rbx
+  0000000140FEDC84: 48 8B CF           mov         rcx,rdi
+  0000000140FEDC87: FF 90 C0 00 00 00  call        qword ptr [rax+00000000000000C0h]
+  0000000140FEDC8D: E9 AC 00 00 00     jmp         0000000140FEDD3E
+  0000000140FEDC92: C1 E9 0B           shr         ecx,0Bh
+  0000000140FEDC95: 80 E1 01           and         cl,1
+  0000000140FEDC98: 40 84 ED           test        bpl,bpl
+  0000000140FEDC9B: 75 38              jne         0000000140FEDCD5
+  0000000140FEDC9D: 84 C9              test        cl,cl
+  0000000140FEDC9F: 75 20              jne         0000000140FEDCC1
+  0000000140FEDCA1: 83 BF 9C 00 00 00  cmp         dword ptr [rdi+000000000000009Ch],0
+                    00
+  0000000140FEDCA8: 74 17              je          0000000140FEDCC1
+  0000000140FEDCAA: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDCAD: 48 8D 93 E4 00 00  lea         rdx,[rbx+00000000000000E4h]
+                    00
+  0000000140FEDCB4: 48 8B CF           mov         rcx,rdi
+  0000000140FEDCB7: FF 90 E0 00 00 00  call        qword ptr [rax+00000000000000E0h]
+  0000000140FEDCBD: 84 C0              test        al,al
+  0000000140FEDCBF: 74 7D              je          0000000140FEDD3E
+  0000000140FEDCC1: 48 8B 07           mov         rax,qword ptr [rdi]
+  0000000140FEDCC4: 44 8B C6           mov         r8d,esi
+  0000000140FEDCC7: 48 8B D3           mov         rdx,rbx
+  0000000140FEDCCA: 48 8B CF           mov         rcx,rdi
+  0000000140FEDCCD: FF 90 C0 00 00 00  call        qword ptr [rax+00000000000000C0h]
+  0000000140FEDCD3: EB 69              jmp         0000000140FEDD3E
+  0000000140FEDCD5: 84 C9              test        cl,cl
+  0000000140FEDCD7: 75 29              jne         0000000140FEDD02
+  0000000140FEDCD9: 83 BF 9C 00 00 00  cmp         dword ptr [rdi+000000000000009Ch],0
+                    00
+  0000000140FEDCE0: 74 20              je          0000000140FEDD02
+  0000000140FEDCE2: 48 8B D3           mov         rdx,rbx
+  0000000140FEDCE5: 48 8B CF           mov         rcx,rdi
+  0000000140FEDCE8: E8 D3 6C F1 FF     call        0000000140F049C0
+  0000000140FEDCED: EB 4F              jmp         0000000140FEDD3E
+  0000000140FEDCEF: 40 84 ED           test        bpl,bpl
+  0000000140FEDCF2: 75 0E              jne         0000000140FEDD02
+  0000000140FEDCF4: 48 8B 01           mov         rax,qword ptr [rcx]
+  0000000140FEDCF7: 48 8B D3           mov         rdx,rbx
+  0000000140FEDCFA: FF 90 C0 00 00 00  call        qword ptr [rax+00000000000000C0h]
+  0000000140FEDD00: EB 3C              jmp         0000000140FEDD3E
+  0000000140FEDD02: 48 8B 03           mov         rax,qword ptr [rbx]
+  0000000140FEDD05: 48 8B D7           mov         rdx,rdi
+  0000000140FEDD08: 48 8B CB           mov         rcx,rbx
+  0000000140FEDD0B: FF 90 A0 01 00 00  call        qword ptr [rax+00000000000001A0h]
+  0000000140FEDD11: 80 BF 1D 01 00 00  cmp         byte ptr [rdi+000000000000011Dh],0
+                    00
+  0000000140FEDD18: 74 24              je          0000000140FEDD3E
+  0000000140FEDD1A: 81 8B F4 00 00 00  or          dword ptr [rbx+00000000000000F4h],4000000h
+                    00 00 00 04
+  0000000140FEDD24: EB 18              jmp         0000000140FEDD3E
+  0000000140FEDD26: 40 84 ED           test        bpl,bpl
+  0000000140FEDD29: 74 13              je          0000000140FEDD3E
+  0000000140FEDD2B: 80 B9 1D 01 00 00  cmp         byte ptr [rcx+000000000000011Dh],0
+                    00
+  0000000140FEDD32: 74 0A              je          0000000140FEDD3E
+  0000000140FEDD34: 81 A3 F4 00 00 00  and         dword ptr [rbx+00000000000000F4h],0FBFFFFFFh
+                    FF FF FF FB
+  0000000140FEDD3E: 48 8B AC 24 30 04  mov         rbp,qword ptr [rsp+0000000000000430h]
+                    00 00
+  0000000140FEDD46: 4C 8D 9C 24 20 04  lea         r11,[rsp+0000000000000420h]
+                    00 00
+  0000000140FEDD4E: 49 8B 5B 20        mov         rbx,qword ptr [r11+20h]
+  0000000140FEDD52: 49 8B 73 28        mov         rsi,qword ptr [r11+28h]
+  0000000140FEDD56: 49 8B E3           mov         rsp,r11
+  0000000140FEDD59: 5F                 pop         rdi
+  0000000140FEDD5A: C3                 ret
+  0000000140FEDD5B: CC                 int         3
+  0000000140FEDD5C: CC                 int         3
+  0000000140FEDD5D: CC                 int         3
+  0000000140FEDD5E: CC                 int         3
+  0000000140FEDD5F: CC                 int         3
+  0000000140FEDD60: CC                 int         3
+  0000000140FEDD61: CC                 int         3
+  0000000140FEDD62: CC                 int         3
+  0000000140FEDD63: CC                 int         3
+  0000000140FEDD64: CC                 int         3
+  0000000140FEDD65: CC                 int         3
+  0000000140FEDD66: CC                 int         3
+  0000000140FEDD67: CC                 int         3
+  0000000140FEDD68: CC                 int         3
+  0000000140FEDD69: CC                 int         3
+  0000000140FEDD6A: CC                 int         3
+  0000000140FEDD6B: CC                 int         3
+  0000000140FEDD6C: CC                 int         3
+  0000000140FEDD6D: CC                 int         3
+  0000000140FEDD6E: CC                 int         3
+  0000000140FEDD6F: CC                 int         3
+  0000000140FEDD70: 48
+
+  Summary
+
+     17C7000 .text

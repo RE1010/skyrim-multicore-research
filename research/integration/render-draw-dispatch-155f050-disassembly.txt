@@ -1,0 +1,22 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  000000014155F050: 4C 8B DC           mov         r11,rsp
+  000000014155F053: 41 56              push        r14
+  000000014155F055: 48 83 EC 70        sub         rsp,70h
+  000000014155F059: 4C 8B 71 10        mov         r14,qword ptr [rcx+10h]
+  000000014155F05D: 41 0F B6 86 50 01  movzx       eax,byte ptr [r14+0000000000000150h]
+                    00 00
+  000000014155F065: FF C8              dec         eax
+  000000014155F067: 83 F8 0C           cmp         eax,0Ch
+  000000014155F06A: 0F 87 40 07 00 00  ja          000000014155F7B0
+  000000014155F070: 49
+
+  Summary
+
+     17C7000 .text

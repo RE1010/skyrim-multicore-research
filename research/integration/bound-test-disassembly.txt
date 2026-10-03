@@ -1,0 +1,329 @@
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000140FEE940: 48 89 5C 24 08     mov         qword ptr [rsp+8],rbx
+  0000000140FEE945: F3 0F 10 1D E3 DD  movss       xmm3,dword ptr [0000000141B5C730h]
+                    B6 00
+  0000000140FEE94D: 4C 8D 49 44        lea         r9,[rcx+44h]
+  0000000140FEE951: 48 8B DA           mov         rbx,rdx
+  0000000140FEE954: 4C 8B D9           mov         r11,rcx
+  0000000140FEE957: 41 B2 01           mov         r10b,1
+  0000000140FEE95A: 45 33 C0           xor         r8d,r8d
+  0000000140FEE95D: 0F 1F 00           nop         dword ptr [rax]
+  0000000140FEE960: 45 84 D2           test        r10b,r10b
+  0000000140FEE963: 0F 84 93 00 00 00  je          0000000140FEE9FC
+  0000000140FEE969: 41 8B 93 9C 00 00  mov         edx,dword ptr [r11+000000000000009Ch]
+                    00
+  0000000140FEE970: 41 8B C8           mov         ecx,r8d
+  0000000140FEE973: B8 01 00 00 00     mov         eax,1
+  0000000140FEE978: D3 E0              shl         eax,cl
+  0000000140FEE97A: 85 D0              test        eax,edx
+  0000000140FEE97C: 74 6D              je          0000000140FEE9EB
+  0000000140FEE97E: F3 41 0F 10 41 F8  movss       xmm0,dword ptr [r9-8]
+  0000000140FEE984: F3 0F 59 03        mulss       xmm0,dword ptr [rbx]
+  0000000140FEE988: F3 0F 10 4B 08     movss       xmm1,dword ptr [rbx+8]
+  0000000140FEE98D: F3 41 0F 59 09     mulss       xmm1,dword ptr [r9]
+  0000000140FEE992: F3 41 0F 10 51 FC  movss       xmm2,dword ptr [r9-4]
+  0000000140FEE998: F3 0F 59 53 04     mulss       xmm2,dword ptr [rbx+4]
+  0000000140FEE99D: F3 0F 58 D0        addss       xmm2,xmm0
+  0000000140FEE9A1: F3 0F 58 D1        addss       xmm2,xmm1
+  0000000140FEE9A5: F3 0F 10 4B 0C     movss       xmm1,dword ptr [rbx+0Ch]
+  0000000140FEE9AA: 0F 28 C1           movaps      xmm0,xmm1
+  0000000140FEE9AD: 0F 57 C3           xorps       xmm0,xmm3
+  0000000140FEE9B0: F3 41 0F 5C 51 04  subss       xmm2,dword ptr [r9+4]
+  0000000140FEE9B6: 0F 2F D0           comiss      xmm2,xmm0
+  0000000140FEE9B9: 77 07              ja          0000000140FEE9C2
+  0000000140FEE9BB: B9 02 00 00 00     mov         ecx,2
+  0000000140FEE9C0: EB 08              jmp         0000000140FEE9CA
+  0000000140FEE9C2: 33 C9              xor         ecx,ecx
+  0000000140FEE9C4: 0F 2F D1           comiss      xmm2,xmm1
+  0000000140FEE9C7: 0F 93 C1           setae       cl
+  0000000140FEE9CA: 83 F9 02           cmp         ecx,2
+  0000000140FEE9CD: 41 0F 95 C2        setne       r10b
+  0000000140FEE9D1: 83 F9 01           cmp         ecx,1
+  0000000140FEE9D4: 75 15              jne         0000000140FEE9EB
+  0000000140FEE9D6: 41 80 BB 20 01 00  cmp         byte ptr [r11+0000000000000120h],0
+                    00 00
+  0000000140FEE9DE: 74 0B              je          0000000140FEE9EB
+  0000000140FEE9E0: F7 D0              not         eax
+  0000000140FEE9E2: 23 C2              and         eax,edx
+  0000000140FEE9E4: 41 89 83 9C 00 00  mov         dword ptr [r11+000000000000009Ch],eax
+                    00
+  0000000140FEE9EB: 41 FF C0           inc         r8d
+  0000000140FEE9EE: 49 83 C1 10        add         r9,10h
+  0000000140FEE9F2: 41 83 F8 06        cmp         r8d,6
+  0000000140FEE9F6: 0F 82 64 FF FF FF  jb          0000000140FEE960
+  0000000140FEE9FC: 48 8B 5C 24 08     mov         rbx,qword ptr [rsp+8]
+  0000000140FEEA01: 41 0F B6 C2        movzx       eax,r10b
+  0000000140FEEA05: C3                 ret
+  0000000140FEEA06: CC                 int         3
+  0000000140FEEA07: CC                 int         3
+  0000000140FEEA08: CC                 int         3
+  0000000140FEEA09: CC                 int         3
+  0000000140FEEA0A: CC                 int         3
+  0000000140FEEA0B: CC                 int         3
+  0000000140FEEA0C: CC                 int         3
+  0000000140FEEA0D: CC                 int         3
+  0000000140FEEA0E: CC                 int         3
+  0000000140FEEA0F: CC                 int         3
+  0000000140FEEA10: 4C 8B 41 18        mov         r8,qword ptr [rcx+18h]
+  0000000140FEEA14: 48 8B C2           mov         rax,rdx
+  0000000140FEEA17: 48 8D 51 3C        lea         rdx,[rcx+3Ch]
+  0000000140FEEA1B: 49 81 C0 A0 00 00  add         r8,0A0h
+                    00
+  0000000140FEEA22: 48 8B C8           mov         rcx,rax
+  0000000140FEEA25: E9 B6 AA FF FF     jmp         0000000140FE94E0
+  0000000140FEEA2A: CC                 int         3
+  0000000140FEEA2B: CC                 int         3
+  0000000140FEEA2C: CC                 int         3
+  0000000140FEEA2D: CC                 int         3
+  0000000140FEEA2E: CC                 int         3
+  0000000140FEEA2F: CC                 int         3
+  0000000140FEEA30: 4C 8B C1           mov         r8,rcx
+  0000000140FEEA33: 48 8B 4A 18        mov         rcx,qword ptr [rdx+18h]
+  0000000140FEEA37: 48 8B 01           mov         rax,qword ptr [rcx]
+  0000000140FEEA3A: 49 8D 50 3C        lea         rdx,[r8+3Ch]
+  0000000140FEEA3E: 48 FF A0 48 01 00  jmp         qword ptr [rax+0000000000000148h]
+                    00
+  0000000140FEEA45: CC                 int         3
+  0000000140FEEA46: CC                 int         3
+  0000000140FEEA47: CC                 int         3
+  0000000140FEEA48: CC                 int         3
+  0000000140FEEA49: CC                 int         3
+  0000000140FEEA4A: CC                 int         3
+  0000000140FEEA4B: CC                 int         3
+  0000000140FEEA4C: CC                 int         3
+  0000000140FEEA4D: CC                 int         3
+  0000000140FEEA4E: CC                 int         3
+  0000000140FEEA4F: CC                 int         3
+  0000000140FEEA50: 48 8B 02           mov         rax,qword ptr [rdx]
+  0000000140FEEA53: 4C 8B C2           mov         r8,rdx
+  0000000140FEEA56: 48 8D 51 3C        lea         rdx,[rcx+3Ch]
+  0000000140FEEA5A: 49 8B C8           mov         rcx,r8
+  0000000140FEEA5D: 48 FF A0 48 01 00  jmp         qword ptr [rax+0000000000000148h]
+                    00
+  0000000140FEEA64: CC                 int         3
+  0000000140FEEA65: CC                 int         3
+  0000000140FEEA66: CC                 int         3
+  0000000140FEEA67: CC                 int         3
+  0000000140FEEA68: CC                 int         3
+  0000000140FEEA69: CC                 int         3
+  0000000140FEEA6A: CC                 int         3
+  0000000140FEEA6B: CC                 int         3
+  0000000140FEEA6C: CC                 int         3
+  0000000140FEEA6D: CC                 int         3
+  0000000140FEEA6E: CC                 int         3
+  0000000140FEEA6F: CC                 int         3
+  0000000140FEEA70: 48 83 EC 28        sub         rsp,28h
+  0000000140FEEA74: 48 8D 0D 6D F8 33  lea         rcx,[000000014332E2E8h]
+                    02
+  0000000140FEEA7B: E8 50 C7 EC FF     call        0000000140EBB1D0
+  0000000140FEEA80: 48 8D 0D 61 F8 33  lea         rcx,[000000014332E2E8h]
+                    02
+  0000000140FEEA87: E8 D4 C7 EC FF     call        0000000140EBB260
+  0000000140FEEA8C: 48 8B 05 35 F8 33  mov         rax,qword ptr [000000014332E2C8h]
+                    02
+  0000000140FEEA93: 48 C7 05 2A F8 33  mov         qword ptr [000000014332E2C8h],0
+                    02 00 00 00 00
+  0000000140FEEA9E: 48 83 C4 28        add         rsp,28h
+  0000000140FEEAA2: C3                 ret
+  0000000140FEEAA3: CC                 int         3
+  0000000140FEEAA4: CC                 int         3
+  0000000140FEEAA5: CC                 int         3
+  0000000140FEEAA6: CC                 int         3
+  0000000140FEEAA7: CC                 int         3
+  0000000140FEEAA8: CC                 int         3
+  0000000140FEEAA9: CC                 int         3
+  0000000140FEEAAA: CC                 int         3
+  0000000140FEEAAB: CC                 int         3
+  0000000140FEEAAC: CC                 int         3
+  0000000140FEEAAD: CC                 int         3
+  0000000140FEEAAE: CC                 int         3
+  0000000140FEEAAF: CC                 int         3
+  0000000140FEEAB0: 40 53              push        rbx
+  0000000140FEEAB2: 48 83 EC 50        sub         rsp,50h
+  0000000140FEEAB6: 8B 05 04 0D 0E 01  mov         eax,dword ptr [00000001420CF7C0h]
+  0000000140FEEABC: 48 8D 15 2D F8 33  lea         rdx,[000000014332E2F0h]
+                    02
+  0000000140FEEAC3: C6 44 24 48 00     mov         byte ptr [rsp+48h],0
+  0000000140FEEAC8: 41 B9 80 00 00 00  mov         r9d,80h
+  0000000140FEEACE: 48 C7 44 24 40 00  mov         qword ptr [rsp+40h],0
+                    00 00 00
+  0000000140FEEAD7: 45 33 C0           xor         r8d,r8d
+  0000000140FEEADA: C6 44 24 38 00     mov         byte ptr [rsp+38h],0
+  0000000140FEEADF: 48 8B D9           mov         rbx,rcx
+  0000000140FEEAE2: 89 44 24 30        mov         dword ptr [rsp+30h],eax
+  0000000140FEEAE6: C7 44 24 28 01 00  mov         dword ptr [rsp+28h],1
+                    00 00
+  0000000140FEEAEE: C7 44 24 20 80 00  mov         dword ptr [rsp+20h],80h
+                    00 00
+  0000000140FEEAF6: E8 05 C1 EC FF     call        0000000140EBAC00
+  0000000140FEEAFB: 48 8B C3           mov         rax,rbx
+  0000000140FEEAFE: 48 83 C4 50        add         rsp,50h
+  0000000140FEEB02: 5B                 pop         rbx
+  0000000140FEEB03: C3                 ret
+  0000000140FEEB04: CC                 int         3
+  0000000140FEEB05: CC                 int         3
+  0000000140FEEB06: CC                 int         3
+  0000000140FEEB07: CC                 int         3
+  0000000140FEEB08: CC                 int         3
+  0000000140FEEB09: CC                 int         3
+  0000000140FEEB0A: CC                 int         3
+  0000000140FEEB0B: CC                 int         3
+  0000000140FEEB0C: CC                 int         3
+  0000000140FEEB0D: CC                 int         3
+  0000000140FEEB0E: CC                 int         3
+  0000000140FEEB0F: CC                 int         3
+  0000000140FEEB10: 48 8B D1           mov         rdx,rcx
+  0000000140FEEB13: 41 B8 FF FF FF FF  mov         r8d,0FFFFFFFFh
+  0000000140FEEB19: 48 8B 0D A8 F7 33  mov         rcx,qword ptr [000000014332E2C8h]
+                    02
+  0000000140FEEB20: 48 8B 01           mov         rax,qword ptr [rcx]
+  0000000140FEEB23: 48 FF A0 B0 00 00  jmp         qword ptr [rax+00000000000000B0h]
+                    00
+  0000000140FEEB2A: CC                 int         3
+  0000000140FEEB2B: CC                 int         3
+  0000000140FEEB2C: CC                 int         3
+  0000000140FEEB2D: CC                 int         3
+  0000000140FEEB2E: CC                 int         3
+  0000000140FEEB2F: CC                 int         3
+  0000000140FEEB30: 48 89 5C 24 10     mov         qword ptr [rsp+10h],rbx
+  0000000140FEEB35: 48 89 6C 24 18     mov         qword ptr [rsp+18h],rbp
+  0000000140FEEB3A: 56                 push        rsi
+  0000000140FEEB3B: 57                 push        rdi
+  0000000140FEEB3C: 41 54              push        r12
+  0000000140FEEB3E: 41 56              push        r14
+  0000000140FEEB40: 41 57              push        r15
+  0000000140FEEB42: 48 83 EC 30        sub         rsp,30h
+  0000000140FEEB46: 4C 8B FA           mov         r15,rdx
+  0000000140FEEB49: 48 8B D9           mov         rbx,rcx
+  0000000140FEEB4C: 48 8B 12           mov         rdx,qword ptr [rdx]
+  0000000140FEEB4F: 48 8D 4C 24 60     lea         rcx,[rsp+60h]
+  0000000140FEEB54: 49 8B E8           mov         rbp,r8
+  0000000140FEEB57: E8 94 3A CF FF     call        0000000140CE25F0
+  0000000140FEEB5C: 44 8B 64 24 60     mov         r12d,dword ptr [rsp+60h]
+  0000000140FEEB61: 4C 8B 73 20        mov         r14,qword ptr [rbx+20h]
+  0000000140FEEB65: 4D 85 F6           test        r14,r14
+  0000000140FEEB68: 0F 84 83 00 00 00  je          0000000140FEEBF1
+  0000000140FEEB6E: 44 8B 4B 04        mov         r9d,dword ptr [rbx+4]
+  0000000140FEEB72: 41 FF C9           dec         r9d
+  0000000140FEEB75: 41 8B C9           mov         ecx,r9d
+  0000000140FEEB78: 49 23 CC           and         rcx,r12
+  0000000140FEEB7B: 48 8D 04 49        lea         rax,[rcx+rcx*2]
+  0000000140FEEB7F: 49 83 7C C6 10 00  cmp         qword ptr [r14+rax*8+10h],0
+  0000000140FEEB85: 49 8D 34 C6        lea         rsi,[r14+rax*8]
+  0000000140FEEB89: 0F 84 01 01 00 00  je          0000000140FEEC90
+  0000000140FEEB8F: 49 8B 0F           mov         rcx,qword ptr [r15]
+  0000000140FEEB92: 48 8B C6           mov         rax,rsi
+  0000000140FEEB95: 48 39 08           cmp         qword ptr [rax],rcx
+  0000000140FEEB98: 0F 84 E9 00 00 00  je          0000000140FEEC87
+  0000000140FEEB9E: 48 8B 40 10        mov         rax,qword ptr [rax+10h]
+  0000000140FEEBA2: 48 3B 43 10        cmp         rax,qword ptr [rbx+10h]
+  0000000140FEEBA6: 75 ED              jne         0000000140FEEB95
+  0000000140FEEBA8: 44 8B 43 08        mov         r8d,dword ptr [rbx+8]
+  0000000140FEEBAC: 33 FF              xor         edi,edi
+  0000000140FEEBAE: 45 85 C0           test        r8d,r8d
+  0000000140FEEBB1: 74 3E              je          0000000140FEEBF1
+  0000000140FEEBB3: 8B 53 0C           mov         edx,dword ptr [rbx+0Ch]
+  0000000140FEEBB6: 66 66 0F 1F 84 00  nop         word ptr [rax+rax+0000000000000000h]
+                    00 00 00 00
+  0000000140FEEBC0: 8D 42 FF           lea         eax,[rdx-1]
+  0000000140FEEBC3: 41 23 C1           and         eax,r9d
+  0000000140FEEBC6: 8B D0              mov         edx,eax
+  0000000140FEEBC8: 89 53 0C           mov         dword ptr [rbx+0Ch],edx
+  0000000140FEEBCB: 48 8D 04 40        lea         rax,[rax+rax*2]
+  0000000140FEEBCF: 49 83 7C C6 10 00  cmp         qword ptr [r14+rax*8+10h],0
+  0000000140FEEBD5: 49 8D 0C C6        lea         rcx,[r14+rax*8]
+  0000000140FEEBD9: 48 0F 45 CF        cmovne      rcx,rdi
+  0000000140FEEBDD: 48 8B F9           mov         rdi,rcx
+  0000000140FEEBE0: 48 85 C9           test        rcx,rcx
+  0000000140FEEBE3: 74 DB              je          0000000140FEEBC0
+  0000000140FEEBE5: 41 8D 40 FF        lea         eax,[r8-1]
+  0000000140FEEBE9: 89 43 08           mov         dword ptr [rbx+8],eax
+  0000000140FEEBEC: 48 85 C9           test        rcx,rcx
+  0000000140FEEBEF: 75 0D              jne         0000000140FEEBFE
+  0000000140FEEBF1: 48 8B CB           mov         rcx,rbx
+  0000000140FEEBF4: E8 47 04 00 00     call        0000000140FEF040
+  0000000140FEEBF9: E9 63 FF FF FF     jmp         0000000140FEEB61
+  0000000140FEEBFE: 48 8B 16           mov         rdx,qword ptr [rsi]
+  0000000140FEEC01: 48 8D 4C 24 20     lea         rcx,[rsp+20h]
+  0000000140FEEC06: E8 E5 39 CF FF     call        0000000140CE25F0
+  0000000140FEEC0B: 8B 4B 04           mov         ecx,dword ptr [rbx+4]
+  0000000140FEEC0E: 8B 44 24 20        mov         eax,dword ptr [rsp+20h]
+  0000000140FEEC12: FF C9              dec         ecx
+  0000000140FEEC14: 48 23 C8           and         rcx,rax
+  0000000140FEEC17: 48 8D 04 49        lea         rax,[rcx+rcx*2]
+  0000000140FEEC1B: 49 8D 0C C6        lea         rcx,[r14+rax*8]
+  0000000140FEEC1F: 48 3B F1           cmp         rsi,rcx
+  0000000140FEEC22: 75 1B              jne         0000000140FEEC3F
+  0000000140FEEC24: 49 8B 07           mov         rax,qword ptr [r15]
+  0000000140FEEC27: 48 8B 4E 10        mov         rcx,qword ptr [rsi+10h]
+  0000000140FEEC2B: 48 89 07           mov         qword ptr [rdi],rax
+  0000000140FEEC2E: 0F B6 45 00        movzx       eax,byte ptr [rbp]
+  0000000140FEEC32: 88 47 08           mov         byte ptr [rdi+8],al
+  0000000140FEEC35: 48 89 4F 10        mov         qword ptr [rdi+10h],rcx
+  0000000140FEEC39: 48 89 7E 10        mov         qword ptr [rsi+10h],rdi
+  0000000140FEEC3D: EB 69              jmp         0000000140FEECA8
+  0000000140FEEC3F: 48 8B 41 10        mov         rax,qword ptr [rcx+10h]
+  0000000140FEEC43: 48 3B C6           cmp         rax,rsi
+  0000000140FEEC46: 74 14              je          0000000140FEEC5C
+  0000000140FEEC48: 0F 1F 84 00 00 00  nop         dword ptr [rax+rax+0000000000000000h]
+                    00 00
+  0000000140FEEC50: 48 8B C8           mov         rcx,rax
+  0000000140FEEC53: 48 8B 40 10        mov         rax,qword ptr [rax+10h]
+  0000000140FEEC57: 48 3B C6           cmp         rax,rsi
+  0000000140FEEC5A: 75 F4              jne         0000000140FEEC50
+  0000000140FEEC5C: 0F 10 06           movups      xmm0,xmmword ptr [rsi]
+  0000000140FEEC5F: 0F 11 07           movups      xmmword ptr [rdi],xmm0
+  0000000140FEEC62: F2 0F 10 4E 10     movsd       xmm1,mmword ptr [rsi+10h]
+  0000000140FEEC67: F2 0F 11 4F 10     movsd       mmword ptr [rdi+10h],xmm1
+  0000000140FEEC6C: 48 89 79 10        mov         qword ptr [rcx+10h],rdi
+  0000000140FEEC70: 49 8B 07           mov         rax,qword ptr [r15]
+  0000000140FEEC73: 48 8B 7B 10        mov         rdi,qword ptr [rbx+10h]
+  0000000140FEEC77: 48 89 06           mov         qword ptr [rsi],rax
+  0000000140FEEC7A: 0F B6 45 00        movzx       eax,byte ptr [rbp]
+  0000000140FEEC7E: 88 46 08           mov         byte ptr [rsi+8],al
+  0000000140FEEC81: 48 89 7E 10        mov         qword ptr [rsi+10h],rdi
+  0000000140FEEC85: EB 21              jmp         0000000140FEECA8
+  0000000140FEEC87: 0F B6 4D 00        movzx       ecx,byte ptr [rbp]
+  0000000140FEEC8B: 88 48 08           mov         byte ptr [rax+8],cl
+  0000000140FEEC8E: EB 18              jmp         0000000140FEECA8
+  0000000140FEEC90: 49 8B 07           mov         rax,qword ptr [r15]
+  0000000140FEEC93: 48 8B 4B 10        mov         rcx,qword ptr [rbx+10h]
+  0000000140FEEC97: 48 89 06           mov         qword ptr [rsi],rax
+  0000000140FEEC9A: 0F B6 45 00        movzx       eax,byte ptr [rbp]
+  0000000140FEEC9E: 88 46 08           mov         byte ptr [rsi+8],al
+  0000000140FEECA1: 48 89 4E 10        mov         qword ptr [rsi+10h],rcx
+  0000000140FEECA5: FF 4B 08           dec         dword ptr [rbx+8]
+  0000000140FEECA8: 48 8B 5C 24 68     mov         rbx,qword ptr [rsp+68h]
+  0000000140FEECAD: B0 01              mov         al,1
+  0000000140FEECAF: 48 8B 6C 24 70     mov         rbp,qword ptr [rsp+70h]
+  0000000140FEECB4: 48 83 C4 30        add         rsp,30h
+  0000000140FEECB8: 41 5F              pop         r15
+  0000000140FEECBA: 41 5E              pop         r14
+  0000000140FEECBC: 41 5C              pop         r12
+  0000000140FEECBE: 5F                 pop         rdi
+  0000000140FEECBF: 5E                 pop         rsi
+  0000000140FEECC0: C3                 ret
+  0000000140FEECC1: CC                 int         3
+  0000000140FEECC2: CC                 int         3
+  0000000140FEECC3: CC                 int         3
+  0000000140FEECC4: CC                 int         3
+  0000000140FEECC5: CC                 int         3
+  0000000140FEECC6: CC                 int         3
+  0000000140FEECC7: CC                 int         3
+  0000000140FEECC8: CC                 int         3
+  0000000140FEECC9: CC                 int         3
+  0000000140FEECCA: CC                 int         3
+  0000000140FEECCB: CC                 int         3
+  0000000140FEECCC: CC                 int         3
+  0000000140FEECCD: CC                 int         3
+  0000000140FEECCE: CC                 int         3
+  0000000140FEECCF: CC                 int         3
+  0000000140FEECD0: 48
+
+  Summary
+
+     17C7000 .text

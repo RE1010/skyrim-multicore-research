@@ -1,0 +1,107 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000140EADA00: 40 53              push        rbx
+  0000000140EADA02: 48 83 EC 50        sub         rsp,50h
+  0000000140EADA06: 83 3D 8B D2 7E 02  cmp         dword ptr [000000014369AC98h],2
+                    02
+  0000000140EADA0D: 74 13              je          0000000140EADA22
+  0000000140EADA0F: 48 8D 15 82 D2 7E  lea         rdx,[000000014369AC98h]
+                    02
+  0000000140EADA16: 48 8D 0D F3 CD 7E  lea         rcx,[000000014369A810h]
+                    02
+  0000000140EADA1D: E8 EE 0D E3 FF     call        0000000140CDE810
+  0000000140EADA22: 45 33 C9           xor         r9d,r9d
+  0000000140EADA25: 48 8D 0D E4 CD 7E  lea         rcx,[000000014369A810h]
+                    02
+  0000000140EADA2C: 45 33 C0           xor         r8d,r8d
+  0000000140EADA2F: 41 8D 51 08        lea         edx,[r9+8]
+  0000000140EADA33: E8 18 08 E3 FF     call        0000000140CDE250
+  0000000140EADA38: 48 89 44 24 60     mov         qword ptr [rsp+60h],rax
+  0000000140EADA3D: 48 8B D8           mov         rbx,rax
+  0000000140EADA40: 48 85 C0           test        rax,rax
+  0000000140EADA43: 74 38              je          0000000140EADA7D
+  0000000140EADA45: 48 8D 4C 24 20     lea         rcx,[rsp+20h]
+  0000000140EADA4A: FF 15 B8 A7 91 00  call        qword ptr [00000001417C8208h]
+  0000000140EADA50: 8B 4C 24 40        mov         ecx,dword ptr [rsp+40h]
+  0000000140EADA54: 89 0B              mov         dword ptr [rbx],ecx
+  0000000140EADA56: 48 8D 4C 24 60     lea         rcx,[rsp+60h]
+  0000000140EADA5B: FF 15 3F A7 91 00  call        qword ptr [00000001417C81A0h]
+  0000000140EADA61: 0F 57 C0           xorps       xmm0,xmm0
+  0000000140EADA64: F3 48 0F 2A 44 24  cvtsi2ss    xmm0,qword ptr [rsp+60h]
+                    60
+  0000000140EADA6B: F3 0F 11 43 04     movss       dword ptr [rbx+4],xmm0
+  0000000140EADA70: 48 89 1D A1 38 3D  mov         qword ptr [0000000143281318h],rbx
+                    02
+  0000000140EADA77: 48 83 C4 50        add         rsp,50h
+  0000000140EADA7B: 5B                 pop         rbx
+  0000000140EADA7C: C3                 ret
+  0000000140EADA7D: 48 C7 05 90 38 3D  mov         qword ptr [0000000143281318h],0
+                    02 00 00 00 00
+  0000000140EADA88: 48 83 C4 50        add         rsp,50h
+  0000000140EADA8C: 5B                 pop         rbx
+  0000000140EADA8D: C3                 ret
+  0000000140EADA8E: CC                 int         3
+  0000000140EADA8F: CC                 int         3
+  0000000140EADA90: CC                 int         3
+  0000000140EADA91: CC                 int         3
+  0000000140EADA92: CC                 int         3
+  0000000140EADA93: CC                 int         3
+  0000000140EADA94: CC                 int         3
+  0000000140EADA95: CC                 int         3
+  0000000140EADA96: CC                 int         3
+  0000000140EADA97: CC                 int         3
+  0000000140EADA98: CC                 int         3
+  0000000140EADA99: CC                 int         3
+  0000000140EADA9A: CC                 int         3
+  0000000140EADA9B: CC                 int         3
+  0000000140EADA9C: CC                 int         3
+  0000000140EADA9D: CC                 int         3
+  0000000140EADA9E: CC                 int         3
+  0000000140EADA9F: CC                 int         3
+  0000000140EADAA0: 48 8B 0D 71 38 3D  mov         rcx,qword ptr [0000000143281318h]
+                    02
+  0000000140EADAA7: BA 08 00 00 00     mov         edx,8
+  0000000140EADAAC: E9 8B 99 6F 00     jmp         00000001415A743C
+  0000000140EADAB1: CC                 int         3
+  0000000140EADAB2: CC                 int         3
+  0000000140EADAB3: CC                 int         3
+  0000000140EADAB4: CC                 int         3
+  0000000140EADAB5: CC                 int         3
+  0000000140EADAB6: CC                 int         3
+  0000000140EADAB7: CC                 int         3
+  0000000140EADAB8: CC                 int         3
+  0000000140EADAB9: CC                 int         3
+  0000000140EADABA: CC                 int         3
+  0000000140EADABB: CC                 int         3
+  0000000140EADABC: CC                 int         3
+  0000000140EADABD: CC                 int         3
+  0000000140EADABE: CC                 int         3
+  0000000140EADABF: CC                 int         3
+  0000000140EADAC0: 40 53              push        rbx
+  0000000140EADAC2: 48 83 EC 50        sub         rsp,50h
+  0000000140EADAC6: 48 8B D9           mov         rbx,rcx
+  0000000140EADAC9: 48 8D 4C 24 20     lea         rcx,[rsp+20h]
+  0000000140EADACE: FF 15 34 A7 91 00  call        qword ptr [00000001417C8208h]
+  0000000140EADAD4: 8B 44 24 40        mov         eax,dword ptr [rsp+40h]
+  0000000140EADAD8: 48 8D 4C 24 60     lea         rcx,[rsp+60h]
+  0000000140EADADD: 89 03              mov         dword ptr [rbx],eax
+  0000000140EADADF: FF 15 BB A6 91 00  call        qword ptr [00000001417C81A0h]
+  0000000140EADAE5: 0F 57 C0           xorps       xmm0,xmm0
+  0000000140EADAE8: 48 8B C3           mov         rax,rbx
+  0000000140EADAEB: F3 48 0F 2A 44 24  cvtsi2ss    xmm0,qword ptr [rsp+60h]
+                    60
+  0000000140EADAF2: F3 0F 11 43 04     movss       dword ptr [rbx+4],xmm0
+  0000000140EADAF7: 48 83 C4 50        add         rsp,50h
+  0000000140EADAFB: 5B                 pop         rbx
+  0000000140EADAFC: C3                 ret
+  0000000140EADAFD: CC                 int         3
+
+  Summary
+
+     17C7000 .text

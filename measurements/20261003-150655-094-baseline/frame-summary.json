@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "source": "C:\\SkyrimMulticoreResearch\\measurements\\20261003-150655-094-baseline\\frames.csv",
+  "columns": [
+    "Application",
+    "ProcessID",
+    "SwapChainAddress",
+    "PresentRuntime",
+    "SyncInterval",
+    "PresentFlags",
+    "AllowsTearing",
+    "PresentMode",
+    "TimeInQPC",
+    "MsBetweenSimulationStart",
+    "MsBetweenPresents",
+    "MsBetweenDisplayChange",
+    "MsInPresentAPI",
+    "MsRenderPresentLatency",
+    "MsUntilDisplayed",
+    "CPUStartQPC",
+    "MsBetweenAppStart",
+    "MsCPUBusy",
+    "MsCPUWait",
+    "MsGPULatency",
+    "MsGPUTime",
+    "MsGPUBusy",
+    "MsGPUWait",
+    "MsAnimationError",
+    "AnimationTime",
+    "MsFlipDelay"
+  ],
+  "totalRows": 1804,
+  "swapChains": [
+    {
+      "application": "SkyrimSE.exe",
+      "processId": "38920",
+      "swapChain": "0x253DD8A30B0",
+      "csvRows": 1804,
+      "frameIntervalColumn": "MsBetweenPresents",
+      "frameIntervals": {
+        "samples": 1804,
+        "meanMs": 8.298040077605314,
+        "medianMs": 8.1375,
+        "p95Ms": 10.088935,
+        "p99Ms": 10.972593
+      },
+      "invalidFrameIntervals": 0,
+      "averagePresentRate": 120.51038445798692,
+      "syncIntervals": [
+        "0"
+      ],
+      "presentModes": [
+        "Hardware: Independent Flip"
+      ],
+      "frameTypes": [],
+      "metrics": {
+        "MsCPUBusy": {
+          "samples": 1804,
+          "meanMs": 8.211943237250537,
+          "medianMs": 8.04705,
+          "p95Ms": 9.995389999999999,
+          "p99Ms": 10.860065
+        },
+        "MsCPUWait": {
+          "samples": 1804,
+          "meanMs": 0.08610687361419077,
+          "medianMs": 0.08074999999999999,
+          "p95Ms": 0.115,
+          "p99Ms": 0.14954300000000006
+        },
+        "MsGPUTime": {
+          "samples": 1804,
+          "meanMs": 8.297328769401346,
+          "medianMs": 8.161349999999999,
+          "p95Ms": 10.868395,
+          "p99Ms": 12.065105
+        },
+        "MsGPUBusy": {
+          "samples": 1804,
+          "meanMs": 4.470622949002215,
+          "medianMs": 3.90085,
+          "p95Ms": 6.6071649999999975,
+          "p99Ms": 7.430198000000001
+        },
+        "MsGPUWait": {
+          "samples": 1804,
+          "meanMs": 3.8267058203991127,
+          "medianMs": 3.9556500000000003,
+          "p95Ms": 6.034135,
+          "p99Ms": 7.147635000000001
+        },
+        "MsInPresentAPI": {
+          "samples": 1804,
+          "meanMs": 0.08610687361419077,
+          "medianMs": 0.08074999999999999,
+          "p95Ms": 0.115,
+          "p99Ms": 0.14954300000000006
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Chains are kept separate; select the gameplay swap chain before making comparisons.",
+    "Average present rate is not necessarily displayed or genuinely rendered FPS.",
+    "ETW CPU frame metrics do not identify the engine main thread or scheduled thread CPU time.",
+    "No bottleneck classification is made from CSV averages alone; inspect CPU/GPU stacks and timeline.",
+    "Invalid/missing metric values are excluded and each metric records its valid sample count."
+  ]
+}

@@ -1,0 +1,49 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  00000001400F5850: 48 83 EC 38        sub         rsp,38h
+  00000001400F5854: 48 C7 44 24 20 FE  mov         qword ptr [rsp+20h],0FFFFFFFFFFFFFFFEh
+                    FF FF FF
+  00000001400F585D: 8B 05 61 D7 14 03  mov         eax,dword ptr [0000000143242FC4h]
+  00000001400F5863: 85 C0              test        eax,eax
+  00000001400F5865: 75 1C              jne         00000001400F5883
+  00000001400F5867: 45 33 C0           xor         r8d,r8d
+  00000001400F586A: 48 8D 15 B7 68 82  lea         rdx,[000000014191C128h]
+                    01
+  00000001400F5871: 48 8D 0D 4C D7 14  lea         rcx,[0000000143242FC4h]
+                    03
+  00000001400F5878: E8 C3 C9 BE 00     call        0000000140CE2240
+  00000001400F587D: 8B 05 41 D7 14 03  mov         eax,dword ptr [0000000143242FC4h]
+  00000001400F5883: 89 44 24 48        mov         dword ptr [rsp+48h],eax
+  00000001400F5887: 48 8D 05 8A 48 9D  lea         rax,[0000000141ACA118h]
+                    01
+  00000001400F588E: 48 89 05 33 B9 25  mov         qword ptr [00000001433511C8h],rax
+                    03
+  00000001400F5895: 48 8D 05 2C B9 25  lea         rax,[00000001433511C8h]
+                    03
+  00000001400F589C: 48 89 44 24 50     mov         qword ptr [rsp+50h],rax
+  00000001400F58A1: E8 7A 15 6B 00     call        00000001407A6E20
+  00000001400F58A6: 48 8D 48 08        lea         rcx,[rax+8]
+  00000001400F58AA: 4C 8D 4C 24 40     lea         r9,[rsp+40h]
+  00000001400F58AF: 4C 8D 44 24 50     lea         r8,[rsp+50h]
+  00000001400F58B4: 48 8D 54 24 48     lea         rdx,[rsp+48h]
+  00000001400F58B9: E8 22 13 6B 00     call        00000001407A6BE0
+  00000001400F58BE: 90                 nop
+  00000001400F58BF: 48 8D 05 92 48 9D  lea         rax,[0000000141ACA158h]
+                    01
+  00000001400F58C6: 48 89 05 FB B8 25  mov         qword ptr [00000001433511C8h],rax
+                    03
+  00000001400F58CD: 48 8D 0D BC 20 6C  lea         rcx,[00000001417B7990h]
+                    01
+  00000001400F58D4: 48 83 C4 38        add         rsp,38h
+  00000001400F58D8: E9 53 20 4B 01     jmp         00000001415A7930
+  00000001400F58DD: CC                 int         3
+
+  Summary
+
+     17C7000 .text

@@ -1,0 +1,39 @@
+Test project C:/SkyrimMulticoreResearch/build/lab
+      Start  1: visibility_correctness
+ 1/17 Test  #1: visibility_correctness ...........   Passed    0.07 sec
+      Start  2: render_owned_packets
+ 2/17 Test  #2: render_owned_packets .............   Passed    0.45 sec
+      Start  3: render_stream_replacement
+ 3/17 Test  #3: render_stream_replacement ........   Passed    1.01 sec
+      Start  4: render_stream_owned_snapshots
+ 4/17 Test  #4: render_stream_owned_snapshots ....   Passed    1.11 sec
+      Start  5: engine_equivalence
+ 5/17 Test  #5: engine_equivalence ...............   Passed    0.08 sec
+      Start  6: plugin_guard
+ 6/17 Test  #6: plugin_guard .....................   Passed    0.06 sec
+      Start  7: render_bridge_guard
+ 7/17 Test  #7: render_bridge_guard ..............   Passed    0.03 sec
+      Start  8: report_reader_lock
+ 8/17 Test  #8: report_reader_lock ...............   Passed    0.02 sec
+      Start  9: movement_plugin_guard
+ 9/17 Test  #9: movement_plugin_guard ............   Passed    0.04 sec
+      Start 10: movement_probe_original
+10/17 Test #10: movement_probe_original ..........   Passed    0.43 sec
+      Start 11: movement_fast_original
+11/17 Test #11: movement_fast_original ...........   Passed    0.07 sec
+      Start 12: movement_report_validation
+12/17 Test #12: movement_report_validation .......   Passed    0.07 sec
+      Start 13: render_plugin_guard
+13/17 Test #13: render_plugin_guard ..............   Passed    0.03 sec
+      Start 14: render_probe_forwarding
+14/17 Test #14: render_probe_forwarding ..........   Passed    0.01 sec
+      Start 15: render_report_validation
+15/17 Test #15: render_report_validation .........   Passed    0.21 sec
+      Start 16: uncap_plugin_guard
+16/17 Test #16: uncap_plugin_guard ...............   Passed    0.03 sec
+      Start 17: uncap_original_physics
+17/17 Test #17: uncap_original_physics ...........   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 17
+
+Total Test time (real) =   4.27 sec

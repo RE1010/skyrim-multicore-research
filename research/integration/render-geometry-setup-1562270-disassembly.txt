@@ -1,0 +1,60 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36252.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\SkyrimSE.exe
+
+File Type: EXECUTABLE IMAGE
+
+  0000000141562270: 48 89 5C 24 08     mov         qword ptr [rsp+8],rbx
+  0000000141562275: 48 89 6C 24 10     mov         qword ptr [rsp+10h],rbp
+  000000014156227A: 48 89 74 24 18     mov         qword ptr [rsp+18h],rsi
+  000000014156227F: 57                 push        rdi
+  0000000141562280: 48 83 EC 20        sub         rsp,20h
+  0000000141562284: 48 3B 15 65 42 ED  cmp         rdx,qword ptr [00000001434364F0h]
+                    01
+  000000014156228B: 41 8B E9           mov         ebp,r9d
+  000000014156228E: 41 0F B6 F0        movzx       esi,r8b
+  0000000141562292: 48 8B FA           mov         rdi,rdx
+  0000000141562295: 48 8B D9           mov         rbx,rcx
+  0000000141562298: 74 56              je          00000001415622F0
+  000000014156229A: 40 F6 C5 04        test        bpl,4
+  000000014156229E: 74 27              je          00000001415622C7
+  00000001415622A0: 8B 49 18           mov         ecx,dword ptr [rcx+18h]
+  00000001415622A3: E8 C8 EE FB FF     call        0000000141521170
+  00000001415622A8: 84 C0              test        al,al
+  00000001415622AA: 75 1B              jne         00000001415622C7
+  00000001415622AC: 48 8B CB           mov         rcx,rbx
+  00000001415622AF: E8 4C 31 FF FF     call        0000000141555400
+  00000001415622B4: 4C 8B 43 08        mov         r8,qword ptr [rbx+8]
+  00000001415622B8: 48 8B D0           mov         rdx,rax
+  00000001415622BB: 44 0F B6 CE        movzx       r9d,sil
+  00000001415622BF: 48 8B CF           mov         rcx,rdi
+  00000001415622C2: E8 09 68 01 00     call        0000000141578AD0
+  00000001415622C7: 40 84 F6           test        sil,sil
+  00000001415622CA: 74 24              je          00000001415622F0
+  00000001415622CC: 48 8B CB           mov         rcx,rbx
+  00000001415622CF: E8 2C 31 FF FF     call        0000000141555400
+  00000001415622D4: 48 85 C0           test        rax,rax
+  00000001415622D7: 74 17              je          00000001415622F0
+  00000001415622D9: 48 8B CB           mov         rcx,rbx
+  00000001415622DC: E8 1F 31 FF FF     call        0000000141555400
+  00000001415622E1: 4C 8B 43 08        mov         r8,qword ptr [rbx+8]
+  00000001415622E5: 48 8B D0           mov         rdx,rax
+  00000001415622E8: 48 8B CF           mov         rcx,rdi
+  00000001415622EB: E8 40 66 01 00     call        0000000141578930
+  00000001415622F0: 48 8B 07           mov         rax,qword ptr [rdi]
+  00000001415622F3: 44 8B C5           mov         r8d,ebp
+  00000001415622F6: 48 8B D3           mov         rdx,rbx
+  00000001415622F9: 48 8B CF           mov         rcx,rdi
+  00000001415622FC: 48 8B 5C 24 30     mov         rbx,qword ptr [rsp+30h]
+  0000000141562301: 48 8B 6C 24 38     mov         rbp,qword ptr [rsp+38h]
+  0000000141562306: 48 8B 74 24 40     mov         rsi,qword ptr [rsp+40h]
+  000000014156230B: 48 83 C4 20        add         rsp,20h
+  000000014156230F: 5F                 pop         rdi
+  0000000141562310: 48 FF 60 30        jmp         qword ptr [rax+30h]
+  0000000141562314: CC                 int         3
+
+  Summary
+
+     17C7000 .text

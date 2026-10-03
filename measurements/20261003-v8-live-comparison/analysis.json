@@ -1,0 +1,540 @@
+{
+  "kind": "v8-same-session-live-ownership-comparison",
+  "pluginVersion": 8,
+  "processId": 38920,
+  "processStartFileTime": 134355062115800952,
+  "installationManifest": "measurements/bridge-installation-20261003-150331-337/manifest.json",
+  "runs": [
+    {
+      "source": "measurements/20261003-150655-094-baseline",
+      "analysis": {
+        "kind": "skyrim-render-worker-live-capture",
+        "mode": "off",
+        "processId": 38920,
+        "actualEngineWorkOffloadedDuringCapture": false,
+        "visualVerification": {
+          "Status": "not-verified"
+        },
+        "acceptedAsCorrectOptimization": false,
+        "counterDelta": {
+          "renderPassCalls": 210757,
+          "drawIndexedCalls": 5376875,
+          "replacedDraws": 0,
+          "workerRecordedDraws": 0,
+          "serialRecordedDraws": 0,
+          "originalDraws": 5376875,
+          "batches": 0,
+          "errors": 0,
+          "foreignContextCalls": 0,
+          "recordingBindings": 0,
+          "recordingBindingsSkipped": 0,
+          "snapshotGroupCopies": 0,
+          "snapshotGroupReuses": 0
+        },
+        "workerIds": [
+          12820,
+          1852,
+          37628,
+          49296
+        ],
+        "observations": 16,
+        "frameRows": 1804,
+        "averagePresentsPerSecond": 120.51038445798692,
+        "frameTimes": {
+          "samples": 1804,
+          "meanMs": 8.298040077605314,
+          "medianMs": 8.1375,
+          "p95Ms": 10.088935,
+          "p99Ms": 10.972593
+        },
+        "gpuBusy": {
+          "samples": 1804,
+          "meanMs": 4.470622949002215,
+          "medianMs": 3.90085,
+          "p95Ms": 6.6071649999999975,
+          "p99Ms": 7.430198000000001
+        },
+        "cpuBusy": {
+          "samples": 1804,
+          "meanMs": 8.211943237250537,
+          "medianMs": 8.04705,
+          "p95Ms": 9.995389999999999,
+          "p99Ms": 10.860065
+        },
+        "limitations": [
+          "Original mode retains adapter forwarding/upload observation.",
+          "Camera/readiness supplied by user.",
+          "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+          "Frame result alone is not a multicore performance comparison."
+        ]
+      },
+      "traceLoss": {
+        "Events": 0,
+        "Buffers": 0
+      },
+      "phaseCounterWindowUTC": [
+        "2026-10-03T13:07:06.6413851Z",
+        "2026-10-03T13:07:22.2575387Z"
+      ],
+      "captureAttempts": 0,
+      "phaseMilliseconds": {
+        "captureTicks": 0.0,
+        "uploadCopyTicks": 2476.9714,
+        "serialRecordTicks": 0.0,
+        "workerWaitTicks": 0.0,
+        "executeTicks": 0.0,
+        "snapshotPublishTicks": 0.0,
+        "queueReleaseTicks": 0.0
+      },
+      "phaseMicrosecondsPerCaptureAttempt": null,
+      "workerRecordMilliseconds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "groupReusePercent": null
+    },
+    {
+      "source": "measurements/20261003-150815-301-baseline",
+      "analysis": {
+        "kind": "skyrim-render-worker-live-capture",
+        "mode": "parallel-owned-snapshots",
+        "processId": 38920,
+        "actualEngineWorkOffloadedDuringCapture": true,
+        "visualVerification": {
+          "Status": "not-verified"
+        },
+        "acceptedAsCorrectOptimization": false,
+        "counterDelta": {
+          "renderPassCalls": 70450,
+          "drawIndexedCalls": 1626612,
+          "replacedDraws": 1354768,
+          "workerRecordedDraws": 1135137,
+          "serialRecordedDraws": 219631,
+          "originalDraws": 271844,
+          "batches": 84041,
+          "errors": 0,
+          "foreignContextCalls": 0,
+          "recordingBindings": 7999564,
+          "recordingBindingsSkipped": 16386260,
+          "snapshotGroupCopies": 17611984,
+          "snapshotGroupReuses": 0
+        },
+        "workerIds": [
+          12820,
+          1852,
+          37628,
+          49296
+        ],
+        "observations": 16,
+        "frameRows": 506,
+        "averagePresentsPerSecond": 33.906435860331044,
+        "frameTimes": {
+          "samples": 506,
+          "meanMs": 29.4929258893281,
+          "medianMs": 29.25285,
+          "p95Ms": 33.081625,
+          "p99Ms": 35.44253499999999
+        },
+        "gpuBusy": {
+          "samples": 506,
+          "meanMs": 7.164057905138336,
+          "medianMs": 7.2697,
+          "p95Ms": 8.941625,
+          "p99Ms": 9.709625
+        },
+        "cpuBusy": {
+          "samples": 506,
+          "meanMs": 29.41643260869564,
+          "medianMs": 29.17785,
+          "p95Ms": 33.00205,
+          "p99Ms": 35.368745
+        },
+        "limitations": [
+          "Original mode retains adapter forwarding/upload observation.",
+          "Camera/readiness supplied by user.",
+          "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+          "Frame result alone is not a multicore performance comparison."
+        ]
+      },
+      "traceLoss": {
+        "Events": 0,
+        "Buffers": 0
+      },
+      "phaseCounterWindowUTC": [
+        "2026-10-03T13:08:26.7254459Z",
+        "2026-10-03T13:08:42.2283154Z"
+      ],
+      "captureAttempts": 1354768,
+      "phaseMilliseconds": {
+        "captureTicks": 4149.8396,
+        "uploadCopyTicks": 772.8824,
+        "serialRecordTicks": 1240.9942,
+        "workerWaitTicks": 1824.2038,
+        "executeTicks": 522.1834,
+        "snapshotPublishTicks": 2398.0208,
+        "queueReleaseTicks": 2034.9406999999999
+      },
+      "phaseMicrosecondsPerCaptureAttempt": {
+        "captureTicks": 3.0631367141827974,
+        "uploadCopyTicks": 0.5704905932233415,
+        "serialRecordTicks": 0.9160197170290413,
+        "workerWaitTicks": 1.3465064129061213,
+        "executeTicks": 0.3854411973120121,
+        "snapshotPublishTicks": 1.7700601136135485,
+        "queueReleaseTicks": 1.5020584336211071
+      },
+      "workerRecordMilliseconds": [
+        1090.3575999999998,
+        1141.533,
+        1114.4807,
+        1125.6592
+      ],
+      "groupReusePercent": 0.0
+    },
+    {
+      "source": "measurements/20261003-150930-923-baseline",
+      "analysis": {
+        "kind": "skyrim-render-worker-live-capture",
+        "mode": "parallel",
+        "processId": 38920,
+        "actualEngineWorkOffloadedDuringCapture": true,
+        "visualVerification": {
+          "Status": "not-verified"
+        },
+        "acceptedAsCorrectOptimization": false,
+        "counterDelta": {
+          "renderPassCalls": 72461,
+          "drawIndexedCalls": 1976701,
+          "replacedDraws": 1643252,
+          "workerRecordedDraws": 1404916,
+          "serialRecordedDraws": 238236,
+          "originalDraws": 333449,
+          "batches": 88683,
+          "errors": 0,
+          "foreignContextCalls": 0,
+          "recordingBindings": 9526808,
+          "recordingBindingsSkipped": 20049928,
+          "snapshotGroupCopies": 2464723,
+          "snapshotGroupReuses": 18897553
+        },
+        "workerIds": [
+          12820,
+          1852,
+          37628,
+          49296
+        ],
+        "observations": 16,
+        "frameRows": 621,
+        "averagePresentsPerSecond": 41.55775907152176,
+        "frameTimes": {
+          "samples": 621,
+          "meanMs": 24.062895169082132,
+          "medianMs": 23.9171,
+          "p95Ms": 28.098,
+          "p99Ms": 29.83063999999999
+        },
+        "gpuBusy": {
+          "samples": 621,
+          "meanMs": 6.958461513687608,
+          "medianMs": 7.1807,
+          "p95Ms": 9.1564,
+          "p99Ms": 9.881599999999988
+        },
+        "cpuBusy": {
+          "samples": 621,
+          "meanMs": 23.98531223832529,
+          "medianMs": 23.8569,
+          "p95Ms": 28.0192,
+          "p99Ms": 29.75167999999999
+        },
+        "limitations": [
+          "Original mode retains adapter forwarding/upload observation.",
+          "Camera/readiness supplied by user.",
+          "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+          "Frame result alone is not a multicore performance comparison."
+        ]
+      },
+      "traceLoss": {
+        "Events": 0,
+        "Buffers": 0
+      },
+      "phaseCounterWindowUTC": [
+        "2026-10-03T13:09:41.9363913Z",
+        "2026-10-03T13:09:57.4159682Z"
+      ],
+      "captureAttempts": 1643252,
+      "phaseMilliseconds": {
+        "captureTicks": 2978.5748,
+        "uploadCopyTicks": 938.65,
+        "serialRecordTicks": 1388.7768,
+        "workerWaitTicks": 2146.5399,
+        "executeTicks": 597.3216,
+        "snapshotPublishTicks": 860.2725,
+        "queueReleaseTicks": 844.3313999999999
+      },
+      "phaseMicrosecondsPerCaptureAttempt": {
+        "captureTicks": 1.8126098735921208,
+        "uploadCopyTicks": 0.5712148836575279,
+        "serialRecordTicks": 0.8451392726130867,
+        "workerWaitTicks": 1.3062755438605889,
+        "executeTicks": 0.3634996945082069,
+        "snapshotPublishTicks": 0.5235183039485118,
+        "queueReleaseTicks": 0.5138173572890828
+      },
+      "workerRecordMilliseconds": [
+        1296.4062000000001,
+        1331.3686,
+        1323.3295,
+        1344.5809
+      ],
+      "groupReusePercent": 88.4622640396557
+    },
+    {
+      "source": "measurements/20261003-151139-070-baseline",
+      "analysis": {
+        "kind": "skyrim-render-worker-live-capture",
+        "mode": "parallel",
+        "processId": 38920,
+        "actualEngineWorkOffloadedDuringCapture": true,
+        "visualVerification": {
+          "Status": "not-verified"
+        },
+        "acceptedAsCorrectOptimization": false,
+        "counterDelta": {
+          "renderPassCalls": 77518,
+          "drawIndexedCalls": 2175143,
+          "replacedDraws": 1807184,
+          "workerRecordedDraws": 1557962,
+          "serialRecordedDraws": 249406,
+          "originalDraws": 367959,
+          "batches": 95862,
+          "errors": 0,
+          "foreignContextCalls": 0,
+          "recordingBindings": 10474672,
+          "recordingBindingsSkipped": 22057952,
+          "snapshotGroupCopies": 2711836,
+          "snapshotGroupReuses": 20781556
+        },
+        "workerIds": [
+          12820,
+          1852,
+          37628,
+          49296
+        ],
+        "observations": 16,
+        "frameRows": 638,
+        "averagePresentsPerSecond": 42.69123483439888,
+        "frameTimes": {
+          "samples": 638,
+          "meanMs": 23.424012068965506,
+          "medianMs": 23.2157,
+          "p95Ms": 26.227965,
+          "p99Ms": 29.247201999999998
+        },
+        "gpuBusy": {
+          "samples": 638,
+          "meanMs": 7.103155956112843,
+          "medianMs": 7.23695,
+          "p95Ms": 9.230295,
+          "p99Ms": 9.917192
+        },
+        "cpuBusy": {
+          "samples": 638,
+          "meanMs": 23.34664059561127,
+          "medianMs": 23.147199999999998,
+          "p95Ms": 26.134165,
+          "p99Ms": 29.153444999999998
+        },
+        "limitations": [
+          "Original mode retains adapter forwarding/upload observation.",
+          "Camera/readiness supplied by user.",
+          "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+          "Frame result alone is not a multicore performance comparison."
+        ]
+      },
+      "traceLoss": {
+        "Events": 0,
+        "Buffers": 0
+      },
+      "phaseCounterWindowUTC": [
+        "2026-10-03T13:11:50.5089422Z",
+        "2026-10-03T13:12:05.9842306Z"
+      ],
+      "captureAttempts": 1807184,
+      "phaseMilliseconds": {
+        "captureTicks": 3187.5083,
+        "uploadCopyTicks": 1008.4557000000001,
+        "serialRecordTicks": 1405.9607,
+        "workerWaitTicks": 2262.3145999999997,
+        "executeTicks": 614.3539,
+        "snapshotPublishTicks": 923.7840000000001,
+        "queueReleaseTicks": 909.4472999999999
+      },
+      "phaseMicrosecondsPerCaptureAttempt": {
+        "captureTicks": 1.7637984289369537,
+        "uploadCopyTicks": 0.5580260228067535,
+        "serialRecordTicks": 0.7779842561687134,
+        "workerWaitTicks": 1.2518451911924848,
+        "executeTicks": 0.3399509402473682,
+        "snapshotPublishTicks": 0.511173184357542,
+        "queueReleaseTicks": 0.5032400131917945
+      },
+      "workerRecordMilliseconds": [
+        1369.2804,
+        1409.2812,
+        1393.9506,
+        1400.3117
+      ],
+      "groupReusePercent": 88.45702655453074
+    },
+    {
+      "source": "measurements/20261003-151242-144-baseline",
+      "analysis": {
+        "kind": "skyrim-render-worker-live-capture",
+        "mode": "parallel-owned-snapshots",
+        "processId": 38920,
+        "actualEngineWorkOffloadedDuringCapture": true,
+        "visualVerification": {
+          "Status": "not-verified"
+        },
+        "acceptedAsCorrectOptimization": false,
+        "counterDelta": {
+          "renderPassCalls": 60260,
+          "drawIndexedCalls": 1700239,
+          "replacedDraws": 1414403,
+          "workerRecordedDraws": 1231701,
+          "serialRecordedDraws": 182681,
+          "originalDraws": 285836,
+          "batches": 74508,
+          "errors": 0,
+          "foreignContextCalls": 0,
+          "recordingBindings": 8206011,
+          "recordingBindingsSkipped": 17252865,
+          "snapshotGroupCopies": 18387239,
+          "snapshotGroupReuses": 0
+        },
+        "workerIds": [
+          12820,
+          1852,
+          37628,
+          49296
+        ],
+        "observations": 16,
+        "frameRows": 495,
+        "averagePresentsPerSecond": 33.138755947804185,
+        "frameTimes": {
+          "samples": 495,
+          "meanMs": 30.176147878787862,
+          "medianMs": 29.8921,
+          "p95Ms": 32.73576,
+          "p99Ms": 34.196164
+        },
+        "gpuBusy": {
+          "samples": 495,
+          "meanMs": 7.1630666666666665,
+          "medianMs": 7.2011,
+          "p95Ms": 8.99909,
+          "p99Ms": 9.562844
+        },
+        "cpuBusy": {
+          "samples": 495,
+          "meanMs": 30.099567878787855,
+          "medianMs": 29.8184,
+          "p95Ms": 32.62856,
+          "p99Ms": 34.106966
+        },
+        "limitations": [
+          "Original mode retains adapter forwarding/upload observation.",
+          "Camera/readiness supplied by user.",
+          "Offload proves moved D3D recording only; shader preparation and replay remain serial.",
+          "Frame result alone is not a multicore performance comparison."
+        ]
+      },
+      "traceLoss": {
+        "Events": 0,
+        "Buffers": 0
+      },
+      "phaseCounterWindowUTC": [
+        "2026-10-03T13:12:54.1520440Z",
+        "2026-10-03T13:13:09.5819350Z"
+      ],
+      "captureAttempts": 1414403,
+      "phaseMilliseconds": {
+        "captureTicks": 4254.375999999999,
+        "uploadCopyTicks": 788.5003,
+        "serialRecordTicks": 1061.8088,
+        "workerWaitTicks": 1928.4727,
+        "executeTicks": 502.37659999999994,
+        "snapshotPublishTicks": 2460.5034,
+        "queueReleaseTicks": 2127.6237
+      },
+      "phaseMicrosecondsPerCaptureAttempt": {
+        "captureTicks": 3.007895203842186,
+        "uploadCopyTicks": 0.5574792332878253,
+        "serialRecordTicks": 0.7507116430041509,
+        "workerWaitTicks": 1.3634534853220759,
+        "executeTicks": 0.35518632242720066,
+        "snapshotPublishTicks": 1.7396056145242904,
+        "queueReleaseTicks": 1.5042556470821966
+      },
+      "workerRecordMilliseconds": [
+        1133.8508,
+        1191.4983,
+        1162.1396,
+        1195.7721999999999
+      ],
+      "groupReusePercent": 0.0
+    }
+  ],
+  "pairGainPercent": [
+    22.565990842294358,
+    28.825701549088034
+  ],
+  "meanOwnedPresentsPerSecond": 33.522595904067614,
+  "meanSharedPresentsPerSecond": 42.124496952960314,
+  "meanRateGainPercent": 25.66000876993224,
+  "sharedRateChangeFromOriginalPercent": -65.04492360353724,
+  "weightedPhaseMicrosecondsPerCaptureAttempt": {
+    "owned": {
+      "captureTicks": 3.0349211370478746,
+      "uploadCopyTicks": 0.5638448113171777,
+      "serialRecordTicks": 0.8315856983913236,
+      "workerWaitTicks": 1.3551624294779918,
+      "executeTicks": 0.36998798557402196,
+      "snapshotPublishTicks": 1.7545049402871835,
+      "queueReleaseTicks": 1.503180699205647
+    },
+    "shared": {
+      "captureTicks": 1.787044622766514,
+      "uploadCopyTicks": 0.5643071484299376,
+      "serialRecordTicks": 0.8099664795985203,
+      "workerWaitTicks": 1.2777673604147415,
+      "executeTicks": 0.3511659106269468,
+      "snapshotPublishTicks": 0.5170524826427734,
+      "queueReleaseTicks": 0.5082774176944594
+    }
+  },
+  "visualObservation": "visual-observation.json",
+  "acceptedAsCorrectOptimization": false,
+  "overallPerformanceGain": false,
+  "limitations": [
+    "Two short pairs in one session, no broad statistical validation.",
+    "Readiness/camera supplied by user; camera not continuously recorded during FPS captures.",
+    "Original includes forwarding and upload observation; not uninstrumented vanilla.",
+    "Owned control is the new v8 group representation, not exact v7.",
+    "Phase counters are independently published; their window is not exact PresentMon boundaries.",
+    "Publication is included in capture time. Worker timings overlap and are CPU-side, not GPU durations.",
+    "Normalized phase timings use capture attempts, not matching frame or worker-draw counts.",
+    "User reports no flicker even during movement in current test; sparse screenshots do not prove full correctness across scenes."
+  ],
+  "userReportedNoFlickerDuringMovement": true,
+  "finalState": {
+    "processId": 38920,
+    "requestedMode": "off",
+    "enabled": false,
+    "worldLoaded": true,
+    "errors": 0
+  }
+}

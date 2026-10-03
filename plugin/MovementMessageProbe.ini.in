@@ -1,0 +1,4 @@
+[Diagnostics]
+OutputDirectory=@CMAKE_SOURCE_DIR@/measurements/live-movement
+SampleEvery=64
+DurationSeconds=20

@@ -1,0 +1,3537 @@
+{
+  "sha": "328916305165a46c4e4b527735bbcfd46b09a0ca",
+  "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/328916305165a46c4e4b527735bbcfd46b09a0ca",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10746d3512d3585a00f6d9bd0efb7cdb451de908",
+      "size": 59,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/10746d3512d3585a00f6d9bd0efb7cdb451de908"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9511d9f64b903264361eb6a6ac56e3271d8b29a5",
+      "size": 603,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9511d9f64b903264361eb6a6ac56e3271d8b29a5"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcd5581931821a764d9f8588746a0af088e04d6",
+      "size": 743,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bbcd5581931821a764d9f8588746a0af088e04d6"
+    },
+    {
+      "path": "Dependencies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64565326aa96725f4dec7d93db0d7dc5b5b49bd7",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/64565326aa96725f4dec7d93db0d7dc5b5b49bd7"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d290e1b983c2bd9766643060d530b369a43cfba7",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/d290e1b983c2bd9766643060d530b369a43cfba7"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/AllMOCProjects.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c695f217f88e399c76070663d82e348aa6cff07d",
+      "size": 6633,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c695f217f88e399c76070663d82e348aa6cff07d"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dded13df499f3022384e2a3c5821acec10962ff6",
+      "size": 1599,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/dded13df499f3022384e2a3c5821acec10962ff6"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/CompilerSpecific.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6203ff939390cbb508b8493e906a5d523947163",
+      "size": 2906,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a6203ff939390cbb508b8493e906a5d523947163"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/CullingThreadpool.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a584473a16ba02a1d5ddbae64fca339e5ea7ba7",
+      "size": 14000,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2a584473a16ba02a1d5ddbae64fca339e5ea7ba7"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/CullingThreadpool.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "887c82b7fc70824b0a1de6604acaaa4980f5f270",
+      "size": 12758,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/887c82b7fc70824b0a1de6604acaaa4980f5f270"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/D3DValidate",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63e5bd6c435f13158e79272679eee970e58b5338",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/63e5bd6c435f13158e79272679eee970e58b5338"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/D3DValidate/D3DValidate.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6d881a5cb0ba00117111ca96a429bfe6eeb2b7a",
+      "size": 15153,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e6d881a5cb0ba00117111ca96a429bfe6eeb2b7a"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/D3DValidate/D3DValidate.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2645123c16e16fa095e314fa20bb20ce3e0b7b33",
+      "size": 1327,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2645123c16e16fa095e314fa20bb20ce3e0b7b33"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/D3DValidate/D3DValidate.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a162907d44137e8f38072128eebce2330ccdb5b",
+      "size": 9826,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8a162907d44137e8f38072128eebce2330ccdb5b"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/D3DValidate/D3DValidate.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f52b9e95bc83538232f32f7d18e44f2c5c7c12",
+      "size": 1434,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a7f52b9e95bc83538232f32f7d18e44f2c5c7c12"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "038c6e7d5c4c62b24afb3d382c405bd552630b38",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/038c6e7d5c4c62b24afb3d382c405bd552630b38"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fb3a84f8d70f6f4d6da6c9c404386a179967259",
+      "size": 565,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0fb3a84f8d70f6f4d6da6c9c404386a179967259"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example/Example.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4f982ed1a0a779db9a20ee5b1fe6c9c7a7bc5e7",
+      "size": 1319,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f4f982ed1a0a779db9a20ee5b1fe6c9c7a7bc5e7"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example/Example.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7705a7735b804b0e8b3d887a6ab16c56f998efff",
+      "size": 10999,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7705a7735b804b0e8b3d887a6ab16c56f998efff"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example/Example.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca949429379b192246e4d750f566bf7d7e69bffc",
+      "size": 1434,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ca949429379b192246e4d750f566bf7d7e69bffc"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/Example/ExampleMain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c164512204ddb21e8ad637683371ad5de62a1e3",
+      "size": 7969,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6c164512204ddb21e8ad637683371ad5de62a1e3"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9dd4efaee22c781cbcb9a78eb13ea59286cca4ea",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/9dd4efaee22c781cbcb9a78eb13ea59286cca4ea"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17bf3671addedea4b55e29166a9a7f323207ff93",
+      "size": 582,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/17bf3671addedea4b55e29166a9a7f323207ff93"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest/FillrateTest.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f672c98178a40017c91bc1b1f7f5e265e65643e",
+      "size": 14971,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8f672c98178a40017c91bc1b1f7f5e265e65643e"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest/FillrateTest.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2687e0b406a1cf7ddedf3e2a86a40c06137e9608",
+      "size": 1329,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2687e0b406a1cf7ddedf3e2a86a40c06137e9608"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest/FillrateTest.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31c127e1e242e3ca953dbd68a57230659a074b53",
+      "size": 10618,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/31c127e1e242e3ca953dbd68a57230659a074b53"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FillrateTest/FillrateTest.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aab38cb3aa72ca5f0ec808d44e41ad07685faaa",
+      "size": 1590,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8aab38cb3aa72ca5f0ec808d44e41ad07685faaa"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorder.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "666f80cb8e25fd78f683062c1a5204ae11188403",
+      "size": 15954,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/666f80cb8e25fd78f683062c1a5204ae11188403"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorder.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dfa0e93a9977acbb685fa3afe0c4e682b7aebd5",
+      "size": 7400,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3dfa0e93a9977acbb685fa3afe0c4e682b7aebd5"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8e9f9c60274ffd4f286ea56b3b378b8c518e0e1",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/a8e9f9c60274ffd4f286ea56b3b378b8c518e0e1"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/FrameRecorderPlayer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ece5c297a9f5740cf09a6bec34bd10857557dfc",
+      "size": 15653,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2ece5c297a9f5740cf09a6bec34bd10857557dfc"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/FrameRecorderPlayer.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a43e1200095bb70ea4c03a3671994e84ea269073",
+      "size": 1343,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a43e1200095bb70ea4c03a3671994e84ea269073"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/FrameRecorderPlayer.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99484e7fff50e9b519901836bfdfe2c7030005ab",
+      "size": 9717,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/99484e7fff50e9b519901836bfdfe2c7030005ab"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/FrameRecorderPlayer.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14ace5fa8373f5e824985358c99bea50ebf8c022",
+      "size": 1494,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/14ace5fa8373f5e824985358c99bea50ebf8c022"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/OcclusionCulling_0.mocrec",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cfd6a00c6e552c684e4efb1cfa74f7bd2b6480c",
+      "size": 269759,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2cfd6a00c6e552c684e4efb1cfa74f7bd2b6480c"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/OcclusionCulling_1.mocrec",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5133e53b41b81678114eed9633f5d1da59ec129f",
+      "size": 458603,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5133e53b41b81678114eed9633f5d1da59ec129f"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/FrameRecorderPlayer/OcclusionCulling_2.mocrec",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe94b999bd363feaa94feb8b51d44c40f1d4d15",
+      "size": 458603,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/afe94b999bd363feaa94feb8b51d44c40f1d4d15"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/MaskedOcclusionCulling.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45e054ee02ba61c1d85c52d84976b23c8714133d",
+      "size": 22764,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/45e054ee02ba61c1d85c52d84976b23c8714133d"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/MaskedOcclusionCulling.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ace5258870bb2f62741afaa9e800e0823c98ea2",
+      "size": 30236,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4ace5258870bb2f62741afaa9e800e0823c98ea2"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/MaskedOcclusionCullingAVX2.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b129f129439832337170836a3c3929c213dc936b",
+      "size": 13312,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b129f129439832337170836a3c3929c213dc936b"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/MaskedOcclusionCullingAVX512.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dccccd83ebff6de0ed6ffd56281b700cb674904",
+      "size": 17302,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1dccccd83ebff6de0ed6ffd56281b700cb674904"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/MaskedOcclusionCullingCommon.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db19bd0f2d4b5b7930775df0f9ebc11d48b2cc1c",
+      "size": 96412,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/db19bd0f2d4b5b7930775df0f9ebc11d48b2cc1c"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "695059d36d6149ddfb01bdab2dd96144f6a17b9d",
+      "size": 28911,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/695059d36d6149ddfb01bdab2dd96144f6a17b9d"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/StaticLib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb9b15d799ee02b66d04ae1d4a00fa2da3cdec9a",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/bb9b15d799ee02b66d04ae1d4a00fa2da3cdec9a"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/StaticLib/StaticLib.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86a4b5164e9d8aaa90f1d90448d056ac08618dad",
+      "size": 9672,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/86a4b5164e9d8aaa90f1d90448d056ac08618dad"
+    },
+    {
+      "path": "Dependencies/MaskedOcclusionCulling/license.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71036ef65967bc780427b94313459f9da2d8981",
+      "size": 10429,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e71036ef65967bc780427b94313459f9da2d8981"
+    },
+    {
+      "path": "Dependencies/detours",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "cc5a2e4a58ef462821877b35ad30215f0e16bba1"
+    },
+    {
+      "path": "Dependencies/imgui",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "615e9ae34537df5324df2f71253eafd887a848d1"
+    },
+    {
+      "path": "Dependencies/libdeflate",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "3107ae1f7e6150edc65ae1225709abcc41fd065c"
+    },
+    {
+      "path": "Dependencies/libdeflate.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60e8fbb7e1b38b3e4b0805a2328611bfae0b8315",
+      "size": 9312,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/60e8fbb7e1b38b3e4b0805a2328611bfae0b8315"
+    },
+    {
+      "path": "Dependencies/libdeflate.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9797f11690d0d497ade0ac2ec7c4b1c8ffa62fe",
+      "size": 762,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a9797f11690d0d497ade0ac2ec7c4b1c8ffa62fe"
+    },
+    {
+      "path": "Dependencies/libimgui.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b26f0686609a568397f047d4ff5e22d4dcd723",
+      "size": 8716,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/11b26f0686609a568397f047d4ff5e22d4dcd723"
+    },
+    {
+      "path": "Dependencies/libimgui.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57fe974e8ea1799074a4c8f73ba31c5dd87cd8db",
+      "size": 684,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/57fe974e8ea1799074a4c8f73ba31c5dd87cd8db"
+    },
+    {
+      "path": "Dependencies/libmeshoptimizer.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50dc2fc47245630fff2c60d01314ad5abe863ff8",
+      "size": 9008,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/50dc2fc47245630fff2c60d01314ad5abe863ff8"
+    },
+    {
+      "path": "Dependencies/libmeshoptimizer.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bef1d3b0cb69ffb2f836268a3cb3c47125a6bb0f",
+      "size": 968,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bef1d3b0cb69ffb2f836268a3cb3c47125a6bb0f"
+    },
+    {
+      "path": "Dependencies/libmoc.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd5409b6b3f8f3a9cfb99f0017b737843433931b",
+      "size": 10242,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/dd5409b6b3f8f3a9cfb99f0017b737843433931b"
+    },
+    {
+      "path": "Dependencies/libmoc.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44faa1d8ab312fb6f484549c140ff21f8f7492f6",
+      "size": 974,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/44faa1d8ab312fb6f484549c140ff21f8f7492f6"
+    },
+    {
+      "path": "Dependencies/libtracy.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1d6279891f461836abdea637884a1942488da31",
+      "size": 17913,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e1d6279891f461836abdea637884a1942488da31"
+    },
+    {
+      "path": "Dependencies/libtracy.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221380d0e4c517060d2308627a4a69ddb1f58277",
+      "size": 9073,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/221380d0e4c517060d2308627a4a69ddb1f58277"
+    },
+    {
+      "path": "Dependencies/libzydis.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3f5b818738b50b763c3919b194e07942ddf6901",
+      "size": 9525,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a3f5b818738b50b763c3919b194e07942ddf6901"
+    },
+    {
+      "path": "Dependencies/libzydis.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c3517da1c50e986b978ce089da35bebbbb9814c",
+      "size": 745,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5c3517da1c50e986b978ce089da35bebbbb9814c"
+    },
+    {
+      "path": "Dependencies/meshoptimizer",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "2daacd56b46f642d1237dab821a1df4a96ee390b"
+    },
+    {
+      "path": "Dependencies/tbb",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "a803f276186fa2c286a357207832112265b448e4"
+    },
+    {
+      "path": "Dependencies/tracy",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "619523b43e581dc404829106adbcb18bd315ff19"
+    },
+    {
+      "path": "Dependencies/xbyak",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae42bc343f9a9dc34aebf8a4aa84510ce12682b1",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/ae42bc343f9a9dc34aebf8a4aa84510ce12682b1"
+    },
+    {
+      "path": "Dependencies/xbyak/xbyak.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "047e6b67829aab2bf99f22014eaf0b7a518fc7d2",
+      "size": 84699,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/047e6b67829aab2bf99f22014eaf0b7a518fc7d2"
+    },
+    {
+      "path": "Dependencies/xbyak/xbyak_bin2hex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69ecdbfedca741cf4edbb3e1279a905a3a29f76b",
+      "size": 4251,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/69ecdbfedca741cf4edbb3e1279a905a3a29f76b"
+    },
+    {
+      "path": "Dependencies/xbyak/xbyak_mnemonic.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea306d2fe8fdbd8b854adaa3e9e27ad809f34c48",
+      "size": 205948,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ea306d2fe8fdbd8b854adaa3e9e27ad809f34c48"
+    },
+    {
+      "path": "Dependencies/xbyak/xbyak_util.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb65004c773641c921afaf851ba6c8b4e021a20b",
+      "size": 18090,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/eb65004c773641c921afaf851ba6c8b4e021a20b"
+    },
+    {
+      "path": "Dependencies/zydis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d48433e4b9998a2a8122651ce0dcbdb9c8544a4f",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/d48433e4b9998a2a8122651ce0dcbdb9c8544a4f"
+    },
+    {
+      "path": "Dependencies/zydis/.gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3a96fa0dafd154b48acb56876aa82f3e6f1ca0",
+      "size": 26,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ef3a96fa0dafd154b48acb56876aa82f3e6f1ca0"
+    },
+    {
+      "path": "Dependencies/zydis/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fda2364d0c5050826a76180c09887de70f2cb43c",
+      "size": 830,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fda2364d0c5050826a76180c09887de70f2cb43c"
+    },
+    {
+      "path": "Dependencies/zydis/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d131264599ae7323d9a39e7f487cb68a0f6eb5c",
+      "size": 10435,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6d131264599ae7323d9a39e7f487cb68a0f6eb5c"
+    },
+    {
+      "path": "Dependencies/zydis/Doxyfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0ad90506358c6a727ca928717b39b0fd6a67ef5",
+      "size": 107453,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b0ad90506358c6a727ca928717b39b0fd6a67ef5"
+    },
+    {
+      "path": "Dependencies/zydis/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "141d6c2524f0a11bc8c6b6862d198e42d3f4596e",
+      "size": 1112,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/141d6c2524f0a11bc8c6b6862d198e42d3f4596e"
+    },
+    {
+      "path": "Dependencies/zydis/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3b272865454dae939b0b44d3149e1ff0256ba84",
+      "size": 4897,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b3b272865454dae939b0b44d3149e1ff0256ba84"
+    },
+    {
+      "path": "Dependencies/zydis/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60e6108977ec84e56dda365ec6446b8b47cb1df1",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/60e6108977ec84e56dda365ec6446b8b47cb1df1"
+    },
+    {
+      "path": "Dependencies/zydis/assets/ZydisExportConfigSample.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bc50d33f9f536885fe505f55b16e59b542f35fa",
+      "size": 830,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8bc50d33f9f536885fe505f55b16e59b542f35fa"
+    },
+    {
+      "path": "Dependencies/zydis/assets/screenshots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "731ba72c807dabdcbfdc2227ddb8a549d4b5b230",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/731ba72c807dabdcbfdc2227ddb8a549d4b5b230"
+    },
+    {
+      "path": "Dependencies/zydis/assets/screenshots/ZydisInfo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "972e0bffe44744666bd3cad6cd46e2f5800fefa3",
+      "size": 23870,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/972e0bffe44744666bd3cad6cd46e2f5800fefa3"
+    },
+    {
+      "path": "Dependencies/zydis/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bbbeda3b9a6b255fc32ac22825b6b1cfe123baad",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/bbbeda3b9a6b255fc32ac22825b6b1cfe123baad"
+    },
+    {
+      "path": "Dependencies/zydis/examples/FormatterHooks.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da612bc4a46c736985ace450a385123f9927b2b8",
+      "size": 10717,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/da612bc4a46c736985ace450a385123f9927b2b8"
+    },
+    {
+      "path": "Dependencies/zydis/examples/ZydisFuzzIn.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97598840d50692c85f731d246f9f1709b798fab4",
+      "size": 5806,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/97598840d50692c85f731d246f9f1709b798fab4"
+    },
+    {
+      "path": "Dependencies/zydis/examples/ZydisPE.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0045023b2906a803b8218fbe5e47df8a01fa6cb3",
+      "size": 15818,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0045023b2906a803b8218fbe5e47df8a01fa6cb3"
+    },
+    {
+      "path": "Dependencies/zydis/examples/ZydisPerfTest.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28de703aa8e2fad0281c02f2d33f1ef7c2852405",
+      "size": 13717,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/28de703aa8e2fad0281c02f2d33f1ef7c2852405"
+    },
+    {
+      "path": "Dependencies/zydis/examples/ZydisWinKernel.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c50ee01598af55379b03658962bf83f98e715dfe",
+      "size": 7228,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c50ee01598af55379b03658962bf83f98e715dfe"
+    },
+    {
+      "path": "Dependencies/zydis/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6aff4ebf65b4d85a90a37bf63c009f11da46e23a",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/6aff4ebf65b4d85a90a37bf63c009f11da46e23a"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4db0d8972b8de22d4f937b54105228d67d1321e",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/a4db0d8972b8de22d4f937b54105228d67d1321e"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/CommonTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d529357f5cb44c9b1143d9eb6594e9ccdf6c3e64",
+      "size": 5907,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d529357f5cb44c9b1143d9eb6594e9ccdf6c3e64"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Decoder.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f80fed87a804ac395e34e1d530f0d5d507a295b",
+      "size": 7783,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2f80fed87a804ac395e34e1d530f0d5d507a295b"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/DecoderTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e5f56ee6a5f022a80029d76192f1ad6d21807b2",
+      "size": 40014,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2e5f56ee6a5f022a80029d76192f1ad6d21807b2"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Defines.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbf9eb765c5757c3abb2c8a208e95fc8e9d746b0",
+      "size": 7274,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/dbf9eb765c5757c3abb2c8a208e95fc8e9d746b0"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Formatter.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84c4e87e0d866fab212e60f53497f080d8bdc341",
+      "size": 26332,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/84c4e87e0d866fab212e60f53497f080d8bdc341"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90ce9804d8e70783c3dbacab81353d59f34c41f6",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/90ce9804d8e70783c3dbacab81353d59f34c41f6"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated/EnumISAExt.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "113df910160d308789c68004339dbf2c151605fd",
+      "size": 4722,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/113df910160d308789c68004339dbf2c151605fd"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated/EnumISASet.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30e49d49135ffe04999bb4d1b15c1cb198aa9da0",
+      "size": 2139,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/30e49d49135ffe04999bb4d1b15c1cb198aa9da0"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated/EnumInstructionCategory.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "112e0617d45ec92e6283d078970e8f4cd16359c6",
+      "size": 2965,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/112e0617d45ec92e6283d078970e8f4cd16359c6"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated/EnumMnemonic.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca2ea58dd4c389ab6f40aea8f7aa308d14b8c40f",
+      "size": 45367,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ca2ea58dd4c389ab6f40aea8f7aa308d14b8c40f"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Generated/EnumRegister.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99177c999579bfde6ae9b7be93ddb1dcc3ff4444",
+      "size": 7340,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/99177c999579bfde6ae9b7be93ddb1dcc3ff4444"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Internal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37ad1e44f88108a9469408cfee74a3e23a7b5b0b",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/37ad1e44f88108a9469408cfee74a3e23a7b5b0b"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Internal/DecoderData.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b38a7da1a743c8a78311726123c67ccf292769d0",
+      "size": 10322,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b38a7da1a743c8a78311726123c67ccf292769d0"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Internal/LibC.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f904b642ac5ce16b18df99a193ea45213dcf046",
+      "size": 3158,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8f904b642ac5ce16b18df99a193ea45213dcf046"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Internal/SharedData.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e7e392cbff0f768a76002e9656d739fd6b0eef",
+      "size": 24028,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/88e7e392cbff0f768a76002e9656d739fd6b0eef"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/MetaInfo.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e01f3f882cca163e242bd36b2bb68fb676c0c288",
+      "size": 3242,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e01f3f882cca163e242bd36b2bb68fb676c0c288"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Mnemonic.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "065c71f69fc1ee87d4a378e439f23544298cb774",
+      "size": 3087,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/065c71f69fc1ee87d4a378e439f23544298cb774"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Register.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34b3a415483ea3784b06719b5f78c2e31085482b",
+      "size": 7297,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/34b3a415483ea3784b06719b5f78c2e31085482b"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/SharedTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07e198ec73475db035e2d51b3439981d9360cb93",
+      "size": 14387,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/07e198ec73475db035e2d51b3439981d9360cb93"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Status.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94f2941b794323266f0e3399cf18e6bb81580839",
+      "size": 7260,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/94f2941b794323266f0e3399cf18e6bb81580839"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/String.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44e91236fc35f9300d977ad4bdce6d50d8fe21e3",
+      "size": 14740,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/44e91236fc35f9300d977ad4bdce6d50d8fe21e3"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c35b37114210cf0f795b0ba06a40abf4d678dd7",
+      "size": 3700,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2c35b37114210cf0f795b0ba06a40abf4d678dd7"
+    },
+    {
+      "path": "Dependencies/zydis/include/Zydis/Zydis.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf73270f3988024f2c72d0b30307b120adf01a6e",
+      "size": 5344,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cf73270f3988024f2c72d0b30307b120adf01a6e"
+    },
+    {
+      "path": "Dependencies/zydis/msvc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e0182d61925c749e1a424afc66238e18203aa98",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/0e0182d61925c749e1a424afc66238e18203aa98"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8207fb0d23091b25de13eec622a87a60ddd219a2",
+      "size": 1023,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8207fb0d23091b25de13eec622a87a60ddd219a2"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/Zydis.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f0e67449dbb6c8ddd6d786c2e2da95edd4d02b4",
+      "size": 15119,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4f0e67449dbb6c8ddd6d786c2e2da95edd4d02b4"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/ZydisExportConfig.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5921a7e61b46579567a469d8a8db3628a7646d99",
+      "size": 881,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5921a7e61b46579567a469d8a8db3628a7646d99"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "659a01f27325a1b2f04523909bef8383275c2dc1",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/659a01f27325a1b2f04523909bef8383275c2dc1"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/FormatterHooks.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db9c711ec5e38878ba6120a5f1841b7bf3d974d2",
+      "size": 25153,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/db9c711ec5e38878ba6120a5f1841b7bf3d974d2"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/FormatterHooks.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64e0d672e7c829ab79e6cef11919d04ed794e672",
+      "size": 2165,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/64e0d672e7c829ab79e6cef11919d04ed794e672"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisFuzzIn.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ecbc5ce5145a062f9e04c09792c1bf7cda34ee4",
+      "size": 25147,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5ecbc5ce5145a062f9e04c09792c1bf7cda34ee4"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisFuzzIn.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1a9c12dcec70e74778972aa4321b032a94549b",
+      "size": 2162,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ba1a9c12dcec70e74778972aa4321b032a94549b"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisPerfTest.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4959473d66f3992d7a8d27926efbce3bfdd3bba5",
+      "size": 25151,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4959473d66f3992d7a8d27926efbce3bfdd3bba5"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisPerfTest.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6963ff03a188d095bdf063d3afa222a824d93657",
+      "size": 2164,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6963ff03a188d095bdf063d3afa222a824d93657"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisWinKernel.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e68cceca9b072d9dbb1727328761e5d43328df9",
+      "size": 12596,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5e68cceca9b072d9dbb1727328761e5d43328df9"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/examples/ZydisWinKernel.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db05b6bf3a982a866cbbf0462877e969d989071e",
+      "size": 2165,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/db05b6bf3a982a866cbbf0462877e969d989071e"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "135d15ea5cea623b9b7caa05c0060fc3a28f127c",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/135d15ea5cea623b9b7caa05c0060fc3a28f127c"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/tools/ZydisDisasm.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "276b96681d5163edc41386c41336612698fc5011",
+      "size": 25144,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/276b96681d5163edc41386c41336612698fc5011"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/tools/ZydisDisasm.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94db87e62f5ac601239b040d1ef4bb73407d19b8",
+      "size": 2159,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/94db87e62f5ac601239b040d1ef4bb73407d19b8"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/tools/ZydisInfo.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb01d8aff57ff196b91b324c0d0f0d9434c7443e",
+      "size": 25140,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fb01d8aff57ff196b91b324c0d0f0d9434c7443e"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/tools/ZydisInfo.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4be28ff5b4deb7605c24273518f3a6186e904ff",
+      "size": 2157,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f4be28ff5b4deb7605c24273518f3a6186e904ff"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/zydis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12751f5fd39f1fcb5a0471071dca78f20899253a",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/12751f5fd39f1fcb5a0471071dca78f20899253a"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/zydis/Zydis.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2172450274a0edf6ef4636531107ec0252d1433b",
+      "size": 31006,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2172450274a0edf6ef4636531107ec0252d1433b"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/zydis/Zydis.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6638ba785a7966a483a970e5877f67e5ded5f86",
+      "size": 3976,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d6638ba785a7966a483a970e5877f67e5ded5f86"
+    },
+    {
+      "path": "Dependencies/zydis/msvc/zydis/ZydisExportConfig.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5921a7e61b46579567a469d8a8db3628a7646d99",
+      "size": 881,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5921a7e61b46579567a469d8a8db3628a7646d99"
+    },
+    {
+      "path": "Dependencies/zydis/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59968f4eb63175a554959267578723eb85623073",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/59968f4eb63175a554959267578723eb85623073"
+    },
+    {
+      "path": "Dependencies/zydis/src/Decoder.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea0fe364d854826c346b183b544f20aa30a06f3a",
+      "size": 166520,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ea0fe364d854826c346b183b544f20aa30a06f3a"
+    },
+    {
+      "path": "Dependencies/zydis/src/DecoderData.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5211bcabb153ac874eb55a10d83052be68fda87d",
+      "size": 13041,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5211bcabb153ac874eb55a10d83052be68fda87d"
+    },
+    {
+      "path": "Dependencies/zydis/src/Formatter.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b7df971b8672a30d85f2bdc7cd3b5b829d3bbeb",
+      "size": 47695,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6b7df971b8672a30d85f2bdc7cd3b5b829d3bbeb"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24db6dc4a3317c1cff278b107e99587a54aec139",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/24db6dc4a3317c1cff278b107e99587a54aec139"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/AccessedFlags.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bc2419c2aa28a55a60e8bceeeeed432b3951c92",
+      "size": 45042,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9bc2419c2aa28a55a60e8bceeeeed432b3951c92"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/DecoderTables.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37b8763bec44488581adcef7e847f3a94eda16f9",
+      "size": 836665,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/37b8763bec44488581adcef7e847f3a94eda16f9"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EncodableInstructions.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98d4b1cdc463011aff8670b9242cbd3455c037c5",
+      "size": 1791123,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/98d4b1cdc463011aff8670b9242cbd3455c037c5"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EnumISAExt.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e90a32328afbd7753b5e5438c03d65915413edfe",
+      "size": 2572,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e90a32328afbd7753b5e5438c03d65915413edfe"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EnumISASet.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf7ac8c9870e6100bc0f2e87215dfb4f0b4a9793",
+      "size": 949,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cf7ac8c9870e6100bc0f2e87215dfb4f0b4a9793"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EnumInstructionCategory.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c32a52e00eae8f56253bccb5d119b21b6c721c8",
+      "size": 1350,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6c32a52e00eae8f56253bccb5d119b21b6c721c8"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EnumMnemonic.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b88270d4d7917b18b0d57b2cc80510c653a5875",
+      "size": 65575,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5b88270d4d7917b18b0d57b2cc80510c653a5875"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/EnumRegister.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fb52e0b4a639411d7fd3253066f96ae431dd5b",
+      "size": 10273,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/66fb52e0b4a639411d7fd3253066f96ae431dd5b"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/InstructionDefinitions.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34fe8bee593a61053164423144c3c6def5333761",
+      "size": 2813439,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/34fe8bee593a61053164423144c3c6def5333761"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/InstructionEncodings.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24c00c1dc61fd2f69febc3d8faae8205be2327f1",
+      "size": 3338,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/24c00c1dc61fd2f69febc3d8faae8205be2327f1"
+    },
+    {
+      "path": "Dependencies/zydis/src/Generated/OperandDefinitions.inc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3baed1a78283fda7b187ccacf6b2d359615f63f7",
+      "size": 1268987,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3baed1a78283fda7b187ccacf6b2d359615f63f7"
+    },
+    {
+      "path": "Dependencies/zydis/src/MetaInfo.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa26a2bef5660130f9bd386ab4d0fb5d88273889",
+      "size": 2832,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fa26a2bef5660130f9bd386ab4d0fb5d88273889"
+    },
+    {
+      "path": "Dependencies/zydis/src/Mnemonic.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcacb1436fb33c1a25242642ad8fcf8e2de6565e",
+      "size": 2273,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fcacb1436fb33c1a25242642ad8fcf8e2de6565e"
+    },
+    {
+      "path": "Dependencies/zydis/src/Register.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c3956194c9c8ebf0bf7c531f0992d6150b0b90",
+      "size": 7375,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/97c3956194c9c8ebf0bf7c531f0992d6150b0b90"
+    },
+    {
+      "path": "Dependencies/zydis/src/SharedData.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "113e747541a1c857c645f70f98e03644b4b9acf9",
+      "size": 9336,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/113e747541a1c857c645f70f98e03644b4b9acf9"
+    },
+    {
+      "path": "Dependencies/zydis/src/String.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4772ab141b83a0b0ce8cec6833a5bca6bbcf7523",
+      "size": 16173,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4772ab141b83a0b0ce8cec6833a5bca6bbcf7523"
+    },
+    {
+      "path": "Dependencies/zydis/src/Utils.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "610d6a2e312afe3c19dbfa47130d505040ca3162",
+      "size": 6019,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/610d6a2e312afe3c19dbfa47130d505040ca3162"
+    },
+    {
+      "path": "Dependencies/zydis/src/VersionInfo.rc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c2e771abc75e409443799023041059544935dca",
+      "size": 4502,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3c2e771abc75e409443799023041059544935dca"
+    },
+    {
+      "path": "Dependencies/zydis/src/Zydis.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d46444976a380355ad6b53ca43af381b0f4e094",
+      "size": 2225,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6d46444976a380355ad6b53ca43af381b0f4e094"
+    },
+    {
+      "path": "Dependencies/zydis/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da4ea6ad92f0076e3a819fabb531edc966160997",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/da4ea6ad92f0076e3a819fabb531edc966160997"
+    },
+    {
+      "path": "Dependencies/zydis/tools/ZydisDisasm.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2171738a961dd460a28884bca558ebf40282ed7e",
+      "size": 5381,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2171738a961dd460a28884bca558ebf40282ed7e"
+    },
+    {
+      "path": "Dependencies/zydis/tools/ZydisInfo.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8804c1cf5ecb73951c6fc42489f7cc8bc2a718d",
+      "size": 22760,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a8804c1cf5ecb73951c6fc42489f7cc8bc2a718d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a2b231ed45808890c1b901aefa1884f747021d3",
+      "size": 120,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7a2b231ed45808890c1b901aefa1884f747021d3"
+    },
+    {
+      "path": "Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8910ba161e2d8e60258cbb6bcbb36b2a9c68e15",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/f8910ba161e2d8e60258cbb6bcbb36b2a9c68e15"
+    },
+    {
+      "path": "Resources/F4_3DSMAX",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de7fc31e02a954d8096be72d7830f7b6443ec8cf",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/de7fc31e02a954d8096be72d7830f7b6443ec8cf"
+    },
+    {
+      "path": "Resources/F4_3DSMAX/EffectMAX.fx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8165539e21a1cc4523d4c895b8d309d397dce30e",
+      "size": 21503,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8165539e21a1cc4523d4c895b8d309d397dce30e"
+    },
+    {
+      "path": "Resources/F4_3DSMAX/LightingMAX.fx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c73c1cf9c44e0fc938680eee0363764e5651d7",
+      "size": 41256,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/26c73c1cf9c44e0fc938680eee0363764e5651d7"
+    },
+    {
+      "path": "Resources/F4_3DSMAX/SkyMAX.fx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05bfff2d86bd3b78135629ca26071bd74036d17d",
+      "size": 3117,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/05bfff2d86bd3b78135629ca26071bd74036d17d"
+    },
+    {
+      "path": "Resources/F4_3DSMAX/WaterMAX.fx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0653cc6db4576802fa14a4d6a7058c08ac0eab4",
+      "size": 1817,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e0653cc6db4576802fa14a4d6a7058c08ac0eab4"
+    },
+    {
+      "path": "Resources/Raw Shader Bundles.7z",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f47b9a111c7a6e4a7810d3202ab9dbc0bf2ec3",
+      "size": 15507620,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c3f47b9a111c7a6e4a7810d3202ab9dbc0bf2ec3"
+    },
+    {
+      "path": "Shaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0a822e7cebcc28b17edcc163739ab18247aa094",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/e0a822e7cebcc28b17edcc163739ab18247aa094"
+    },
+    {
+      "path": "Shaders/BloodSplatter.hlsl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf36f8de45b32aad978282b7dc75bfd36d301cb",
+      "size": 2267,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0cf36f8de45b32aad978282b7dc75bfd36d301cb"
+    },
+    {
+      "path": "Shaders/DistantTree.hlsl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c1794f5113c0fecd9e6d7125f661404640698e6",
+      "size": 3932,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3c1794f5113c0fecd9e6d7125f661404640698e6"
+    },
+    {
+      "path": "Shaders/RunGrass.hlsl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46271ae1f641ed8ec69dfbce38d9a9f9da282bd9",
+      "size": 6904,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/46271ae1f641ed8ec69dfbce38d9a9f9da282bd9"
+    },
+    {
+      "path": "Shaders/ShaderCommon.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7357c1cb0265698151b189b657159194a828643",
+      "size": 570,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b7357c1cb0265698151b189b657159194a828643"
+    },
+    {
+      "path": "Shaders/Sky.hlsl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60bc39e7e8e70edbf5200d6c3612fcb8c6e334e2",
+      "size": 5366,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/60bc39e7e8e70edbf5200d6c3612fcb8c6e334e2"
+    },
+    {
+      "path": "Shaders/Water.hlsl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9aa656f2eabc905cd0a48e394e5ea0c4b3c0c82",
+      "size": 17143,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f9aa656f2eabc905cd0a48e394e5ea0c4b3c0c82"
+    },
+    {
+      "path": "release.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28bb16a0b4f9e7b2527c49f0f6fad78bcbe5fed4",
+      "size": 3056,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/28bb16a0b4f9e7b2527c49f0f6fad78bcbe5fed4"
+    },
+    {
+      "path": "shader_analyzer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1a787b00b4aa97d6861681a5972c4b05d1a38e3",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/b1a787b00b4aa97d6861681a5972c4b05d1a38e3"
+    },
+    {
+      "path": "shader_analyzer/App.config",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de5b12c062a48e2771ecbe80f3117ff2a76f235",
+      "size": 549,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8de5b12c062a48e2771ecbe80f3117ff2a76f235"
+    },
+    {
+      "path": "shader_analyzer/FXPPackageExtractor.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7fb75a3e3b795ee240f25a0f7153e2e1cb83ad1",
+      "size": 14000,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e7fb75a3e3b795ee240f25a0f7153e2e1cb83ad1"
+    },
+    {
+      "path": "shader_analyzer/FormDiff.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "777457db2788eee518ccd17995d3e6d8cfefaa2c",
+      "size": 3140,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/777457db2788eee518ccd17995d3e6d8cfefaa2c"
+    },
+    {
+      "path": "shader_analyzer/FormDiff.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c22ac137800d05f3761114c90f08b2eccab8f6",
+      "size": 6772,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/07c22ac137800d05f3761114c90f08b2eccab8f6"
+    },
+    {
+      "path": "shader_analyzer/FormDiff.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1af7de150c99c12dd67a509fe57c10d63e4eeb04",
+      "size": 5698,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1af7de150c99c12dd67a509fe57c10d63e4eeb04"
+    },
+    {
+      "path": "shader_analyzer/FormMain.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe76992f89fdb6251184c27c8887d677d1d5e11c",
+      "size": 18755,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fe76992f89fdb6251184c27c8887d677d1d5e11c"
+    },
+    {
+      "path": "shader_analyzer/FormMain.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "932945a3eff82801a5491339abd607d296cf5fba",
+      "size": 4383,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/932945a3eff82801a5491339abd607d296cf5fba"
+    },
+    {
+      "path": "shader_analyzer/FormMain.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1af7de150c99c12dd67a509fe57c10d63e4eeb04",
+      "size": 5698,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1af7de150c99c12dd67a509fe57c10d63e4eeb04"
+    },
+    {
+      "path": "shader_analyzer/Program.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98519634b8cd19185628e628a9165cb705fcf7c5",
+      "size": 2368,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/98519634b8cd19185628e628a9165cb705fcf7c5"
+    },
+    {
+      "path": "shader_analyzer/Properties",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "175aa97e63c51a068376d7a1fe5feee2ee501595",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/175aa97e63c51a068376d7a1fe5feee2ee501595"
+    },
+    {
+      "path": "shader_analyzer/Properties/AssemblyInfo.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a080dfa07ef36b01e4c046ab9062b93bc7ee0df",
+      "size": 1401,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9a080dfa07ef36b01e4c046ab9062b93bc7ee0df"
+    },
+    {
+      "path": "shader_analyzer/Properties/Resources.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba33f26b6f442314badfda306afebad4d8c365a0",
+      "size": 2789,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ba33f26b6f442314badfda306afebad4d8c365a0"
+    },
+    {
+      "path": "shader_analyzer/Properties/Resources.resx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af7dbebbacef595e3089c01c05671016c21a8304",
+      "size": 5496,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/af7dbebbacef595e3089c01c05671016c21a8304"
+    },
+    {
+      "path": "shader_analyzer/Properties/Settings.Designer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfad21996674ceb21e6ddfcd033e5f5afb9cb476",
+      "size": 1072,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cfad21996674ceb21e6ddfcd033e5f5afb9cb476"
+    },
+    {
+      "path": "shader_analyzer/Properties/Settings.settings",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39645652af62950ebf3b28ec3a5400dcec30b1c4",
+      "size": 242,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/39645652af62950ebf3b28ec3a5400dcec30b1c4"
+    },
+    {
+      "path": "shader_analyzer/ShaderAnalyzer.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d4e6d9170b6e2eb6d115f1ea9f011882881bb8",
+      "size": 13393,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c0d4e6d9170b6e2eb6d115f1ea9f011882881bb8"
+    },
+    {
+      "path": "shader_analyzer/ShaderDecompiler.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66aacf13b65b8bea45c0e598cff031f25eedef04",
+      "size": 3655,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/66aacf13b65b8bea45c0e598cff031f25eedef04"
+    },
+    {
+      "path": "shader_analyzer/ShaderMetadata.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4954a9bbd5fb91fdb61e4e5821fb75488dae1b01",
+      "size": 3329,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4954a9bbd5fb91fdb61e4e5821fb75488dae1b01"
+    },
+    {
+      "path": "shader_analyzer/ShaderVariableMetadata.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6164a72613d8cbeaed2a817e0da63a055c819728",
+      "size": 6208,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6164a72613d8cbeaed2a817e0da63a055c819728"
+    },
+    {
+      "path": "shader_analyzer/packages.config",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa2902a64592c73d515fdad7703ebec784a68d40",
+      "size": 4224,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fa2902a64592c73d515fdad7703ebec784a68d40"
+    },
+    {
+      "path": "shader_analyzer/shader_analyzer.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7395001ffe38c1f38bf8cd098d7fea75f8dfd49f",
+      "size": 9855,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7395001ffe38c1f38bf8cd098d7fea75f8dfd49f"
+    },
+    {
+      "path": "skyrim32_ckt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d4badf14151ee2842dc1d6a201c36c31bd67fae",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/8d4badf14151ee2842dc1d6a201c36c31bd67fae"
+    },
+    {
+      "path": "skyrim32_ckt/CreationKit.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "330cdd5caafe730ab50ff2c2fa03e00c1555952d",
+      "size": 2127,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/330cdd5caafe730ab50ff2c2fa03e00c1555952d"
+    },
+    {
+      "path": "skyrim32_ckt/CreationKit.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973a3120b4239454200e2c8b43c32f2deea68bb8",
+      "size": 1459,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/973a3120b4239454200e2c8b43c32f2deea68bb8"
+    },
+    {
+      "path": "skyrim32_ckt/LipSynchAnim.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441b31064decb0d593919914464c6407881090d0",
+      "size": 1055,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/441b31064decb0d593919914464c6407881090d0"
+    },
+    {
+      "path": "skyrim32_ckt/LipSynchAnim.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "587dd5c89c85dbcbbef669ef13785b9c4081a1be",
+      "size": 628,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/587dd5c89c85dbcbbef669ef13785b9c4081a1be"
+    },
+    {
+      "path": "skyrim32_ckt/Loader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c0af6f7e41229b28e79d8b6e9e7306c7760775b",
+      "size": 7042,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8c0af6f7e41229b28e79d8b6e9e7306c7760775b"
+    },
+    {
+      "path": "skyrim32_ckt/Loader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef1379ee1ba26118578471958ace48eebc3a508",
+      "size": 1088,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5ef1379ee1ba26118578471958ace48eebc3a508"
+    },
+    {
+      "path": "skyrim32_ckt/LoaderTLS.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b6d444b912e165ad2b4c5e90ec532cbeb8472aa",
+      "size": 2936,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5b6d444b912e165ad2b4c5e90ec532cbeb8472aa"
+    },
+    {
+      "path": "skyrim32_ckt/MemoryModule.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "452212cf2b185c51d3a55b3eb56e6519e7039338",
+      "size": 35036,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/452212cf2b185c51d3a55b3eb56e6519e7039338"
+    },
+    {
+      "path": "skyrim32_ckt/MemoryModule.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abcac6370225b42be02d8213e1dadb11defb4707",
+      "size": 4832,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/abcac6370225b42be02d8213e1dadb11defb4707"
+    },
+    {
+      "path": "skyrim32_ckt/compressed_rsrc.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca365493f3494a251a22b00ac5e62dd5bdf0d897",
+      "size": 9637093,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ca365493f3494a251a22b00ac5e62dd5bdf0d897"
+    },
+    {
+      "path": "skyrim32_ckt/resource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc7d9a2ae9d303d788cb6d0bc9240a1932d9a79",
+      "size": 439,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2cc7d9a2ae9d303d788cb6d0bc9240a1932d9a79"
+    },
+    {
+      "path": "skyrim32_ckt/skyrim32_ckt.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c15ac5a3c90c77a048571a2bc7a84f608dbd8897",
+      "size": 5999,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c15ac5a3c90c77a048571a2bc7a84f608dbd8897"
+    },
+    {
+      "path": "skyrim32_ckt/skyrim32_ckt.rc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99b5bf03529ff44e4941b8454ae0ad49ff5ebfd4",
+      "size": 3086,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/99b5bf03529ff44e4941b8454ae0ad49ff5ebfd4"
+    },
+    {
+      "path": "skyrim32_ckt/skyrim32_ckt.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9434f1805f7e15ad9288b2429764e688a4a7921d",
+      "size": 5459,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9434f1805f7e15ad9288b2429764e688a4a7921d"
+    },
+    {
+      "path": "skyrim32_ckt/skyrim32_ckt.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09f9521a81a513fe72559f82805c9f37345a5e34",
+      "size": 1972,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/09f9521a81a513fe72559f82805c9f37345a5e34"
+    },
+    {
+      "path": "skyrim32_ckt/stb.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4aba9cdb870b2f3442f1da7a23542b84c5c5525",
+      "size": 35,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b4aba9cdb870b2f3442f1da7a23542b84c5c5525"
+    },
+    {
+      "path": "skyrim32_ckt/stb.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1d29d47f05fd52b9e5a45f59e6d8dcfd15e7174",
+      "size": 429588,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f1d29d47f05fd52b9e5a45f59e6d8dcfd15e7174"
+    },
+    {
+      "path": "skyrim64_test.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c50f91823d890368268777736172dad4e8548b6",
+      "size": 32676,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8c50f91823d890368268777736172dad4e8548b6"
+    },
+    {
+      "path": "skyrim64_test.sln",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd96044255a6cb5507f1eaf2b4ea280b2cf82f6",
+      "size": 32117,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bbd96044255a6cb5507f1eaf2b4ea280b2cf82f6"
+    },
+    {
+      "path": "skyrim64_test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8c6308601677387a39e836f785e1ff1747bd77e",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/b8c6308601677387a39e836f785e1ff1747bd77e"
+    },
+    {
+      "path": "skyrim64_test/resource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e1b8327d035efbacc04cea30cb726ddf1e6805f",
+      "size": 804,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3e1b8327d035efbacc04cea30cb726ddf1e6805f"
+    },
+    {
+      "path": "skyrim64_test/resource.rc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e65683ef3a4e9f38a152d4c19819949e0f01aa2",
+      "size": 18526,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7e65683ef3a4e9f38a152d4c19819949e0f01aa2"
+    },
+    {
+      "path": "skyrim64_test/skyrim64_test.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7babe91350cfd8e2cd57846e0466d037cc390d16",
+      "size": 22901,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7babe91350cfd8e2cd57846e0466d037cc390d16"
+    },
+    {
+      "path": "skyrim64_test/skyrim64_test.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6a97781db83def2b41e01349f2b9214e18afa55",
+      "size": 25272,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f6a97781db83def2b41e01349f2b9214e18afa55"
+    },
+    {
+      "path": "skyrim64_test/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8558a5d9a0c41eede676c5cb114bdf3ff6dddb33",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/8558a5d9a0c41eede676c5cb114bdf3ff6dddb33"
+    },
+    {
+      "path": "skyrim64_test/src/INIReader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a67cb4508aecd1c73ce45af062c3a172fcab0a5",
+      "size": 12457,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9a67cb4508aecd1c73ce45af062c3a172fcab0a5"
+    },
+    {
+      "path": "skyrim64_test/src/common.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec295f775c5f5352cf231fbb1bd17367a026f50",
+      "size": 1420,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/eec295f775c5f5352cf231fbb1bd17367a026f50"
+    },
+    {
+      "path": "skyrim64_test/src/common.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fcc0a76fb11504aedcb920ae08dc9fc3903d10b",
+      "size": 1720,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6fcc0a76fb11504aedcb920ae08dc9fc3903d10b"
+    },
+    {
+      "path": "skyrim64_test/src/config.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffaed78d9dfb2e885ebb1a99a1a7415ddb1ffe99",
+      "size": 663,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ffaed78d9dfb2e885ebb1a99a1a7415ddb1ffe99"
+    },
+    {
+      "path": "skyrim64_test/src/dllmain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7758ce8a2c0ce36ab5426895d3bf3aaec1d0831c",
+      "size": 2711,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7758ce8a2c0ce36ab5426895d3bf3aaec1d0831c"
+    },
+    {
+      "path": "skyrim64_test/src/dump.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5e3759955bbfa1ab17f4361a024c2530d91f16",
+      "size": 3120,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ab5e3759955bbfa1ab17f4361a024c2530d91f16"
+    },
+    {
+      "path": "skyrim64_test/src/dump.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62fb0e834f691896140a705786f700c27dda20f3",
+      "size": 72,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/62fb0e834f691896140a705786f700c27dda20f3"
+    },
+    {
+      "path": "skyrim64_test/src/patches",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d59b126d7c926075561894fc46ea8685de11619",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/2d59b126d7c926075561894fc46ea8685de11619"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16828a2c4a8a5479acba8df90313d2af1f898f74",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/16828a2c4a8a5479acba8df90313d2af1f898f74"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSGraphicsRenderTargetManager_CK.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44ebc8bf413615524e4969902eccac2eb46a7a9f",
+      "size": 13524,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/44ebc8bf413615524e4969902eccac2eb46a7a9f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSGraphicsRenderTargetManager_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "393c36eacbc63666738a050f45defdc6ba59736d",
+      "size": 2201,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/393c36eacbc63666738a050f45defdc6ba59736d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSHandleRefObject_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd91d8193135331acc64ef08de6b326d8b189f8c",
+      "size": 1564,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bd91d8193135331acc64ef08de6b326d8b189f8c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSPointerHandleManager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d9448f1fb1dcfd5576f273c84caa7d926aa98a",
+      "size": 7057,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/90d9448f1fb1dcfd5576f273c84caa7d926aa98a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSPointerHandleManager.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66cfecb2419d477f5f9a2ed1ebd4a0d77a847d02",
+      "size": 4308,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/66cfecb2419d477f5f9a2ed1ebd4a0d77a847d02"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSRenderPass_CK.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de5312e44749771f7675e961a0c26e58dc549dae",
+      "size": 966,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/de5312e44749771f7675e961a0c26e58dc549dae"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSRenderPass_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be155b47110363b4ab6cf05efa45d57e0b8479f3",
+      "size": 438,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/be155b47110363b4ab6cf05efa45d57e0b8479f3"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSShaderResourceManager_CK.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ceda65e8e4bed6b1c758eb0b3729dd4f38e9cfe",
+      "size": 6270,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9ceda65e8e4bed6b1c758eb0b3729dd4f38e9cfe"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/BSShaderResourceManager_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "648e6f2b053ab1b5b5a13f3def18adab5e54c4d8",
+      "size": 333,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/648e6f2b053ab1b5b5a13f3def18adab5e54c4d8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/CellViewWindow.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b257bca0a1c00b9e91251edaad3d8cba89a31c1",
+      "size": 3776,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7b257bca0a1c00b9e91251edaad3d8cba89a31c1"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/CellViewWindow.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "959601208e22f941bbb522e25ffe84ded67d873c",
+      "size": 331,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/959601208e22f941bbb522e25ffe84ded67d873c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/DataDialogWindow.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e728bad4a97b8f5cea9454acec9e6b78764324d",
+      "size": 3300,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5e728bad4a97b8f5cea9454acec9e6b78764324d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/DataDialogWindow.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99dee0bfa6f3ac27030d879e599ebe639cfcb645",
+      "size": 202,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/99dee0bfa6f3ac27030d879e599ebe639cfcb645"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/Editor.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4a06ed922409966aca3ea1db88953c132ca208e",
+      "size": 29666,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d4a06ed922409966aca3ea1db88953c132ca208e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/Editor.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6b2f4aec41075ae58b0f61712d57f2b9ccf7377",
+      "size": 4548,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e6b2f4aec41075ae58b0f61712d57f2b9ccf7377"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUI.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e1137f5106ca436077c9111d9edd6d5de51963e",
+      "size": 14597,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4e1137f5106ca436077c9111d9edd6d5de51963e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUI.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1001e49a9fe55b3da479d02626c87f9abd16d4df",
+      "size": 3391,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1001e49a9fe55b3da479d02626c87f9abd16d4df"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUIDarkMode.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "087eaaa1ee23586bf1e2814c97c5c7e02d28ed9b",
+      "size": 20456,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/087eaaa1ee23586bf1e2814c97c5c7e02d28ed9b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUIDarkMode.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7e4fc923f3da13b2f9d34f40dde6146fd244fe6",
+      "size": 1188,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a7e4fc923f3da13b2f9d34f40dde6146fd244fe6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUIDialogs.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a3baedcedff002c47ec24c4aee9e3ff285445e9",
+      "size": 3638,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7a3baedcedff002c47ec24c4aee9e3ff285445e9"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/EditorUIDialogs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6d3d27016c2251a44f51caf2e0d1f0473e53530",
+      "size": 273,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a6d3d27016c2251a44f51caf2e0d1f0473e53530"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/Experimental.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c713fb976bf6a2c8423777ef4310397d38523d13",
+      "size": 12836,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c713fb976bf6a2c8423777ef4310397d38523d13"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/Experimental.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13dfe738d887e1c0415b6c304f89f22903b50f77",
+      "size": 516,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/13dfe738d887e1c0415b6c304f89f22903b50f77"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/LogWindow.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5b6c7435b2cc10f49cf5a6bae9e4d675096476e",
+      "size": 11662,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b5b6c7435b2cc10f49cf5a6bae9e4d675096476e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/LogWindow.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807102e11a487d4453b129a86586543f6f48c37c",
+      "size": 678,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/807102e11a487d4453b129a86586543f6f48c37c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/MainWindow.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "714807dff474d8f4d25a65e60a92131062bc1010",
+      "size": 8564,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/714807dff474d8f4d25a65e60a92131062bc1010"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/MainWindow.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9009ed6b44ac947dab4aca9ac8340e233d3069dd",
+      "size": 277,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9009ed6b44ac947dab4aca9ac8340e233d3069dd"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/NavMesh.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bcabef4a14da3ed7bc95aa3de18df956437a5e6",
+      "size": 5803,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7bcabef4a14da3ed7bc95aa3de18df956437a5e6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/ObjectWindow.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98d9c2b149497d9316532908949767d5da26aee6",
+      "size": 1758,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/98d9c2b149497d9316532908949767d5da26aee6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/ObjectWindow.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c606d96fc59c0b788ca23b036f79044867435d3b",
+      "size": 260,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c606d96fc59c0b788ca23b036f79044867435d3b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/TESFile_CK.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a6e3d7f7ac86e94e1126db53ccacc12ce1fed39",
+      "size": 2141,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1a6e3d7f7ac86e94e1126db53ccacc12ce1fed39"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/TESFile_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "906a0991bf0623d16d48be6e5156a1d169c3b1fd",
+      "size": 883,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/906a0991bf0623d16d48be6e5156a1d169c3b1fd"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/TESForm_CK.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75f2b71b7d00e44a7086b62f13f7d2e5004e7001",
+      "size": 2917,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/75f2b71b7d00e44a7086b62f13f7d2e5004e7001"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/TESForm_CK.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0738b9a429e057e648e852ae3225816e8d19530a",
+      "size": 1531,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0738b9a429e057e648e852ae3225816e8d19530a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/CKSSE/TESWater.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a668ae450b5d066a5f7ae1f25d54366127bad2c5",
+      "size": 620,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a668ae450b5d066a5f7ae1f25d54366127bad2c5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0e0d4231a3e256601f76d24675a2cc05ed26776",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/d0e0d4231a3e256601f76d24675a2cc05ed26776"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BGSDistantTreeBlock.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e660bbca1074a1cdae0c4ea118f5349789a0caa2",
+      "size": 3249,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e660bbca1074a1cdae0c4ea118f5349789a0caa2"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BGSDistantTreeBlock.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e320ebd55c71beb8f82f1a8c616ccc589d382490",
+      "size": 1289,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e320ebd55c71beb8f82f1a8c616ccc589d382490"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSBatchRenderer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e10f429b206e5866ecb466309ec8184e8178a05f",
+      "size": 18748,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e10f429b206e5866ecb466309ec8184e8178a05f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSBatchRenderer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "994e76b1348bfbacac0c5adc6682e6042b420cb9",
+      "size": 3997,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/994e76b1348bfbacac0c5adc6682e6042b420cb9"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSCullingProcess.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be214021e1fc64400aa7f9f60cf6a237424b4d64",
+      "size": 4322,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/be214021e1fc64400aa7f9f60cf6a237424b4d64"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d5ec7b2ebb3a62286347fc6cb4dd3268b22a698",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/9d5ec7b2ebb3a62286347fc6cb4dd3268b22a698"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsRenderTargetManager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24c5931a2b178a2269d1303ddd05e86bd11a3600",
+      "size": 4466,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/24c5931a2b178a2269d1303ddd05e86bd11a3600"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsRenderTargetManager.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e752a954944f8a68f1227c14a0da519a18136e",
+      "size": 1744,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/22e752a954944f8a68f1227c14a0da519a18136e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsRenderer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dabdc058c91cc5a976f2e32f157293fad86be4f8",
+      "size": 57103,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/dabdc058c91cc5a976f2e32f157293fad86be4f8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsRenderer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0393c04468c696d93a4ad04b258abc025445a9e9",
+      "size": 13260,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0393c04468c696d93a4ad04b258abc025445a9e9"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsState.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab18fcbf8e4c1fcfedc614ea75e4e98a58f7461",
+      "size": 1014,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9ab18fcbf8e4c1fcfedc614ea75e4e98a58f7461"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsState.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0411ecf2ecc9af342272ed09946a54cd1a56ef5",
+      "size": 4879,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f0411ecf2ecc9af342272ed09946a54cd1a56ef5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsTypes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbf1075acb11f515055e067543fd7c476dc012b2",
+      "size": 14495,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cbf1075acb11f515055e067543fd7c476dc012b2"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsUtility.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89df968637ee1e77514bcf774bd5f637591a1c09",
+      "size": 595,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/89df968637ee1e77514bcf774bd5f637591a1c09"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSGraphics/BSGraphicsUtility.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038f71c0cdb760a2586aad96819784f9280365f6",
+      "size": 345,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/038f71c0cdb760a2586aad96819784f9280365f6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSJobs.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f75b41d1286657aede74ba6ecce8471a8465b4",
+      "size": 5639,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/79f75b41d1286657aede74ba6ecce8471a8465b4"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSJobs.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a298fc294bf89fada8894615bf9c0dfb45c0ca86",
+      "size": 673,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a298fc294bf89fada8894615bf9c0dfb45c0ca86"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSReadWriteLock.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31f631a9ca190bbbd9f6f5f1821a23fa5abda36e",
+      "size": 2040,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/31f631a9ca190bbbd9f6f5f1821a23fa5abda36e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSReadWriteLock.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "502ee53207ba8bff293b9b760278e95021b06966",
+      "size": 1303,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/502ee53207ba8bff293b9b760278e95021b06966"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSRenderPass.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5485bcad928833311d797d885ec5f404cf80381c",
+      "size": 1130,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5485bcad928833311d797d885ec5f404cf80381c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSRenderPass.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "666d9f716255a251c0b17e4831e493b4f830e5f0",
+      "size": 1695,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/666d9f716255a251c0b17e4831e493b4f830e5f0"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c37580d9a86c56167cd4af10abe2b198da61c35",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/7c37580d9a86c56167cd4af10abe2b198da61c35"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSLight.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "906f676704c30e8aea37062db748f1b2e9cc4f5d",
+      "size": 473,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/906f676704c30e8aea37062db748f1b2e9cc4f5d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "455935d1c1f73a6427c9bf36ef4d400b12be6ab3",
+      "size": 14008,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/455935d1c1f73a6427c9bf36ef4d400b12be6ab3"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82984494e4d7d789f61b7a1ac04adab7fcc36104",
+      "size": 7223,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/82984494e4d7d789f61b7a1ac04adab7fcc36104"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderAccumulator.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24211b856247ef0f5df4c32831b8473c5504011f",
+      "size": 20838,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/24211b856247ef0f5df4c32831b8473c5504011f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderAccumulator.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ba7052af05f575f143eb3ee4c012db988ca4c8",
+      "size": 5563,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e3ba7052af05f575f143eb3ee4c012db988ca4c8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderConstants.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb683c23d9f3c239436e08d45bd0888adab7ae8",
+      "size": 4579,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7bb683c23d9f3c239436e08d45bd0888adab7ae8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderManager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef341e1f7ce3864c737f635b53f1b6af1b16fb73",
+      "size": 1006,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ef341e1f7ce3864c737f635b53f1b6af1b16fb73"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderManager.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7308c93851a03656e719c72629b64dbfd6b0e29",
+      "size": 7902,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f7308c93851a03656e719c72629b64dbfd6b0e29"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderManagerInfo.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80535cd47612fc08e38b50a4d00f2ada7c0527c",
+      "size": 19955,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c80535cd47612fc08e38b50a4d00f2ada7c0527c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderMaterial.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3103dc1f2aaaf57fe136f25f06baab8810596b32",
+      "size": 837,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3103dc1f2aaaf57fe136f25f06baab8810596b32"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderProperty.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e0fc0ea2fcd6735d9aacfb6e9edf39e55a4d7c4",
+      "size": 3722,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3e0fc0ea2fcd6735d9aacfb6e9edf39e55a4d7c4"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b00fbefbd1a51454ca68f5572be629b4577e938c",
+      "size": 3832,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b00fbefbd1a51454ca68f5572be629b4577e938c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderRenderTargets.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e20b3801747a382c035a7ec075450f11a0d4800",
+      "size": 6386,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1e20b3801747a382c035a7ec075450f11a0d4800"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderRenderTargets.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa74eb58f0f4cd06c56fd5133e1b8895771c45a0",
+      "size": 5401,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fa74eb58f0f4cd06c56fd5133e1b8895771c45a0"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderUtil.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a79d92e4ef07a11fc10c005db0546c663cef9bd",
+      "size": 2363,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0a79d92e4ef07a11fc10c005db0546c663cef9bd"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShaderUtil.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7be6cfeb3f6c41e2dde78c0d4dc13fc72c15607c",
+      "size": 448,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7be6cfeb3f6c41e2dde78c0d4dc13fc72c15607c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShader_Dumper.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55a28aa3587ec55dd44e2e26086037cc33e5288f",
+      "size": 12494,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/55a28aa3587ec55dd44e2e26086037cc33e5288f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShader_Dumper.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d843b5df752d29f802a94e47afc41bc7939aace",
+      "size": 2247,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2d843b5df752d29f802a94e47afc41bc7939aace"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/BSShadowLight.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d90f8345da39bdbedd46c374604e0a543d37175d",
+      "size": 184,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d90f8345da39bdbedd46c374604e0a543d37175d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23437f426696a17393301aff7f37e81826679a03",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/23437f426696a17393301aff7f37e81826679a03"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSBloodSplatterShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fca6060b4c5e1033b98a2ddaa3c79709a8fe1148",
+      "size": 7360,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fca6060b4c5e1033b98a2ddaa3c79709a8fe1148"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSBloodSplatterShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b29f53f877d62d49e906842ecedff5e57d56232",
+      "size": 1880,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0b29f53f877d62d49e906842ecedff5e57d56232"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSBloodSplatterShaderProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d123008a07c800c7b8379a4abb74832f3fadfd",
+      "size": 1009,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/03d123008a07c800c7b8379a4abb74832f3fadfd"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSDistantTreeShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ec434eb30e22d522bfba490582b16d513c3c1b5",
+      "size": 9586,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3ec434eb30e22d522bfba490582b16d513c3c1b5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSDistantTreeShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36857b755e38d2c61410bf561be24913a20c2316",
+      "size": 1356,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/36857b755e38d2c61410bf561be24913a20c2316"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSEffectShaderMaterial.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98fd5f399780fcfe56f7b77a95f86d660a16dc79",
+      "size": 1737,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/98fd5f399780fcfe56f7b77a95f86d660a16dc79"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSGrassShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a29ccf914934ab453d179d335907a43a2f7a2ce",
+      "size": 14681,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5a29ccf914934ab453d179d335907a43a2f7a2ce"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSGrassShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e4edaed0019de2569341bb769e8fc8190d01ce6",
+      "size": 2519,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6e4edaed0019de2569341bb769e8fc8190d01ce6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSLightingShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f61d5216f4649667ba8e74585a44fc7216ff668a",
+      "size": 58427,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f61d5216f4649667ba8e74585a44fc7216ff668a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSLightingShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0375d9dcaf26efe071ae7ec6a2607e47783f5a",
+      "size": 5209,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cb0375d9dcaf26efe071ae7ec6a2607e47783f5a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSLightingShaderMaterial.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "befdc0d15cc7a6fb88aa3e0e13ada1fb9fd0efce",
+      "size": 9777,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/befdc0d15cc7a6fb88aa3e0e13ada1fb9fd0efce"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSLightingShaderProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29fbea5ea8d7bf384010df5d9309b5954fbbc17e",
+      "size": 1024,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/29fbea5ea8d7bf384010df5d9309b5954fbbc17e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSParticleShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f9809c4d738d3b7c59255e85891cfd16d8c2549",
+      "size": 9112,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2f9809c4d738d3b7c59255e85891cfd16d8c2549"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSParticleShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b1e77d0dc8701aa0e0b167cb1a845f4cbd4c12",
+      "size": 1540,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a0b1e77d0dc8701aa0e0b167cb1a845f4cbd4c12"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSSkyShader.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c78e34d96d3164d2628306402c85a1a593fd10",
+      "size": 14028,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/26c78e34d96d3164d2628306402c85a1a593fd10"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSSkyShader.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "777188ccc180c982e368c4d8366a8153fc817838",
+      "size": 1689,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/777188ccc180c982e368c4d8366a8153fc817838"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSShader/Shaders/BSSkyShaderProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdb142c0c5e2033df312791c983b1aff2da8a127",
+      "size": 1034,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cdb142c0c5e2033df312791c983b1aff2da8a127"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSSpinLock.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39ccdd772abde919f550988001985a922df88ad8",
+      "size": 1711,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/39ccdd772abde919f550988001985a922df88ad8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSSpinLock.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157972d1afb710a5273907f463b245b69e0eb561",
+      "size": 374,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/157972d1afb710a5273907f463b245b69e0eb561"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTArray.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be726f980c40ff13c181843a49fdd79af979505",
+      "size": 2139,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9be726f980c40ff13c181843a49fdd79af979505"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTList.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6f000c4d7862f5371f8d291f0b9efda357ff07e",
+      "size": 1516,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f6f000c4d7862f5371f8d291f0b9efda357ff07e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTLocklessQueue.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf969d91671e90e182bc7ea1c18c6a640e9f1496",
+      "size": 680,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bf969d91671e90e182bc7ea1c18c6a640e9f1496"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTScatterTable.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42ee99c07be4a41fd9121315f33515b28d84b66d",
+      "size": 8491,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/42ee99c07be4a41fd9121315f33515b28d84b66d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTaskManager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ca9b7b4e9258395b07779d66e6d2316d799269a",
+      "size": 3031,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8ca9b7b4e9258395b07779d66e6d2316d799269a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSTaskManager.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a121983e48febed6cbd0350866861d6842e0d6b5",
+      "size": 1517,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a121983e48febed6cbd0350866861d6842e0d6b5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSThread_Win32.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e222ebea88185db130783fe697b23ec7cce0544f",
+      "size": 1578,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e222ebea88185db130783fe697b23ec7cce0544f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/BSThread_Win32.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b9637ef9c2c043f20cd95de027e160de40fec49",
+      "size": 12,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7b9637ef9c2c043f20cd95de027e160de40fec49"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/Console.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a72a955a30765ff61540d5b0609f0306d3d5c63",
+      "size": 687,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/3a72a955a30765ff61540d5b0609f0306d3d5c63"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/Console.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a448bf7eefbe7ab97f4b7fbc54f2f665d074bd89",
+      "size": 546,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a448bf7eefbe7ab97f4b7fbc54f2f665d074bd89"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MOC.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8809c411acf5023c9335025e53d9df1597e44019",
+      "size": 21126,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8809c411acf5023c9335025e53d9df1597e44019"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MOC.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e624a383075ac2820a4b2f20ea22b4a13fc22df2",
+      "size": 9781,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e624a383075ac2820a4b2f20ea22b4a13fc22df2"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MOC_ThreadedMerger.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b79d426ee8530a66a3d8959582448c437e0a6c8",
+      "size": 6541,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2b79d426ee8530a66a3d8959582448c437e0a6c8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MOC_ThreadedMerger.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edb73b645b0cab89e58c070c521eb3b693cf799e",
+      "size": 2402,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/edb73b645b0cab89e58c070c521eb3b693cf799e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MemoryContextTracker.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f0b60226ab43bf5a50981b4fbdbc348e0ffbe3c",
+      "size": 2624,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9f0b60226ab43bf5a50981b4fbdbc348e0ffbe3c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MemoryManager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af0ae38c48927c0860e20bfb2cbac7bac91771db",
+      "size": 5238,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/af0ae38c48927c0860e20bfb2cbac7bac91771db"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/MemoryManager.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c14fb6bd159849a4ca83032b5619a1eb9986a4",
+      "size": 567,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/26c14fb6bd159849a4ca83032b5619a1eb9986a4"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "292d90718111abb786765ee063a74843d97b2044",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/292d90718111abb786765ee063a74843d97b2044"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSDynamicTriShape.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c699ffaf7b3d53e264f646c234d93202fce8759f",
+      "size": 1053,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c699ffaf7b3d53e264f646c234d93202fce8759f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSGeometry.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d126067424d083b4576a25f2111df965515c7bdd",
+      "size": 4782,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d126067424d083b4576a25f2111df965515c7bdd"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSMultiBoundNode.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a1e4e7f5ea84801fa32c745a95595b1c87c4a4",
+      "size": 1366,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f7a1e4e7f5ea84801fa32c745a95595b1c87c4a4"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSMultiIndexTriShape.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baa40b288436db33a0bdf13dd2607de00f8ef3e5",
+      "size": 1122,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/baa40b288436db33a0bdf13dd2607de00f8ef3e5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSNiNode.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89650f9804bb8def72a48a0dc03c23f3d3cb2247",
+      "size": 120,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/89650f9804bb8def72a48a0dc03c23f3d3cb2247"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/BSTriShape.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317dfa1b8976f8b55f125f5cb2474379fd525537",
+      "size": 632,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/317dfa1b8976f8b55f125f5cb2474379fd525537"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiAVObject.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87a341cdacf95f315c5e11564f10ea44b2491202",
+      "size": 3497,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/87a341cdacf95f315c5e11564f10ea44b2491202"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiAlphaProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e40dda4addbda2641a3829a9e8000b16a747c4",
+      "size": 1743,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/34e40dda4addbda2641a3829a9e8000b16a747c4"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiCamera.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2d110f02ab1c208413ad2c7b428a5a8276f24f5",
+      "size": 4864,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d2d110f02ab1c208413ad2c7b428a5a8276f24f5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiCollisionUtils.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "705fc259e9256a89763d62d62a7e5e39e8e2f998",
+      "size": 1975,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/705fc259e9256a89763d62d62a7e5e39e8e2f998"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiCollisionUtils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7a0b34981b6f42399ec1283cc27345b67aaf34f",
+      "size": 277,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e7a0b34981b6f42399ec1283cc27345b67aaf34f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiColor.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e56f1bb817f3075e3501b9d266e24811ad118ab",
+      "size": 1248,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8e56f1bb817f3075e3501b9d266e24811ad118ab"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiCullingProcess.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9fe1c08e9ccb63a076629bc19afee5a97d706d2",
+      "size": 4819,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a9fe1c08e9ccb63a076629bc19afee5a97d706d2"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiDirectionalLight.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6a39bae58f94b921c18c49ac883598b7a8764b",
+      "size": 473,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8a6a39bae58f94b921c18c49ac883598b7a8764b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiFogProperty.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd7bc9242c3d10733ca35c469d0fd6f5367398a3",
+      "size": 1387,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/dd7bc9242c3d10733ca35c469d0fd6f5367398a3"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiFrustum.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e42f1a800a20c00f0658cbfda4ef05c888e6b5e",
+      "size": 482,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2e42f1a800a20c00f0658cbfda4ef05c888e6b5e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiLight.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b04df4021cabffbf14121e849e6b493a0c72f4c",
+      "size": 680,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0b04df4021cabffbf14121e849e6b493a0c72f4c"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiMain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb38b7e56368769efc4e74811c45b523cf56b08e",
+      "size": 511,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/eb38b7e56368769efc4e74811c45b523cf56b08e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiMatrix.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0a3019624422feac0003d176dad9f2b7fa53c7f",
+      "size": 3059,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d0a3019624422feac0003d176dad9f2b7fa53c7f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiNode.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cffb2daa3e74ff729bec1c50b5ce53929d6ac5bb",
+      "size": 1385,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cffb2daa3e74ff729bec1c50b5ce53929d6ac5bb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiObject.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c7085afb4f868231366bd23fe8c6ce730ffa99f",
+      "size": 2606,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/5c7085afb4f868231366bd23fe8c6ce730ffa99f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiObjectNET.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf49733dd9cb1b6746c94452b267ffb3d9ea7c88",
+      "size": 1164,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/bf49733dd9cb1b6746c94452b267ffb3d9ea7c88"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiPick.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dbae1a00b2dcaed95e26fa2820d29faff139b7f",
+      "size": 1674,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9dbae1a00b2dcaed95e26fa2820d29faff139b7f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiPoint.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38befefbed0237b7ac796a34182ab20f7cdaf877",
+      "size": 1966,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/38befefbed0237b7ac796a34182ab20f7cdaf877"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiPointer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03f8ce98c03a5f5ce3f9431b37fae8597f5aad6b",
+      "size": 1039,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/03f8ce98c03a5f5ce3f9431b37fae8597f5aad6b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiRTTI.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e6217487f5002029a228852b51b3aefd90ae13",
+      "size": 2249,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/70e6217487f5002029a228852b51b3aefd90ae13"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiRTTI.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d693b90fedfdc44cd8154d01ad90d3b0cea4f629",
+      "size": 777,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d693b90fedfdc44cd8154d01ad90d3b0cea4f629"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiRTTI.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7d4582803152b3b1ac48ec730d3345e7030dc0e",
+      "size": 13969,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b7d4582803152b3b1ac48ec730d3345e7030dc0e"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiRefObject.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e566ba4a429414b524ec546c265cdebece0b07fc",
+      "size": 951,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e566ba4a429414b524ec546c265cdebece0b07fc"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiSkinInstance.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e64996252f8bf0c5c853b174252a1e15242f5ee",
+      "size": 4194,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0e64996252f8bf0c5c853b174252a1e15242f5ee"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiSourceTexture.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2e19042e483e99ef9ece6a55b3d38ab5ec4dbfe",
+      "size": 491,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c2e19042e483e99ef9ece6a55b3d38ab5ec4dbfe"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiTexture.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "251defac7e3b1e286b5b212ef1f7234e307d0dbe",
+      "size": 282,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/251defac7e3b1e286b5b212ef1f7234e307d0dbe"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/NiTransform.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "283eaeaf98ff3f41eb3e8cff53c8a6a8aa9dbd79",
+      "size": 964,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/283eaeaf98ff3f41eb3e8cff53c8a6a8aa9dbd79"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/NiMain/common.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e952cf53b74b749b63f61bd734459dd4e95986fb",
+      "size": 349,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e952cf53b74b749b63f61bd734459dd4e95986fb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/Setting.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9376ebe9138a8908d460b737a626c09ad5c5ac29",
+      "size": 8390,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9376ebe9138a8908d460b737a626c09ad5c5ac29"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/Setting.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49a909cd1393335d0c32baf06b921e6fcba13beb",
+      "size": 2808,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/49a909cd1393335d0c32baf06b921e6fcba13beb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/TES.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "780d7b5f2f8bee913e751e41f3dc5f561f7e1cba",
+      "size": 36,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/780d7b5f2f8bee913e751e41f3dc5f561f7e1cba"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/TESForm.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "013e582850cdd0597d93f6782fb6065f4f37dfe8",
+      "size": 9658,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/013e582850cdd0597d93f6782fb6065f4f37dfe8"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/TESForm.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f2471f4b20a9a696f20dcb3b184107f5c4e1bbc",
+      "size": 7169,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9f2471f4b20a9a696f20dcb3b184107f5c4e1bbc"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/bhkThreadMemorySource.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e0ade5985b67a88917cf01c52caec8eb55173f",
+      "size": 1604,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/88e0ade5985b67a88917cf01c52caec8eb55173f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/TES/bhkThreadMemorySource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "470b19f22cb7b8ec095eaf11cfc3072d0a6b4dcc",
+      "size": 918,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/470b19f22cb7b8ec095eaf11cfc3072d0a6b4dcc"
+    },
+    {
+      "path": "skyrim64_test/src/patches/achievements.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0fb8afe228bead0f8dc4e519c7ac664261d2eef",
+      "size": 1099,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a0fb8afe228bead0f8dc4e519c7ac664261d2eef"
+    },
+    {
+      "path": "skyrim64_test/src/patches/bnet.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7c1dddac5bb3c43fa795453a522e4d96384bf00",
+      "size": 635,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e7c1dddac5bb3c43fa795453a522e4d96384bf00"
+    },
+    {
+      "path": "skyrim64_test/src/patches/dinput8.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48a645d20744f9753eda698a73df378626488de",
+      "size": 7291,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/a48a645d20744f9753eda698a73df378626488de"
+    },
+    {
+      "path": "skyrim64_test/src/patches/dinput8.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c843469c8d615f7159648fd2283b2de5fd2babb",
+      "size": 3492,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0c843469c8d615f7159648fd2283b2de5fd2babb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/logging.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eafc8c491955890c85a4c2182f0b1b67ce200bb",
+      "size": 3118,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1eafc8c491955890c85a4c2182f0b1b67ce200bb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/offsets.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cf9005dd2ce5e4591ba52c89846b62c0fde65d6",
+      "size": 59111,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2cf9005dd2ce5e4591ba52c89846b62c0fde65d6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/offsets.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "446d6bcebe3633ca1b8021f33ee00e7aa5485536",
+      "size": 1040,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/446d6bcebe3633ca1b8021f33ee00e7aa5485536"
+    },
+    {
+      "path": "skyrim64_test/src/patches/patches_sseck.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa061db4494ad0d0051c986f53db29f668ed8059",
+      "size": 40227,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/fa061db4494ad0d0051c986f53db29f668ed8059"
+    },
+    {
+      "path": "skyrim64_test/src/patches/patches_tes.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee0136d4b6598bbd469fd0250354a3b38cd8d917",
+      "size": 12171,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ee0136d4b6598bbd469fd0250354a3b38cd8d917"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9fa96f4c1a9cbaef911358cd85bec4cdd16ce8b",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/c9fa96f4c1a9cbaef911358cd85bec4cdd16ce8b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/GpuCircularBuffer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e17910d2fd15921675c537fc9ad56849c27bbb",
+      "size": 2559,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c8e17910d2fd15921675c537fc9ad56849c27bbb"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/GpuCircularBuffer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c4d9b272b0be81bad6864ecf41fad2e27cd53a7",
+      "size": 1060,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9c4d9b272b0be81bad6864ecf41fad2e27cd53a7"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/GpuTimer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c8e789070acf238650c32868193189159de0978",
+      "size": 3157,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7c8e789070acf238650c32868193189159de0978"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/GpuTimer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d25c4ae047beb50a1f6d75481690ba61855b206",
+      "size": 755,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0d25c4ae047beb50a1f6d75481690ba61855b206"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/codegen.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fc6b01d3e5c1315f3679484a306056b56e394d",
+      "size": 21869,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/66fc6b01d3e5c1315f3679484a306056b56e394d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/codegen.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "298a9a9a349d2112dffb497eaba5f5c348998565",
+      "size": 1772,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/298a9a9a349d2112dffb497eaba5f5c348998565"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/common.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e64e51de9505e42e8bb5d7932163054a5763e6a",
+      "size": 62,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8e64e51de9505e42e8bb5d7932163054a5763e6a"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0188349a7e2feb933f2eec1e71dff48931504641",
+      "size": 9630,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0188349a7e2feb933f2eec1e71dff48931504641"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_codegen_tables.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e060d05330bd5cd078723bbda238899713e31af1",
+      "size": 5972,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e060d05330bd5cd078723bbda238899713e31af1"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_proxy.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f44669bf222b8d0e9afdad8f74022b8471563d",
+      "size": 48362,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/f9f44669bf222b8d0e9afdad8f74022b8471563d"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_proxy.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c8f15c65fb89e5bab789e7b2d45e6218dc17af6",
+      "size": 28720,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2c8f15c65fb89e5bab789e7b2d45e6218dc17af6"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_tls.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f656ab5632f77763de7f22cba4a1244b9c37b27",
+      "size": 6888,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/1f656ab5632f77763de7f22cba4a1244b9c37b27"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_tls.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f6faee9a1e99b3c4705131aa18cf03258340d76",
+      "size": 757,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6f6faee9a1e99b3c4705131aa18cf03258340d76"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_tls_patchlist.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0704c24672847dca6444747661b7a136fdac6f",
+      "size": 345187,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2a0704c24672847dca6444747661b7a136fdac6f"
+    },
+    {
+      "path": "skyrim64_test/src/patches/rendering/d3d11_tls_xreflist.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29cc2f7306d0aed773da407878ed40ee9d772eba",
+      "size": 56644,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/29cc2f7306d0aed773da407878ed40ee9d772eba"
+    },
+    {
+      "path": "skyrim64_test/src/patches/settings.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45adc4cd0232a21e37baf0cb86ab4e25f31dfa5",
+      "size": 8440,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e45adc4cd0232a21e37baf0cb86ab4e25f31dfa5"
+    },
+    {
+      "path": "skyrim64_test/src/patches/steam.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffd1d757d63e1d68599aeffbda42c866ee5b77d2",
+      "size": 1789,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ffd1d757d63e1d68599aeffbda42c866ee5b77d2"
+    },
+    {
+      "path": "skyrim64_test/src/patches/threading.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e66b70d457c02f51ec4935c6a8be2feb4b83411b",
+      "size": 1022,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/e66b70d457c02f51ec4935c6a8be2feb4b83411b"
+    },
+    {
+      "path": "skyrim64_test/src/patches/window.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce06f2356023403b98bdcf41aa8124b8741ca488",
+      "size": 3670,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/ce06f2356023403b98bdcf41aa8124b8741ca488"
+    },
+    {
+      "path": "skyrim64_test/src/profiler.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82a50d97d0644e3ab1d46568a80355a5f6f719c3",
+      "size": 3595,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/82a50d97d0644e3ab1d46568a80355a5f6f719c3"
+    },
+    {
+      "path": "skyrim64_test/src/profiler.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d48047fc48cb7f7da284c04617ba3b32d0b391b",
+      "size": 3457,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0d48047fc48cb7f7da284c04617ba3b32d0b391b"
+    },
+    {
+      "path": "skyrim64_test/src/profiler_internal.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c938bec6ad0b778aa8897b71853b3764b7b8e07b",
+      "size": 4374,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/c938bec6ad0b778aa8897b71853b3764b7b8e07b"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d2ff218c8a52deb08324471e08aeb7340c74eb9",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/0d2ff218c8a52deb08324471e08aeb7340c74eb9"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/hk_rtti.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39618e9f691ba16ed0c2a0818d62aa7d2122ce50",
+      "size": 8377,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/39618e9f691ba16ed0c2a0818d62aa7d2122ce50"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/hk_rtti.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbc1ba28816ceb99544d298841736a676dd40dcc",
+      "size": 5650,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/cbc1ba28816ceb99544d298841736a676dd40dcc"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/ms_rtti.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fda028c59506b21c6ebce240fce0140b401c98e",
+      "size": 3379,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8fda028c59506b21c6ebce240fce0140b401c98e"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/ms_rtti.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6d4586f170c1bc8fd35cfa9e2c24300226448c9",
+      "size": 3308,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d6d4586f170c1bc8fd35cfa9e2c24300226448c9"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/ni_rtti.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e438138f49c44165c4f09439da3c0a775f08501",
+      "size": 3493,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/6e438138f49c44165c4f09439da3c0a775f08501"
+    },
+    {
+      "path": "skyrim64_test/src/typeinfo/ni_rtti.inl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1dbc388a3662a4aea88876ca23124d02a82250",
+      "size": 7400,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8a1dbc388a3662a4aea88876ca23124d02a82250"
+    },
+    {
+      "path": "skyrim64_test/src/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8f55c457256b10be5baf850ba859ae6022d517a",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/b8f55c457256b10be5baf850ba859ae6022d517a"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_ext.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ebfba81797f33bd111b2763c18c582b168cdd91",
+      "size": 6849,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9ebfba81797f33bd111b2763c18c582b168cdd91"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_ext.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0c5ca0d730d7ff4419745275d949c8bdd364a98",
+      "size": 2125,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/d0c5ca0d730d7ff4419745275d949c8bdd364a98"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_impl_dx11.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d378c34f5d84e5d95d9c25340f1a21b6f9254e8",
+      "size": 26237,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/8d378c34f5d84e5d95d9c25340f1a21b6f9254e8"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_impl_dx11.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93216c27e8a7603b529713ee68ba7703dfac85f1",
+      "size": 1192,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/93216c27e8a7603b529713ee68ba7703dfac85f1"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_impl_win32.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0430153152653233ca5c47e25ffa6e5700026eaf",
+      "size": 30211,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/0430153152653233ca5c47e25ffa6e5700026eaf"
+    },
+    {
+      "path": "skyrim64_test/src/ui/imgui_impl_win32.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b56057fb254f597ce82e163010d28fb7b98cb04",
+      "size": 1695,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4b56057fb254f597ce82e163010d28fb7b98cb04"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "043e99e3d54f4eac6d92cd9c41da497a26f4b8d1",
+      "size": 24270,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/043e99e3d54f4eac6d92cd9c41da497a26f4b8d1"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68ccbc568722826ed7af9b1e27c4f5b04bc0a2ac",
+      "size": 1509,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/68ccbc568722826ed7af9b1e27c4f5b04bc0a2ac"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui_renderer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b838fcc68ed49f53a6a7210f291b9630bbb1463",
+      "size": 19187,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/9b838fcc68ed49f53a6a7210f291b9630bbb1463"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui_renderer.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82559b90c3e0b0d086c1efae1e947ddcc46220ad",
+      "size": 390,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/82559b90c3e0b0d086c1efae1e947ddcc46220ad"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui_tracy.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2053f05dfaaac1e5c6ff1fd8b5419ced86d63781",
+      "size": 637,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/2053f05dfaaac1e5c6ff1fd8b5419ced86d63781"
+    },
+    {
+      "path": "skyrim64_test/src/ui/ui_tracy.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d5dcf623fb8c2adf2a314a3cb13de361160738",
+      "size": 57,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/84d5dcf623fb8c2adf2a314a3cb13de361160738"
+    },
+    {
+      "path": "skyrim64_test/src/winhttp_exports.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c49d7b9c848e93879813ff65165180c3debe558",
+      "size": 7683,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/7c49d7b9c848e93879813ff65165180c3debe558"
+    },
+    {
+      "path": "skyrim64_test/src/xutil.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "293dfc73865c1389cd53d7b588cd0ad5dba88400",
+      "size": 12535,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/293dfc73865c1389cd53d7b588cd0ad5dba88400"
+    },
+    {
+      "path": "skyrim64_test/src/xutil.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56f04519cd07773db46fdcc049164b7245698da0",
+      "size": 3988,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/56f04519cd07773db46fdcc049164b7245698da0"
+    },
+    {
+      "path": "skyrim64_tls_mt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a76b39d56f42737b5bde11764bb1cd0e1a8e3dd4",
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/trees/a76b39d56f42737b5bde11764bb1cd0e1a8e3dd4"
+    },
+    {
+      "path": "skyrim64_tls_mt/dllmain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4357e3b1a5efa319e539e7072770c8d69114263a",
+      "size": 569,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/4357e3b1a5efa319e539e7072770c8d69114263a"
+    },
+    {
+      "path": "skyrim64_tls_mt/skyrim64_tls_mt.vcxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "572c90ef5c0908525fb0c4d41f5b2b08f045d26e",
+      "size": 6142,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/572c90ef5c0908525fb0c4d41f5b2b08f045d26e"
+    },
+    {
+      "path": "skyrim64_tls_mt/skyrim64_tls_mt.vcxproj.filters",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b816125e2befc014f523de4bed55f89e0b00dbec",
+      "size": 495,
+      "url": "https://api.github.com/repos/Nukem9/skyrimse-test/git/blobs/b816125e2befc014f523de4bed55f89e0b00dbec"
+    }
+  ],
+  "truncated": false
+}

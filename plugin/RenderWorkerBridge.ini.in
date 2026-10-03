@@ -1,0 +1,4 @@
+[Bridge]
+Enabled=0
+Workers=4
+OutputDirectory=@CMAKE_SOURCE_DIR@/measurements/live-render-bridge

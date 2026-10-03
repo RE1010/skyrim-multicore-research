@@ -1,0 +1,68 @@
+{
+  "kind": "sparse-live-window-observation",
+  "requestedSeconds": 10,
+  "observations": [
+    {
+      "time": "2026-10-03T13:14:42.071Z",
+      "requestedMode": "off",
+      "shared": true,
+      "workers": 17552829,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:42.891Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 17603856,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:43.724Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 17711716,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:44.559Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 17765380,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:45.379Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 17873392,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:46.211Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 17980250,
+      "errors": 0
+    },
+    {
+      "time": "2026-10-03T13:14:47.041Z",
+      "requestedMode": "parallel",
+      "shared": true,
+      "workers": 18033433,
+      "errors": 0
+    }
+  ],
+  "activeObservedFrames": 6,
+  "observation": "No obvious gross bright-dark alternation seen in displayed gate/wall/shadow views.",
+  "limitations": [
+    "Sparse snapshots; no high-frame-rate video.",
+    "No fast camera-motion test.",
+    "Earlier cause not isolated; other scenes and longer motion tests not covered."
+  ],
+  "acceptedAsVisualCorrectnessProof": false,
+  "userObservation": {
+    "verbatim": "doch ist auch weg beim bewegen",
+    "reportedNoFlickerDuringMovement": true,
+    "scope": "Current v8 test, user observation; movement not continuously recorded by assistant."
+  }
+}

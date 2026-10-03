@@ -1,0 +1,3 @@
+[Benchmark]
+Enabled=1
+OutputDirectory=@CMAKE_SOURCE_DIR@/measurements/live-uncap

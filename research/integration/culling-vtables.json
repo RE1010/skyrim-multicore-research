@@ -1,0 +1,292 @@
+{
+  "sha256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "imageBase": "0x140000000",
+  "vtables": [
+    {
+      "class": "BSCullingProcess",
+      "typeDescriptorRva": "0x20ebe78",
+      "completeObjectLocatorRva": "0x1c4dd98",
+      "vtableRva": "0x1a6ef90",
+      "slots": [
+        {
+          "slot": "0x0",
+          "targetRva": "0xfeef60",
+          "first16Bytes": "488d0571f33302c3cccccccccccccccc"
+        },
+        {
+          "slot": "0x1",
+          "targetRva": "0x410490",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x2",
+          "targetRva": "0x4104d0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x3",
+          "targetRva": "0x410420",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x4",
+          "targetRva": "0x410450",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x5",
+          "targetRva": "0x410430",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x6",
+          "targetRva": "0x4104f0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x7",
+          "targetRva": "0x4104e0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x8",
+          "targetRva": "0x4104b0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x9",
+          "targetRva": "0x4104c0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xa",
+          "targetRva": "0x410410",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xb",
+          "targetRva": "0x410460",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xc",
+          "targetRva": "0x410470",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xd",
+          "targetRva": "0x410480",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xe",
+          "targetRva": "0x4104a0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xf",
+          "targetRva": "0x410440",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x10",
+          "targetRva": "0x4103f0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x11",
+          "targetRva": "0x4103d0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x12",
+          "targetRva": "0x4103c0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x13",
+          "targetRva": "0x410400",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x14",
+          "targetRva": "0x4103e0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x15",
+          "targetRva": "0xfeee10",
+          "first16Bytes": "48895c2408574883ec208bda488bf9e8"
+        },
+        {
+          "slot": "0x16",
+          "targetRva": "0xfeda70",
+          "first16Bytes": "48895c24184889742420574881ec2004"
+        },
+        {
+          "slot": "0x17",
+          "targetRva": "0xfedd70",
+          "first16Bytes": "4885d20f84c501000048895c24184889"
+        },
+        {
+          "slot": "0x18",
+          "targetRva": "0xfedfc0",
+          "first16Bytes": "48895c24084889742410574883ec2080"
+        },
+        {
+          "slot": "0x19",
+          "targetRva": "0xfedf50",
+          "first16Bytes": "40574883ec4048c7442420feffffff48"
+        },
+        {
+          "slot": "0x1a",
+          "targetRva": "0xfeea30",
+          "first16Bytes": "4c8bc1488b4a18488b01498d503c48ff"
+        },
+        {
+          "slot": "0x1b",
+          "targetRva": "0xfeea10",
+          "first16Bytes": "4c8b4118488bc2488d513c4981c0a000"
+        },
+        {
+          "slot": "0x1c",
+          "targetRva": "0xfee940",
+          "first16Bytes": "48895c2408f30f101de3ddb6004c8d49"
+        }
+      ]
+    },
+    {
+      "class": "NiCullingProcess",
+      "typeDescriptorRva": "0x20ebea0",
+      "completeObjectLocatorRva": "0x1c439f8",
+      "vtableRva": "0x1a4b160",
+      "slots": [
+        {
+          "slot": "0x0",
+          "targetRva": "0xf04cb0",
+          "first16Bytes": "488d05918b4102c3cccccccccccccccc"
+        },
+        {
+          "slot": "0x1",
+          "targetRva": "0x410490",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x2",
+          "targetRva": "0x4104d0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x3",
+          "targetRva": "0x410420",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x4",
+          "targetRva": "0x410450",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x5",
+          "targetRva": "0x410430",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x6",
+          "targetRva": "0x4104f0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x7",
+          "targetRva": "0x4104e0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x8",
+          "targetRva": "0x4104b0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x9",
+          "targetRva": "0x4104c0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xa",
+          "targetRva": "0x410410",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xb",
+          "targetRva": "0x410460",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xc",
+          "targetRva": "0x410470",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xd",
+          "targetRva": "0x410480",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xe",
+          "targetRva": "0x4104a0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0xf",
+          "targetRva": "0x410440",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x10",
+          "targetRva": "0x4103f0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x11",
+          "targetRva": "0x4103d0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x12",
+          "targetRva": "0x4103c0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x13",
+          "targetRva": "0x410400",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x14",
+          "targetRva": "0x4103e0",
+          "first16Bytes": "33c0c3cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x15",
+          "targetRva": "0xf04c80",
+          "first16Bytes": "40534883ec20488d05d364b400488bd9"
+        },
+        {
+          "slot": "0x16",
+          "targetRva": "0xf04ae0",
+          "first16Bytes": "48895c2410574883ec20488bd9488bfa"
+        },
+        {
+          "slot": "0x17",
+          "targetRva": "0xf04840",
+          "first16Bytes": "c20000cccccccccccccccccccccccccc"
+        },
+        {
+          "slot": "0x18",
+          "targetRva": "0x441460",
+          "first16Bytes": "4883ec28ff159e6c380183f801750b48"
+        }
+      ]
+    }
+  ]
+}

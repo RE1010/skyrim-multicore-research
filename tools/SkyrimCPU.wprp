@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsPerformanceRecorder Version="1.0" Author="Skyrim research project">
+  <Profiles>
+    <SystemCollector Id="SkyrimCpuCollector" Name="Skyrim CPU collector">
+      <BufferSize Value="256" />
+      <Buffers Value="256" />
+    </SystemCollector>
+    <SystemProvider Id="SkyrimCpuProvider">
+      <Keywords>
+        <Keyword Value="ProcessThread" />
+        <Keyword Value="Loader" />
+        <Keyword Value="SampledProfile" />
+        <Keyword Value="CSwitch" />
+        <Keyword Value="ReadyThread" />
+      </Keywords>
+      <Stacks>
+        <Stack Value="SampledProfile" />
+      </Stacks>
+    </SystemProvider>
+    <Profile Id="SkyrimCPU.Verbose.File" Name="SkyrimCPU" Description="CPU samples with stacks and scheduling; GPU frame metrics are collected separately by PresentMon." LoggingMode="File" DetailLevel="Verbose">
+      <Collectors>
+        <SystemCollectorId Value="SkyrimCpuCollector">
+          <SystemProviderId Value="SkyrimCpuProvider" />
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

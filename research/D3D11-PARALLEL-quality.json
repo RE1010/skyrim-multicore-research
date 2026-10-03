@@ -1,0 +1,17 @@
+{
+  "DebugValidatedImages": 372,
+  "ReleaseValidatedImages": 372,
+  "Mismatches": 0,
+  "DebugStoredMessages": 0,
+  "Cases": 12,
+  "LogicalWorkersTested": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "SkyrimRunningDuringCheck": false,
+  "RendererExecutableSHA256": "7F2B79BA363BD1BC55A143FB45F74D9172F3054503C039844044D8F6DDFE3395",
+  "ReleaseSHA256": "209615B1FB29911104E0ECE184857F1C6567324A3EEC3F5A76B8F4FAC962223F",
+  "DebugSHA256": "9D9E25E3948043AC2E765A1592769A68B7B389BD1D1BCED4F694A12A8767222A"
+}

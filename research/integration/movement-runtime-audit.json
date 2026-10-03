@@ -1,0 +1,7978 @@
+{
+  "exeSHA256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "eligibleGetters": 1122,
+  "getters": [
+    {
+      "functionRVA": "0x120e10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0x120e30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x145680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 46
+    },
+    {
+      "functionRVA": "0x145700",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0x145710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x145790",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 106
+    },
+    {
+      "functionRVA": "0x1457a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x146660",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x146670",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x146690",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1414090309
+    },
+    {
+      "functionRVA": "0x1466d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x146830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x146b20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 129
+    },
+    {
+      "functionRVA": "0x146ba0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 95
+    },
+    {
+      "functionRVA": "0x146bb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x149c30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0x149cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 67
+    },
+    {
+      "functionRVA": "0x149cc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x14d9a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0x14da20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x14da30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x14e740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0x14e760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1414090309
+    },
+    {
+      "functionRVA": "0x14e790",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x14e9f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 30
+    },
+    {
+      "functionRVA": "0x14ea70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x14ea80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14fcd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x14fce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14fcf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1414090309
+    },
+    {
+      "functionRVA": "0x14fd20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x14fd40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x14fd50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x152e50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x154700",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0x154780",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 100
+    },
+    {
+      "functionRVA": "0x154790",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1549a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x1549b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1549c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x154ce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1414090835
+    },
+    {
+      "functionRVA": "0x154d10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x154ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0x154f60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0x154f70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x156190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1561d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1561e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x156260",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x156270",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x1562a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x1562d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 125
+    },
+    {
+      "functionRVA": "0x156300",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x156330",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 86
+    },
+    {
+      "functionRVA": "0x156360",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x1563b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x1563c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 66
+    },
+    {
+      "functionRVA": "0x1563d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x1563e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 178
+    },
+    {
+      "functionRVA": "0x180510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x180970",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 92
+    },
+    {
+      "functionRVA": "0x1809b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0x180a70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 41
+    },
+    {
+      "functionRVA": "0x180a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 63
+    },
+    {
+      "functionRVA": "0x180c00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 29
+    },
+    {
+      "functionRVA": "0x180fd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 42
+    },
+    {
+      "functionRVA": "0x181010",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 45
+    },
+    {
+      "functionRVA": "0x181020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 149
+    },
+    {
+      "functionRVA": "0x181030",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 104
+    },
+    {
+      "functionRVA": "0x1810f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 43
+    },
+    {
+      "functionRVA": "0x181120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 168
+    },
+    {
+      "functionRVA": "0x1811e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 44
+    },
+    {
+      "functionRVA": "0x181240",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x181310",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0x1813b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0x1813d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x181420",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33
+    },
+    {
+      "functionRVA": "0x181470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 163
+    },
+    {
+      "functionRVA": "0x1814c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 34
+    },
+    {
+      "functionRVA": "0x181500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 35
+    },
+    {
+      "functionRVA": "0x181550",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0x1815a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 31
+    },
+    {
+      "functionRVA": "0x1815b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0x181600",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 150
+    },
+    {
+      "functionRVA": "0x181610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0x181620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 61
+    },
+    {
+      "functionRVA": "0x181650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 37
+    },
+    {
+      "functionRVA": "0x181680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 118
+    },
+    {
+      "functionRVA": "0x1816b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 39
+    },
+    {
+      "functionRVA": "0x1816e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x181730",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 156
+    },
+    {
+      "functionRVA": "0x181760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 47
+    },
+    {
+      "functionRVA": "0x181770",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 176
+    },
+    {
+      "functionRVA": "0x1817a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 73
+    },
+    {
+      "functionRVA": "0x1818d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 76
+    },
+    {
+      "functionRVA": "0x181960",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x181980",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 28
+    },
+    {
+      "functionRVA": "0x1819c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 137
+    },
+    {
+      "functionRVA": "0x181a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 25
+    },
+    {
+      "functionRVA": "0x181af0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 26
+    },
+    {
+      "functionRVA": "0x181d40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 52
+    },
+    {
+      "functionRVA": "0x181d50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 46
+    },
+    {
+      "functionRVA": "0x181d60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 142
+    },
+    {
+      "functionRVA": "0x181db0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x181e70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0x181ea0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0x182190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0x182600",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 126
+    },
+    {
+      "functionRVA": "0x182910",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 27
+    },
+    {
+      "functionRVA": "0x1829f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0x182a20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 54
+    },
+    {
+      "functionRVA": "0x182ae0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 55
+    },
+    {
+      "functionRVA": "0x182b00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 172
+    },
+    {
+      "functionRVA": "0x182b10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 173
+    },
+    {
+      "functionRVA": "0x182b40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 58
+    },
+    {
+      "functionRVA": "0x182b50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 133
+    },
+    {
+      "functionRVA": "0x182b80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 139
+    },
+    {
+      "functionRVA": "0x182bb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 144
+    },
+    {
+      "functionRVA": "0x182ca0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x182cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 81
+    },
+    {
+      "functionRVA": "0x183210",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 82
+    },
+    {
+      "functionRVA": "0x183270",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 83
+    },
+    {
+      "functionRVA": "0x183640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 97
+    },
+    {
+      "functionRVA": "0x183bc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 98
+    },
+    {
+      "functionRVA": "0x1841e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 128
+    },
+    {
+      "functionRVA": "0x184a40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 129
+    },
+    {
+      "functionRVA": "0x184af0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 30
+    },
+    {
+      "functionRVA": "0x184c50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 62
+    },
+    {
+      "functionRVA": "0x184c90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 155
+    },
+    {
+      "functionRVA": "0x184cd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x184cf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 67
+    },
+    {
+      "functionRVA": "0x184d20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 99
+    },
+    {
+      "functionRVA": "0x184d50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 96
+    },
+    {
+      "functionRVA": "0x184d60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 94
+    },
+    {
+      "functionRVA": "0x184e30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 181
+    },
+    {
+      "functionRVA": "0x184e60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 116
+    },
+    {
+      "functionRVA": "0x184e70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 117
+    },
+    {
+      "functionRVA": "0x184ea0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 109
+    },
+    {
+      "functionRVA": "0x184eb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x184f70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 57
+    },
+    {
+      "functionRVA": "0x185070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 65
+    },
+    {
+      "functionRVA": "0x185170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 60
+    },
+    {
+      "functionRVA": "0x1853b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 68
+    },
+    {
+      "functionRVA": "0x1853c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 69
+    },
+    {
+      "functionRVA": "0x1853d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 71
+    },
+    {
+      "functionRVA": "0x1853e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 72
+    },
+    {
+      "functionRVA": "0x185520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 74
+    },
+    {
+      "functionRVA": "0x1855a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 75
+    },
+    {
+      "functionRVA": "0x1855b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 77
+    },
+    {
+      "functionRVA": "0x1855c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 78
+    },
+    {
+      "functionRVA": "0x1855d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 121
+    },
+    {
+      "functionRVA": "0x1855e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 134
+    },
+    {
+      "functionRVA": "0x1855f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 127
+    },
+    {
+      "functionRVA": "0x185600",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 130
+    },
+    {
+      "functionRVA": "0x185610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 131
+    },
+    {
+      "functionRVA": "0x185620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 84
+    },
+    {
+      "functionRVA": "0x185630",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 85
+    },
+    {
+      "functionRVA": "0x185640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 79
+    },
+    {
+      "functionRVA": "0x185650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 87
+    },
+    {
+      "functionRVA": "0x185660",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 88
+    },
+    {
+      "functionRVA": "0x185690",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 89
+    },
+    {
+      "functionRVA": "0x185fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 91
+    },
+    {
+      "functionRVA": "0x185fd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 93
+    },
+    {
+      "functionRVA": "0x186000",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 106
+    },
+    {
+      "functionRVA": "0x186030",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 101
+    },
+    {
+      "functionRVA": "0x186060",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 103
+    },
+    {
+      "functionRVA": "0x1860b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 105
+    },
+    {
+      "functionRVA": "0x1861b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 107
+    },
+    {
+      "functionRVA": "0x186310",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 132
+    },
+    {
+      "functionRVA": "0x1863c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 114
+    },
+    {
+      "functionRVA": "0x186470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 115
+    },
+    {
+      "functionRVA": "0x1865d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 119
+    },
+    {
+      "functionRVA": "0x186620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 108
+    },
+    {
+      "functionRVA": "0x1866a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 110
+    },
+    {
+      "functionRVA": "0x186b70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 120
+    },
+    {
+      "functionRVA": "0x186e20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 111
+    },
+    {
+      "functionRVA": "0x186fb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 113
+    },
+    {
+      "functionRVA": "0x186fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 124
+    },
+    {
+      "functionRVA": "0x187390",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 135
+    },
+    {
+      "functionRVA": "0x188a70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 136
+    },
+    {
+      "functionRVA": "0x1891a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 140
+    },
+    {
+      "functionRVA": "0x1891b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 165
+    },
+    {
+      "functionRVA": "0x1892d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 141
+    },
+    {
+      "functionRVA": "0x189310",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 145
+    },
+    {
+      "functionRVA": "0x189340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 146
+    },
+    {
+      "functionRVA": "0x189350",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 147
+    },
+    {
+      "functionRVA": "0x189380",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 148
+    },
+    {
+      "functionRVA": "0x1893b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 151
+    },
+    {
+      "functionRVA": "0x189520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x189680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 179
+    },
+    {
+      "functionRVA": "0x189e90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 153
+    },
+    {
+      "functionRVA": "0x18b120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 152
+    },
+    {
+      "functionRVA": "0x18b150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 154
+    },
+    {
+      "functionRVA": "0x18b170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 123
+    },
+    {
+      "functionRVA": "0x18b190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 157
+    },
+    {
+      "functionRVA": "0x18b1b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 164
+    },
+    {
+      "functionRVA": "0x18b1f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 159
+    },
+    {
+      "functionRVA": "0x18b250",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 160
+    },
+    {
+      "functionRVA": "0x18c0b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 161
+    },
+    {
+      "functionRVA": "0x18c1c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 162
+    },
+    {
+      "functionRVA": "0x18c1f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 166
+    },
+    {
+      "functionRVA": "0x18c270",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 167
+    },
+    {
+      "functionRVA": "0x18c390",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 169
+    },
+    {
+      "functionRVA": "0x18c4c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 170
+    },
+    {
+      "functionRVA": "0x18c520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 171
+    },
+    {
+      "functionRVA": "0x18cbc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 174
+    },
+    {
+      "functionRVA": "0x18d230",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 175
+    },
+    {
+      "functionRVA": "0x18d290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 177
+    },
+    {
+      "functionRVA": "0x18d2a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 49
+    },
+    {
+      "functionRVA": "0x191740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 95
+    },
+    {
+      "functionRVA": "0x19ccf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0x19cd00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x19cd10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x1e85a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x20bc90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x20bca0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x20bcb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x20bcc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x20bcd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 524288
+    },
+    {
+      "functionRVA": "0x20bd00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 524288
+    },
+    {
+      "functionRVA": "0x24ef10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 58
+    },
+    {
+      "functionRVA": "0x250610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x250970",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x251e60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x252b80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x253310",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x253c10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x254570",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x25b610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 94
+    },
+    {
+      "functionRVA": "0x25b690",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 41
+    },
+    {
+      "functionRVA": "0x25b6a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x25c340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33
+    },
+    {
+      "functionRVA": "0x25c3c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 90
+    },
+    {
+      "functionRVA": "0x25c3d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x25cc90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 125
+    },
+    {
+      "functionRVA": "0x25cd10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 84
+    },
+    {
+      "functionRVA": "0x25cd20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x25dc80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 49
+    },
+    {
+      "functionRVA": "0x25dd00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 63
+    },
+    {
+      "functionRVA": "0x25dd10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x25e910",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 88
+    },
+    {
+      "functionRVA": "0x25e990",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0x25e9a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x260430",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 87
+    },
+    {
+      "functionRVA": "0x2604b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 34
+    },
+    {
+      "functionRVA": "0x2604c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x261c70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 51
+    },
+    {
+      "functionRVA": "0x261cf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 92
+    },
+    {
+      "functionRVA": "0x261d00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x2628c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 135
+    },
+    {
+      "functionRVA": "0x262940",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 103
+    },
+    {
+      "functionRVA": "0x262950",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x263750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 137
+    },
+    {
+      "functionRVA": "0x2637d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 105
+    },
+    {
+      "functionRVA": "0x2637e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x263e70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0x263ef0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 42
+    },
+    {
+      "functionRVA": "0x263f00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x2645f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 124
+    },
+    {
+      "functionRVA": "0x264670",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 83
+    },
+    {
+      "functionRVA": "0x264680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x2650e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 50
+    },
+    {
+      "functionRVA": "0x265160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x265170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x266920",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 35
+    },
+    {
+      "functionRVA": "0x2669a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 69
+    },
+    {
+      "functionRVA": "0x2669b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x266fd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 25
+    },
+    {
+      "functionRVA": "0x267050",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33
+    },
+    {
+      "functionRVA": "0x268680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 42
+    },
+    {
+      "functionRVA": "0x268700",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0x268710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x269860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x2698e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 25
+    },
+    {
+      "functionRVA": "0x2698f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x26aa00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 85
+    },
+    {
+      "functionRVA": "0x26aa80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 31
+    },
+    {
+      "functionRVA": "0x26aa90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x26d6c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 39
+    },
+    {
+      "functionRVA": "0x26d740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0x26d750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x26de70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x26def0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0x26df00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x270200",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 37
+    },
+    {
+      "functionRVA": "0x270280",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x270290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x270bb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 45
+    },
+    {
+      "functionRVA": "0x270c30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0x270c40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x271110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 44
+    },
+    {
+      "functionRVA": "0x271190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0x271820",
+      "slotRVA": "0x207acc0",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 34057408
+    },
+    {
+      "functionRVA": "0x271a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 53
+    },
+    {
+      "functionRVA": "0x271b00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0x271b10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x272110",
+      "slotRVA": "0x207ace8",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 34057448
+    },
+    {
+      "functionRVA": "0x272340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 82
+    },
+    {
+      "functionRVA": "0x2723c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 27
+    },
+    {
+      "functionRVA": "0x2723d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x2736c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 31
+    },
+    {
+      "functionRVA": "0x273740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x273750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x279480",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x279510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x27b520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 83
+    },
+    {
+      "functionRVA": "0x27b5a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 28
+    },
+    {
+      "functionRVA": "0x27b5b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x27bd50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 102
+    },
+    {
+      "functionRVA": "0x27bdd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 57
+    },
+    {
+      "functionRVA": "0x27bde0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x27d610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 26
+    },
+    {
+      "functionRVA": "0x27d690",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x27d6a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x27f3c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 27
+    },
+    {
+      "functionRVA": "0x27f440",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x27f450",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x281250",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 28
+    },
+    {
+      "functionRVA": "0x2812d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x2812e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x2826a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 29
+    },
+    {
+      "functionRVA": "0x282720",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x282730",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x2865c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x286640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x286650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x287210",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 34
+    },
+    {
+      "functionRVA": "0x287290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x2872a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x287b90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 38
+    },
+    {
+      "functionRVA": "0x287c10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x287c20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x2886e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 41
+    },
+    {
+      "functionRVA": "0x288760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0x288770",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x28ebd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 52
+    },
+    {
+      "functionRVA": "0x28ec50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 97
+    },
+    {
+      "functionRVA": "0x28ec60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x28f370",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 103
+    },
+    {
+      "functionRVA": "0x28f3f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 61
+    },
+    {
+      "functionRVA": "0x28f400",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x295400",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 108
+    },
+    {
+      "functionRVA": "0x295480",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 87
+    },
+    {
+      "functionRVA": "0x295490",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x297f90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 104
+    },
+    {
+      "functionRVA": "0x298010",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 71
+    },
+    {
+      "functionRVA": "0x298020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x29e4f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x29e570",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 72
+    },
+    {
+      "functionRVA": "0x29e580",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x29e7f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 57
+    },
+    {
+      "functionRVA": "0x29e870",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 89
+    },
+    {
+      "functionRVA": "0x29e880",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x29ee40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x29eec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 88
+    },
+    {
+      "functionRVA": "0x29eed0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x2a5800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 55
+    },
+    {
+      "functionRVA": "0x2a5880",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x2a5890",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x2a60c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 89
+    },
+    {
+      "functionRVA": "0x2a6140",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 59
+    },
+    {
+      "functionRVA": "0x2a6150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x2a68b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 90
+    },
+    {
+      "functionRVA": "0x2a6930",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 60
+    },
+    {
+      "functionRVA": "0x2a6940",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x2a8f60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 72
+    },
+    {
+      "functionRVA": "0x2b6680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0x2b6700",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x2b6710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x2b76c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 60
+    },
+    {
+      "functionRVA": "0x2dd370",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 61
+    },
+    {
+      "functionRVA": "0x2f9f90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 180
+    },
+    {
+      "functionRVA": "0x2fb810",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x2fb820",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x2fb830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 272
+    },
+    {
+      "functionRVA": "0x2fb840",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x2fb850",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0x2fb860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x305e20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 84
+    },
+    {
+      "functionRVA": "0x305ea0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 29
+    },
+    {
+      "functionRVA": "0x305eb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x307c00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 54
+    },
+    {
+      "functionRVA": "0x307c80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 55
+    },
+    {
+      "functionRVA": "0x307c90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x309f20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1024
+    },
+    {
+      "functionRVA": "0x30ac60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 71
+    },
+    {
+      "functionRVA": "0x315830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x3158b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x3158c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x315e40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 97
+    },
+    {
+      "functionRVA": "0x318800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 96
+    },
+    {
+      "functionRVA": "0x318880",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 43
+    },
+    {
+      "functionRVA": "0x318890",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x31a1e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 132
+    },
+    {
+      "functionRVA": "0x31a260",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 99
+    },
+    {
+      "functionRVA": "0x31a270",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x31b3c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 133
+    },
+    {
+      "functionRVA": "0x31b440",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 101
+    },
+    {
+      "functionRVA": "0x31b450",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x31c630",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 110
+    },
+    {
+      "functionRVA": "0x31c6b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 73
+    },
+    {
+      "functionRVA": "0x31c6c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x31cb70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 111
+    },
+    {
+      "functionRVA": "0x31cbf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 74
+    },
+    {
+      "functionRVA": "0x31cc00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x31d5b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 100
+    },
+    {
+      "functionRVA": "0x31d630",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 44
+    },
+    {
+      "functionRVA": "0x31d640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x31e020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 101
+    },
+    {
+      "functionRVA": "0x31e0a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 45
+    },
+    {
+      "functionRVA": "0x31e0b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x31fac0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 91
+    },
+    {
+      "functionRVA": "0x31fb40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 38
+    },
+    {
+      "functionRVA": "0x31fb50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x320ec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 126
+    },
+    {
+      "functionRVA": "0x320f40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 85
+    },
+    {
+      "functionRVA": "0x320f50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x321fd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 99
+    },
+    {
+      "functionRVA": "0x322050",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 75
+    },
+    {
+      "functionRVA": "0x322060",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x322ff0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x323070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 37
+    },
+    {
+      "functionRVA": "0x323080",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x3234f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 105
+    },
+    {
+      "functionRVA": "0x323570",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 62
+    },
+    {
+      "functionRVA": "0x323580",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x3248f0",
+      "slotRVA": "0x31df618",
+      "typeName": "BGSMusicPaletteTrack",
+      "mode": 0,
+      "operand": 52295192
+    },
+    {
+      "functionRVA": "0x325560",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x325570",
+      "slotRVA": "0x31df618",
+      "typeName": "BGSMusicPaletteTrack",
+      "mode": 0,
+      "operand": 52295192
+    },
+    {
+      "functionRVA": "0x3259b0",
+      "slotRVA": "0x31df720",
+      "typeName": "BGSMusicSilenceTrack",
+      "mode": 0,
+      "operand": 52295456
+    },
+    {
+      "functionRVA": "0x325b90",
+      "slotRVA": "0x31df720",
+      "typeName": "BGSMusicSilenceTrack",
+      "mode": 0,
+      "operand": 52295456
+    },
+    {
+      "functionRVA": "0x325f10",
+      "slotRVA": "0x31df730",
+      "typeName": "BGSMusicSingleTrack",
+      "mode": 0,
+      "operand": 52295472
+    },
+    {
+      "functionRVA": "0x326c50",
+      "slotRVA": "0x31df730",
+      "typeName": "BGSMusicSingleTrack",
+      "mode": 0,
+      "operand": 52295472
+    },
+    {
+      "functionRVA": "0x326ff0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 116
+    },
+    {
+      "functionRVA": "0x327070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 77
+    },
+    {
+      "functionRVA": "0x327080",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x3278b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 109
+    },
+    {
+      "functionRVA": "0x327930",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 68
+    },
+    {
+      "functionRVA": "0x327940",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x328a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 134
+    },
+    {
+      "functionRVA": "0x328b00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 102
+    },
+    {
+      "functionRVA": "0x328b10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x329160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 130
+    },
+    {
+      "functionRVA": "0x3291e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 96
+    },
+    {
+      "functionRVA": "0x3291f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x32a080",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 128
+    },
+    {
+      "functionRVA": "0x32a100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 94
+    },
+    {
+      "functionRVA": "0x32a110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x32ade0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 131
+    },
+    {
+      "functionRVA": "0x32ae60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 98
+    },
+    {
+      "functionRVA": "0x32ae70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x32b610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x32c1d0",
+      "slotRVA": "0x31dfae0",
+      "typeName": "BGSStandardSoundDef",
+      "mode": 0,
+      "operand": 52296416
+    },
+    {
+      "functionRVA": "0x32c290",
+      "slotRVA": "0x31dfae0",
+      "typeName": "BGSStandardSoundDef",
+      "mode": 0,
+      "operand": 52296416
+    },
+    {
+      "functionRVA": "0x32cd50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x32cdd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 35
+    },
+    {
+      "functionRVA": "0x32cde0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x340820",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x3408a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 58
+    },
+    {
+      "functionRVA": "0x3408b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x340cd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 81
+    },
+    {
+      "functionRVA": "0x340d50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 26
+    },
+    {
+      "functionRVA": "0x340d60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x3418f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0x341970",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 66
+    },
+    {
+      "functionRVA": "0x341980",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x387730",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 119
+    },
+    {
+      "functionRVA": "0x3877b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 79
+    },
+    {
+      "functionRVA": "0x3877c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x3884c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0x388540",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0x388550",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x3889e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 118
+    },
+    {
+      "functionRVA": "0x388a60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 78
+    },
+    {
+      "functionRVA": "0x388a70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x388eb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x388f30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 76
+    },
+    {
+      "functionRVA": "0x389210",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 123
+    },
+    {
+      "functionRVA": "0x389290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 82
+    },
+    {
+      "functionRVA": "0x3892a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x38b010",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 93
+    },
+    {
+      "functionRVA": "0x38b090",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x38c9a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 115
+    },
+    {
+      "functionRVA": "0x38e0c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 65535
+    },
+    {
+      "functionRVA": "0x38ee80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x38ee90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x38eea0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x38eeb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x38eec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x38eed0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x38eee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x38f250",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 120
+    },
+    {
+      "functionRVA": "0x38f2d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 81
+    },
+    {
+      "functionRVA": "0x38f2e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x38fe30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0x38feb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 52
+    },
+    {
+      "functionRVA": "0x38fec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x391420",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 47
+    },
+    {
+      "functionRVA": "0x3914a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 30
+    },
+    {
+      "functionRVA": "0x3914b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x391e50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x391ed0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 70
+    },
+    {
+      "functionRVA": "0x391ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x393150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 127
+    },
+    {
+      "functionRVA": "0x3931d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 91
+    },
+    {
+      "functionRVA": "0x3931e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x394140",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x3941c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 54
+    },
+    {
+      "functionRVA": "0x3941d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x3957a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 92
+    },
+    {
+      "functionRVA": "0x395820",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 39
+    },
+    {
+      "functionRVA": "0x395b20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 65535
+    },
+    {
+      "functionRVA": "0x3984c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x3984d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x39c860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 106
+    },
+    {
+      "functionRVA": "0x39c8e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 65
+    },
+    {
+      "functionRVA": "0x39c8f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x3a4480",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 121
+    },
+    {
+      "functionRVA": "0x3a4500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x3a4510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3a5c70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 122
+    },
+    {
+      "functionRVA": "0x3ab280",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x3ab290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 60
+    },
+    {
+      "functionRVA": "0x3abfb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x3acf50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x3aea50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 98
+    },
+    {
+      "functionRVA": "0x3aead0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x3aeae0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3b2640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x3b26c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 49
+    },
+    {
+      "functionRVA": "0x3b26d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3b2db0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x3b2e30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 51
+    },
+    {
+      "functionRVA": "0x3b2e40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x3b34d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x3b3550",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 53
+    },
+    {
+      "functionRVA": "0x3b3560",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3b68a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 78
+    },
+    {
+      "functionRVA": "0x3bb5e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 43
+    },
+    {
+      "functionRVA": "0x3bb660",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x3cddb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 77
+    },
+    {
+      "functionRVA": "0x3cde30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 46
+    },
+    {
+      "functionRVA": "0x3cde40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3e2ef0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0x3e2f70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 50
+    },
+    {
+      "functionRVA": "0x3e2f80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x3ed770",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 75
+    },
+    {
+      "functionRVA": "0x3f0e10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 76
+    },
+    {
+      "functionRVA": "0x3f9ff0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x3fb920",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 96
+    },
+    {
+      "functionRVA": "0x3fdb70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x3fdc40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x3fefd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x442e30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 95
+    },
+    {
+      "functionRVA": "0x44dce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x44dd80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x451100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0x451160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x453bf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x453cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x45af30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x45af40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x45d7d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x45ef10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x461bf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4627f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x464640",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x4654c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x4682c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4696d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x46d510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x46ea00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x46f120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x472940",
+      "slotRVA": "0x31ec808",
+      "typeName": "MovementParameters",
+      "mode": 0,
+      "operand": 52348936
+    },
+    {
+      "functionRVA": "0x4729e0",
+      "slotRVA": "0x31ec808",
+      "typeName": "MovementParameters",
+      "mode": 0,
+      "operand": 52348936
+    },
+    {
+      "functionRVA": "0x472c50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x473360",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x4740a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x474820",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x475d70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x4769f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x476cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x477cc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x4792b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x47cc70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x47d650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x482fa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4837f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4859c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x486170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x487fa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x48d4f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x48ede0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x491390",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0x4944f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x494a90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x4969b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 79
+    },
+    {
+      "functionRVA": "0x4969c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 47
+    },
+    {
+      "functionRVA": "0x4969d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4a2300",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x4a9fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x4aae50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x4adc90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x4b04f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x4b4ad0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x4b5800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x4b6170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x4b8ef0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 73
+    },
+    {
+      "functionRVA": "0x4dffe0",
+      "slotRVA": "0x31ed2f8",
+      "typeName": "PathingCell",
+      "mode": 0,
+      "operand": 52351736
+    },
+    {
+      "functionRVA": "0x4e0020",
+      "slotRVA": "0x31ed2f8",
+      "typeName": "PathingCell",
+      "mode": 0,
+      "operand": 52351736
+    },
+    {
+      "functionRVA": "0x4e0ed0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x4e3300",
+      "slotRVA": "0x31ee5b8",
+      "typeName": "PathingRequest",
+      "mode": 0,
+      "operand": 52356536
+    },
+    {
+      "functionRVA": "0x4e3340",
+      "slotRVA": "0x31ee5b8",
+      "typeName": "PathingRequest",
+      "mode": 0,
+      "operand": 52356536
+    },
+    {
+      "functionRVA": "0x4e3ab0",
+      "slotRVA": "0x31ed2ec",
+      "typeName": "PathingStreamMasterFileRead",
+      "mode": 0,
+      "operand": 52351724
+    },
+    {
+      "functionRVA": "0x4e4130",
+      "slotRVA": "0x31ee5bc",
+      "typeName": "MasterFilePathingStreamWriteToBuffer",
+      "mode": 0,
+      "operand": 52356540
+    },
+    {
+      "functionRVA": "0x4e4610",
+      "slotRVA": "0x31ee5c0",
+      "typeName": "MasterFilePathingStreamGetSize",
+      "mode": 0,
+      "operand": 52356544
+    },
+    {
+      "functionRVA": "0x4f23e0",
+      "slotRVA": "0x31ee5d0",
+      "typeName": "PathingRequestClosePoint",
+      "mode": 0,
+      "operand": 52356560
+    },
+    {
+      "functionRVA": "0x4f2420",
+      "slotRVA": "0x31ee5d0",
+      "typeName": "PathingRequestClosePoint",
+      "mode": 0,
+      "operand": 52356560
+    },
+    {
+      "functionRVA": "0x4f2990",
+      "slotRVA": "0x31ee920",
+      "typeName": "PathingRequestClosestGoal",
+      "mode": 0,
+      "operand": 52357408
+    },
+    {
+      "functionRVA": "0x4f29d0",
+      "slotRVA": "0x31ee920",
+      "typeName": "PathingRequestClosestGoal",
+      "mode": 0,
+      "operand": 52357408
+    },
+    {
+      "functionRVA": "0x4f4300",
+      "slotRVA": "0x31ee938",
+      "typeName": "PathingRequestCover",
+      "mode": 0,
+      "operand": 52357432
+    },
+    {
+      "functionRVA": "0x4f4340",
+      "slotRVA": "0x31ee938",
+      "typeName": "PathingRequestCover",
+      "mode": 0,
+      "operand": 52357432
+    },
+    {
+      "functionRVA": "0x4f4f70",
+      "slotRVA": "0x31ee948",
+      "typeName": "PathingRequestFlee",
+      "mode": 0,
+      "operand": 52357448
+    },
+    {
+      "functionRVA": "0x4f4fb0",
+      "slotRVA": "0x31ee948",
+      "typeName": "PathingRequestFlee",
+      "mode": 0,
+      "operand": 52357448
+    },
+    {
+      "functionRVA": "0x4f53c0",
+      "slotRVA": "0x31ee958",
+      "typeName": "PathingRequestFly",
+      "mode": 0,
+      "operand": 52357464
+    },
+    {
+      "functionRVA": "0x4f5400",
+      "slotRVA": "0x31ee958",
+      "typeName": "PathingRequestFly",
+      "mode": 0,
+      "operand": 52357464
+    },
+    {
+      "functionRVA": "0x4f5ac0",
+      "slotRVA": "0x31ee968",
+      "typeName": "PathingRequestFlyAction",
+      "mode": 0,
+      "operand": 52357480
+    },
+    {
+      "functionRVA": "0x4f5b00",
+      "slotRVA": "0x31ee968",
+      "typeName": "PathingRequestFlyAction",
+      "mode": 0,
+      "operand": 52357480
+    },
+    {
+      "functionRVA": "0x4f6380",
+      "slotRVA": "0x31ee978",
+      "typeName": "PathingRequestFlyHover",
+      "mode": 0,
+      "operand": 52357496
+    },
+    {
+      "functionRVA": "0x4f63c0",
+      "slotRVA": "0x31ee978",
+      "typeName": "PathingRequestFlyHover",
+      "mode": 0,
+      "operand": 52357496
+    },
+    {
+      "functionRVA": "0x4f6e90",
+      "slotRVA": "0x31ee988",
+      "typeName": "PathingRequestFlyLand",
+      "mode": 0,
+      "operand": 52357512
+    },
+    {
+      "functionRVA": "0x4f6ed0",
+      "slotRVA": "0x31ee988",
+      "typeName": "PathingRequestFlyLand",
+      "mode": 0,
+      "operand": 52357512
+    },
+    {
+      "functionRVA": "0x4f74f0",
+      "slotRVA": "0x31ee998",
+      "typeName": "PathingRequestFlyOrbit",
+      "mode": 0,
+      "operand": 52357528
+    },
+    {
+      "functionRVA": "0x4f7530",
+      "slotRVA": "0x31ee998",
+      "typeName": "PathingRequestFlyOrbit",
+      "mode": 0,
+      "operand": 52357528
+    },
+    {
+      "functionRVA": "0x4f7920",
+      "slotRVA": "0x31ee9a8",
+      "typeName": "PathingRequestFlyTakeOff",
+      "mode": 0,
+      "operand": 52357544
+    },
+    {
+      "functionRVA": "0x4f7960",
+      "slotRVA": "0x31ee9a8",
+      "typeName": "PathingRequestFlyTakeOff",
+      "mode": 0,
+      "operand": 52357544
+    },
+    {
+      "functionRVA": "0x4f7cf0",
+      "slotRVA": "0x31ee9b8",
+      "typeName": "PathingRequestHide",
+      "mode": 0,
+      "operand": 52357560
+    },
+    {
+      "functionRVA": "0x4f7d30",
+      "slotRVA": "0x31ee9b8",
+      "typeName": "PathingRequestHide",
+      "mode": 0,
+      "operand": 52357560
+    },
+    {
+      "functionRVA": "0x4f82b0",
+      "slotRVA": "0x31ee9c8",
+      "typeName": "PathingRequestLOS",
+      "mode": 0,
+      "operand": 52357576
+    },
+    {
+      "functionRVA": "0x4f82f0",
+      "slotRVA": "0x31ee9c8",
+      "typeName": "PathingRequestLOS",
+      "mode": 0,
+      "operand": 52357576
+    },
+    {
+      "functionRVA": "0x4f8cc0",
+      "slotRVA": "0x31ee9d8",
+      "typeName": "PathingRequestOptimalLocation",
+      "mode": 0,
+      "operand": 52357592
+    },
+    {
+      "functionRVA": "0x4f8d00",
+      "slotRVA": "0x31ee9d8",
+      "typeName": "PathingRequestOptimalLocation",
+      "mode": 0,
+      "operand": 52357592
+    },
+    {
+      "functionRVA": "0x4f9080",
+      "slotRVA": "0x31ee9e8",
+      "typeName": "PathingRequestRotate",
+      "mode": 0,
+      "operand": 52357608
+    },
+    {
+      "functionRVA": "0x4f90c0",
+      "slotRVA": "0x31ee9e8",
+      "typeName": "PathingRequestRotate",
+      "mode": 0,
+      "operand": 52357608
+    },
+    {
+      "functionRVA": "0x4f93a0",
+      "slotRVA": "0x31ee9f8",
+      "typeName": "PathingRequestSafeStraightLine",
+      "mode": 0,
+      "operand": 52357624
+    },
+    {
+      "functionRVA": "0x4f93e0",
+      "slotRVA": "0x31ee9f8",
+      "typeName": "PathingRequestSafeStraightLine",
+      "mode": 0,
+      "operand": 52357624
+    },
+    {
+      "functionRVA": "0x4f9670",
+      "slotRVA": "0x31eea08",
+      "typeName": "PathingRequestStopMoving",
+      "mode": 0,
+      "operand": 52357640
+    },
+    {
+      "functionRVA": "0x4f96b0",
+      "slotRVA": "0x31eea08",
+      "typeName": "PathingRequestStopMoving",
+      "mode": 0,
+      "operand": 52357640
+    },
+    {
+      "functionRVA": "0x51c710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x51c720",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x51c730",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x51c740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x51c750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x5359f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0x535ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 114
+    },
+    {
+      "functionRVA": "0x535f60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 93
+    },
+    {
+      "functionRVA": "0x535f70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x537ea0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 113
+    },
+    {
+      "functionRVA": "0x59e270",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x5d8910",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x5d9900",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 50
+    },
+    {
+      "functionRVA": "0x5dbe40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x5e2310",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x5e5350",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x63a4c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x63a510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x63a520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x63a630",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x63a660",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x63a6b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x644910",
+      "slotRVA": "0x33363c4",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 53699524
+    },
+    {
+      "functionRVA": "0x644920",
+      "slotRVA": "0x33363c8",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 53699528
+    },
+    {
+      "functionRVA": "0x6b61b0",
+      "slotRVA": "0x20b6be0",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 34302944
+    },
+    {
+      "functionRVA": "0x73ac30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x73cab0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x76ac00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x76e8d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x78ca50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x78f830",
+      "slotRVA": "0x324f08c",
+      "typeName": "MovementParametersFixed",
+      "mode": 0,
+      "operand": 52752524
+    },
+    {
+      "functionRVA": "0x7abb20",
+      "slotRVA": "0x324feb4",
+      "typeName": "PathingStreamLoadGame",
+      "mode": 0,
+      "operand": 52756148
+    },
+    {
+      "functionRVA": "0x7abb60",
+      "slotRVA": "0x324feb4",
+      "typeName": "PathingStreamLoadGame",
+      "mode": 0,
+      "operand": 52756148
+    },
+    {
+      "functionRVA": "0x7ac2d0",
+      "slotRVA": "0x324feb8",
+      "typeName": "PathingStreamSaveGame",
+      "mode": 0,
+      "operand": 52756152
+    },
+    {
+      "functionRVA": "0x7ac310",
+      "slotRVA": "0x324feb8",
+      "typeName": "PathingStreamSaveGame",
+      "mode": 0,
+      "operand": 52756152
+    },
+    {
+      "functionRVA": "0x7b8d60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0x7b9ac0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x7bc0e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0x7bd370",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x7c01a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0x7f5670",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x82d240",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x82d740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x82dcb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x82dcc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x82e120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x82e330",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x82e340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x82e350",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x82e830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x82ef80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x82f140",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x82f170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x82f190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x834ca0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x835d40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x836740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x83b9a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0x842c50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x842f50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x8431b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x843420",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x843620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x844760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x8449f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x844cf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x844f50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x845250",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x846fd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x8472e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x8475b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x847830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x847a70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x855800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x87d5c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x88b6a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x89ebf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x8b72f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x8f2cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x956d90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x9ba870",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x9cf200",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xa09020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0xa09170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0xa091f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0xa09330",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0xa093b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0xa094f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0xa28d40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0xa28eb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0xa32150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0xa322a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0xa33620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0xa33770",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0xa35ed0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0xa36020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0xa4fa20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0xa4fb70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0xa4fbf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xa4fd40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xa4ff90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xa500d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xa50150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xa50290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xa50320",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xa50470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xa50500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0xa50650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0xa506d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0xa50810",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0xa50890",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0xa509d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0xa50a50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0xa50ba0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0xa50c20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0xa50d70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0xa50df0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0xa50f30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0xa50fb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xa51100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xa51180",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0xa512d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0xa51350",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0xa51490",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0xa51620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0xa51760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0xa51940",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xa51a90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xa51be0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0xa51d30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0xaa60d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xaa60e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xaa6100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xaa6130",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xaaf7d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xaaf800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xab6a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xab6a90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xab6ab0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xab8780",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xabfaa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xabfc00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xabfc10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xad2140",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xb1cad0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xb33970",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xb341e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0xb36fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb37120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xb376a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0xb377d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xb3a990",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb3aef0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xb3b810",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xb3c040",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0xb3e500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0xb42e20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0xb43c00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0xb45ba0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xb4fec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0xb50040",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb50090",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb52c50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb5dad0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb5dae0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb62340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb63530",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb64d70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xb659b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0xb661c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xb72780",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0xb73a30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xb74420",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0xb75070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0xb75120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xb75dc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0xb75f90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xb761e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0xb76910",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 101
+    },
+    {
+      "functionRVA": "0xb76ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xb77570",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0xb77c30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0xb77d50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 100
+    },
+    {
+      "functionRVA": "0xb78390",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xb796a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0xb79b70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0xb7a1a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0xb7a210",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xb7ed20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xb8cf10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0xbab110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xbc9650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xbc9680",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xc356f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 102
+    },
+    {
+      "functionRVA": "0xc363a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xc3c2f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 144
+    },
+    {
+      "functionRVA": "0xc4d1e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xc4d1f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xc60c70",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xc60f00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xc60f10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xc60f20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xc60f30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xc60f60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0xc610a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xc610b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xc610c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0xc610d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xc61100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0xc61110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xc611a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xc65760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xc65770",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xcb9d60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xcba7c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xcec160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0xcf5be0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xcf5bf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 23
+    },
+    {
+      "functionRVA": "0xd12e40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xd12e50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0xd33f10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xd33f30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xd61120",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0xd612e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 52
+    },
+    {
+      "functionRVA": "0xd61ce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0xd61cf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xd62060",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33792
+    },
+    {
+      "functionRVA": "0xd623c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xd6c470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0xd79de0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xd79f30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xd81160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32768
+    },
+    {
+      "functionRVA": "0xd81170",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 768
+    },
+    {
+      "functionRVA": "0xd81180",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 34048
+    },
+    {
+      "functionRVA": "0xd85b20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 25
+    },
+    {
+      "functionRVA": "0xd87ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 27
+    },
+    {
+      "functionRVA": "0xd93d00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0xd93d10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0xd93f50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33536
+    },
+    {
+      "functionRVA": "0xd93fa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1652404175
+    },
+    {
+      "functionRVA": "0xda0620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 21
+    },
+    {
+      "functionRVA": "0xda3190",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 15
+    },
+    {
+      "functionRVA": "0xda56d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0xda8ce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0xdab060",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0xdacad0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 26
+    },
+    {
+      "functionRVA": "0xdaf290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0xdb0dd0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xdb3740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xdb4f90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0xdb6360",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0xdb9500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0xdbd210",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 35
+    },
+    {
+      "functionRVA": "0xdbf340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 22
+    },
+    {
+      "functionRVA": "0xdc2d40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xdc8c30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 30
+    },
+    {
+      "functionRVA": "0xdcda40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 44
+    },
+    {
+      "functionRVA": "0xdd0320",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 43
+    },
+    {
+      "functionRVA": "0xdd84e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0xdd84f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xdd8670",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33024
+    },
+    {
+      "functionRVA": "0xdd8860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4026511311
+    },
+    {
+      "functionRVA": "0xdddd50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 37
+    },
+    {
+      "functionRVA": "0xddef00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 38
+    },
+    {
+      "functionRVA": "0xde0cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 39
+    },
+    {
+      "functionRVA": "0xde2550",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0xde3a90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 41
+    },
+    {
+      "functionRVA": "0xde5a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 42
+    },
+    {
+      "functionRVA": "0xdf5720",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0xe031e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xe093d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 33280
+    },
+    {
+      "functionRVA": "0xe1a180",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xe1aab0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0xe1b1c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 512
+    },
+    {
+      "functionRVA": "0xe28830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xe55e30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 31
+    },
+    {
+      "functionRVA": "0xe6c7f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xe6c800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xe73ac0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xe9c0b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xe9c0f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4097
+    },
+    {
+      "functionRVA": "0xe9c2b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xe9c2c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xe9c2f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xeaa7b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 44
+    },
+    {
+      "functionRVA": "0xeae180",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xec1710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xec1720",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0xec1850",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xec1860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 36
+    },
+    {
+      "functionRVA": "0xec18e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xec7ce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecb980",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecb990",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecba20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecbab0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecbac0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xecc600",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 8
+    },
+    {
+      "functionRVA": "0xed1db0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xed5110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xed9ec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0xf01650",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0xf0f110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf11fe0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0xf38520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0xf38530",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf39cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xf3bd50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0xf3e460",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0xf3e470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0xf617c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf62920",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf62970",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xf62fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf63a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xf657c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xf75c50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf75ca0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0xf78340",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf7a840",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf7afb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf7bc10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xf84e90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf84ee0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf859b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf85a00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xf8d040",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xf9b760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xfc4fa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0xfceaa0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0xfcf830",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0xfe54c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0xffd7c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 9
+    },
+    {
+      "functionRVA": "0x1002740",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x10516f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 256
+    },
+    {
+      "functionRVA": "0x1055d80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x106a710",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x1080e40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x1084a30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x1086a60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x10891b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x108bbc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x108c8d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x1090a20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x1097090",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 112
+    },
+    {
+      "functionRVA": "0x1099750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 144
+    },
+    {
+      "functionRVA": "0x109c490",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 128
+    },
+    {
+      "functionRVA": "0x109ea20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x109ea30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10a08a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4294967295
+    },
+    {
+      "functionRVA": "0x10a1860",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x10ac470",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x10ac940",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x10ad630",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x10ae1c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x10af750",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10b0610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x10b1150",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x10b1bf0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x10b2600",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x10b35b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x10b44d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x10b7070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 72
+    },
+    {
+      "functionRVA": "0x10b7080",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x10b7660",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10b8100",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10b8d20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 56
+    },
+    {
+      "functionRVA": "0x10b8d30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10ba910",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10bbd60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10bc850",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x10bd180",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x10bdac0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x10bf430",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 32
+    },
+    {
+      "functionRVA": "0x10c0050",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 48
+    },
+    {
+      "functionRVA": "0x10c0a50",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x10c13f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 80
+    },
+    {
+      "functionRVA": "0x10c7c10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x10c7c60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x10c7cb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x10c8020",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x10c88a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x10e24a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 262144
+    },
+    {
+      "functionRVA": "0x10e6320",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 304
+    },
+    {
+      "functionRVA": "0x1104040",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x11076a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1107720",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 20
+    },
+    {
+      "functionRVA": "0x1107880",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x11166c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x1116d40",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x1124500",
+      "slotRVA": "0x333ae2c",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 53718572
+    },
+    {
+      "functionRVA": "0x112f130",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 13
+    },
+    {
+      "functionRVA": "0x1172760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 65536
+    },
+    {
+      "functionRVA": "0x11893e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x11cba90",
+      "slotRVA": "0x3350930",
+      "typeName": "BSPathingRequest",
+      "mode": 0,
+      "operand": 53807408
+    },
+    {
+      "functionRVA": "0x11cbad0",
+      "slotRVA": "0x3350930",
+      "typeName": "BSPathingRequest",
+      "mode": 0,
+      "operand": 53807408
+    },
+    {
+      "functionRVA": "0x11d4290",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 40
+    },
+    {
+      "functionRVA": "0x11d5d30",
+      "slotRVA": "0x3242fc4",
+      "typeName": "MovementMessageNewPath",
+      "mode": 0,
+      "operand": 52703172
+    },
+    {
+      "functionRVA": "0x11d78b0",
+      "slotRVA": "0x33509d0",
+      "typeName": "BSPathingSolution",
+      "mode": 0,
+      "operand": 53807568
+    },
+    {
+      "functionRVA": "0x11d78f0",
+      "slotRVA": "0x33509d0",
+      "typeName": "BSPathingSolution",
+      "mode": 0,
+      "operand": 53807568
+    },
+    {
+      "functionRVA": "0x11eb580",
+      "slotRVA": "0x33509e0",
+      "typeName": "BSPathingStreamSimpleBufferRead",
+      "mode": 0,
+      "operand": 53807584
+    },
+    {
+      "functionRVA": "0x11eb8a0",
+      "slotRVA": "0x33509e4",
+      "typeName": "BSPathingStreamSimpleBufferWrite",
+      "mode": 0,
+      "operand": 53807588
+    },
+    {
+      "functionRVA": "0x12173c0",
+      "slotRVA": "0x3350a70",
+      "typeName": "MovementMessageApproachingDoor",
+      "mode": 0,
+      "operand": 53807728
+    },
+    {
+      "functionRVA": "0x1217400",
+      "slotRVA": "0x3350a70",
+      "typeName": "MovementMessageApproachingDoor",
+      "mode": 0,
+      "operand": 53807728
+    },
+    {
+      "functionRVA": "0x1217530",
+      "slotRVA": "0x3350a74",
+      "typeName": "MovementMessageActivateDoor",
+      "mode": 0,
+      "operand": 53807732
+    },
+    {
+      "functionRVA": "0x1217570",
+      "slotRVA": "0x3350a74",
+      "typeName": "MovementMessageActivateDoor",
+      "mode": 0,
+      "operand": 53807732
+    },
+    {
+      "functionRVA": "0x1217c90",
+      "slotRVA": "0x3350a80",
+      "typeName": "MovementMessageWarpToLocation",
+      "mode": 0,
+      "operand": 53807744
+    },
+    {
+      "functionRVA": "0x1217cd0",
+      "slotRVA": "0x3350a80",
+      "typeName": "MovementMessageWarpToLocation",
+      "mode": 0,
+      "operand": 53807744
+    },
+    {
+      "functionRVA": "0x1218050",
+      "slotRVA": "0x3350a90",
+      "typeName": "MovementMessageWarpToMultiple",
+      "mode": 0,
+      "operand": 53807760
+    },
+    {
+      "functionRVA": "0x1218090",
+      "slotRVA": "0x3350a90",
+      "typeName": "MovementMessageWarpToMultiple",
+      "mode": 0,
+      "operand": 53807760
+    },
+    {
+      "functionRVA": "0x1218730",
+      "slotRVA": "0x3350aa0",
+      "typeName": "MovementMessageBlocked",
+      "mode": 0,
+      "operand": 53807776
+    },
+    {
+      "functionRVA": "0x1218770",
+      "slotRVA": "0x3350aa0",
+      "typeName": "MovementMessageBlocked",
+      "mode": 0,
+      "operand": 53807776
+    },
+    {
+      "functionRVA": "0x121a980",
+      "slotRVA": "0x3350ab0",
+      "typeName": "MovementMessagePlayIdle",
+      "mode": 0,
+      "operand": 53807792
+    },
+    {
+      "functionRVA": "0x121a9c0",
+      "slotRVA": "0x3350ab0",
+      "typeName": "MovementMessagePlayIdle",
+      "mode": 0,
+      "operand": 53807792
+    },
+    {
+      "functionRVA": "0x121ad90",
+      "slotRVA": "0x3350ac0",
+      "typeName": "MovementMessageFreezeDirection",
+      "mode": 0,
+      "operand": 53807808
+    },
+    {
+      "functionRVA": "0x121add0",
+      "slotRVA": "0x3350ac0",
+      "typeName": "MovementMessageFreezeDirection",
+      "mode": 0,
+      "operand": 53807808
+    },
+    {
+      "functionRVA": "0x121b050",
+      "slotRVA": "0x3350ad0",
+      "typeName": "MovementMessageSetStaticPath",
+      "mode": 0,
+      "operand": 53807824
+    },
+    {
+      "functionRVA": "0x121b090",
+      "slotRVA": "0x3350ad0",
+      "typeName": "MovementMessageSetStaticPath",
+      "mode": 0,
+      "operand": 53807824
+    },
+    {
+      "functionRVA": "0x1234b60",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1237850",
+      "slotRVA": "0x3242fcc",
+      "typeName": "MovementMessagePathFailed",
+      "mode": 0,
+      "operand": 52703180
+    },
+    {
+      "functionRVA": "0x1237880",
+      "slotRVA": "0x3242fc8",
+      "typeName": "MovementMessagePathComplete",
+      "mode": 0,
+      "operand": 52703176
+    },
+    {
+      "functionRVA": "0x12378b0",
+      "slotRVA": "0x3242fcc",
+      "typeName": "MovementMessagePathFailed",
+      "mode": 0,
+      "operand": 52703180
+    },
+    {
+      "functionRVA": "0x13439a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x13753d0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x13dab90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x140b4e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b4f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b500",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b510",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b520",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b530",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 24
+    },
+    {
+      "functionRVA": "0x140b540",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 176
+    },
+    {
+      "functionRVA": "0x1413800",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1444780",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1459550",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 176
+    },
+    {
+      "functionRVA": "0x14713b0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 163840
+    },
+    {
+      "functionRVA": "0x14a3c10",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0x14d6b20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14d6e00",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14d6e80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14d6ec0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x14dbfc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14e5440",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 2,
+      "operand": 64
+    },
+    {
+      "functionRVA": "0x14e85f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x14e8620",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1519130",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x151d530",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x151d9a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1525010",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1525760",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 16
+    },
+    {
+      "functionRVA": "0x1525ce0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 2
+    },
+    {
+      "functionRVA": "0x1526160",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x1526610",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 7
+    },
+    {
+      "functionRVA": "0x1526e20",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x1526fc0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x15271e0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 6
+    },
+    {
+      "functionRVA": "0x1527a80",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 19
+    },
+    {
+      "functionRVA": "0x1527fb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 18
+    },
+    {
+      "functionRVA": "0x1528110",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 14
+    },
+    {
+      "functionRVA": "0x15288c0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 11
+    },
+    {
+      "functionRVA": "0x1529b30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x152adb0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x152c6f0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 17
+    },
+    {
+      "functionRVA": "0x152d560",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x152d8a0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 12
+    },
+    {
+      "functionRVA": "0x1532c90",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 5
+    },
+    {
+      "functionRVA": "0x1553540",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 10
+    },
+    {
+      "functionRVA": "0x1556670",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1558ca0",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x155af30",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 3
+    },
+    {
+      "functionRVA": "0x15828b0",
+      "slotRVA": "0x33363f4",
+      "typeName": "verified-leaf-body",
+      "mode": 1,
+      "operand": 53699572
+    },
+    {
+      "functionRVA": "0x1599060",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 4
+    },
+    {
+      "functionRVA": "0x1599070",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 1
+    },
+    {
+      "functionRVA": "0x1599080",
+      "slotRVA": "0x0",
+      "typeName": "verified-leaf-body",
+      "mode": 3,
+      "operand": 8
+    }
+  ],
+  "nearbyListReferenceCandidates": [
+    {
+      "startRVA": "0x7931d0",
+      "endRVA": "0x7933ec",
+      "length": 540,
+      "lockConstructorCalls": []
+    },
+    {
+      "startRVA": "0x794d20",
+      "endRVA": "0x794e64",
+      "length": 324,
+      "lockConstructorCalls": []
+    },
+    {
+      "startRVA": "0x794e70",
+      "endRVA": "0x795111",
+      "length": 673,
+      "lockConstructorCalls": [
+        "0x794f28"
+      ]
+    },
+    {
+      "startRVA": "0x795120",
+      "endRVA": "0x795342",
+      "length": 546,
+      "lockConstructorCalls": [
+        "0x795293"
+      ]
+    },
+    {
+      "startRVA": "0x796be0",
+      "endRVA": "0x7972db",
+      "length": 1787,
+      "lockConstructorCalls": [
+        "0x797218"
+      ]
+    },
+    {
+      "startRVA": "0x7972f0",
+      "endRVA": "0x79779c",
+      "length": 1196,
+      "lockConstructorCalls": [
+        "0x797526"
+      ]
+    },
+    {
+      "startRVA": "0x7977b0",
+      "endRVA": "0x797b60",
+      "length": 944,
+      "lockConstructorCalls": [
+        "0x79781c"
+      ]
+    },
+    {
+      "startRVA": "0x797b70",
+      "endRVA": "0x797c52",
+      "length": 226,
+      "lockConstructorCalls": [
+        "0x797b9b"
+      ]
+    },
+    {
+      "startRVA": "0x797c60",
+      "endRVA": "0x797cf3",
+      "length": 147,
+      "lockConstructorCalls": [
+        "0x797c85"
+      ]
+    },
+    {
+      "startRVA": "0x7a9400",
+      "endRVA": "0x7a99f1",
+      "length": 1521,
+      "lockConstructorCalls": [
+        "0x7a9440"
+      ]
+    },
+    {
+      "startRVA": "0x7ad450",
+      "endRVA": "0x7ad6d2",
+      "length": 642,
+      "lockConstructorCalls": []
+    },
+    {
+      "startRVA": "0x7adfc0",
+      "endRVA": "0x7ae006",
+      "length": 70,
+      "lockConstructorCalls": []
+    },
+    {
+      "startRVA": "0x7ae440",
+      "endRVA": "0x7ae889",
+      "length": 1097,
+      "lockConstructorCalls": [
+        "0x7ae50e"
+      ]
+    },
+    {
+      "startRVA": "0x7af6f0",
+      "endRVA": "0x7af7a7",
+      "length": 183,
+      "lockConstructorCalls": [
+        "0x7af716"
+      ]
+    },
+    {
+      "startRVA": "0x7af7b0",
+      "endRVA": "0x7af8b6",
+      "length": 262,
+      "lockConstructorCalls": [
+        "0x7af7e0"
+      ]
+    }
+  ],
+  "limitations": [
+    "Byte-pattern candidates are not a complete mutation/call graph.",
+    "Accepted getters have a verified side-effect-free nonzero-cache branch; zero must use the original resolver."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "local-skyrim-research-prototype",
+  "pluginVersion": 8,
+  "gameExecutableVersion": "1.7.104.0",
+  "gameExecutableSha256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "skseVersion": "2.3.1",
+  "validationDirectory": "measurements/20261003-143229-005-render-bridge-ownership-tests",
+  "ctestPassed": 17,
+  "fullImages": 164,
+  "installed": false,
+  "liveTest": "deferred by user",
+  "defaultEnabled": false,
+  "files": [
+    {
+      "file": "RenderWorkerBridge.dll",
+      "sha256": "D15A6E5D6CA0CDD0A87AA3A7C93B2784CDC59B0486CDAC6C5AE2F2F350A6C5B2",
+      "bytes": 174080
+    },
+    {
+      "file": "RenderWorkerBridge.ini",
+      "sha256": "DACB2C9D7D9C624E0F62C3EF71F582C770CEE42C6DD09931FFFD674AC63DA95C",
+      "bytes": 108
+    }
+  ],
+  "publicationSanitized": true,
+  "publicationNote": "Local user paths replaced with neutral example paths. DLL bytes unchanged; INI hash describes sanitized published file. Original local manifest is retained outside this export."
+}
