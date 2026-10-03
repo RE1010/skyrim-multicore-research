@@ -1,7 +1,7 @@
-# Bereinigte Veröffentlichung
+# Publication Cleanup
 
-Diese Kopie wurde vor dem Upload auf persönliche Angaben geprüft. Persönliche Benutzerpfade wurden durch neutrale Beispielpfade ersetzt. Quellcode, Tests und Messwerte bleiben enthalten; vollständige Rohtraces, Screenshots, lokale Zugangsdaten und alte Git-Metadaten sind ausgeschlossen.
+This copy was checked for personal information before upload. Personal user paths were replaced with neutral example paths. Source code, tests, and measured results remain included; full raw traces, screenshots, local credentials, and prior Git metadata are excluded.
 
-Die DLL ist bytegleich zum geprüften v8-Build. Der OutputDirectory-Pfad in der INI wurde neutralisiert; ihr neuer Hash steht im Paketmanifest. Auf einem anderen Rechner muss der Pfad angepasst werden. Sanitierte Pfade in historischen Messberichten sind Beispiele, keine originalen Dateisystemadressen.
+The DLL is byte-for-byte identical to the tested V8 build. The INI's `OutputDirectory` was changed to a neutral example path, and its updated hash is recorded in the package manifest. Adjust that path for another machine. Sanitized paths in historical measurement reports are examples, not the original filesystem addresses.
 
-Das neue Repository verwendet für Autor und Committer einen neutralen Projektnamen sowie eine nicht zustellbare Adresse unter .invalid. Ein GitHub-Konto, dessen Profil, dessen Aktivität und mögliche frühere Verknüpfungen werden dadurch nicht anonymisiert.
+Commits use a neutral project name for both author and committer, with a non-deliverable address under `.invalid`. This does not anonymize a GitHub account, its profile, its activity, or any earlier associations.

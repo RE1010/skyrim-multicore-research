@@ -1,21 +1,23 @@
-# Repository-Inhalt und Nutzung
+# Repository Contents and Setup
 
-Dieses Repository enthält den bisherigen Quellcode, Tests, Werkzeuge, Forschungsberichte und das geprüfte RenderWorkerBridge-v8-Testpaket. Der aktuelle Stand ist in [PROJEKTSTAND-2026-10-03.md](PROJEKTSTAND-2026-10-03.md) beschrieben.
+This repository contains the source code, tests, tools, research reports, and validated RenderWorkerBridge V8 test package. The current status is described in [Project Progress and Results](PROJEKTSTAND-2026-10-03.md).
 
-Version 8 ersetzt geeignete D3D11-Draws durch geordnete Aufzeichnung auf vier Workern. Zwei kurze Spielvergleichspaare bestätigen eine höhere Bildrate gegenüber der internen V8-Kopierkontrolle. Der Originalrenderer bleibt deutlich schneller. Dies ist ein Forschungsprototyp; eine allgemeine Skyrim-FPS-Steigerung ist nicht erreicht. Die Ersetzung startet ausgeschaltet.
+V8 replaces eligible D3D11 draws with ordered recording on four workers. Two short game comparison pairs show a higher present rate than the internal V8 copy control. The original renderer remains substantially faster. This is a research prototype; an overall Skyrim FPS improvement has not been achieved. Replacement starts disabled.
 
-## Mitgelieferte Messgrundlage
+## Included measurement evidence
 
-Die kompakten Berichte für den aktuellen v8-Labor- und Spielvergleich liegen unter `measurements/`. Der [Live-Bericht](../measurements/20261003-v8-live-comparison/analysis.json) enthält Messherkunft, Raten, Phasenbudgets und Grenzen. `analyze.py` reproduziert ihn aus den fünf gespeicherten Capture-Berichten und Zustandsverläufen. Frühere Berichte verweisen teilweise auf ausschließlich lokal vorhandene Aufnahmen.
+Compact reports for the current V8 laboratory and game comparisons are under `measurements/`. The [live report](../measurements/20261003-v8-live-comparison/analysis.json) records provenance, rates, phase budgets, and limitations. Its `analyze.py` script reproduces the report from the five saved capture reports, state histories, trace statistics, and saved final state. Some earlier notes refer to captures that remain local.
 
-Große ETL-Rohaufnahmen, vollständige Frame-CSV-Dateien, Bildschirmbilder, Spielstände, Installationssicherungen, lokale Builds und heruntergeladene Drittanbieterwerkzeuge sind nicht enthalten. Das Repository enthält keine Skyrim-Spielinstallation oder SKSE-Distribution. Skyrim-Code-Evidenz wird beim Bauen aus der eigenen, versionsgebundenen Installation erzeugt.
+Large raw ETL traces, complete frame CSV files, screenshots, saved games, installation backups, local builds, and downloaded third-party tools are excluded. The repository does not distribute a Skyrim installation or SKSE. Version-specific executable evidence is generated from your own verified game installation when building.
 
-## Lokale Voraussetzungen
+## Local prerequisites
 
-- Windows, Visual Studio C++ Build Tools, Windows SDK mit D3D11-Headern, CMake, Ninja und Python 3.
-- Die geprüfte eigene SkyrimSE.exe 1.7.104.0 mit dem im Projekt dokumentierten SHA256; SKSE 2.3.1 zum Spieltest.
-- Die Pfade in `tools/Build-Multicore.cmd`, CMake-Einstellungen und den INI-Dateien müssen zur lokalen Installation passen. Das vorhandene Buildskript ist auf die ursprüngliche Entwicklungsmaschine zugeschnitten.
+- Windows, Visual Studio C++ Build Tools, Windows SDK with D3D11 headers, CMake, Ninja, and Python 3.
+- Your own verified SkyrimSE.exe 1.7.104.0 matching the documented SHA256; SKSE 2.3.1 for game testing.
+- Adjust paths in `tools/Build-Multicore.cmd`, CMake settings, and INI files for your machine. The build script retains the original development toolchain assumptions, with neutral example paths in this published copy.
 
-Das feste [V8-Testpaket](../artifacts/render-worker-bridge-v8/README.md) enthält den unveränderten geprüften DLL-Build und eine INI mit neutralem Beispielpfad. Vor Nutzung auf einem anderen Rechner insbesondere `OutputDirectory` anpassen. Eine geänderte INI stimmt dann nicht mehr mit dem historischen INI-Hash im Paketmanifest überein; der DLL-Hash bleibt separat überprüfbar. Das Paketmanifest dokumentiert den Erstellungsstand und die Bereinigung des INI-Pfades; `live-test.json` dokumentiert den nachfolgenden Spieltest.
+The [fixed V8 package](../artifacts/render-worker-bridge-v8/README.md) contains the unchanged tested DLL and an INI with a neutral example path. Adjust `OutputDirectory` before using it on another machine. Editing the INI changes its hash relative to the published package manifest; the DLL hash remains independently verifiable. The manifest records package creation and INI cleanup; `live-test.json` records the subsequent game test.
 
-Für Tests ohne erneute Spielmessung dient CTest im Buildverzeichnis. Die v8-Laborprüfung bestand 17/17 Tests und 164 vollständige Bildvergleiche; aktuelle Nachweise liegen im Repository. Die Feststellung des Nutzers, dass Flackern auch bei Bewegung verschwunden war, ist als Beobachtung des aktuellen Spieltests dokumentiert und keine automatische Prüfung sämtlicher Szenen.
+CTest can run the laboratory checks in the build directory without a new game capture. V8 passed 17/17 tests and 164 full-image comparisons; the corresponding reports are included. The tester's report that flicker was gone during movement is documented as an observation from the current game test, not an automatic correctness check across all scenes.
+
+The README, project summary, repository guide, and V8 instructions are in English. Earlier detailed research notes remain in German.

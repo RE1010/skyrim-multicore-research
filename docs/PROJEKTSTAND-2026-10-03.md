@@ -1,86 +1,85 @@
-# Bisher erledigt: Skyrim-Multicore-Projekt
+# Skyrim Multicore Project: Progress and Results
 
-Stand: 3. Oktober 2026. Ziel ist, geeignete Engine-Arbeit vom Main Thread auf zusätzliche CPU-Kerne zu verlagern und dabei die Bildrate bei korrekter Darstellung zu verbessern.
+Updated: October 3, 2026. The objective is to move suitable engine work from the main thread to additional CPU cores and improve frame rates while preserving correct rendering.
 
-**Echte Renderarbeit läuft bereits auf vier eigenen Worker-Threads. Ein nutzbarer Leistungsgewinn gegenüber dem Originalrenderer ist bisher nicht erreicht.** Version 8 ist installiert und live getestet; die Ersetzung ist wieder ausgeschaltet. Zwei Vergleichspaare zeigen im Mittel 25,7 % mehr Bildausgaben durch geteilte Zustandsgruppen innerhalb des Worker-Pfads. Der Originalrenderer bleibt deutlich schneller.
+**Real rendering work already runs on four dedicated worker threads. A usable performance improvement over the original renderer has not yet been achieved.** Version 8 is installed and has been tested in-game; replacement is disabled again. Two comparison pairs show an average 25.7% increase in present rate from shared state groups within the worker path. The original renderer remains significantly faster.
 
-## Untersuchung und Messgrundlage
+## Investigation and measurement setup
 
-- Die lokale Installation, Hardware und Entwicklungswerkzeuge wurden untersucht. Ziel ist die konkret geprüfte SkyrimSE.exe **1.7.104.0**, mit Intel Core i5-14400F und NVIDIA RTX 5060 Ti.
-- SKSE **2.3.1** wurde heruntergeladen, installiert und erfolgreich verwendet. Die Plugins prüfen Spielversion und EXE-Hash, bevor sie sich anbinden.
-- CPU-Aufnahmen mit Windows Performance Recorder und Bildausgabemessungen mit PresentMon wurden eingerichtet. Berichte speichern Prozessidentität, Messbedingungen, Framezeiten und Trace-Verluste.
-- Normale Szenen in und vor Weißlauf sowie Belastungsszenen mit zusätzlichen Wachen wurden untersucht. Der 600-Wachen-Test zeigte, dass bereits vorhandene Skyrim-Worker teuer arbeiten und der Main-/Frame-Thread auf Jobs wartet. Mehr NPCs belasten daher nicht ausschließlich den Main Thread.
-- Ein serieller Renderpfad wurde als weiterer Kandidat identifiziert. Die untersuchte Geräteerzeugung enthält bereits keine D3D11-Single-Thread-Einschränkung. Es fehlt kein einfacher Schalter: Gemeinsame Zustände und die Reihenfolge der Engine-Arbeit müssen berücksichtigt werden.
+- The local installation, hardware, and development tools were examined. The verified target is **SkyrimSE.exe 1.7.104.0**, running on an Intel Core i5-14400F and NVIDIA RTX 5060 Ti.
+- **SKSE 2.3.1** was downloaded, installed, and used successfully. Plugins check the executable version and hash before attaching.
+- CPU tracing with Windows Performance Recorder and present-rate measurements with PresentMon were set up. Reports record process identity, conditions, frame times, and trace loss.
+- Normal scenes in and outside Whiterun and stress scenes with additional guards were examined. The 600-guard test showed expensive work on existing Skyrim workers and main/frame-thread waits for jobs. Additional NPCs therefore do not stress only the main thread.
+- A serial rendering path was identified as another candidate. The investigated device-creation path already lacks the D3D11 single-thread restriction. Shared state and work ordering must be addressed to move additional work safely.
 
-## Erste Engine-Kandidaten
+## Initial engine candidates
 
-**Sichtbarkeit/Culling:** Ein C++20-Kern und ein SKSE-Diagnose-Plugin wurden gebaut. Echte Engine-Eingaben wurden gespeichert und seriell sowie auf vier Workern verglichen. Der vollständige Live-Vergleich enthält **68.739 Datensätze ohne Ergebnisabweichung**. Dieser Pfad wird bereits von mehreren Skyrim-Threads aufgerufen. Die Diagnose ersetzt die ursprünglichen Spielentscheidungen nicht und belegt keinen FPS-Gewinn.
+**Visibility/culling:** A C++20 core and an SKSE diagnostic plugin were built. Real engine inputs were saved and compared serially and on four workers. The complete live comparison contains **68,739 records with no result differences**. Several Skyrim threads already call this path. The diagnostic does not replace the original game decisions and does not establish an FPS gain.
 
-**Bewegungsnachrichten:** Die bei hoher NPC-Last auffällige Suche wurde instrumentiert. Ein zustandsloser Suchprototyp wurde gebaut und live verglichen: **5.875 gültige Stichproben ohne Ergebnisabweichung**, darunter Listen mit bis zu 56.826 Einträgen. Ein Laufzeitgewinn wurde nicht nachgewiesen; die Originalsuche bleibt maßgeblich.
+**Movement messages:** The search that became prominent under heavy NPC load was instrumented. A stateless search prototype was built and compared live: **5,875 valid samples with no result differences**, including lists with up to 56,826 entries. No runtime improvement was demonstrated; the original search remains authoritative.
 
-## Renderentwicklung und Anbindung
+## Rendering development and integration
 
-Ein eigener D3D11-Laborbackend wurde umgesetzt, der Befehle auf mehreren Workern aufzeichnet und geordnet abspielt. Vollständige Bildvergleiche prüfen Reihenfolge, wechselnde Materialien und Konstanteninhalte. Anschließend wurden eigene Renderpakete mit gesicherten Ressourcenreferenzen und kopierten Konstanten entwickelt.
+A standalone D3D11 laboratory backend was implemented to record commands on multiple workers and replay them in order. Full-image comparisons check ordering, changing materials, and constant contents. Owned render packets with retained resource references and copied constants were then developed.
 
-Die **RenderWorkerBridge** bindet diese Arbeitsweise an den geprüften Skyrim-Renderpfad an. Sie übernimmt geeignete echte `DrawIndexed`-Befehle, hält deren Ressourcen fest, zeichnet sie auf vier getrennten Worker-Contexts auf und lässt den aufrufenden Thread die fertigen Listen in Originalreihenfolge abspielen. Nicht unterstützte Zustände bleiben im Originalpfad. Bei GPU-Änderungen werden bereits gesammelte Draws zuerst ausgeführt. Kleine Gruppen werden seriell aufgezeichnet.
+**RenderWorkerBridge** integrates this approach with the verified Skyrim rendering path. It intercepts eligible real `DrawIndexed` commands, retains their resources, records them on four separate worker contexts, and lets the calling thread replay the finished lists in their original order. Unsupported states remain on the original path. Queued draws are replayed before relevant GPU mutations. Small groups are recorded serially.
 
-Der erste Spieltest bestätigte mehr als **914.000 tatsächliche Worker-Draws während einer Aufnahme**. Damit ist die technische Auslagerung nachgewiesen. Gleichzeitig traten FPS-Verluste und Hell-dunkel-Flackern auf; die Umsetzung ist deshalb noch keine brauchbare Spieloptimierung.
+The first game test confirmed more than **914,000 actual worker draws during one capture**, proving that rendering work was moved. It also produced FPS losses and bright/dark flicker, so that implementation was not a usable optimization.
 
-| Bridge-Version | Erledigt |
+| Bridge version | Completed work |
 | --- | --- |
-| 1–2 | Engine-Anbindung, tatsächliche Draw-Ersetzung, korrigierte Thread-Zuordnung und begrenzter Vergleich beobachteter Constant-Bytes mit GPU-Daten. |
-| 3 | Sofortige serielle, gesammelte serielle und parallele Wiedergabe als getrennte Diagnosemodi; zeitlich begrenzte Aktivierung. |
-| 4 | Getrennte CPU-Zeitmessungen für Erfassung, Uploadkopien, Aufzeichnung, Worker-Warten und Wiedergabe. |
-| 5 | Bereits hochgeladene unveränderliche Constant-Versionen werden pro Recorder wiederverwendet. Im Live-Intervall wurden rund 69,6 % wiederholter privater Uploads vermieden. |
-| 6 | Getter-Cache: unveränderte Renderzustände werden nicht erneut beim Treiber abgefragt. Im Spiel rund 37,4 % weniger Getter pro erfasstem Draw und 30,9 % weniger Erfassungszeit. |
-| 7 | Unveränderte Bindungen werden innerhalb einer Command List übersprungen. Eigener Kontrollmodus setzt weiterhin alle Bindungen. Im Labor und im Spiel geprüft; beim v8-Austausch gesichert. |
-| 8 | Unveränderliche Zustandsgruppen werden zwischen Draws geteilt; geänderte Gruppen bekommen neue Versionen. Kontrollmodus kopiert jede Gruppe pro Draw. Im Labor und im Spiel geprüft, derzeit ausgeschaltet installiert. |
+| 1–2 | Engine integration, real draw replacement, corrected thread assignment, and limited comparison of observed constant bytes against GPU data. |
+| 3 | Separate immediate serial, batched serial, and parallel diagnostic modes; activation expires automatically. |
+| 4 | Separate CPU timing for capture, upload copies, recording, worker waits, and replay. |
+| 5 | Reuse of already-uploaded immutable constant versions per recorder. About 69.6% of repeated private uploads were avoided in a live interval. |
+| 6 | Getter cache: unchanged render states are not queried again. About 37.4% fewer getters per captured draw and 30.9% less capture time in-game. |
+| 7 | Skip unchanged bindings within a command list, with a separate full-binding control. Tested in the lab and in-game; backed up when V8 was installed. |
+| 8 | Share immutable state groups between draws and create new versions for changed groups. A control copies every group per draw. Tested in the lab and in-game; currently installed with replacement disabled. |
 
-Drawargumente und Constant-Inhalte bleiben individuell. Ein gemeinsamer Zustandsblock darf ältere Draws nicht nachträglich verändern. Agenten haben unter anderem Cache-Invalidierung, numerische Bindungsargumente, Ressourcenlebensdauer und Testabdeckung unabhängig geprüft.
+Draw arguments and constant contents remain individual to each draw. Sharing a state block must not modify older draws. Agents independently reviewed cache invalidation, numeric binding arguments, resource lifetime, and test coverage.
 
-## FPS-Limit und bisherige Spielmessungen
+## FPS limits and earlier game measurements
 
-Das Plugin **UncappedBenchmark** hebt die untersuchten Engine-/DXGI-Limits mit angepassten Physikzeitbudgets auf. Eine frühe Referenzaufnahme ergab 236,04 Presents/s. Das war ein Uncapping-Ergebnis, kein Multicore-Gewinn. Verschiedene Szenen und Sitzungen sind nicht unmittelbar miteinander vergleichbar.
+**UncappedBenchmark** removes the investigated engine/DXGI limits with adjusted physics time budgets. An early reference capture reached 236.04 presents/s. This was an uncapping result, not a multicore gain. Different scenes and sessions are not directly comparable.
 
-Der frühere direkte Vergleich von Version 7 verwendet jeweils 15 Sekunden PresentMon-Aufnahme vor Weißlauf:
+The earlier V7 comparison used 15-second PresentMon captures outside Whiterun:
 
-| Modus | Mittlere Bildausgaberate | Mittlere Framezeit |
+| Mode | Average present rate | Average frame time |
 | --- | ---: | ---: |
-| Originalpfad mit vorhandener Diagnose | **119,26 Presents/s** | 8,39 ms |
-| Worker mit vollständigen Bindungen | 32,94 Presents/s | 30,35 ms |
-| Worker mit reduzierten Bindungen | **33,97 Presents/s** | 29,44 ms |
+| Original path with existing diagnostics | **119.26 presents/s** | 8.39 ms |
+| Workers with full bindings | 32.94 presents/s | 30.35 ms |
+| Workers with reduced bindings | **33.97 presents/s** | 29.44 ms |
 
-Im optimierten Intervall entfallen **68,2 % der Aufzeichnungs-Bindungen**. Alle drei Traces enthalten null verlorene Ereignisse und Buffer. Die rund 3,1 % höhere Rate gegenüber der Worker-Kontrolle ist ein einzelnes Paar; frühere kurze Paare waren uneinheitlich. Ein verlässlich bestätigter FPS-Gewinn oder eine Verbesserung gegenüber dem Originalrenderer folgt daraus nicht.
+The optimized interval skipped **68.2% of recording bindings**. All three traces reported zero lost events and buffers. The roughly 3.1% higher rate than the worker control came from one pair; earlier short pairs were inconsistent. This does not establish a reliable FPS gain or an improvement over the original renderer.
 
-## Version 8: Laborprüfung und durchgeführter Spieltest
+## Version 8: laboratory and live tests
 
-- Festes Paket mit DLL, INI, Hash-Manifest und Installationsanleitung erstellt: [RenderWorkerBridge v8](../artifacts/render-worker-bridge-v8/README.md).
-- **17 von 17 Tests bestanden.** Vier Laborläufe mit beiden Besitzmodellen und mit/ohne Debug-Layer ergeben **164 vollständige Bildvergleiche ohne Abweichung**.
-- Gezielt geprüft: temporäre Textur-/SRV-Besitzer werden freigegeben, bevor gesammelte Draws abgespielt werden; Besitzmodi wechseln bei gefüllter Queue; Konstanten ändern sich ohne erneutes Binding; hohe Slots, NULL-Bindungen und numerische Zustände bleiben korrekt.
-- Im Laborfall mit überwiegend unveränderten Bindungen entstehen rund **92,3 % weniger Gruppenkopien**. Veröffentlichung und Queue-Freigabe werden nun getrennt gemessen.
-- Die neue Kontrolle verwendet dieselbe Gruppenstruktur wie die optimierte Variante und ist kein exakter Nachbau der flachen Version-7-Snapshots. Die Laborzahlen belegen noch keinen Skyrim-FPS-Gewinn.
+- A fixed package containing the DLL, INI, hash manifest, and installation instructions was created: [RenderWorkerBridge V8](../artifacts/render-worker-bridge-v8/README.md).
+- **17/17 tests passed.** Four lab runs across both ownership modes, with and without the debug layer, produced **164 full-image comparisons with no differences**.
+- Targeted tests release temporary texture/SRV owners before queued draws replay, switch ownership modes with a nonempty queue, change constants without rebinding, and check high slots, NULL bindings, and numeric state.
+- In a laboratory case with mostly unchanged bindings, approximately **92.3% fewer groups were copied**. Publication and queue release are now timed separately.
+- The new control uses the same group representation as the optimized mode. It is not an exact reconstruction of V7's flat snapshots. The lab results alone do not establish a Skyrim FPS gain.
 
-Anschließend wurde das feste Paket bei regulär beendetem Skyrim installiert. SKSE bestätigt Version 8. Der Nutzer stellte wieder Tor und Mauer vor Weißlauf bereit, ohne zusätzliche Wachen. Fünf genaue PresentMon-Aufnahmen zu jeweils 15 Sekunden vergleichen Originalpfad und zweimal beide Besitzmodelle, mit umgekehrter Reihenfolge im zweiten Paar:
+The package was then installed while Skyrim was closed. SKSE confirmed V8. The tester prepared the gate and wall outside Whiterun without adding guards. Five 15-second PresentMon captures compare the original path and two pairs of ownership modes, reversing the pair order for the second comparison:
 
-| Modus | Mittlere Bildausgaberate | Mittlere Framezeit |
+| Mode | Average present rate | Average frame time |
 | --- | ---: | ---: |
-| Originalpfad mit vorhandener Diagnose | **120,51 Presents/s** | 8,30 ms |
-| V8-Kopierkontrolle, erstes / zweites Intervall | 33,91 / 33,14 Presents/s | 29,49 / 30,18 ms |
-| V8 mit geteilten Gruppen, erstes / zweites Intervall | **41,56 / 42,69 Presents/s** | 24,06 / 23,42 ms |
+| Original path with existing diagnostics | **120.51 presents/s** | 8.30 ms |
+| V8 copy control, first / second interval | 33.91 / 33.14 presents/s | 29.49 / 30.18 ms |
+| V8 shared groups, first / second interval | **41.56 / 42.69 presents/s** | 24.06 / 23.42 ms |
 
-Das ergibt 22,6 % und 28,8 % mehr innerhalb des Worker-Pfads, beim Mittelwert beider Raten **25,7 %**. Rund **88,5 % der Gruppenkopien** entfallen. Die Erfassungszeit sinkt gewichtet pro Capture-Versuch um **41,1 %**, die Queue-Freigabezeit um **66,2 %**. Der vorgesehene Kostenanteil wurde also tatsächlich reduziert. Vier feste Worker zeichnen in den beiden optimierten Intervallen zusammen 2.962.878 echte Draws auf. Alle fünf Traces enthalten null verlorene Ereignisse und Buffer; alle Adapterfehler bleiben null.
+The pairs show 22.6% and 28.8% higher rates within the worker path. Comparing the means of both rates gives **25.7%**. Approximately **88.5% of group copies** are avoided. Weighted capture time per attempt falls by **41.1%**, and queue-release time falls by **66.2%**. The intended overhead was measurably reduced. Four fixed workers record a combined 2,962,878 actual draws in the two optimized intervals. All five traces report zero lost events and buffers; all adapter errors remain zero.
 
-Die optimierte Rate liegt dennoch rund **65 % unter der Originalreferenz**. Zwei kurze Paare in einer Sitzung sind keine breite statistische Absicherung. Die Kamera wurde für die FPS-Messung vom Nutzer bereitgestellt und nicht kontinuierlich mitgeschnitten. Ein Versionsvergleich mit v7 wird wegen der geänderten Kontrollstruktur nicht behauptet. Vollständige Herkunft und CPU-Zeitbudgets: [V8-Messbericht](../measurements/20261003-v8-live-comparison/analysis.json).
+The optimized rate is still approximately **65% below the original reference**. Two short pairs in one session are not broad statistical validation. Camera readiness was supplied by the tester and was not continuously recorded during FPS measurement. The changed control representation prevents a direct V7 performance claim. Full provenance and CPU timing budgets: [V8 measurement report](../measurements/20261003-v8-live-comparison/analysis.json).
 
-Ein separat angekündigter zehnsekündiger Bildtest lieferte sechs eigene Beobachtungen mit bestätigtem Parallelmodus. Kein grober Hell-dunkel-Wechsel war sichtbar. Der Nutzer bestätigte anschließend ausdrücklich, dass das Flackern **auch bei Bewegung verschwunden war**. Damit wurde im aktuellen Test kein sichtbarer Bildfehler mehr beobachtet. Die eigenen Einzelbilder erfassen weder jede Zwischenänderung noch den vollständigen Bewegungsverlauf; die Nutzerbeobachtung ist keine automatische Bildgleichheitsprüfung. Nach dem Test wurde der Originalpfad wieder aktiviert und `off` bestätigt.
+A separately announced ten-second visual test produced six observations with confirmed parallel mode. No obvious bright/dark flicker was visible. The tester subsequently confirmed that flicker was **also gone during movement**. No visible rendering error was reported in the current test. The individual screenshots do not capture every intermediate change or the complete movement sequence; the tester's observation is not an automatic image-equality check. The original path was restored after testing, and `off` was confirmed.
 
-## Offen und nächster Schritt
+## Remaining work
 
-Der zusätzliche Aufwand für Erfassung, Ressourcenverwaltung, Aufzeichnung und Synchronisation ist im Spiel noch zu groß. Shader-Vorbereitung, Material-/Sichtbarkeitsentscheidungen und geordnete Übermittlung bleiben teilweise seriell. Das Main-Thread-Problem ist insgesamt nicht gelöst.
+Capture, resource management, recording, and synchronization overhead is still too high in-game. Shader preparation, material/visibility decisions, and ordered submission remain partly serial. The overall main-thread bottleneck is not solved.
 
-Das früher gemeldete Flackern war im aktuellen Version-8-Test laut Nutzer **auch bei Bewegung nicht mehr sichtbar**. Eigene Bildschirmbeobachtungen zeigten ebenfalls keinen groben Hell-dunkel-Wechsel. Die genaue Ursache des früheren Fehlers ist noch nicht isoliert; weitere Szenen und längere Bewegungsprüfungen fehlen. Labor-Bildgleichheit und die aktuelle Beobachtung beweisen keine vollständige visuelle Korrektheit in sämtlichen Skyrim-Szenen.
+According to the tester, the earlier flicker was **no longer visible during movement in the current V8 test**. The assistant's sparse observations also showed no obvious bright/dark alternation. The exact earlier cause has not been isolated; other scenes and longer movement tests remain unverified. Lab image equality and the current observation do not prove complete rendering correctness in every Skyrim scene.
 
-Version 8 bleibt mit `Enabled=0` installiert. Als nächstes muss der verbleibende Abstand zum Originalrenderer genauer zugeordnet werden: Worker-Warten, serielle Teilgruppen, Command-List-Grenzen, Uploadarbeit und übrige Engine-/Treiberkosten. Die neuen Phasenwerte belegen den reduzierten Verwaltungsaufwand, erklären aber noch nicht sämtliche FPS-Verluste. Die positive Bildbeobachtung sollte in weiteren Szenen und längeren Bewegungsprüfungen bestätigt werden.
+V8 remains installed with `Enabled=0`. The next step is to identify the remaining performance gap: worker waits, serial small batches, command-list boundaries, upload work, and other engine/driver costs. The new phase budgets confirm lower management overhead but do not explain all FPS losses. The positive visual observation should also be confirmed in other scenes and longer movement tests.
 
-Details und Messherkunft: [Render-Bridge-Bericht](../research/RENDER-BRIDGE-001.md), [Sichtbarkeitsvergleich](../research/LIVE-CULLING-001.md), [NPC-Belastung](../research/NPC-STRESS-002.md), [Bewegungssuche](../research/LIVE-MOVEMENT-003.md), [Uncapping](../research/UNCAPPED-001.md).
-w
+Detailed earlier notes, currently in German: [Render bridge](../research/RENDER-BRIDGE-001.md), [visibility comparison](../research/LIVE-CULLING-001.md), [NPC stress](../research/NPC-STRESS-002.md), [movement search](../research/LIVE-MOVEMENT-003.md), and [uncapping](../research/UNCAPPED-001.md).
