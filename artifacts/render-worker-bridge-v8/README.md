@@ -1,3 +1,5 @@
+> Historical V8 record. Later V10 live testing reproduced shadow flicker; worker replay remains slower than the original renderer and is not an accepted optimization. See the [current project status](../../docs/PROJEKTSTAND-2026-10-04.md). The latest source is V12 diagnostics; this package remains V8.
+
 # RenderWorkerBridge Version 8 — Validated Test Package
 
 This fixed package contains the tested DLL and an INI with a neutral example path. It was installed and tested in-game on October 3, 2026; draw replacement was disabled again afterward. Version 8 passed 17 tests and 164 full-image comparisons in the laboratory.

@@ -1,23 +1,21 @@
 # Repository Contents and Setup
 
-This repository contains the source code, tests, tools, research reports, and validated RenderWorkerBridge V8 test package. The current status is described in [Project Progress and Results](PROJEKTSTAND-2026-10-03.md).
+Current source is the V12 diagnostic research branch, plus the read-only Study 013 reference tools. The prebuilt V8 package remains a historical experiment. There is no accepted performance release. [Current progress](PROJEKTSTAND-2026-10-04.md).
 
-V8 replaces eligible D3D11 draws with ordered recording on four workers. Two short game comparison pairs show a higher present rate than the internal V8 copy control. The original renderer remains substantially faster. This is a research prototype; an overall Skyrim FPS improvement has not been achieved. Replacement starts disabled.
+## Included and excluded
 
-## Included measurement evidence
+Source, tests, local build/recording tools, English current reports and curated numerical results are included. Study 014 reports engine RVAs and dependencies rather than distributing game code or disassembly. Historical V8 compact evidence remains available.
 
-Compact reports for the current V8 laboratory and game comparisons are under `measurements/`. The [live report](../measurements/20261003-v8-live-comparison/analysis.json) records provenance, rates, phase budgets, and limitations. Its `analyze.py` script reproduces the report from the five saved capture reports, state histories, trace statistics, and saved final state. Some earlier notes refer to captures that remain local.
+Raw ETL traces, complete frame CSVs, screenshots, savegames, private installation backups, local paths, builds and third-party executables are excluded. The repository does not distribute Skyrim or SKSE. Executable evidence is generated locally from the user's verified installation.
 
-Large raw ETL traces, complete frame CSV files, screenshots, saved games, installation backups, local builds, and downloaded third-party tools are excluded. The repository does not distribute a Skyrim installation or SKSE. Version-specific executable evidence is generated from your own verified game installation when building.
+## Prerequisites
 
-## Local prerequisites
+- Windows, Visual Studio C++ tools, Windows SDK including D3D11 headers, CMake, Ninja and Python 3 discoverable by CMake.
+- A user-owned SkyrimSE.exe 1.7.104.0 matching SHA256 `846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F`, and matching SKSE 2.3.1 for game testing.
+- Review the toolchain/version assumptions in `tools/Build-Multicore.cmd`. Set `CONTEXT_SDK`, `SKYRIM_EXE` and optionally `Python3_EXECUTABLE` for your machine when configuring CMake. Generated INI output paths depend on the local source directory.
 
-- Windows, Visual Studio C++ Build Tools, Windows SDK with D3D11 headers, CMake, Ninja, and Python 3.
-- Your own verified SkyrimSE.exe 1.7.104.0 matching the documented SHA256; SKSE 2.3.1 for game testing.
-- Adjust paths in `tools/Build-Multicore.cmd`, CMake settings, and INI files for your machine. The build script retains the original development toolchain assumptions, with neutral example paths in this published copy.
+Use a separate experimental game configuration. Replacement defaults to disabled. Native tests can run through CTest without a game capture. V12's historical 22 checks and 952 images remain separate from the later hook-free report fixture check; there is no claimed new full 23-test native result.
 
-The [fixed V8 package](../artifacts/render-worker-bridge-v8/README.md) contains the unchanged tested DLL and an INI with a neutral example path. Adjust `OutputDirectory` before using it on another machine. Editing the INI changes its hash relative to the published package manifest; the DLL hash remains independently verifiable. The manifest records package creation and INI cleanup; `live-test.json` records the subsequent game test.
+`Set-ProjectHookReference.ps1` only handles the exact known diagnostic DLL hashes in its guard. It refuses unrelated or changed binaries and requires Skyrim to be closed for disable/restore. It preserves the existing uncapping files. `Get-ProjectHookReference.ps1` is an external read-only verifier, not an injector or live hook-detach tool.
 
-CTest can run the laboratory checks in the build directory without a new game capture. V8 passed 17/17 tests and 164 full-image comparisons; the corresponding reports are included. The tester's report that flicker was gone during movement is documented as an observation from the current game test, not an automatic correctness check across all scenes.
-
-The README, project summary, repository guide, and V8 instructions are in English. Earlier detailed research notes remain in German.
+The fixed V8 DLL and its sanitized INI are preserved unchanged. They do not correspond to the latest source and are not recommended as a performance mod. Later live shadow failures prevent treating the earlier V8 visual observation as general correctness. No new V12 binary is included.

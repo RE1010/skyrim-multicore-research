@@ -6,10 +6,14 @@ param(
     [ValidateRange(5, 60)][int]$DurationSeconds = 30,
     [ValidateRange(0, 30)][int]$FocusDelaySeconds = 8,
     [switch]$RequireUncapped,
-    [ValidateSet('none','off','parallel','parallel-full-bindings','parallel-owned-snapshots')][string]$BridgeMode='none'
+    [ValidateSet('none','project-hook-free','off','parallel','parallel-full-bindings','parallel-owned-snapshots','parallel-map-uploads','parallel-direct-small','free-draw','original-clean','profile-context')][string]$BridgeMode='none',
+    [ValidateSet(1,16)][int]$SampleEvery=16
 )
 
 $ErrorActionPreference = 'Stop'
+if($BridgeMode -eq 'free-draw' -and ($DurationSeconds -ne 5 -or -not $RequireUncapped)) {throw 'Free-draw capture requires uncapped verification and a five-second recording.'}
+if($BridgeMode -eq 'profile-context' -and ($DurationSeconds -ne 5 -or -not $RequireUncapped)) {throw 'Context profiling requires uncapped verification and a five-second recording.'}
+if($BridgeMode -eq 'project-hook-free' -and -not $RequireUncapped) {throw 'Project-hook-free reference requires unchanged, verified uncapping.'}
 $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
 $principal = [Security.Principal.WindowsPrincipal]::new($identity)
 if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
@@ -23,6 +27,7 @@ $modules = @($process.Modules | ForEach-Object {
     [pscustomobject]@{ name=$_.ModuleName; path=$_.FileName; baseAddress=('0x{0:X}' -f $_.BaseAddress.ToInt64()) }
 })
 $process.Dispose()
+if($BridgeMode -eq 'project-hook-free' -and (Get-FileHash -LiteralPath $exe.FullName).Hash -ne '846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F') {throw 'Unknown reference executable.'}
 $presentMon = Join-Path $PSScriptRoot 'vendor\presentmon\PresentMon-2.6.0-x64.exe'
 $expectedHash = 'B2A706BC6AD475749E3B7E3409263AA1E6906D45BDCF993F6DBC0F660188F1AF'
 if ((Get-FileHash -LiteralPath $presentMon -Algorithm SHA256).Hash -ne $expectedHash) { throw 'PresentMon hash mismatch.' }
@@ -38,6 +43,7 @@ $statePath = Join-Path $output 'capture-state.json'
 $profilePath = Join-Path $PSScriptRoot 'SkyrimCPU.wprp'
 Copy-Item -LiteralPath $profilePath -Destination (Join-Path $output 'recorder-profile.wprp')
 & (Join-Path $PSScriptRoot 'Collect-Setup.ps1') -OutputPath (Join-Path $output 'setup-before-capture.json') | Out-Null
+& (Join-Path $PSScriptRoot 'Collect-CpuTopology.ps1') -OutputPath (Join-Path $output 'cpu-topology.json') | Out-Null
 $metadata = [ordered]@{
     schemaVersion=1; scene=$Scene; processId=$ProcessId; processStartUtc=$processStart.ToString('o')
     gamePath=$exe.FullName; gameVersion=$exe.VersionInfo.FileVersion
@@ -48,7 +54,7 @@ $metadata = [ordered]@{
     recorderProfile='SkyrimCPU'; recorderProfileSha256=(Get-FileHash -LiteralPath $profilePath -Algorithm SHA256).Hash
     traceQuality='not checked'; schedulingStacks=$false; sampledCpuStacks=$true
     limitation='Scene readiness is supplied by the user; this script does not identify menus, loading screens or camera movement.'
-    requireUncapped=[bool]$RequireUncapped;bridgeMode=$BridgeMode
+    requireUncapped=[bool]$RequireUncapped;bridgeMode=$BridgeMode;profileSampleEvery=$SampleEvery
 }
 function Save-State { $metadata | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $statePath -Encoding utf8 }
 function Save-UncappedState {
@@ -62,14 +68,28 @@ function Save-UncappedState {
     [ordered]@{readAtUTC=[DateTime]::UtcNow.ToString('o');session=$session;snapshot=$snapshot} |
         ConvertTo-Json -Depth 5 -Compress | Add-Content -LiteralPath (Join-Path $output 'uncap-state-history.jsonl') -Encoding utf8
 }
-function Save-BridgeState {
+function Save-BridgeState([string]$ExpectedMode=$BridgeMode,[switch]$Preflight) {
     if($BridgeMode -eq 'none') {return}
+    if($BridgeMode -eq 'project-hook-free') {
+        $reference=& (Join-Path $PSScriptRoot 'Get-ProjectHookReference.ps1') -ProcessId $ProcessId -ProcessStartFileTime $processStart.ToFileTimeUtc() -HashRuntime:$Preflight
+        if($Preflight) {$reference | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Join-Path $output 'project-hook-reference-preflight.json') -Encoding utf8}
+        else {$reference | ConvertTo-Json -Depth 6 -Compress | Add-Content -LiteralPath (Join-Path $output 'project-hook-reference-history.jsonl') -Encoding utf8}
+        return
+    }
     $root=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\measurements\live-render-bridge'))
     $current=Get-Content -LiteralPath (Join-Path $root 'current-session.json') -Raw | ConvertFrom-Json
     $session=[IO.Path]::GetFullPath($current.sessionDirectory)
     if($current.processId -ne $ProcessId -or [long]$current.processStartFileTime -ne $processStart.ToFileTimeUtc() -or -not $session.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)) {throw 'Bridge session identity mismatch.'}
     $snapshot=Get-Content -LiteralPath (Join-Path $session 'summary.json') -Raw | ConvertFrom-Json
-    if($snapshot.processId -ne $ProcessId -or -not $snapshot.worldLoaded -or -not $snapshot.contextAttached -or $snapshot.initializationError -or $snapshot.errors -or $snapshot.offloadDisabled -or [bool]$snapshot.enabled -ne ($BridgeMode -in @('parallel','parallel-full-bindings','parallel-owned-snapshots')) -or ($snapshot.requestedMode -and $snapshot.requestedMode -ne $BridgeMode)) {throw 'Bridge mode/context validity mismatch.'}
+    if($snapshot.processId -ne $ProcessId -or -not $snapshot.worldLoaded -or -not $snapshot.contextAttached -or $snapshot.initializationError -or $snapshot.errors -or $snapshot.offloadDisabled -or [bool]$snapshot.enabled -ne ($ExpectedMode -in @('parallel','parallel-full-bindings','parallel-owned-snapshots','parallel-map-uploads','parallel-direct-small')) -or ($snapshot.requestedMode -and $snapshot.requestedMode -ne $ExpectedMode)) {throw 'Bridge mode/context validity mismatch.'}
+    if($ExpectedMode -eq 'free-draw' -and ($snapshot.pluginVersion -lt 11 -or -not $snapshot.drawSuppressionActive)) {throw 'Bounded draw suppression is not active.'}
+    if($ExpectedMode -in @('original-clean','profile-context') -and ($snapshot.pluginVersion -lt 12 -or -not $snapshot.contextProfile.cleanForwarding -or [long]$snapshot.processStartFileTime -ne $processStart.ToFileTimeUtc())) {throw 'Clean original forwarding or process identity is not verified.'}
+    if($ExpectedMode -eq 'profile-context' -and (-not $snapshot.contextProfile.active -or $snapshot.contextProfile.sampleEvery -ne $SampleEvery)) {throw 'Bounded context profiling is not active at the requested density.'}
+    if($Preflight) {
+        $preflightName=if($BridgeMode -eq 'profile-context'){'context-profile-preflight.json'}else{'free-draw-preflight.json'}
+        [ordered]@{readAtUTC=[DateTime]::UtcNow.ToString('o');session=$session;snapshot=$snapshot} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $output $preflightName) -Encoding utf8
+        return
+    }
     [ordered]@{readAtUTC=[DateTime]::UtcNow.ToString('o');session=$session;snapshot=$snapshot} |
         ConvertTo-Json -Depth 5 -Compress | Add-Content -LiteralPath (Join-Path $output 'bridge-state-history.jsonl') -Encoding utf8
 }
@@ -83,12 +103,41 @@ try {
     try { if ($current.StartTime.ToUniversalTime() -ne $processStart) { throw 'Target process was restarted.' } }
     finally { $current.Dispose() }
     Save-UncappedState
-    Save-BridgeState
+    if($BridgeMode -in @('original-clean','profile-context')) {
+        & (Join-Path $PSScriptRoot 'Set-RenderBridgeMode.ps1') -Mode original-clean | Out-Null
+        $cleanCurrent=Get-Content -LiteralPath (Join-Path $PSScriptRoot '..\measurements\live-render-bridge\current-session.json') -Raw | ConvertFrom-Json
+        $cleanWatch=[Diagnostics.Stopwatch]::StartNew()
+        do {Start-Sleep -Milliseconds 100;$cleanState=Get-Content -LiteralPath (Join-Path $cleanCurrent.sessionDirectory 'summary.json') -Raw | ConvertFrom-Json}
+        while($cleanWatch.Elapsed.TotalSeconds -lt 2 -and ($cleanState.requestedMode -ne 'original-clean' -or -not $cleanState.contextProfile.cleanForwarding))
+    }
+    if($BridgeMode -eq 'project-hook-free') {Save-BridgeState -Preflight}
+    elseif($BridgeMode -eq 'free-draw') {Save-BridgeState -ExpectedMode off -Preflight}
+    elseif($BridgeMode -eq 'profile-context') {Save-BridgeState -ExpectedMode original-clean -Preflight}
+    else{Save-BridgeState}
     $startResult = & "$env:SystemRoot\System32\wpr.exe" -start "${profilePath}!SkyrimCPU" -filemode -recordtempto $tempOutput -instancename $instance 2>&1
     $startCode = $LASTEXITCODE
     $startResult | Out-File -LiteralPath (Join-Path $output 'wpr-start.log') -Encoding utf8
     if ($startCode -ne 0) { throw "WPR start failed (exit $startCode). Other recorder sessions were not stopped." }
     $recordingOwned = $true
+    if($BridgeMode -eq 'free-draw') {
+        $preflight=Get-Content -LiteralPath (Join-Path $output 'free-draw-preflight.json') -Raw | ConvertFrom-Json
+        if($preflight.snapshot.pluginVersion -lt 11 -or -not $preflight.snapshot.deviceCapabilities.threadingQuerySucceeded) {throw 'Live device capability query and V11 required.'}
+        & (Join-Path $PSScriptRoot 'Set-RenderBridgeMode.ps1') -Mode free-draw -DurationSeconds 10 | Out-Null
+        $armWatch=[Diagnostics.Stopwatch]::StartNew()
+        do {
+            Start-Sleep -Milliseconds 100
+            $armed=Get-Content -LiteralPath (Join-Path $preflight.session 'summary.json') -Raw | ConvertFrom-Json
+        } while($armWatch.Elapsed.TotalSeconds -lt 2 -and ($armed.requestedMode -ne 'free-draw' -or -not $armed.drawSuppressionActive))
+        Save-BridgeState
+    }
+    if($BridgeMode -eq 'profile-context') {
+        $preflight=Get-Content -LiteralPath (Join-Path $output 'context-profile-preflight.json') -Raw | ConvertFrom-Json
+        & (Join-Path $PSScriptRoot 'Set-RenderBridgeMode.ps1') -Mode profile-context -DurationSeconds 10 -SampleEvery $SampleEvery | Out-Null
+        $armWatch=[Diagnostics.Stopwatch]::StartNew()
+        do {Start-Sleep -Milliseconds 100;$armed=Get-Content -LiteralPath (Join-Path $preflight.session 'summary.json') -Raw | ConvertFrom-Json}
+        while($armWatch.Elapsed.TotalSeconds -lt 2 -and ($armed.requestedMode -ne 'profile-context' -or -not $armed.contextProfile.active))
+        Save-BridgeState
+    }
     $presentArgs = @('--process_id', "$ProcessId", '--timed', "$DurationSeconds", '--terminate_after_timed',
         '--no_track_input', '--no_console_stats', '--qpc_time', '--session_name', $instance,
         '--output_file', ('"{0}"' -f (Join-Path $output 'frames.csv')))
@@ -111,6 +160,30 @@ try {
 } catch {
     $metadata.status='failed'; $metadata.error=$_.Exception.Message
 } finally {
+    if($BridgeMode -eq 'profile-context') {
+        try {
+            & (Join-Path $PSScriptRoot 'Set-RenderBridgeMode.ps1') -Mode original-clean | Out-Null
+            if($preflight) {
+                $restoreWatch=[Diagnostics.Stopwatch]::StartNew()
+                do {Start-Sleep -Milliseconds 100;$restored=Get-Content -LiteralPath (Join-Path $preflight.session 'summary.json') -Raw | ConvertFrom-Json}
+                while($restoreWatch.Elapsed.TotalSeconds -lt 2 -and ($restored.requestedMode -ne 'original-clean' -or $restored.contextProfile.active -or -not $restored.contextProfile.cleanForwarding))
+                $restored | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $output 'context-profile-restoration.json') -Encoding utf8
+                if($restored.requestedMode -ne 'original-clean' -or $restored.contextProfile.active -or -not $restored.contextProfile.cleanForwarding) {throw 'Original clean restoration not confirmed.'}
+            }
+        } catch {$metadata.status='failed';$metadata.error='Context profiling cleanup: '+$_.Exception.Message}
+    }
+    if($BridgeMode -eq 'free-draw') {
+        try {
+            & (Join-Path $PSScriptRoot 'Set-RenderBridgeMode.ps1') -Mode off | Out-Null
+            if($preflight) {
+                $restoreWatch=[Diagnostics.Stopwatch]::StartNew()
+                do {Start-Sleep -Milliseconds 100;$restored=Get-Content -LiteralPath (Join-Path $preflight.session 'summary.json') -Raw | ConvertFrom-Json}
+                while($restoreWatch.Elapsed.TotalSeconds -lt 2 -and ($restored.requestedMode -ne 'off' -or $restored.drawSuppressionActive))
+                $restored | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $output 'free-draw-restoration.json') -Encoding utf8
+                if($restored.requestedMode -ne 'off' -or $restored.drawSuppressionActive) {throw 'Original mode restoration not confirmed.'}
+            }
+        } catch {$metadata.status='failed';$metadata.error='Free-draw cleanup: '+$_.Exception.Message}
+    }
     if ($presentProcess -and -not $presentProcess.HasExited) { $presentProcess.Kill(); $presentProcess.WaitForExit() }
     if ($presentProcess) { $presentProcess.Dispose() }
     if ($recordingOwned) {

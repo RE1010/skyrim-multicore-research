@@ -1,3 +1,5 @@
+> Historical V8 record. Later V10 live testing reproduced shadow flicker; worker replay remains slower than the original renderer and is not an accepted optimization. See the [current project status](PROJEKTSTAND-2026-10-04.md). The latest source is V12 diagnostics; this package remains V8.
+
 # Skyrim Multicore Project: Progress and Results
 
 Updated: October 3, 2026. The objective is to move suitable engine work from the main thread to additional CPU cores and improve frame rates while preserving correct rendering.

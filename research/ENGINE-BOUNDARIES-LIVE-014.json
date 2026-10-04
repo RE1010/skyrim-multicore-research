@@ -1,0 +1,1014 @@
+{
+  "schemaVersion": 1,
+  "kind": "curated-engine-boundary-census",
+  "executableSHA256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "sourceStudy": "PROJECT-HOOK-FREE-LIVE-013.json",
+  "rawMainSampleDenominators": {
+    "01-project-hook-free": 4474,
+    "03-project-hook-free": 4503
+  },
+  "rawSkyrimLeafSamples": {
+    "01-project-hook-free": 2687,
+    "03-project-hook-free": 2615
+  },
+  "mappedSkyrimLeafSamples": {
+    "01-project-hook-free": 2384,
+    "03-project-hook-free": 2319
+  },
+  "unmappedSkyrimLeafSamples": {
+    "01-project-hook-free": 303,
+    "03-project-hook-free": 296
+  },
+  "stableTopFamilies": [
+    {
+      "unwindFamilyBeginRVA": "0xfed6e0",
+      "minimumRawMainPercent": 7.084166111481235,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 348,
+          "rawMainPercent": 7.778274474742959,
+          "rawSkyrimPercent": 12.951246743580201,
+          "symbolizedExclusiveSamples": 348,
+          "inclusiveRawStackSamples": 363,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x15394da",
+              "unwindFamilyBeginRVA": "0x1538fa0",
+              "samples": 126
+            },
+            {
+              "returnRVA": "0x516992",
+              "unwindFamilyBeginRVA": "0x516960",
+              "samples": 119
+            },
+            {
+              "returnRVA": "0x43f32c",
+              "unwindFamilyBeginRVA": "0x43f2b0",
+              "samples": 103
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 319,
+          "rawMainPercent": 7.084166111481235,
+          "rawSkyrimPercent": 12.19885277246654,
+          "symbolizedExclusiveSamples": 319,
+          "inclusiveRawStackSamples": 344,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x43f32c",
+              "unwindFamilyBeginRVA": "0x43f2b0",
+              "samples": 114
+            },
+            {
+              "returnRVA": "0x15394da",
+              "unwindFamilyBeginRVA": "0x1538fa0",
+              "samples": 104
+            },
+            {
+              "returnRVA": "0x516992",
+              "unwindFamilyBeginRVA": "0x516960",
+              "samples": 101
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x1579120",
+      "minimumRawMainPercent": 4.086164779036198,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 196,
+          "rawMainPercent": 4.380867232901207,
+          "rawSkyrimPercent": 7.294380349832527,
+          "symbolizedExclusiveSamples": 196,
+          "inclusiveRawStackSamples": 232,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x1547d9f",
+              "unwindFamilyBeginRVA": "0x1547d20",
+              "samples": 122
+            },
+            {
+              "returnRVA": "0x1556872",
+              "unwindFamilyBeginRVA": "0x1556840",
+              "samples": 57
+            },
+            {
+              "returnRVA": "0x1566795",
+              "unwindFamilyBeginRVA": "0x1566710",
+              "samples": 6
+            },
+            {
+              "returnRVA": "0x1564971",
+              "unwindFamilyBeginRVA": "0x1564960",
+              "samples": 3
+            },
+            {
+              "returnRVA": "0x1552328",
+              "unwindFamilyBeginRVA": "0x1552280",
+              "samples": 2
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,0>",
+              "skyrimReturnRVA": "0x15791fa",
+              "exclusiveD3DLeafSamples": 14
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,4>",
+              "skyrimReturnRVA": "0x1579210",
+              "exclusiveD3DLeafSamples": 11
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x1579210",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!SWDC_Context::DDI_CreateQuery_",
+              "skyrimReturnRVA": "0x15791fa",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!TOptContext<0>::SupportsFeatureLevel<45056>",
+              "skyrimReturnRVA": "0x15791fa",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 184,
+          "rawMainPercent": 4.086164779036198,
+          "rawSkyrimPercent": 7.036328871892925,
+          "symbolizedExclusiveSamples": 184,
+          "inclusiveRawStackSamples": 212,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x1547d9f",
+              "unwindFamilyBeginRVA": "0x1547d20",
+              "samples": 117
+            },
+            {
+              "returnRVA": "0x1556872",
+              "unwindFamilyBeginRVA": "0x1556840",
+              "samples": 39
+            },
+            {
+              "returnRVA": "0x1566795",
+              "unwindFamilyBeginRVA": "0x1566710",
+              "samples": 15
+            },
+            {
+              "returnRVA": "0x1564971",
+              "unwindFamilyBeginRVA": "0x1564960",
+              "samples": 3
+            },
+            {
+              "returnRVA": "0x1552328",
+              "unwindFamilyBeginRVA": "0x1552280",
+              "samples": 3
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,0>",
+              "skyrimReturnRVA": "0x15791fa",
+              "exclusiveD3DLeafSamples": 15
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,4>",
+              "skyrimReturnRVA": "0x1579210",
+              "exclusiveD3DLeafSamples": 5
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x15791fa",
+              "exclusiveD3DLeafSamples": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x1560340",
+      "minimumRawMainPercent": 3.956191327670988,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 177,
+          "rawMainPercent": 3.956191327670988,
+          "rawSkyrimPercent": 6.587272050614068,
+          "symbolizedExclusiveSamples": 177,
+          "inclusiveRawStackSamples": 2086,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x15601d4",
+              "unwindFamilyBeginRVA": "0x155ff40",
+              "samples": 166
+            },
+            {
+              "returnRVA": "0x1561aa3",
+              "unwindFamilyBeginRVA": "0x15618b0",
+              "samples": 6
+            },
+            {
+              "returnRVA": "0x156510d",
+              "unwindFamilyBeginRVA": "0x1565090",
+              "samples": 2
+            },
+            {
+              "returnRVA": "0x155e052",
+              "unwindFamilyBeginRVA": "0x155df50",
+              "samples": 2
+            },
+            {
+              "returnRVA": "0x1539cd4",
+              "unwindFamilyBeginRVA": "0x1539b10",
+              "samples": 1
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,4>",
+              "skyrimReturnRVA": "0x156040e",
+              "exclusiveD3DLeafSamples": 10
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x156040e",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::UMPerformAmortizedProcessing_",
+              "skyrimReturnRVA": "0x156040e",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 187,
+          "rawMainPercent": 4.15278703086831,
+          "rawSkyrimPercent": 7.151051625239006,
+          "symbolizedExclusiveSamples": 187,
+          "inclusiveRawStackSamples": 2143,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x15601d4",
+              "unwindFamilyBeginRVA": "0x155ff40",
+              "samples": 174
+            },
+            {
+              "returnRVA": "0x155e052",
+              "unwindFamilyBeginRVA": "0x155df50",
+              "samples": 5
+            },
+            {
+              "returnRVA": "0x1561aa3",
+              "unwindFamilyBeginRVA": "0x15618b0",
+              "samples": 5
+            },
+            {
+              "returnRVA": "0x1539cd4",
+              "unwindFamilyBeginRVA": "0x1539b10",
+              "samples": 2
+            },
+            {
+              "returnRVA": "0x156510d",
+              "unwindFamilyBeginRVA": "0x1565090",
+              "samples": 1
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,4>",
+              "skyrimReturnRVA": "0x156040e",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x156040e",
+              "exclusiveD3DLeafSamples": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x1549550",
+      "minimumRawMainPercent": 2.8647568287808127,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 132,
+          "rawMainPercent": 2.950379973178364,
+          "rawSkyrimPercent": 4.912541868254559,
+          "symbolizedExclusiveSamples": 132,
+          "inclusiveRawStackSamples": 341,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x1560654",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 131
+            },
+            {
+              "returnRVA": "0x1560467",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 1
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x154964f",
+              "exclusiveD3DLeafSamples": 13
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x154960c",
+              "exclusiveD3DLeafSamples": 8
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,4>",
+              "skyrimReturnRVA": "0x154a89c",
+              "exclusiveD3DLeafSamples": 6
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154a868",
+              "exclusiveD3DLeafSamples": 5
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x154a883",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x154a850",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x154a868",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154a850",
+              "exclusiveD3DLeafSamples": 2
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 129,
+          "rawMainPercent": 2.8647568287808127,
+          "rawSkyrimPercent": 4.933078393881453,
+          "symbolizedExclusiveSamples": 129,
+          "inclusiveRawStackSamples": 353,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x1560654",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 128
+            },
+            {
+              "returnRVA": "0x1560467",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 1
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x154964f",
+              "exclusiveD3DLeafSamples": 15
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x154960c",
+              "exclusiveD3DLeafSamples": 12
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x154a883",
+              "exclusiveD3DLeafSamples": 9
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,4>",
+              "skyrimReturnRVA": "0x154a89c",
+              "exclusiveD3DLeafSamples": 8
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154a850",
+              "exclusiveD3DLeafSamples": 7
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154a868",
+              "exclusiveD3DLeafSamples": 5
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_Unmap_<1>",
+              "skyrimReturnRVA": "0x154a868",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!__security_check_cookie",
+              "skyrimReturnRVA": "0x154960c",
+              "exclusiveD3DLeafSamples": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0xf049c0",
+      "minimumRawMainPercent": 1.4081358962896737,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 63,
+          "rawMainPercent": 1.4081358962896737,
+          "rawSkyrimPercent": 2.344622255303312,
+          "symbolizedExclusiveSamples": 63,
+          "inclusiveRawStackSamples": 199,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0xfedced",
+              "unwindFamilyBeginRVA": "0xfeda70",
+              "samples": 63
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 66,
+          "rawMainPercent": 1.4656895403064623,
+          "rawSkyrimPercent": 2.5239005736137665,
+          "symbolizedExclusiveSamples": 66,
+          "inclusiveRawStackSamples": 197,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0xfedced",
+              "unwindFamilyBeginRVA": "0xfeda70",
+              "samples": 66
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x100bcd0",
+      "minimumRawMainPercent": 1.1846222619579794,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 53,
+          "rawMainPercent": 1.1846222619579794,
+          "rawSkyrimPercent": 1.9724599925567547,
+          "symbolizedExclusiveSamples": 53,
+          "inclusiveRawStackSamples": 509,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x155f1f2",
+              "unwindFamilyBeginRVA": "0x155f050",
+              "samples": 47
+            },
+            {
+              "returnRVA": "0x155f51e",
+              "unwindFamilyBeginRVA": "0x155f050",
+              "samples": 4
+            },
+            {
+              "returnRVA": "0xf08588",
+              "unwindFamilyBeginRVA": "0xf084c0",
+              "samples": 2
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 126
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+              "skyrimReturnRVA": "0x100bd97",
+              "exclusiveD3DLeafSamples": 65
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_DrawIndexed_<1>",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 7
+            },
+            {
+              "d3dFunction": "D3D11.dll!TOptContext<0>::SupportsFeatureLevel<45056>",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!TOptContext<0>::SupportsFeatureLevel<45056>",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::PerformAmortizedRenderOperations",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::AcquireDevCtxIfaceNoSync",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 65,
+          "rawMainPercent": 1.4434821230290917,
+          "rawSkyrimPercent": 2.48565965583174,
+          "symbolizedExclusiveSamples": 65,
+          "inclusiveRawStackSamples": 563,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x155f1f2",
+              "unwindFamilyBeginRVA": "0x155f050",
+              "samples": 61
+            },
+            {
+              "returnRVA": "0x155f51e",
+              "unwindFamilyBeginRVA": "0x155f050",
+              "samples": 4
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 141
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+              "skyrimReturnRVA": "0x100bd97",
+              "exclusiveD3DLeafSamples": 71
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_DrawIndexed_<1>",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 6
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x100bd97",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!TOptContext<0>::SupportsFeatureLevel<45056>",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x100bd53",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_DrawIndexed_Amortized<1>",
+              "skyrimReturnRVA": "0x100bdad",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::UMPerformAmortizedProcessing_",
+              "skyrimReturnRVA": "0x100bd97",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x155f050",
+      "minimumRawMainPercent": 0.894054537326777,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 40,
+          "rawMainPercent": 0.894054537326777,
+          "rawSkyrimPercent": 1.48864905098623,
+          "symbolizedExclusiveSamples": 40,
+          "inclusiveRawStackSamples": 648,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156065c",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 40
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x155f741",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x155f729",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!__security_check_cookie",
+              "skyrimReturnRVA": "0x155f729",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 50,
+          "rawMainPercent": 1.1103708638685321,
+          "rawSkyrimPercent": 1.9120458891013383,
+          "symbolizedExclusiveSamples": 50,
+          "inclusiveRawStackSamples": 722,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156065c",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 50
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x155f741",
+              "exclusiveD3DLeafSamples": 5
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x155f130",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x1548820",
+      "minimumRawMainPercent": 0.8882966910948257,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 43,
+          "rawMainPercent": 0.9611086276262852,
+          "rawSkyrimPercent": 1.6002977298101972,
+          "symbolizedExclusiveSamples": 44,
+          "inclusiveRawStackSamples": 135,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156040e",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 43
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x15494a4",
+              "exclusiveD3DLeafSamples": 11
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x1548889",
+              "exclusiveD3DLeafSamples": 10
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x15488ca",
+              "exclusiveD3DLeafSamples": 9
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154948b",
+              "exclusiveD3DLeafSamples": 5
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_Map_<1>",
+              "skyrimReturnRVA": "0x15488ca",
+              "exclusiveD3DLeafSamples": 4
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x154948b",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x1549472",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x15488ca",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 40,
+          "rawMainPercent": 0.8882966910948257,
+          "rawSkyrimPercent": 1.5296367112810707,
+          "symbolizedExclusiveSamples": 40,
+          "inclusiveRawStackSamples": 140,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156040e",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 40
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x1548889",
+              "exclusiveD3DLeafSamples": 13
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x15488ca",
+              "exclusiveD3DLeafSamples": 6
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x1549472",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x154948b",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x15494a4",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_Map_<1>",
+              "skyrimReturnRVA": "0x1548889",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x1548889",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_Unmap_<1>",
+              "skyrimReturnRVA": "0x1549472",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x1556c40",
+      "minimumRawMainPercent": 0.7599463567277603,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 34,
+          "rawMainPercent": 0.7599463567277603,
+          "rawSkyrimPercent": 1.2653516933382956,
+          "symbolizedExclusiveSamples": 34,
+          "inclusiveRawStackSamples": 59,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156040e",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 34
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x1556ef2",
+              "exclusiveD3DLeafSamples": 4
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x1556da6",
+              "exclusiveD3DLeafSamples": 4
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,4>",
+              "skyrimReturnRVA": "0x155705c",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x1557041",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!__security_check_cookie",
+              "skyrimReturnRVA": "0x1556ef2",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!_guard_dispatch_icall$thunk$10345483385596137414",
+              "skyrimReturnRVA": "0x1557029",
+              "exclusiveD3DLeafSamples": 1
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x1557029",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 45,
+          "rawMainPercent": 0.9993337774816788,
+          "rawSkyrimPercent": 1.7208413001912046,
+          "symbolizedExclusiveSamples": 45,
+          "inclusiveRawStackSamples": 70,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x156040e",
+              "unwindFamilyBeginRVA": "0x1560340",
+              "samples": 45
+            }
+          ],
+          "directD3DCallerCorrelations": [
+            {
+              "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+              "skyrimReturnRVA": "0x1556da6",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+              "skyrimReturnRVA": "0x1557041",
+              "exclusiveD3DLeafSamples": 3
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x1557029",
+              "exclusiveD3DLeafSamples": 2
+            },
+            {
+              "d3dFunction": "D3D11.dll!CResource::Unmap<0,5>",
+              "skyrimReturnRVA": "0x1557011",
+              "exclusiveD3DLeafSamples": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x17ebe0",
+      "minimumRawMainPercent": 0.6884299355984899,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 31,
+          "rawMainPercent": 0.6928922664282521,
+          "rawSkyrimPercent": 1.1537030145143283,
+          "symbolizedExclusiveSamples": 31,
+          "inclusiveRawStackSamples": 31,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x760932",
+              "unwindFamilyBeginRVA": "0x7607f0",
+              "samples": 31
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 31,
+          "rawMainPercent": 0.6884299355984899,
+          "rawSkyrimPercent": 1.1854684512428297,
+          "symbolizedExclusiveSamples": 31,
+          "inclusiveRawStackSamples": 31,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x760932",
+              "unwindFamilyBeginRVA": "0x7607f0",
+              "samples": 31
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0x14e7a80",
+      "minimumRawMainPercent": 0.6705409029950827,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 30,
+          "rawMainPercent": 0.6705409029950827,
+          "rawSkyrimPercent": 1.1164867882396725,
+          "symbolizedExclusiveSamples": 30,
+          "inclusiveRawStackSamples": 31,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x151b2ab",
+              "unwindFamilyBeginRVA": "0x151b1e0",
+              "samples": 25
+            },
+            {
+              "returnRVA": "0x151b57a",
+              "unwindFamilyBeginRVA": "0x151b1e0",
+              "samples": 5
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 33,
+          "rawMainPercent": 0.7328447701532311,
+          "rawSkyrimPercent": 1.2619502868068833,
+          "symbolizedExclusiveSamples": 33,
+          "inclusiveRawStackSamples": 33,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0x151b2ab",
+              "unwindFamilyBeginRVA": "0x151b1e0",
+              "samples": 28
+            },
+            {
+              "returnRVA": "0x151b57a",
+              "unwindFamilyBeginRVA": "0x151b1e0",
+              "samples": 5
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        }
+      }
+    },
+    {
+      "unwindFamilyBeginRVA": "0xfcef10",
+      "minimumRawMainPercent": 0.6662225183211192,
+      "runs": {
+        "01-project-hook-free": {
+          "rawExclusiveSamples": 35,
+          "rawMainPercent": 0.7822977201609298,
+          "rawSkyrimPercent": 1.3025679196129512,
+          "symbolizedExclusiveSamples": 35,
+          "inclusiveRawStackSamples": 35,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0xfe3ae2",
+              "unwindFamilyBeginRVA": "0xfe3940",
+              "samples": 25
+            },
+            {
+              "returnRVA": "0x1510d1f",
+              "unwindFamilyBeginRVA": "0x1510c90",
+              "samples": 10
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        },
+        "03-project-hook-free": {
+          "rawExclusiveSamples": 30,
+          "rawMainPercent": 0.6662225183211192,
+          "rawSkyrimPercent": 1.147227533460803,
+          "symbolizedExclusiveSamples": 30,
+          "inclusiveRawStackSamples": 30,
+          "nearestCapturedSkyrimParents": [
+            {
+              "returnRVA": "0xfe3ae2",
+              "unwindFamilyBeginRVA": "0xfe3940",
+              "samples": 24
+            },
+            {
+              "returnRVA": "0x1510d1f",
+              "unwindFamilyBeginRVA": "0x1510c90",
+              "samples": 5
+            },
+            {
+              "returnRVA": "0x1510e1c",
+              "unwindFamilyBeginRVA": "0x1510db0",
+              "samples": 1
+            }
+          ],
+          "directD3DCallerCorrelations": []
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Exclusive instruction samples are not frame-time or movable-work fractions.",
+    "Inclusive stack counts overlap; do not sum them.",
+    "PE unwind families are not recovered source-level function symbols.",
+    "Static state dependencies do not establish thread safety."
+  ],
+  "livePatchApplied": false,
+  "multicoreGainEstablished": false,
+  "parallelSafety": "unproven"
+}

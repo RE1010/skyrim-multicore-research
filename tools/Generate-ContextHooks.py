@@ -28,7 +28,19 @@ def generate(sdk,out):
     out.mkdir(parents=True,exist_ok=True)
     header='#pragma once\nnamespace skyrim_mc::stream::slots {\n'
     for i,(_,name,_,_) in enumerate(methods):header+=f'inline constexpr unsigned {name}={i};\n'
-    header+=f'inline constexpr unsigned count={len(methods)};\n}}\n'
+    def category(name):
+        if name in ('Map','Unmap'):return 'map-unmap'
+        if name.startswith('Draw') or name.startswith('Dispatch'):return 'draw-dispatch'
+        if name.startswith('UpdateSubresource') or name=='UpdateTiles':return 'update'
+        if name in ('Begin','End','GetData','Flush','Flush1','Signal','Wait','FinishCommandList','ExecuteCommandList','TiledResourceBarrier'):return 'query-sync'
+        if name.startswith(('Copy','Clear','Discard','Resolve','Generate','Resize')):return 'resource-copy-clear'
+        if 'Get' in name and name not in ('GetDevice','GetPrivateData'):return 'getter'
+        if name.startswith(('VSSet','PSSet','GSSet','HSSet','DSSet','CSSet','IASet','OMSet','RSSet','SOSet')) or name in ('SetPredication','SetResourceMinLOD','SwapDeviceContextState','SetHardwareProtectionState'):return 'state'
+        return 'interface-other'
+    header+=f'inline constexpr unsigned count={len(methods)};\n'
+    header+='inline constexpr const char* names[]{'+','.join(f'"{name}"' for _,name,_,_ in methods)+'};\n'
+    header+='inline constexpr const char* categories[]{'+','.join(f'"{category(name)}"' for _,name,_,_ in methods)+'};\n'
+    header+='inline constexpr bool hresults[]{'+','.join('true' if result=='HRESULT' else 'false' for result,_,_,_ in methods)+'};\n}\n'
     (out/'context_slots.hpp').write_text(header,encoding='utf-8')
     cpp='''#define CINTERFACE
 #define D3D11_NO_HELPERS
@@ -52,11 +64,15 @@ struct Lock {Lock(){callbacks.enter(owner);}~Lock(){callbacks.leave(owner);}};
         if name in special:
             cpp+='    const std::uintptr_t values[]{'+','.join(f'(std::uintptr_t){a}' for a in args[1:])+'};\n';use='values'
         cpp+=f'    const bool skip=callbacks.before(owner,{i},{use});\n'
-        if name=='DrawIndexed':cpp+=f'    if(!skip) original->{name}('+','.join(args)+');\n'
+        result_value='reinterpret_cast<std::intptr_t>(result)' if '*' in result else 'static_cast<std::intptr_t>(result)' if result!='void' else '0'
+        if name=='DrawIndexed':
+            cpp+=f'    if(!skip) {{const auto timing=callbacks.start_original(owner,{i},{use});original->{name}('+','.join(args)+f');callbacks.finish_original(owner,{i},timing,0);}}\n'
         else:
             cpp+='    (void)skip;\n'
+            cpp+=f'    const auto timing=callbacks.start_original(owner,{i},{use});\n'
             cpp+=f'    {"const auto result=" if result!="void" else ""}original->{name}('+','.join(args)+');\n'
-        cpp+=f'    callbacks.after(owner,{i},{use},'+('reinterpret_cast<std::intptr_t>(result)' if '*' in result else 'static_cast<std::intptr_t>(result)' if result!='void' else '0')+');\n'
+            cpp+=f'    callbacks.finish_original(owner,{i},timing,{result_value});\n'
+        cpp+=f'    callbacks.after(owner,{i},{use},{result_value});\n'
         if result!='void':cpp+='    return result;\n'
         cpp+='}\n'
     cpp+='''}

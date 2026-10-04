@@ -1,0 +1,1109 @@
+{
+  "schemaVersion": 1,
+  "kind": "v12-original-context-live-screen",
+  "scene": "fixed-whiterun-gate-wall",
+  "recordingCompleted": true,
+  "replayEnabled": false,
+  "errors": 0,
+  "frameIntervals": [
+    {
+      "source": "01-off-16",
+      "mode": "off",
+      "sampleEvery": 16,
+      "frameRows": 573,
+      "wholeCSVFrameMs": 8.648532984293196,
+      "wholeCSVCPUBusyMs": 8.559727050610805,
+      "wholeCSVGPUBusyMs": 3.6954883071553186
+    },
+    {
+      "source": "02-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 906,
+      "wholeCSVFrameMs": 5.4841091611479,
+      "wholeCSVCPUBusyMs": 5.396594039735096,
+      "wholeCSVGPUBusyMs": 3.6222472406180986
+    },
+    {
+      "source": "03-off-16",
+      "mode": "off",
+      "sampleEvery": 16,
+      "frameRows": 580,
+      "wholeCSVFrameMs": 8.577553275862073,
+      "wholeCSVCPUBusyMs": 8.490365517241383,
+      "wholeCSVGPUBusyMs": 3.7232125862068965
+    },
+    {
+      "source": "04-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 927,
+      "wholeCSVFrameMs": 5.373203883495143,
+      "wholeCSVCPUBusyMs": 5.286403559870546,
+      "wholeCSVGPUBusyMs": 3.6221903991369997
+    },
+    {
+      "source": "05-profile-context-16",
+      "mode": "profile-context",
+      "sampleEvery": 16,
+      "frameRows": 846,
+      "wholeCSVFrameMs": 5.881201063829791,
+      "wholeCSVCPUBusyMs": 5.793569503546099,
+      "wholeCSVGPUBusyMs": 3.629562293144211
+    },
+    {
+      "source": "06-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 927,
+      "wholeCSVFrameMs": 5.379625566343046,
+      "wholeCSVCPUBusyMs": 5.29284778856527,
+      "wholeCSVGPUBusyMs": 3.6062627831715215
+    },
+    {
+      "source": "07-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 884,
+      "wholeCSVFrameMs": 5.64017364253394,
+      "wholeCSVCPUBusyMs": 5.553534841628954,
+      "wholeCSVGPUBusyMs": 3.6593654977375594
+    },
+    {
+      "source": "08-profile-context-16",
+      "mode": "profile-context",
+      "sampleEvery": 16,
+      "frameRows": 813,
+      "wholeCSVFrameMs": 6.123650430504305,
+      "wholeCSVCPUBusyMs": 6.03319790897909,
+      "wholeCSVGPUBusyMs": 3.6489419434194326
+    },
+    {
+      "source": "09-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 899,
+      "wholeCSVFrameMs": 5.543194994438267,
+      "wholeCSVCPUBusyMs": 5.455789098998895,
+      "wholeCSVGPUBusyMs": 3.6263013348164628
+    },
+    {
+      "source": "10-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 914,
+      "wholeCSVFrameMs": 5.460563894967176,
+      "wholeCSVCPUBusyMs": 5.374289168490164,
+      "wholeCSVGPUBusyMs": 3.637423522975929
+    },
+    {
+      "source": "11-profile-context-16",
+      "mode": "profile-context",
+      "sampleEvery": 16,
+      "frameRows": 841,
+      "wholeCSVFrameMs": 5.919337217598099,
+      "wholeCSVCPUBusyMs": 5.831783234244936,
+      "wholeCSVGPUBusyMs": 3.6603239001189047
+    },
+    {
+      "source": "12-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 872,
+      "wholeCSVFrameMs": 5.699071903669726,
+      "wholeCSVCPUBusyMs": 5.6110758027522945,
+      "wholeCSVGPUBusyMs": 3.6932017201834864
+    },
+    {
+      "source": "13-profile-context-1",
+      "mode": "profile-context",
+      "sampleEvery": 1,
+      "frameRows": 652,
+      "wholeCSVFrameMs": 7.635176226993867,
+      "wholeCSVCPUBusyMs": 7.546704754601224,
+      "wholeCSVGPUBusyMs": 3.7485093558282214
+    },
+    {
+      "source": "14-original-clean-16",
+      "mode": "original-clean",
+      "sampleEvery": 16,
+      "frameRows": 912,
+      "wholeCSVFrameMs": 5.461556250000007,
+      "wholeCSVCPUBusyMs": 5.375832565789477,
+      "wholeCSVGPUBusyMs": 3.6654183114035077
+    }
+  ],
+  "nativeWindowProfiles": [
+    {
+      "run": "05-profile-context-16",
+      "frames": 832,
+      "frameMs": 5.883650240384616,
+      "stateMs": 1.255860028650562,
+      "mapUnmapMs": 0.7556921852642281,
+      "drawMs": 0.10452145262744189,
+      "queryMs": 0.009654468118836726,
+      "presentApiMs": 0.0877140625,
+      "mapsPerFrame": 9950.537259615385,
+      "getDataPerFrame": 2.046875,
+      "getDataPending": 0,
+      "getDataFailures": 0,
+      "mapFailures": 0,
+      "discardPercent": 99.60180445417097,
+      "mapMs": 0.49782109371445993,
+      "unmapMs": 0.25787109154976817
+    },
+    {
+      "run": "08-profile-context-16",
+      "frames": 795,
+      "frameMs": 6.115544905660377,
+      "stateMs": 1.2897520705627672,
+      "mapUnmapMs": 0.7852773085527562,
+      "drawMs": 0.10989339207157968,
+      "queryMs": 0.008000872553210085,
+      "presentApiMs": 0.09025471698113208,
+      "mapsPerFrame": 10185.16855345912,
+      "getDataPerFrame": 2.0654088050314465,
+      "getDataPending": 2,
+      "getDataFailures": 0,
+      "mapFailures": 0,
+      "discardPercent": 99.60782783302247,
+      "mapMs": 0.5162058430505951,
+      "unmapMs": 0.26907146550216116
+    },
+    {
+      "run": "11-profile-context-16",
+      "frames": 819,
+      "frameMs": 5.908360317460318,
+      "stateMs": 1.2794034605292957,
+      "mapUnmapMs": 0.7690242047175179,
+      "drawMs": 0.10841181122089323,
+      "queryMs": 0.009840084548575115,
+      "presentApiMs": 0.0873041514041514,
+      "mapsPerFrame": 10265.404151404151,
+      "getDataPerFrame": 2.0744810744810747,
+      "getDataPending": 0,
+      "getDataFailures": 0,
+      "mapFailures": 0,
+      "discardPercent": 99.61028222156618,
+      "mapMs": 0.5039573804111958,
+      "unmapMs": 0.26506682430632206
+    },
+    {
+      "run": "13-profile-context-1",
+      "frames": 633,
+      "frameMs": 7.635072827804108,
+      "stateMs": 1.3045908372827806,
+      "mapUnmapMs": 0.7544183254344391,
+      "drawMs": 0.10476556082148498,
+      "queryMs": 0.00990568720379147,
+      "presentApiMs": 0.08858372827804108,
+      "mapsPerFrame": 10309.862559241707,
+      "getDataPerFrame": 2.0789889415481833,
+      "getDataPending": 0,
+      "getDataFailures": 0,
+      "mapFailures": 0,
+      "discardPercent": 99.61055097934569,
+      "mapMs": 0.493626224328594,
+      "unmapMs": 0.26079210110584516
+    }
+  ],
+  "exclusiveMovableCPUFraction": null,
+  "predictedFPSGain": null,
+  "fullProxyAccepted": false,
+  "limitations": [
+    "Full CSV frame metrics and native-profile complete-window metrics are distinct denominators.",
+    "Original-clean still retains the context hook, mutex, counters and query bookkeeping.",
+    "API durations include driver/waits/timer overhead; they are not additive with exclusive module samples.",
+    "Per-frame native counts include partial edge-frame work and use complete recorded frames as an approximate denominator.",
+    "Upload byte volume, actual queue drains, exact preparation boundaries and proxy enqueue costs are not yet verified.",
+    "A background probe ran near the second sparse-profile transition; timing contamination must be checked before including it.",
+    "This is diagnostic cost removal, not a released multicore or mod-capacity improvement.",
+    "Clean CPU references use first native publication inside ETL and differ from full-CSV frame windows.",
+    "Context-switch stacks are absent: blocked time is classified but cannot be assigned to Present, GPU or a specific API.",
+    "Direct bridge and bridge-called SRW exclusive sample bins total roughly 29.5-30 percent in clean controls, not a removable frame-wall fraction or contention measurement."
+  ],
+  "exclusiveOwnerCPUWindows": [
+    {
+      "run": "04-original-clean-16",
+      "nativeStartQPC": 1508546140746,
+      "nativeEndQPC": 1508586319406,
+      "qpcFrequency": 10000000,
+      "durationSeconds": 4.017866,
+      "executableEntrypointOwnerVerified": true,
+      "rawOwnerSamples": 3746,
+      "exclusiveModules": [
+        {
+          "module": "SkyrimSE.exe",
+          "samples": 1540,
+          "percent": 41.11051788574479
+        },
+        {
+          "module": "ntdll.dll",
+          "samples": 675,
+          "percent": 18.01922050186866
+        },
+        {
+          "module": "RenderWorkerBridge.dll",
+          "samples": 493,
+          "percent": 13.160704751735183
+        },
+        {
+          "module": "d3d11.dll",
+          "samples": 424,
+          "percent": 11.318739989321944
+        },
+        {
+          "module": "ntoskrnl.exe",
+          "samples": 176,
+          "percent": 4.698344901227976
+        },
+        {
+          "module": "nvwgf2umx.dll",
+          "samples": 166,
+          "percent": 4.431393486385478
+        },
+        {
+          "module": "msvcp140.dll",
+          "samples": 54,
+          "percent": 1.4415376401494928
+        },
+        {
+          "module": "D3DX9_42.dll",
+          "samples": 44,
+          "percent": 1.174586225306994
+        },
+        {
+          "module": "vcruntime140.dll",
+          "samples": 44,
+          "percent": 1.174586225306994
+        },
+        {
+          "module": "kernel32.dll",
+          "samples": 41,
+          "percent": 1.0945008008542445
+        },
+        {
+          "module": "nvlddmkm.sys",
+          "samples": 16,
+          "percent": 0.4271222637479979
+        },
+        {
+          "module": "ucrtbase.dll",
+          "samples": 14,
+          "percent": 0.37373198077949815
+        },
+        {
+          "module": "dxgi.dll",
+          "samples": 6,
+          "percent": 0.1601708489054992
+        },
+        {
+          "module": "dxgmms2.sys",
+          "samples": 5,
+          "percent": 0.13347570742124934
+        },
+        {
+          "module": "KernelBase.dll",
+          "samples": 5,
+          "percent": 0.13347570742124934
+        },
+        {
+          "module": "steamclient64.dll",
+          "samples": 4,
+          "percent": 0.10678056593699947
+        },
+        {
+          "module": "dxgkrnl.sys",
+          "samples": 4,
+          "percent": 0.10678056593699947
+        },
+        {
+          "module": "GameOverlayRenderer64.dll",
+          "samples": 4,
+          "percent": 0.10678056593699947
+        },
+        {
+          "module": "NETIO.SYS",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "tcpip.sys",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "user32.dll",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "steam_api64.dll",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "FLTMGR.SYS",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "ndis.sys",
+          "samples": 3,
+          "percent": 0.0800854244527496
+        },
+        {
+          "module": "gdi32.dll",
+          "samples": 2,
+          "percent": 0.053390282968499736
+        },
+        {
+          "module": "afd.sys",
+          "samples": 2,
+          "percent": 0.053390282968499736
+        },
+        {
+          "module": "bfs.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "rt640x64.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "\"Unknown\"",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "win32kfull.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "tier0_s64.dll",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "win32k.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "win32kbase.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "wfplwfs.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        },
+        {
+          "module": "Ndu.sys",
+          "samples": 1,
+          "percent": 0.026695141484249868
+        }
+      ],
+      "schedulingClasses": [
+        {
+          "kind": "running",
+          "ticks": 37460847,
+          "milliseconds": 3746.0847,
+          "windowPercent": 93.23568033378913
+        },
+        {
+          "kind": "blocked-until-ready",
+          "ticks": 2556883,
+          "milliseconds": 255.6883,
+          "windowPercent": 6.363783660281353
+        },
+        {
+          "kind": "ready-to-running",
+          "ticks": 47326,
+          "milliseconds": 4.7326,
+          "windowPercent": 0.11778889589647838
+        },
+        {
+          "kind": "runnable-or-preempted",
+          "ticks": 113604,
+          "milliseconds": 11.3604,
+          "windowPercent": 0.28274711003303743
+        }
+      ],
+      "blockedWaitReasons": [
+        {
+          "reason": "UserRequest",
+          "ticks": 2553169,
+          "milliseconds": 255.3169
+        },
+        {
+          "reason": "WrResource",
+          "ticks": 3461,
+          "milliseconds": 0.3461
+        },
+        {
+          "reason": "WrAlertByThreadId",
+          "ticks": 253,
+          "milliseconds": 0.0253
+        }
+      ],
+      "clockProofEventCount": 76,
+      "bridgeCalledSRWExclusive": [
+        {
+          "leafFunction": "ntdll.dll!RtlReleaseSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 313
+        },
+        {
+          "leafFunction": "ntdll.dll!RtlAcquireSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 297
+        },
+        {
+          "leafFunction": "ntdll.dll!RtlpAcquireSRWLockExclusiveContended",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 1
+        }
+      ],
+      "verifiedCallerCrosswalk": [
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShaderResources_<1,4>",
+          "nearestSkyrimReturnRVA": "0x10113fb",
+          "exclusiveLeafSamples": 64
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd53",
+          "exclusiveLeafSamples": 62
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd97",
+          "exclusiveLeafSamples": 60
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bfb9",
+          "exclusiveLeafSamples": 28
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_OMSetRenderTargets_<1>",
+          "nearestSkyrimReturnRVA": "0x1010fc6",
+          "exclusiveLeafSamples": 15
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,0>",
+          "nearestSkyrimReturnRVA": "0x15791fa",
+          "exclusiveLeafSamples": 10
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x154960c",
+          "exclusiveLeafSamples": 7
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+          "nearestSkyrimReturnRVA": "0x154a883",
+          "exclusiveLeafSamples": 7
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,4>",
+          "nearestSkyrimReturnRVA": "0x1579210",
+          "exclusiveLeafSamples": 7
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x156746c",
+          "exclusiveLeafSamples": 7
+        }
+      ]
+    },
+    {
+      "run": "05-profile-context-16",
+      "nativeStartQPC": 1508721946563,
+      "nativeEndQPC": 1508772160352,
+      "qpcFrequency": 10000000,
+      "durationSeconds": 5.0213789,
+      "executableEntrypointOwnerVerified": true,
+      "rawOwnerSamples": 4696,
+      "exclusiveModules": [
+        {
+          "module": "SkyrimSE.exe",
+          "samples": 1878,
+          "percent": 39.99148211243612
+        },
+        {
+          "module": "ntdll.dll",
+          "samples": 837,
+          "percent": 17.8236797274276
+        },
+        {
+          "module": "RenderWorkerBridge.dll",
+          "samples": 683,
+          "percent": 14.544293015332197
+        },
+        {
+          "module": "d3d11.dll",
+          "samples": 545,
+          "percent": 11.605621805792163
+        },
+        {
+          "module": "ntoskrnl.exe",
+          "samples": 202,
+          "percent": 4.301533219761499
+        },
+        {
+          "module": "nvwgf2umx.dll",
+          "samples": 196,
+          "percent": 4.173764906303237
+        },
+        {
+          "module": "kernel32.dll",
+          "samples": 85,
+          "percent": 1.8100511073253833
+        },
+        {
+          "module": "msvcp140.dll",
+          "samples": 56,
+          "percent": 1.192504258943782
+        },
+        {
+          "module": "D3DX9_42.dll",
+          "samples": 55,
+          "percent": 1.1712095400340716
+        },
+        {
+          "module": "vcruntime140.dll",
+          "samples": 47,
+          "percent": 1.0008517887563884
+        },
+        {
+          "module": "nvlddmkm.sys",
+          "samples": 23,
+          "percent": 0.489778534923339
+        },
+        {
+          "module": "steamclient64.dll",
+          "samples": 12,
+          "percent": 0.2555366269165247
+        },
+        {
+          "module": "GameOverlayRenderer64.dll",
+          "samples": 11,
+          "percent": 0.2342419080068143
+        },
+        {
+          "module": "KernelBase.dll",
+          "samples": 10,
+          "percent": 0.21294718909710392
+        },
+        {
+          "module": "ucrtbase.dll",
+          "samples": 9,
+          "percent": 0.19165247018739354
+        },
+        {
+          "module": "dxgi.dll",
+          "samples": 8,
+          "percent": 0.17035775127768313
+        },
+        {
+          "module": "dxgkrnl.sys",
+          "samples": 7,
+          "percent": 0.14906303236797275
+        },
+        {
+          "module": "user32.dll",
+          "samples": 6,
+          "percent": 0.12776831345826234
+        },
+        {
+          "module": "USBXHCI.SYS",
+          "samples": 3,
+          "percent": 0.06388415672913117
+        },
+        {
+          "module": "rt640x64.sys",
+          "samples": 3,
+          "percent": 0.06388415672913117
+        },
+        {
+          "module": "tcpip.sys",
+          "samples": 3,
+          "percent": 0.06388415672913117
+        },
+        {
+          "module": "Ndu.sys",
+          "samples": 2,
+          "percent": 0.04258943781942078
+        },
+        {
+          "module": "uxtheme.dll",
+          "samples": 2,
+          "percent": 0.04258943781942078
+        },
+        {
+          "module": "win32kbase.sys",
+          "samples": 2,
+          "percent": 0.04258943781942078
+        },
+        {
+          "module": "\"Unknown\"",
+          "samples": 2,
+          "percent": 0.04258943781942078
+        },
+        {
+          "module": "NETIO.SYS",
+          "samples": 2,
+          "percent": 0.04258943781942078
+        },
+        {
+          "module": "FLTMGR.SYS",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "dxgmms2.sys",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "steam_api64.dll",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "skse64_1_7_104.dll",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "win32k.sys",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "ndis.sys",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        },
+        {
+          "module": "Wdf01000.sys",
+          "samples": 1,
+          "percent": 0.02129471890971039
+        }
+      ],
+      "schedulingClasses": [
+        {
+          "kind": "running",
+          "ticks": 46912070,
+          "milliseconds": 4691.207,
+          "windowPercent": 93.42467663613276
+        },
+        {
+          "kind": "blocked-until-ready",
+          "ticks": 3119519,
+          "milliseconds": 311.9519,
+          "windowPercent": 6.212474824395347
+        },
+        {
+          "kind": "ready-to-running",
+          "ticks": 51308,
+          "milliseconds": 5.1308,
+          "windowPercent": 0.10217910462801363
+        },
+        {
+          "kind": "runnable-or-preempted",
+          "ticks": 130892,
+          "milliseconds": 13.0892,
+          "windowPercent": 0.2606694348438832
+        }
+      ],
+      "blockedWaitReasons": [
+        {
+          "reason": "UserRequest",
+          "ticks": 2884172,
+          "milliseconds": 288.4172
+        },
+        {
+          "reason": "WrResource",
+          "ticks": 235109,
+          "milliseconds": 23.5109
+        },
+        {
+          "reason": "WrPushLock",
+          "ticks": 238,
+          "milliseconds": 0.0238
+        }
+      ],
+      "clockProofEventCount": 99,
+      "bridgeCalledSRWExclusive": [
+        {
+          "leafFunction": "ntdll.dll!RtlReleaseSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 377
+        },
+        {
+          "leafFunction": "ntdll.dll!RtlAcquireSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 319
+        }
+      ],
+      "verifiedCallerCrosswalk": [
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd53",
+          "exclusiveLeafSamples": 101
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd97",
+          "exclusiveLeafSamples": 91
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShaderResources_<1,4>",
+          "nearestSkyrimReturnRVA": "0x10113fb",
+          "exclusiveLeafSamples": 83
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bfb9",
+          "exclusiveLeafSamples": 24
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_OMSetRenderTargets_<1>",
+          "nearestSkyrimReturnRVA": "0x1010fc6",
+          "exclusiveLeafSamples": 15
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,4>",
+          "nearestSkyrimReturnRVA": "0x1579210",
+          "exclusiveLeafSamples": 11
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x156746c",
+          "exclusiveLeafSamples": 11
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+          "nearestSkyrimReturnRVA": "0x100bf51",
+          "exclusiveLeafSamples": 8
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x154964f",
+          "exclusiveLeafSamples": 7
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x154960c",
+          "exclusiveLeafSamples": 6
+        }
+      ]
+    },
+    {
+      "run": "06-original-clean-16",
+      "nativeStartQPC": 1508907758666,
+      "nativeEndQPC": 1508947941481,
+      "qpcFrequency": 10000000,
+      "durationSeconds": 4.0182815,
+      "executableEntrypointOwnerVerified": true,
+      "rawOwnerSamples": 3717,
+      "exclusiveModules": [
+        {
+          "module": "SkyrimSE.exe",
+          "samples": 1568,
+          "percent": 42.18455743879473
+        },
+        {
+          "module": "ntdll.dll",
+          "samples": 664,
+          "percent": 17.86386871132634
+        },
+        {
+          "module": "RenderWorkerBridge.dll",
+          "samples": 507,
+          "percent": 13.64003228410008
+        },
+        {
+          "module": "d3d11.dll",
+          "samples": 377,
+          "percent": 10.142588108689804
+        },
+        {
+          "module": "ntoskrnl.exe",
+          "samples": 173,
+          "percent": 4.654291094969061
+        },
+        {
+          "module": "nvwgf2umx.dll",
+          "samples": 164,
+          "percent": 4.412160344363734
+        },
+        {
+          "module": "vcruntime140.dll",
+          "samples": 43,
+          "percent": 1.156846919558784
+        },
+        {
+          "module": "msvcp140.dll",
+          "samples": 41,
+          "percent": 1.1030400860909335
+        },
+        {
+          "module": "D3DX9_42.dll",
+          "samples": 35,
+          "percent": 0.9416195856873822
+        },
+        {
+          "module": "kernel32.dll",
+          "samples": 32,
+          "percent": 0.8609093354856067
+        },
+        {
+          "module": "nvlddmkm.sys",
+          "samples": 30,
+          "percent": 0.8071025020177562
+        },
+        {
+          "module": "user32.dll",
+          "samples": 9,
+          "percent": 0.24213075060532688
+        },
+        {
+          "module": "ucrtbase.dll",
+          "samples": 9,
+          "percent": 0.24213075060532688
+        },
+        {
+          "module": "dxgi.dll",
+          "samples": 8,
+          "percent": 0.21522733387140167
+        },
+        {
+          "module": "GameOverlayRenderer64.dll",
+          "samples": 8,
+          "percent": 0.21522733387140167
+        },
+        {
+          "module": "KernelBase.dll",
+          "samples": 7,
+          "percent": 0.18832391713747645
+        },
+        {
+          "module": "dxgkrnl.sys",
+          "samples": 7,
+          "percent": 0.18832391713747645
+        },
+        {
+          "module": "tcpip.sys",
+          "samples": 5,
+          "percent": 0.13451708366962603
+        },
+        {
+          "module": "USBXHCI.SYS",
+          "samples": 4,
+          "percent": 0.10761366693570083
+        },
+        {
+          "module": "dxgmms2.sys",
+          "samples": 4,
+          "percent": 0.10761366693570083
+        },
+        {
+          "module": "ndis.sys",
+          "samples": 3,
+          "percent": 0.08071025020177562
+        },
+        {
+          "module": "uxtheme.dll",
+          "samples": 2,
+          "percent": 0.053806833467850416
+        },
+        {
+          "module": "rt640x64.sys",
+          "samples": 2,
+          "percent": 0.053806833467850416
+        },
+        {
+          "module": "FLTMGR.SYS",
+          "samples": 2,
+          "percent": 0.053806833467850416
+        },
+        {
+          "module": "steamclient64.dll",
+          "samples": 2,
+          "percent": 0.053806833467850416
+        },
+        {
+          "module": "NETIO.SYS",
+          "samples": 2,
+          "percent": 0.053806833467850416
+        },
+        {
+          "module": "MovementMessageProbe.dll",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "win32k.sys",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "win32kfull.sys",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "win32u.dll",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "DXCore.dll",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "fwpkclnt.sys",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "ucx01000.sys",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "steam_api64.dll",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        },
+        {
+          "module": "skse64_1_7_104.dll",
+          "samples": 1,
+          "percent": 0.026903416733925208
+        }
+      ],
+      "schedulingClasses": [
+        {
+          "kind": "running",
+          "ticks": 37503662,
+          "milliseconds": 3750.3662,
+          "windowPercent": 93.33259006368768
+        },
+        {
+          "kind": "runnable-or-preempted",
+          "ticks": 111787,
+          "milliseconds": 11.1787,
+          "windowPercent": 0.27819603977471463
+        },
+        {
+          "kind": "blocked-until-ready",
+          "ticks": 2522155,
+          "milliseconds": 252.2155,
+          "windowPercent": 6.276700624383832
+        },
+        {
+          "kind": "ready-to-running",
+          "ticks": 45211,
+          "milliseconds": 4.5211,
+          "windowPercent": 0.11251327215378017
+        }
+      ],
+      "blockedWaitReasons": [
+        {
+          "reason": "UserRequest",
+          "ticks": 2520415,
+          "milliseconds": 252.0415
+        },
+        {
+          "reason": "WrPushLock",
+          "ticks": 134,
+          "milliseconds": 0.0134
+        },
+        {
+          "reason": "WrResource",
+          "ticks": 64,
+          "milliseconds": 0.0064
+        },
+        {
+          "reason": "WrAlertByThreadId",
+          "ticks": 1542,
+          "milliseconds": 0.1542
+        }
+      ],
+      "clockProofEventCount": 46,
+      "bridgeCalledSRWExclusive": [
+        {
+          "leafFunction": "ntdll.dll!RtlReleaseSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 327
+        },
+        {
+          "leafFunction": "ntdll.dll!RtlAcquireSRWLockExclusive",
+          "nearestNonOSOrCRTComponent": "RenderWorkerBridge.dll",
+          "exclusiveSamples": 280
+        }
+      ],
+      "verifiedCallerCrosswalk": [
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetIndexBuffer_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd53",
+          "exclusiveLeafSamples": 58
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShaderResources_<1,4>",
+          "nearestSkyrimReturnRVA": "0x10113fb",
+          "exclusiveLeafSamples": 56
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bd97",
+          "exclusiveLeafSamples": 48
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,4>",
+          "nearestSkyrimReturnRVA": "0x1579210",
+          "exclusiveLeafSamples": 15
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_IASetVertexBuffers_<1>",
+          "nearestSkyrimReturnRVA": "0x100bfb9",
+          "exclusiveLeafSamples": 15
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_OMSetRenderTargets_<1>",
+          "nearestSkyrimReturnRVA": "0x1010fc6",
+          "exclusiveLeafSamples": 9
+        },
+        {
+          "d3dFunction": "D3D11.dll!CResource::Map<0,5>",
+          "nearestSkyrimReturnRVA": "0x156746c",
+          "exclusiveLeafSamples": 8
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+          "nearestSkyrimReturnRVA": "0x1568066",
+          "exclusiveLeafSamples": 5
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetConstantBuffers_<1,0>",
+          "nearestSkyrimReturnRVA": "0x154a883",
+          "exclusiveLeafSamples": 5
+        },
+        {
+          "d3dFunction": "D3D11.dll!CContext::TID3D11DeviceContext_SetShader_<1,0>",
+          "nearestSkyrimReturnRVA": "0x15791fa",
+          "exclusiveLeafSamples": 4
+        }
+      ]
+    }
+  ]
+}

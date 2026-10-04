@@ -29,19 +29,164 @@ void test_abi() {
     const auto result=reinterpret_cast<render_bridge_call::Original>(memory)(abi_a,&b,&c,abi_d,0xaabbccdd);
     require(result==0xa5 && abi_calls==1 && abi_scope.began==1 && abi_scope.ended==1,"AL/original once/scope ABI");VirtualFree(memory,0,MEM_RELEASE);
 }
+unsigned test_shadow_passes(Fixture& f,skyrim_mc::stream::Bridge& bridge,unsigned& images,bool debug) {
+    // The lighting image consumes both raw depth and comparison-sampler results.
+    // Color-only draws cannot detect missing writes in a PS-null shadow pass.
+    D3D11_TEXTURE2D_DESC texture_desc{};texture_desc.Width=texture_desc.Height=256;
+    texture_desc.MipLevels=texture_desc.ArraySize=1;texture_desc.Format=DXGI_FORMAT_R32_TYPELESS;
+    texture_desc.SampleDesc.Count=1;texture_desc.BindFlags=D3D11_BIND_DEPTH_STENCIL|D3D11_BIND_SHADER_RESOURCE;
+    Ref<ID3D11Texture2D> shadow;Ref<ID3D11DepthStencilView> shadow_target,shadow_readonly;Ref<ID3D11ShaderResourceView> shadow_view;
+    checked(f.device->CreateTexture2D(&texture_desc,nullptr,&shadow),"shadow depth texture");
+    D3D11_DEPTH_STENCIL_VIEW_DESC dsv_desc{};dsv_desc.Format=DXGI_FORMAT_D32_FLOAT;dsv_desc.ViewDimension=D3D11_DSV_DIMENSION_TEXTURE2D;
+    checked(f.device->CreateDepthStencilView(shadow.Get(),&dsv_desc,&shadow_target),"shadow DSV");
+    dsv_desc.Flags=D3D11_DSV_READ_ONLY_DEPTH;
+    checked(f.device->CreateDepthStencilView(shadow.Get(),&dsv_desc,&shadow_readonly),"read-only shadow DSV");
+    D3D11_SHADER_RESOURCE_VIEW_DESC srv_desc{};srv_desc.Format=DXGI_FORMAT_R32_FLOAT;srv_desc.ViewDimension=D3D11_SRV_DIMENSION_TEXTURE2D;srv_desc.Texture2D.MipLevels=1;
+    checked(f.device->CreateShaderResourceView(shadow.Get(),&srv_desc,&shadow_view),"shadow SRV");
+    const char* shader=R"(
+cbuffer C:register(b0) {float4 parameters;float4 transform;};
+Texture2D<float> shadow:register(t5);SamplerComparisonState comparison:register(s3);
+struct Out {float4 position:SV_Position;};
+Out vertex(float2 xy:POSITION) {Out o;o.position=float4(transform.xy+xy*transform.zw,parameters.x,1);return o;}
+float4 lighting(Out p):SV_Target {
+    float depth=shadow.Load(int3(int2(p.position.xy),0));
+    float visible=shadow.SampleCmpLevelZero(comparison,p.position.xy/256,parameters.y);
+    return float4(visible,depth,1-visible,1);
+}
+)";
+    Ref<ID3DBlob> vs_code,ps_code,error;Ref<ID3D11VertexShader> vertex;Ref<ID3D11PixelShader> lighting;
+    checked(D3DCompile(shader,std::strlen(shader),nullptr,nullptr,nullptr,"vertex","vs_5_0",0,0,&vs_code,&error),"shadow VS compile");
+    checked(D3DCompile(shader,std::strlen(shader),nullptr,nullptr,nullptr,"lighting","ps_5_0",0,0,&ps_code,&error),"shadow lighting compile");
+    checked(f.device->CreateVertexShader(vs_code->GetBufferPointer(),vs_code->GetBufferSize(),nullptr,&vertex),"shadow VS");
+    checked(f.device->CreatePixelShader(ps_code->GetBufferPointer(),ps_code->GetBufferSize(),nullptr,&lighting),"shadow lighting PS");
+    Ref<ID3D11Buffer> constants;D3D11_BUFFER_DESC cb_desc{};cb_desc.ByteWidth=64;cb_desc.Usage=D3D11_USAGE_DYNAMIC;
+    cb_desc.BindFlags=D3D11_BIND_CONSTANT_BUFFER;cb_desc.CPUAccessFlags=D3D11_CPU_ACCESS_WRITE;
+    checked(f.device->CreateBuffer(&cb_desc,nullptr,&constants),"shadow constants");
+    std::array<Ref<ID3D11DepthStencilState>,3> depths;
+    for(unsigned i=0;i<depths.size();++i) {
+        D3D11_DEPTH_STENCIL_DESC state{};state.DepthEnable=TRUE;
+        state.DepthWriteMask=i==2?D3D11_DEPTH_WRITE_MASK_ZERO:D3D11_DEPTH_WRITE_MASK_ALL;
+        state.DepthFunc=i==1?D3D11_COMPARISON_ALWAYS:D3D11_COMPARISON_LESS;
+        checked(f.device->CreateDepthStencilState(&state,&depths[i]),"shadow depth state");
+    }
+    std::array<Ref<ID3D11RasterizerState>,4> rasters;
+    for(unsigned i=0;i<rasters.size();++i) {
+        D3D11_RASTERIZER_DESC state{};state.FillMode=D3D11_FILL_SOLID;state.CullMode=i==3?D3D11_CULL_FRONT:D3D11_CULL_NONE;
+        state.DepthClipEnable=TRUE;state.ScissorEnable=i!=1;
+        // A bounded, visible bias makes omitted rasterizer changes affect pixels.
+        if(i==2) {state.DepthBias=4194304;state.DepthBiasClamp=0.0625f;}
+        checked(f.device->CreateRasterizerState(&state,&rasters[i]),"shadow rasterizer state");
+    }
+    std::array<Ref<ID3D11SamplerState>,2> samplers;
+    for(unsigned i=0;i<samplers.size();++i) {
+        D3D11_SAMPLER_DESC state{};state.Filter=D3D11_FILTER_COMPARISON_MIN_MAG_MIP_POINT;
+        state.AddressU=state.AddressV=state.AddressW=D3D11_TEXTURE_ADDRESS_CLAMP;
+        state.ComparisonFunc=i?D3D11_COMPARISON_GREATER_EQUAL:D3D11_COMPARISON_LESS_EQUAL;state.MaxLOD=D3D11_FLOAT32_MAX;
+        checked(f.device->CreateSamplerState(&state,&samplers[i]),"shadow comparison sampler");
+    }
+    Ref<ID3D11InfoQueue> messages;if(debug) {f.messages();checked(f.device.As(&messages),"shadow debug queue");messages->ClearStoredMessages();}
+    unsigned warnings=0;
+    // Seven draws exercise serial/deferred and isolated direct replay; 257
+    // crosses worker dispatch and capacity, then leaves a one-draw tail.
+    for(const unsigned length:{7u,257u}) {
+        std::array<std::vector<unsigned char>,2> expected;
+        for(unsigned variant=0;variant<4;++variant) {
+            bridge.direct_small_batches(variant==2);f.context->ClearState();
+            auto* cb=constants.Get();auto* vb=f.source.vertices.Get();
+            f.context->VSSetConstantBuffers(0,1,&cb);f.context->PSSetConstantBuffers(0,1,&cb);
+            f.context->IASetVertexBuffers(0,1,&vb,&f.source.stride,&f.source.vertex_offset);
+            f.context->IASetIndexBuffer(f.source.indices.Get(),f.source.index_format,f.source.index_offset);
+            f.context->IASetInputLayout(f.source.layout.Get());f.context->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+            f.context->VSSetShader(vertex.Get(),nullptr,0);f.context->OMSetBlendState(nullptr,nullptr,~0u);
+            f.context->RSSetViewports(1,&f.source.viewport);
+            const auto before=bridge.statistics();
+            for(unsigned frame=0;frame<2;++frame) {
+                f.clear(f.rtv.Get());bridge.begin(variant!=0,variant==3?skyrim_mc::stream::Recording::serial:skyrim_mc::stream::Recording::workers);
+                // Frame two intentionally still has this depth SRV bound from
+                // lighting. A writable DSV must implicitly null it before use.
+                f.context->OMSetRenderTargets(0,nullptr,shadow_target.Get());
+                Ref<ID3D11ShaderResourceView> unbound;f.context->PSGetShaderResources(5,1,&unbound);
+                require(!unbound,"shadow DSV did not implicitly unbind its SRV");
+                f.context->ClearDepthStencilView(shadow_target.Get(),D3D11_CLEAR_DEPTH,1,0);
+                f.context->PSSetShader(nullptr,nullptr,0);
+                auto draw=[&](unsigned i,float depth,bool shadow_pass) {
+                    const unsigned tile=i%64,x=tile%8,y=tile/8;
+                    const std::array<float,8> values{depth,0.5f,0,0,x/4.0f-1,1-y/4.0f,0.25f,-0.25f};
+                    D3D11_MAPPED_SUBRESOURCE map{};checked(f.context->Map(constants.Get(),0,D3D11_MAP_WRITE_DISCARD,0,&map),"shadow upload");
+                    std::memset(map.pData,0,64);std::memcpy(map.pData,values.data(),sizeof(values));f.context->Unmap(constants.Get(),0);
+                    D3D11_RECT scissor{static_cast<LONG>(x*32),static_cast<LONG>(y*32),static_cast<LONG>((x+1)*32),static_cast<LONG>((y+1)*32)};
+                    if(shadow_pass && i%5==0)scissor.left+=16;
+                    f.context->RSSetScissorRects(1,&scissor);
+                    if(shadow_pass) {
+                        f.context->OMSetDepthStencilState(depths[(i/64+tile+frame)%3].Get(),0);
+                        f.context->RSSetState(rasters[(tile+frame)%4].Get());
+                    } else {
+                        auto* sampler=samplers[(tile+frame)%2].Get();f.context->PSSetSamplers(3,1,&sampler);
+                    }
+                    f.context->DrawIndexed(6,0,0);
+                };
+                for(unsigned i=0;i<length;++i)draw(i,((i/64+i%64+frame)%2)?0.75f:0.25f,true);
+                // A read-only DSV may overlap the sampled SRV. The second
+                // frame also depth-tests receiver geometry against that view.
+                f.context->OMSetDepthStencilState(frame?depths[2].Get():nullptr,0);
+                auto* target=f.rtv.Get();f.context->OMSetRenderTargets(1,&target,frame?shadow_readonly.Get():nullptr);
+                auto* view=shadow_view.Get();f.context->PSSetShaderResources(5,1,&view);
+                f.context->PSSetShader(lighting.Get(),nullptr,0);f.context->RSSetState(f.source.raster.Get());
+                for(unsigned i=0;i<length;++i)draw(i,frame && i%2?0.5f:0,false);
+                bridge.end();auto output=f.pixels();
+                if(!variant) {
+                    bool written_depth=false,clear_depth=false,visible=false,occluded=false;
+                    for(std::size_t p=0;p<output.size();p+=4)if(output[p+3]==255) {
+                        written_depth|=output[p+1]>0 && output[p+1]<250;clear_depth|=output[p+1]==255;
+                        visible|=output[p]==255;occluded|=output[p]==0;
+                    }
+                    require(written_depth && clear_depth && visible && occluded,"shadow oracle did not consume depth writes and comparison results");
+                    expected[frame]=std::move(output);
+                    if(frame)require(expected[0]!=expected[1],"changing shadow states did not affect lighting");
+                } else require(output==expected[frame],"PS-null shadow depth or sampled lighting changed under replacement");
+                ++images;
+            }
+            const auto after=bridge.statistics();const auto draws=4u*length;
+            if(variant)require(after.replaced-before.replaced==draws,"shadow draws silently fell back instead of exercising replacement");
+            if(variant==3)require(after.serial_draws-before.serial_draws==draws && after.worker_draws==before.worker_draws,"shadow serial control dispatched workers");
+            if(variant==1 || variant==2)require(after.worker_draws-before.worker_draws==(length==257?1024u:0u),"shadow group did not exercise expected worker dispatch");
+            const auto direct=variant==2?(length==7?28u:4u):0u;
+            require(after.direct_small_draws-before.direct_small_draws==direct,"shadow direct-small control did not exercise its intended tail");
+            if(messages) {
+                unsigned hazards=0;
+                for(UINT64 i=0;i<messages->GetNumStoredMessagesAllowedByRetrievalFilter();++i) {
+                    SIZE_T size=0;checked(messages->GetMessage(i,nullptr,&size),"shadow diagnostic size");
+                    std::vector<std::byte> bytes(size);auto* message=reinterpret_cast<D3D11_MESSAGE*>(bytes.data());checked(messages->GetMessage(i,message,&size),"shadow diagnostic");
+                    if(message->Severity<=D3D11_MESSAGE_SEVERITY_WARNING) {
+                        const bool expected_hazard=message->ID==D3D11_MESSAGE_ID_DEVICE_OMSETRENDERTARGETS_HAZARD || message->ID==D3D11_MESSAGE_ID_DEVICE_PSSETSHADERRESOURCES_HAZARD;
+                        if(!expected_hazard)std::cerr<<"Shadow diagnostic ID "<<message->ID<<": "<<message->pDescription<<'\n';
+                        require(expected_hazard,"unexpected diagnostic in shadow depth test");++hazards;
+                    }
+                }
+                require(hazards==2,"shadow SRV/DSV transition did not produce exactly its intentional hazard diagnostics");warnings+=hazards;messages->ClearStoredMessages();
+            }
+        }
+    }
+    return warnings;
+}
 }
 
 int main(int argc,char** argv) {
     try {
-        bool debug=true,sharing=true;
-        for(int a=1;a<argc;++a) {if(std::strcmp(argv[a],"--hardware")==0 || std::strcmp(argv[a],"--no-debug")==0)debug=false;else if(std::strcmp(argv[a],"--owned-snapshots")==0)sharing=false;else throw std::runtime_error("unknown stream test option");}
+        bool debug=true,sharing=true,flat_lookup=true,direct_small=false;
+        for(int a=1;a<argc;++a) {if(std::strcmp(argv[a],"--hardware")==0 || std::strcmp(argv[a],"--no-debug")==0)debug=false;else if(std::strcmp(argv[a],"--owned-snapshots")==0)sharing=false;else if(std::strcmp(argv[a],"--map-uploads")==0)flat_lookup=false;else if(std::strcmp(argv[a],"--direct-small")==0)direct_small=true;else throw std::runtime_error("unknown stream test option");}
         test_abi();Fixture f(debug);unsigned images=0;
         using Update=void(STDMETHODCALLTYPE*)(ID3D11DeviceContext*,ID3D11Resource*,UINT,const D3D11_BOX*,const void*,UINT,UINT);
         const auto original_update=reinterpret_cast<Update>((*reinterpret_cast<void***>(f.context.Get()))[skyrim_mc::stream::slots::UpdateSubresource]);
         Ref<ID3D11Buffer> constants;
         D3D11_BUFFER_DESC desc{};desc.ByteWidth=64;desc.Usage=D3D11_USAGE_DYNAMIC;desc.BindFlags=D3D11_BIND_CONSTANT_BUFFER;desc.CPUAccessFlags=D3D11_CPU_ACCESS_WRITE;
         checked(f.device->CreateBuffer(&desc,nullptr,&constants),"stream constants");
-        skyrim_mc::stream::Bridge bridge(f.device.Get(),f.context.Get(),4);require(bridge.attach(),"context attachment");bridge.share_bindings(sharing);
+        skyrim_mc::stream::Bridge bridge(f.device.Get(),f.context.Get(),4);require(bridge.attach(),"context attachment");bridge.share_bindings(sharing);bridge.flat_upload_lookup(flat_lookup);
+        const auto caps=bridge.capabilities();D3D11_FEATURE_DATA_THREADING direct_caps{};
+        const auto direct_hr=f.device->CheckFeatureSupport(D3D11_FEATURE_THREADING,&direct_caps,sizeof(direct_caps));
+        require(caps.threading_query_result==direct_hr && caps.creation_flags==f.device->GetCreationFlags() && caps.feature_level==static_cast<std::uint32_t>(f.device->GetFeatureLevel()),"device capability report identity");
+        if(SUCCEEDED(direct_hr))require(caps.driver_command_lists==(direct_caps.DriverCommandLists!=FALSE) && caps.driver_concurrent_creates==(direct_caps.DriverConcurrentCreates!=FALSE),"device threading flags differ");
+        bridge.direct_small_batches(direct_small);require(bridge.statistics().direct_small_available,"D3D11 context-state isolation unavailable");
         std::function<void(const Packet&)> before_draw;
         auto issue=[&](const Packet& p,bool update=true) {
             if(update) {D3D11_MAPPED_SUBRESOURCE m{};checked(f.context->Map(constants.Get(),0,D3D11_MAP_WRITE_DISCARD,0,&m),"engine upload");
@@ -77,6 +222,59 @@ int main(int argc,char** argv) {
             Ref<ID3D11PixelShader> shader;f.context->PSGetShader(&shader,nullptr,nullptr);require(shader.Get()==source.back().pixel_shader.Get(),"engine state preservation");
         }
         require(reduced_material_bindings<full_material_bindings,"redundant material bindings were not reduced");
+        // Free-draw removes only the actual scoped indexed draw. It must avoid
+        // capture/replay, preserve outside-scope draws, and recover without a
+        // control-thread response when its native deadline expires.
+        f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);const auto blank=f.pixels();
+        bridge.suppress_indexed_draws(GetTickCount64()+10000);const auto outside_before=bridge.statistics();issue(source[0]);
+        require(bridge.statistics().suppressed_indexed_draws==outside_before.suppressed_indexed_draws,"free-draw affected outside-scope rendering");
+        f.clear(target);const auto free_before=bridge.statistics();bridge.begin(false);
+        for(unsigned i=0;i<32;++i)issue(source[i]);bridge.end();const auto free_after=bridge.statistics();
+        require(f.pixels()==blank,"free-draw did not leave the cleared GPU output");++images;
+        require(free_after.suppressed_indexed_draws-free_before.suppressed_indexed_draws==32 && free_after.capture_attempts==free_before.capture_attempts && free_after.replaced==free_before.replaced && free_after.batches==free_before.batches,"free-draw captured/replayed work or lost accounting");
+        bridge.suppress_indexed_draws(0);f.clear(target);bridge.begin(false);for(const auto& packet:source)issue(packet);bridge.end();
+        require(f.pixels()==Fixture::oracle(3),"free-draw explicit off did not restore original output");++images;
+        const auto expiry=GetTickCount64()+32;bridge.suppress_indexed_draws(expiry);
+        while(GetTickCount64()<expiry)Sleep(1);const auto expired_before=bridge.statistics();
+        f.clear(target);bridge.begin(false);for(const auto& packet:source)issue(packet);bridge.end();
+        require(f.pixels()==Fixture::oracle(3) && bridge.statistics().suppressed_indexed_draws==expired_before.suppressed_indexed_draws && !bridge.statistics().draw_suppression_active,"free-draw native expiry did not restore original output");++images;
+        bridge.suppress_indexed_draws(GetTickCount64()+20000);require(!bridge.statistics().draw_suppression_active,"free-draw accepted an overlong deadline");
+        // Inventory mode must keep original state, mapped pointers and GPU
+        // results while eliminating observer payload copies. Check both timing
+        // densities and a counter-only control against the independent oracle.
+        for(const unsigned sampling:{0u,1u,16u}) {
+            bridge.profile_original(true,sampling?GetTickCount64()+10000:0,sampling?sampling:16);
+            const auto inventory_before=bridge.statistics();
+            f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
+            bridge.begin(true);for(const auto& packet:source)issue(packet);bridge.end();
+            require(f.pixels()==Fixture::oracle(3),"original inventory forwarding changed GPU image");++images;
+            const auto inventory_after=bridge.statistics();
+            require(inventory_after.clean_forwarding && inventory_after.upload_copies==inventory_before.upload_copies && inventory_after.upload_copy_bytes==inventory_before.upload_copy_bytes && inventory_after.capture_attempts==inventory_before.capture_attempts && inventory_after.replaced==inventory_before.replaced && inventory_after.worker_draws==inventory_before.worker_draws,"original inventory retained payloads or replayed");
+            using namespace skyrim_mc::stream::slots;
+            const auto& draw=inventory_after.context_methods[DrawIndexed];const auto& old_draw=inventory_before.context_methods[DrawIndexed];
+            require(draw.calls-old_draw.calls==(sampling?source.size():0) && draw.scoped_calls-old_draw.scoped_calls==(sampling?source.size():0),"inventory draw/scoped coverage");
+            if(sampling) {
+                require(draw.samples>old_draw.samples && draw.samples-old_draw.samples<=draw.calls-old_draw.calls && draw.ticks>=old_draw.ticks,"inventory sample accounting");
+                require(inventory_after.context_methods[Map].scoped_calls-inventory_before.context_methods[Map].scoped_calls==source.size() && inventory_after.context_methods[Unmap].scoped_calls-inventory_before.context_methods[Unmap].scoped_calls==source.size(),"inventory missed original maps");
+                // f.pixels performs one READ Map outside the guarded scope.
+                require(inventory_after.map_modes[0]-inventory_before.map_modes[0]==1 && inventory_after.map_modes[3]-inventory_before.map_modes[3]==source.size(),"inventory conflated readback/discard modes");
+                if(sampling==1)require(draw.samples-old_draw.samples==source.size(),"full-density timer skipped real calls");
+                Ref<ID3D11PixelShader> saved;f.context->PSGetShader(&saved,nullptr,nullptr);
+                require(saved.Get()==source.back().pixel_shader.Get(),"inventory getter returned wrong COM object");
+                Ref<ID3D11Query> event;D3D11_QUERY_DESC event_desc{D3D11_QUERY_EVENT,0};checked(f.device->CreateQuery(&event_desc,&event),"inventory event query");
+                f.context->End(event.Get());const auto query_stats=bridge.statistics();
+                const auto status=f.context->GetData(event.Get(),nullptr,0,D3D11_ASYNC_GETDATA_DONOTFLUSH);
+                require(status==S_OK || status==S_FALSE,"inventory changed query HRESULT");
+                const auto query_after=bridge.statistics();
+                require(query_after.context_methods[GetData].calls==query_stats.context_methods[GetData].calls+1 && query_after.context_methods[GetData].pending-query_stats.context_methods[GetData].pending==(status==S_FALSE?1u:0u),"inventory lost pending query result");
+            } else require(!inventory_after.context_profile_active,"clean control unexpectedly timed context calls");
+        }
+        const auto profile_expiry=GetTickCount64()+32;bridge.profile_original(true,profile_expiry,1);
+        while(GetTickCount64()<profile_expiry)Sleep(1);const auto profile_expired_before=bridge.statistics();
+        f.clear(target);bridge.begin(false);for(const auto& packet:source)issue(packet);bridge.end();
+        const auto profile_expired_after=bridge.statistics();
+        require(!profile_expired_after.context_profile_active && profile_expired_after.context_methods[skyrim_mc::stream::slots::DrawIndexed].calls==profile_expired_before.context_methods[skyrim_mc::stream::slots::DrawIndexed].calls && f.pixels()==Fixture::oracle(3),"inventory native expiry changed output or kept counting");++images;
+        bridge.profile_original(false);require(!bridge.statistics().clean_forwarding,"inventory did not restore normal adapter mode");
         // Unsupported unknown constant must execute original, not be discarded.
         Ref<ID3D11Buffer> unknown;desc.Usage=D3D11_USAGE_DEFAULT;desc.CPUAccessFlags=0;
         const auto bytes=source[0].constants;std::array<std::byte,64> initial{};std::copy(bytes.begin(),bytes.end(),initial.begin());D3D11_SUBRESOURCE_DATA data{initial.data(),0,0};
@@ -88,6 +286,10 @@ int main(int argc,char** argv) {
         Ref<ID3D11Query> query;D3D11_QUERY_DESC q{D3D11_QUERY_OCCLUSION,0};checked(f.device->CreateQuery(&q,&query),"query");
         const auto query_before=bridge.statistics();f.context->Begin(query.Get());bridge.begin(true);issue(source[0]);bridge.end();f.context->End(query.Get());
         require(bridge.statistics().replaced==query_before.replaced,"query scope offloaded");
+        Ref<ID3D11Query> free_query;checked(f.device->CreateQuery(&q,&free_query),"free-draw query");
+        const auto free_query_before=bridge.statistics();bridge.suppress_indexed_draws(GetTickCount64()+10000);
+        f.context->Begin(free_query.Get());bridge.begin(false);issue(source[0]);bridge.end();f.context->End(free_query.Get());bridge.suppress_indexed_draws(0);
+        require(bridge.statistics().suppressed_indexed_draws==free_query_before.suppressed_indexed_draws && bridge.statistics().suppression_query_fallbacks==free_query_before.suppression_query_fallbacks+1,"free-draw changed query-enclosed draws");
         // Distinct same-sized buffers at nonzero VS/PS slots. PS is a DEFAULT
         // buffer updated in-place; workers must see each draw's owned bytes.
         const char* multi_shader=R"(
@@ -357,7 +559,7 @@ float4 free_pixel(float4 p:SV_Position):SV_Target{return shade();}
             bridge.share_bindings(variant!=2);bridge.cache_state(true);
             f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
             const auto lifetime_before=bridge.statistics();bridge.begin(variant!=0);
-            for(std::size_t i=0;i<64;++i) {
+            for(std::size_t i=0;i<(direct_small?7u:64u);++i) {
                 D3D11_TEXTURE2D_DESC temporary_desc{};temporary_desc.Width=temporary_desc.Height=temporary_desc.MipLevels=temporary_desc.ArraySize=1;
                 temporary_desc.Format=DXGI_FORMAT_R8G8B8A8_UNORM;temporary_desc.SampleDesc.Count=1;temporary_desc.Usage=D3D11_USAGE_IMMUTABLE;temporary_desc.BindFlags=D3D11_BIND_SHADER_RESOURCE;
                 const UINT pixel=0xff000000u|static_cast<UINT>((i*37+19)%256)|static_cast<UINT>((i*71+43)%256)<<8|static_cast<UINT>((i*13+101)%256)<<16;
@@ -393,6 +595,105 @@ float4 free_pixel(float4 p:SV_Position):SV_Target{return shade();}
             bridge.end();auto output=f.pixels();if(!variant)ownership_expected=std::move(output);else require(output==ownership_expected,"ownership mode switch froze constants or mutated queued bindings");++images;
         }
         bridge.share_bindings(sharing);
+        // Consume all 14 slots in each stage. Exercise the scratch table's
+        // maximum 28 distinct buffers, cross-stage duplicates, and NULL holes.
+        std::string wide_shader;
+        for(unsigned i=0;i<14;++i)wide_shader+="cbuffer C"+std::to_string(i)+":register(b"+std::to_string(i)+") {float4 color"+std::to_string(i)+";float4 transform"+std::to_string(i)+";float4 padding"+std::to_string(i)+"[2];};\n";
+        wide_shader+="struct Out {float4 position:SV_Position;};\nOut vertex(float2 xy:POSITION) {Out o;float4 t=(";
+        for(unsigned i=0;i<14;++i)wide_shader+=(i?"+":"")+std::string("transform")+std::to_string(i);
+        wide_shader+=")/14; o.position=float4(t.xy+xy*t.zw,0,1);return o;}\nfloat4 pixel(Out p):SV_Target {return (";
+        for(unsigned i=0;i<14;++i)wide_shader+=(i?"+":"")+std::string("color")+std::to_string(i);
+        wide_shader+=")/14;}";
+        Ref<ID3DBlob> wide_vs_code,wide_ps_code;Ref<ID3D11VertexShader> wide_vs;Ref<ID3D11PixelShader> wide_ps;
+        checked(D3DCompile(wide_shader.data(),wide_shader.size(),nullptr,nullptr,nullptr,"vertex","vs_5_0",0,0,&wide_vs_code,&error),"28-buffer VS");
+        checked(D3DCompile(wide_shader.data(),wide_shader.size(),nullptr,nullptr,nullptr,"pixel","ps_5_0",0,0,&wide_ps_code,&error),"28-buffer PS");
+        checked(f.device->CreateVertexShader(wide_vs_code->GetBufferPointer(),wide_vs_code->GetBufferSize(),nullptr,&wide_vs),"28-buffer VS creation");
+        checked(f.device->CreatePixelShader(wide_ps_code->GetBufferPointer(),wide_ps_code->GetBufferSize(),nullptr,&wide_ps),"28-buffer PS creation");
+        std::array<Ref<ID3D11Buffer>,28> wide_buffers;D3D11_BUFFER_DESC wide_desc{};
+        wide_desc.ByteWidth=64;wide_desc.Usage=D3D11_USAGE_DEFAULT;wide_desc.BindFlags=D3D11_BIND_CONSTANT_BUFFER;
+        for(auto& buffer:wide_buffers)checked(f.device->CreateBuffer(&wide_desc,nullptr,&buffer),"28-buffer allocation");
+        for(unsigned scene=0;scene<3;++scene) {
+            std::vector<unsigned char> wide_expected;
+            for(unsigned variant=0;variant<5;++variant) {
+                bridge.flat_upload_lookup(variant==1 || variant==3);
+                f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
+                before_draw=[&](const Packet& p) {
+                    std::array<ID3D11Buffer*,14> vs_buffers{},ps_buffers{};
+                    for(unsigned slot=0;slot<14;++slot) {
+                        std::array<std::byte,64> copy{};std::memcpy(copy.data(),p.constants.data(),32);
+                        // Each stage has its own changing version in the 28-buffer
+                        // case. Shared buffers must be uploaded only once per draw.
+                        const float tint=static_cast<float>(slot)/255;std::memcpy(copy.data(),&tint,4);
+                        auto* vb=wide_buffers[slot].Get();auto* pb=wide_buffers[scene==0?slot+14:slot].Get();
+                        f.context->UpdateSubresource(vb,0,nullptr,copy.data(),0,0);
+                        if(pb!=vb) {const float other=1-tint;std::memcpy(copy.data(),&other,4);f.context->UpdateSubresource(pb,0,nullptr,copy.data(),0,0);}
+                        if(scene!=2 || slot%2==0) {vs_buffers[slot]=vb;ps_buffers[slot]=pb;}
+                    }
+                    f.context->VSSetConstantBuffers(0,14,vs_buffers.data());f.context->PSSetConstantBuffers(0,14,ps_buffers.data());
+                    f.context->VSSetShader(wide_vs.Get(),nullptr,0);f.context->PSSetShader(wide_ps.Get(),nullptr,0);
+                };
+                const auto wide_before=bridge.statistics();
+                bridge.begin(variant!=0,variant>=3?skyrim_mc::stream::Recording::serial:skyrim_mc::stream::Recording::workers);
+                for(unsigned i=0;i<64;++i)issue(source[i]);
+                require(bridge.statistics().batches==wide_before.batches,"28-buffer scene flushed before its scope ended");
+                bridge.end();auto output=f.pixels();if(!variant)wide_expected=std::move(output);else require(output==wide_expected,"upload lookup changed high slots, shared versions or NULL bindings");++images;
+                const auto wide_after=bridge.statistics();if(variant) {
+                    const auto entries=(scene==0?28u:scene==1?14u:7u)*64u;
+                    const bool flat=variant==1 || variant==3;
+                    require(wide_after.flat_upload_entries-wide_before.flat_upload_entries==(flat?entries:0),"flat lookup distinct buffer accounting");
+                    require(wide_after.temporary_upload_map_entries-wide_before.temporary_upload_map_entries==(flat?0:entries),"map control distinct buffer accounting");
+                    require(wide_after.draw_upload_duplicates-wide_before.draw_upload_duplicates==(scene==0?0:entries),"cross-stage upload duplicate accounting");
+                    require(wide_after.private_uploads-wide_before.private_uploads==entries,"changed distinct buffer uploaded zero or multiple times");
+                }
+            }
+        }
+        before_draw={};bridge.flat_upload_lookup(flat_lookup);
+        // Exact small/worker and queue-capacity boundaries. Direct replay must
+        // preserve the independent output and untouched compute-stage bindings.
+        const char* compute_source="[numthreads(1,1,1)] void compute(uint3 index:SV_DispatchThreadID) {}";
+        Ref<ID3DBlob> compute_code;Ref<ID3D11ComputeShader> compute_shader;
+        checked(D3DCompile(compute_source,std::strlen(compute_source),nullptr,nullptr,nullptr,"compute","cs_5_0",0,0,&compute_code,&error),"compute preservation shader");
+        checked(f.device->CreateComputeShader(compute_code->GetBufferPointer(),compute_code->GetBufferSize(),nullptr,&compute_shader),"compute shader creation");
+        for(const unsigned length:{1u,2u,3u,4u,15u,16u,17u,63u,64u,255u,256u,257u}) {
+            std::vector<unsigned char> boundary_expected;
+            for(unsigned variant=0;variant<3;++variant) {
+                bridge.direct_small_batches(variant==2);f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
+                auto* compute_buffer=constants.Get();auto* compute_view=f.source.texture.Get();auto* compute_sampler=f.source.sampler.Get();
+                f.context->CSSetShader(compute_shader.Get(),nullptr,0);f.context->CSSetConstantBuffers(13,1,&compute_buffer);
+                f.context->CSSetShaderResources(127,1,&compute_view);f.context->CSSetSamplers(15,1,&compute_sampler);
+                const auto boundary_before=bridge.statistics();bridge.begin(variant!=0);
+                for(unsigned i=0;i<length;++i)issue(source[i]);bridge.end();
+                auto output=f.pixels();if(!variant)boundary_expected=std::move(output);else require(output==boundary_expected,"direct small batch changed pixels at a threshold");++images;
+                Ref<ID3D11ComputeShader> saved_shader;Ref<ID3D11Buffer> saved_buffer;Ref<ID3D11ShaderResourceView> saved_view;Ref<ID3D11SamplerState> saved_sampler;
+                f.context->CSGetShader(&saved_shader,nullptr,nullptr);f.context->CSGetConstantBuffers(13,1,&saved_buffer);
+                f.context->CSGetShaderResources(127,1,&saved_view);f.context->CSGetSamplers(15,1,&saved_sampler);
+                require(saved_shader.Get()==compute_shader.Get() && saved_buffer.Get()==compute_buffer && saved_view.Get()==compute_view && saved_sampler.Get()==compute_sampler,"direct small replay failed to restore untouched compute state");
+                const auto boundary_after=bridge.statistics();const unsigned tail=length%256,expected_direct=variant==2 && tail<16?tail:0;
+                require(boundary_after.direct_small_draws-boundary_before.direct_small_draws==expected_direct,"direct small threshold or capacity accounting");
+                require(boundary_after.direct_small_batch_count-boundary_before.direct_small_batch_count==(expected_direct?1u:0u),"direct batch count changed");
+                if(expected_direct && length<16)require(boundary_after.serial_finish_ticks==boundary_before.serial_finish_ticks,"direct small batch still finished a command list");
+            }
+        }
+        // Repeated small scopes retain private uploads across state swaps.
+        // Alternating direct/deferred scopes and unchanged constant versions
+        // must neither change output nor leave private buffers bound to Skyrim.
+        std::vector<unsigned char> mixed_expected;
+        for(unsigned variant=0;variant<4;++variant) {
+            f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
+            unsigned ordinal=0;
+            for(std::size_t first=0;first<source.size();) {
+                const unsigned lengths[]{1,2,3,7,15,16,17};const auto last=std::min(source.size(),first+lengths[ordinal%7]);
+                bridge.direct_small_batches(variant==2 || (variant==3 && ordinal%2==0));bridge.begin(variant!=0);
+                for(auto i=first;i<last;++i)issue(source[i],i%3==0);
+                bridge.end();Ref<ID3D11Buffer> engine_vertex,engine_pixel;
+                f.context->VSGetConstantBuffers(0,1,&engine_vertex);f.context->PSGetConstantBuffers(0,1,&engine_pixel);
+                require(engine_vertex.Get()==constants.Get() && engine_pixel.Get()==constants.Get(),"small scope left private constant buffers bound");
+                first=last;++ordinal;
+            }
+            auto output=f.pixels();if(!variant)mixed_expected=std::move(output);else require(output==mixed_expected,"repeated mixed small scopes changed reused upload versions or ordering");++images;
+        }
+        const auto shadow_before=images;const auto shadow_warnings=test_shadow_passes(f,bridge,images,debug);const auto shadow_images=images-shadow_before;
+        bridge.direct_small_batches(direct_small);f.context->ClearState();f.clear(target);f.context->OMSetRenderTargets(1,&target,nullptr);
         bridge.verify_constants(true);bridge.begin(false);for(std::size_t i=0;i<64;++i) issue(source[i]);bridge.end();bridge.verify_constants(false);
         require(bridge.statistics().constant_checks==64 && !bridge.statistics().constant_mismatches,"actual GPU constant bytes differed from CPU upload snapshots");
         before_draw=[&](const Packet& p) {
@@ -406,9 +707,17 @@ float4 free_pixel(float4 p:SV_Position):SV_Target{return shade();}
         const auto stats=bridge.statistics();require(stats.constant_checks==66 && stats.constant_mismatches==1 && stats.first_mismatch_slot==14,"unobserved GPU update not detected");
         require(stats.worker_draws>6000 && stats.errors==0 && stats.unknown_constants>0,"actual replacement counters");
         for(const auto id:stats.worker_ids) require(id && id!=GetCurrentThreadId(),"real non-main workers");
+        std::uint64_t bucket_batches=0,bucket_draws=0,reason_batches=0;
+        for(const auto& bucket:stats.batch_sizes) {bucket_batches+=bucket.batches;bucket_draws+=bucket.draws;require(bucket.batches==bucket.worker_batches+bucket.serial_batches && bucket.draws==bucket.worker_draws+bucket.serial_draws,"batch bucket recording accounting");}
+        for(const auto value:stats.flush_reasons)reason_batches+=value;
+        require(bucket_batches==stats.batches && reason_batches==stats.batches && bucket_draws==stats.worker_draws+stats.serial_draws,"batch histogram conservation");
+        require(stats.serial_finish_ticks<=stats.serial_record_ticks,"serial finish timing exceeds inclusive recording");
+        for(unsigned i=0;i<4;++i)require(stats.worker_finish_ticks[i]<=stats.worker_record_ticks[i],"worker finish timing exceeds inclusive recording");
         const auto messages=debug?f.messages():0;
         std::cout<<"{\"kind\":\"immediate-stream-replacement-test\",\"fullImages\":"<<images<<",\"replacedDraws\":"<<stats.replaced<<",\"workerDraws\":"<<stats.worker_draws
             <<",\"originalDraws\":"<<stats.fallback<<",\"batches\":"<<stats.batches<<",\"errors\":"<<stats.errors<<",\"debugMessages\":"<<messages
+            <<",\"suppressedIndexedDraws\":"<<stats.suppressed_indexed_draws<<",\"suppressionQueryFallbacks\":"<<stats.suppression_query_fallbacks
+            <<",\"driverCommandLists\":"<<(caps.driver_command_lists?"true":"false")<<",\"driverConcurrentCreates\":"<<(caps.driver_concurrent_creates?"true":"false")<<",\"threadingQueryHRESULT\":"<<caps.threading_query_result
             <<",\"GPUConstantChecks\":"<<stats.constant_checks<<",\"deliberateGPUChangesDetected\":"<<stats.constant_mismatches
             <<",\"qpcFrequency\":"<<stats.qpc_frequency<<",\"captureTicks\":"<<stats.capture_ticks<<",\"uploadCopyTicks\":"<<stats.upload_copy_ticks
             <<",\"serialRecordTicks\":"<<stats.serial_record_ticks<<",\"workerWaitTicks\":"<<stats.worker_wait_ticks<<",\"executeTicks\":"<<stats.execute_ticks
@@ -426,7 +735,12 @@ float4 free_pixel(float4 p:SV_Position):SV_Target{return shade();}
             <<",\"constantOnlyOwnedPublishTicks\":"<<ownership_publish[0]<<",\"constantOnlySharedPublishTicks\":"<<ownership_publish[1]
             <<",\"constantOnlyOwnedReleaseTicks\":"<<ownership_release[0]<<",\"constantOnlySharedReleaseTicks\":"<<ownership_release[1]
             <<",\"constantOnlyOwnedGroupCopies\":"<<ownership_copies[0]<<",\"constantOnlySharedGroupCopies\":"<<ownership_copies[1]
+            <<",\"flatUploadLookup\":"<<(flat_lookup?"true":"false")
+            <<",\"temporaryUploadMapEntries\":"<<stats.temporary_upload_map_entries<<",\"flatUploadEntries\":"<<stats.flat_upload_entries<<",\"drawUploadDuplicates\":"<<stats.draw_upload_duplicates
+            <<",\"serialFinishTicks\":"<<stats.serial_finish_ticks
+            <<",\"directSmallMode\":"<<(direct_small?"true":"false")<<",\"directSmallDraws\":"<<stats.direct_small_draws<<",\"directSmallBatches\":"<<stats.direct_small_batch_count<<",\"directSmallTicks\":"<<stats.direct_small_ticks
             <<",\"expectedHazardWarnings\":"<<expected_hazard_warnings
+            <<",\"shadowFullImages\":"<<shadow_images<<",\"expectedShadowHazardWarnings\":"<<shadow_warnings
             <<",\"mismatches\":0}\n";return 0;
     } catch(const std::exception& e) {std::cerr<<e.what()<<'\n';return 1;}
 }

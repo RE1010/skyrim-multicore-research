@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory)][ValidateSet('off','inline','serial','parallel','parallel-uncached','parallel-full-bindings','parallel-owned-snapshots')][string]$Mode,
+    [Parameter(Mandatory)][ValidateSet('off','inline','serial','parallel','parallel-uncached','parallel-full-bindings','parallel-owned-snapshots','parallel-map-uploads','parallel-direct-small')][string]$Mode,
     [ValidateRange(5,30)][int]$DurationSeconds=10,
     [ValidateRange(0,15)][int]$FocusDelaySeconds=5,
     [ValidateRange(5,60)][int]$ReadyTimeoutSeconds=30
@@ -70,7 +70,7 @@ for($i=0;$i -lt $first.bridge.workerRecordTicks.Count;$i++) {
     if($delta -lt 0) {throw 'Worker timer counter reset.'}
     $workerTimings+=[math]::Round($delta*1000.0/$frequency,3)
 }
-if($Mode -in @('parallel','parallel-uncached','parallel-full-bindings','parallel-owned-snapshots') -and ($last.bridge.workerRecordedDraws -le $first.bridge.workerRecordedDraws -or @($last.bridge.workerIds | Sort-Object -Unique).Count -ne 4 -or @($last.bridge.workerIds | Where-Object {$_ -le 0}).Count)) {throw 'Parallel mode did not prove four distinct live workers.'}
+if($Mode -in @('parallel','parallel-uncached','parallel-full-bindings','parallel-owned-snapshots','parallel-map-uploads','parallel-direct-small') -and ($last.bridge.workerRecordedDraws -le $first.bridge.workerRecordedDraws -or @($last.bridge.workerIds | Sort-Object -Unique).Count -ne 4 -or @($last.bridge.workerIds | Where-Object {$_ -le 0}).Count)) {throw 'Parallel mode did not prove four distinct live workers.'}
 $result=[ordered]@{
     processId=$identity.processId;requestedMode=$Mode;activeObservations=$valid.Count;intervalSeconds=$seconds
     approximatePresentsPerSecond=($last.uncap.presents-$first.uncap.presents)/$seconds
@@ -107,5 +107,22 @@ if($first.bridge.PSObject.Properties.Name -contains 'snapshotGroupCopies') {
     $result.snapshotPublishMilliseconds=($last.bridge.snapshotPublishTicks-$first.bridge.snapshotPublishTicks)*1000.0/$frequency
     $result.queueReleaseMilliseconds=($last.bridge.queueReleaseTicks-$first.bridge.queueReleaseTicks)*1000.0/$frequency
     if($Mode -eq 'parallel-owned-snapshots' -and ($result.sharedSnapshotBindings -or $result.snapshotGroupReusesDelta -ne 0 -or $result.snapshotGroupCopiesDelta -le 0)) {throw 'Owned snapshot control not proven.'}
+}
+if($first.bridge.PSObject.Properties.Name -contains 'flatUploadLookup') {
+    $result.flatUploadLookup=$last.bridge.flatUploadLookup
+    foreach($field in @('temporaryUploadMapEntries','flatUploadEntries','drawUploadDuplicates')) {
+        $delta=[long]$last.bridge.$field-[long]$first.bridge.$field
+        if($delta -lt 0) {throw "Upload lookup counter reset: $field"}
+        $result[$field+'Delta']=$delta
+    }
+    if($Mode -eq 'parallel-map-uploads' -and ($result.flatUploadLookup -or $result.flatUploadEntriesDelta -ne 0 -or $result.temporaryUploadMapEntriesDelta -le 0)) {throw 'Map upload control not proven.'}
+    if($Mode -eq 'parallel' -and (-not $result.flatUploadLookup -or $result.temporaryUploadMapEntriesDelta -ne 0 -or $result.flatUploadEntriesDelta -le 0)) {throw 'Flat upload mode not proven.'}
+}
+if($Mode -eq 'parallel-direct-small') {
+    if(-not $last.bridge.directSmallRequested -or -not $last.bridge.directSmallAvailable) {throw 'Direct small-batch mode unavailable.'}
+    $result.directSmallDrawsDelta=$last.bridge.directSmallDraws-$first.bridge.directSmallDraws
+    $result.directSmallBatchesDelta=$last.bridge.directSmallBatches-$first.bridge.directSmallBatches
+    $result.directSmallMilliseconds=($last.bridge.directSmallTicks-$first.bridge.directSmallTicks)*1000.0/$frequency
+    if($result.directSmallDrawsDelta -le 0 -or $result.directSmallBatchesDelta -le 0 -or $result.directSmallDrawsDelta -gt $result.serialDrawsDelta) {throw 'Direct small-batch execution not proven.'}
 }
 $result | ConvertTo-Json -Depth 6 | Tee-Object -FilePath (Join-Path $run 'analysis.json')

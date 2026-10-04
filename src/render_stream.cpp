@@ -16,6 +16,17 @@
 #include <type_traits>
 #include <vector>
 namespace skyrim_mc::stream {
+DeviceCapabilities query_device_capabilities(ID3D11Device* device) noexcept {
+    DeviceCapabilities result;if(!device)return result;
+    result.creation_flags=device->GetCreationFlags();result.feature_level=static_cast<std::uint32_t>(device->GetFeatureLevel());
+    D3D11_FEATURE_DATA_THREADING threading{};
+    result.threading_query_result=device->CheckFeatureSupport(D3D11_FEATURE_THREADING,&threading,sizeof(threading));
+    if(SUCCEEDED(result.threading_query_result)) {
+        result.driver_command_lists=threading.DriverCommandLists!=FALSE;
+        result.driver_concurrent_creates=threading.DriverConcurrentCreates!=FALSE;
+    }
+    return result;
+}
 namespace {
 template<class T> using Ref=Microsoft::WRL::ComPtr<T>;
 void check(HRESULT h) {if(FAILED(h)) throw std::runtime_error("D3D stream operation failed");}
@@ -145,7 +156,8 @@ struct Recorder {
     struct Upload {Ref<ID3D11Buffer> source,buffer;Bytes bytes;};
     std::map<ID3D11Buffer*,Upload> buffers;
     std::uint64_t uploads=0,reuses=0,uploaded_bytes=0,bindings=0,bindings_skipped=0;
-    Recorder(ID3D11Device* d):device(d) {check(d->CreateDeferredContext(0,&context));}
+    std::uint64_t map_entries=0,flat_entries=0,duplicates=0;
+    Recorder(ID3D11Device* d,ID3D11DeviceContext* immediate=nullptr):device(d) {if(immediate)context=immediate;else check(d->CreateDeferredContext(0,&context));}
     ID3D11Buffer* upload(ID3D11Buffer* source,const Bytes& bytes,bool& changed) {
         if(!source) return nullptr;
         auto& u=buffers[source];
@@ -161,7 +173,7 @@ struct Recorder {
         std::memcpy(mapped.pData,bytes->data(),bytes->size());context->Unmap(u.buffer.Get(),0);
         changed=true;u.bytes=bytes;++uploads;uploaded_bytes+=bytes->size();return u.buffer.Get();
     }
-    void record(const std::vector<Snapshot>& draws,std::size_t first,std::size_t last,bool reduce_bindings) {
+    void record(const std::vector<Snapshot>& draws,std::size_t first,std::size_t last,bool reduce_bindings,bool flat_lookup) {
         context->ClearState();if(buffers.size()>256) buffers.clear();
         // This cache is local to one command list. FinishCommandList(FALSE)
         // resets deferred state; no list may inherit a previous list's bindings.
@@ -190,11 +202,29 @@ struct Recorder {
             std::array<ID3D11Buffer*,14> vb{},pb{};
             struct Uploaded {ID3D11Buffer* buffer=nullptr;bool changed=false;};
             std::map<ID3D11Buffer*,Uploaded> uploaded;
+            // At most 14 VS + 14 PS bindings. This scratch table owns no COM
+            // references and never outlives the draw; snapshots and Upload do.
+            struct Entry {ID3D11Buffer* source=nullptr;Uploaded value;};
+            std::array<Entry,28> scratch{};unsigned scratch_count=0;
             bool vertex_uploaded=false,pixel_uploaded=false;
             auto one=[&](ID3D11Buffer* source,const Bytes& bytes,bool& changed) {
                 if(!source) return static_cast<ID3D11Buffer*>(nullptr);
-                auto [entry,inserted]=uploaded.try_emplace(source);if(inserted)entry->second.buffer=upload(source,bytes,entry->second.changed);
-                changed|=entry->second.changed;return entry->second.buffer;
+                Uploaded* result=nullptr;
+                if(flat_lookup) {
+                    unsigned index=0;while(index<scratch_count && scratch[index].source!=source)++index;
+                    if(index==scratch_count) {
+                        auto& entry=scratch[scratch_count++];entry.source=source;
+                        entry.value.buffer=upload(source,bytes,entry.value.changed);++flat_entries;
+                    } else ++duplicates;
+                    result=&scratch[index].value;
+                } else {
+                    auto [entry,inserted]=uploaded.try_emplace(source);
+                    if(inserted) {entry->second.buffer=upload(source,bytes,entry->second.changed);++map_entries;}else ++duplicates;
+                    result=&entry->second;
+                }
+                // A duplicate in another stage must retain the changed flag:
+                // WRITE_DISCARD can rename storage without changing its pointer.
+                changed|=result->changed;return result->buffer;
             };
             for(unsigned s=0;s<14;++s) {vb[s]=one(d.vertex_constants->vcb[s].Get(),d.vbytes[s],vertex_uploaded);pb[s]=one(d.pixel_constants->pcb[s].Get(),d.pbytes[s],pixel_uploaded);}
             // WRITE_DISCARD may rename storage behind the same buffer pointer.
@@ -228,44 +258,54 @@ bool harmless(unsigned s) {
 }
 }
 struct Bridge::Impl {
+    static_assert(slots::count==context_method_count,"SDK context ABI profile storage differs");
     Ref<ID3D11Device> device;Ref<ID3D11DeviceContext> context;Ref<ID3D11DeviceContext1> context1;
     DWORD owner=GetCurrentThreadId();unsigned count;bool attached=false,enabled=false,disabled=false,scope_conflict=false,verify_requested=false;unsigned scope=0,bypass=0,verify_remaining=0;
     Recording recording=Recording::workers;
-    bool reduce_bindings=true;
+    bool reduce_bindings=true,flat_upload_lookup=true,direct_small_batches=false;
     bool cache_enabled=true,cached_eligible=false;unsigned dirty_state=all_state;
     CachedBindings cached_state;BindingPacket published_bindings;
     bool share_bindings=true;unsigned unpublished_state=all_state;
     std::array<UINT,14> vertex_cb_offsets{},pixel_cb_offsets{},vertex_cb_lengths{},pixel_cb_lengths{};
     mutable std::recursive_mutex api_mutex;Statistics stats{};
+    DeviceCapabilities device_caps{};std::uint64_t suppression_deadline=0;
+    bool clean_forwarding=false;std::uint64_t profile_deadline=0;unsigned sample_every=16;
     struct Constant {Ref<ID3D11Buffer> buffer;Bytes bytes;};
     struct Mapped {Ref<ID3D11Buffer> buffer;void* pointer;UINT size;};
     std::map<ID3D11Buffer*,Constant> constants;std::map<ID3D11Resource*,Mapped> mapped;
     std::set<ID3D11Asynchronous*> queries;
     std::vector<Snapshot> queued;
-    Recorder serial;std::vector<std::unique_ptr<Recorder>> recorders;std::vector<Ref<ID3D11CommandList>> lists;
+    Recorder serial,direct;Ref<ID3DDeviceContextState> direct_state;
+    std::vector<std::unique_ptr<Recorder>> recorders;std::vector<Ref<ID3D11CommandList>> lists;
     std::vector<std::jthread> workers;std::vector<std::exception_ptr> failures;
     std::mutex work_mutex;std::condition_variable work,done;bool stop=false;std::uint64_t generation=0;unsigned remaining=0;
-    Impl(ID3D11Device* d,ID3D11DeviceContext* c,unsigned n):device(d),context(c),count(n),serial(d),lists(n),failures(n) {
+    Impl(ID3D11Device* d,ID3D11DeviceContext* c,unsigned n):device(d),context(c),count(n),serial(d),direct(d,c),lists(n),failures(n) {
         if(n<1 || n>4 || c->GetType()!=D3D11_DEVICE_CONTEXT_IMMEDIATE || (d->GetCreationFlags()&D3D11_CREATE_DEVICE_SINGLETHREADED)) throw std::runtime_error("unsupported stream device");
         LARGE_INTEGER frequency{};if(!QueryPerformanceFrequency(&frequency) || frequency.QuadPart<=0) throw std::runtime_error("performance counter unavailable");stats.qpc_frequency=static_cast<std::uint64_t>(frequency.QuadPart);
         check(c->QueryInterface(IID_PPV_ARGS(&context1)));queued.reserve(256);
+        // Optional immediate-state isolation, using the same feature level and
+        // D3D11 behavior. Failure leaves the existing deferred path available.
+        device_caps=query_device_capabilities(d);
+        Ref<ID3D11Device1> extended;const auto level=d->GetFeatureLevel();
+        if(SUCCEEDED(d->QueryInterface(IID_PPV_ARGS(&extended))))
+            extended->CreateDeviceContextState(0,&level,1,D3D11_SDK_VERSION,__uuidof(ID3D11Device1),nullptr,&direct_state);
         for(unsigned i=0;i<n;++i) recorders.push_back(std::make_unique<Recorder>(d));
         try {for(unsigned i=0;i<n;++i) workers.emplace_back([this,i] {
             std::uint64_t seen=0;
             for(;;) {
                 std::unique_lock lock(work_mutex);work.wait(lock,[&]{return stop || generation!=seen;});if(stop) return;
                 seen=generation;lock.unlock();
-                try {PhaseTimer timing(stats.worker_record_ticks[i]);recorders[i]->record(queued,queued.size()*i/count,queued.size()*(i+1)/count,reduce_bindings);
-                    check(recorders[i]->context->FinishCommandList(FALSE,lists[i].ReleaseAndGetAddressOf()));
+                try {PhaseTimer timing(stats.worker_record_ticks[i]);recorders[i]->record(queued,queued.size()*i/count,queued.size()*(i+1)/count,reduce_bindings,flat_upload_lookup);
+                    {PhaseTimer finishing(stats.worker_finish_ticks[i]);check(recorders[i]->context->FinishCommandList(FALSE,lists[i].ReleaseAndGetAddressOf()));}
                 } catch(...) {failures[i]=std::current_exception();Ref<ID3D11CommandList> discard;recorders[i]->context->FinishCommandList(FALSE,&discard);lists[i].Reset();}
                 lock.lock();--remaining;if(!remaining) done.notify_one();
             }
         });} catch(...) {shutdown();throw;}
     }
     void shutdown() {{std::lock_guard lock(work_mutex);stop=true;}work.notify_all();workers.clear();}
-    ~Impl() {if(attached) {std::lock_guard lock(api_mutex);flush(false);detach_context();}shutdown();}
+    ~Impl() {if(attached) {std::lock_guard lock(api_mutex);flush(false,FlushReason::shutdown);detach_context();}shutdown();}
     struct Bypass {Impl& s;explicit Bypass(Impl& v):s(v){++s.bypass;}~Bypass(){--s.bypass;}};
-    void flush(bool parallel=true) noexcept {
+    void flush(bool parallel=true,FlushReason reason=FlushReason::gpu_barrier) noexcept {
         if(queued.empty()) return;Bypass guard(*this);const auto n=queued.size();bool used=false;
         try {
             if(parallel && recording==Recording::workers && !disabled && n>=count*4) {
@@ -278,10 +318,33 @@ struct Bridge::Impl {
                 for(auto& list:lists) list.Reset();
             }
             if(!used) {
-                Ref<ID3D11CommandList> list;
-                {PhaseTimer timing(stats.serial_record_ticks);serial.record(queued,0,n,reduce_bindings);check(serial.context->FinishCommandList(FALSE,&list));}
-                {PhaseTimer timing(stats.execute_ticks);context->ExecuteCommandList(list.Get(),TRUE);}stats.serial_draws+=n;
+                if(parallel && recording==Recording::workers && !disabled && direct_small_batches && direct_state && n<count*4 && GetCurrentThreadId()==owner) {
+                    PhaseTimer serial_timing(stats.serial_record_ticks);PhaseTimer direct_timing(stats.direct_small_ticks);
+                    // Restore ALL application pipeline state even on exception.
+                    // Bypass is active, so our ClearState/binds/private uploads
+                    // cannot invalidate the engine getter cache or its uploads.
+                    struct Restore {
+                        ID3D11DeviceContext1* context;Ref<ID3DDeviceContextState> saved;
+                        Restore(ID3D11DeviceContext1* c,ID3DDeviceContextState* scratch):context(c) {context->SwapDeviceContextState(scratch,&saved);if(!saved)throw std::runtime_error("context state isolation failed");}
+                        // The scratch state must not retain the last render
+                        // targets/SRVs after its batch, as a finished deferred
+                        // context also returns to an empty state.
+                        ~Restore() {context->ClearState();context->SwapDeviceContextState(saved.Get(),nullptr);}
+                    } restore(context1.Get(),direct_state.Get());
+                    direct.record(queued,0,n,reduce_bindings,flat_upload_lookup);
+                    stats.direct_small_draws+=n;++stats.direct_small_batch_count;
+                } else {
+                    Ref<ID3D11CommandList> list;
+                    {PhaseTimer timing(stats.serial_record_ticks);serial.record(queued,0,n,reduce_bindings,flat_upload_lookup);
+                        {PhaseTimer finishing(stats.serial_finish_ticks);check(serial.context->FinishCommandList(FALSE,&list));}}
+                    {PhaseTimer timing(stats.execute_ticks);context->ExecuteCommandList(list.Get(),TRUE);}
+                }
+                stats.serial_draws+=n;
             } else stats.worker_draws+=n;
+            const unsigned bucket=n==1?0:n<4?1:n<16?2:n<64?3:n<256?4:5;
+            auto& sizes=stats.batch_sizes[bucket];++sizes.batches;sizes.draws+=n;
+            if(used) {++sizes.worker_batches;sizes.worker_draws+=n;}else {++sizes.serial_batches;sizes.serial_draws+=n;}
+            ++stats.flush_reasons[static_cast<unsigned>(reason)];
             ++stats.batches;{PhaseTimer timing(stats.queue_release_ticks);queued.clear();}
         } catch(...) {
             // A suppressed draw must never be silently dropped. Failure of both
@@ -397,18 +460,31 @@ struct Bridge::Impl {
             // Loading uses different context callers. Outside a captured pass
             // there is no suppressed GPU work. Within a pass a foreign caller
             // flushes before proceeding and prevents further capture in it.
-            if(scope) {flush(false);scope_conflict=true;}
+            if(scope) {flush(false,FlushReason::foreign_call);scope_conflict=true;}
+        }
+        if(clean_forwarding) {
+            // A diagnostic reference still renders every original call. Avoid
+            // upload QueryInterface/GetDesc, COM retention and mapped-byte reads.
+            // Query bookkeeping remains so later mode changes stay conservative.
+            if(s==DrawIndexed) {++stats.draws;++stats.fallback;}
+            if(s==Begin) queries.insert(reinterpret_cast<ID3D11Asynchronous*>(args[0]));
+            if(s==End) queries.erase(reinterpret_cast<ID3D11Asynchronous*>(args[0]));
+            return false;
         }
         if(s==DrawIndexed) {
             ++stats.draws;
+            if(scope && !enabled && !disabled && !scope_conflict && GetCurrentThreadId()==owner && suppression_deadline>GetTickCount64()) {
+                if(queries.empty()) {++stats.suppressed_indexed_draws;return true;}
+                ++stats.suppression_query_fallbacks;
+            }
             if(scope && !enabled && verify_remaining && !scope_conflict && GetCurrentThreadId()==owner) {Snapshot d;if(capture(d)) verify(d);}
             if(scope && enabled && !disabled && !scope_conflict && GetCurrentThreadId()==owner) {
                 Snapshot d;
                 if(capture(d)) {d.count=static_cast<UINT>(args[0]);d.start=static_cast<UINT>(args[1]);d.base=static_cast<INT>(args[2]);queued.push_back(std::move(d));++stats.replaced;
-                    if(recording==Recording::inline_serial)flush(false);else if(queued.size()>=256)flush();return true;}
+                    if(recording==Recording::inline_serial)flush(false,FlushReason::capacity);else if(queued.size()>=256)flush(true,FlushReason::capacity);return true;}
                 ++stats.unsupported;
             }
-            flush();++stats.fallback;return false;
+            flush(true,FlushReason::unsupported_draw);++stats.fallback;return false;
         }
         dirty_state|=invalidated_state(s);
         if(s==Map) {
@@ -436,7 +512,7 @@ struct Bridge::Impl {
         return false;
     }
     void after(unsigned s,const std::uintptr_t* args,std::intptr_t result) {
-        if(bypass || s!=slots::Map || FAILED(static_cast<HRESULT>(result))) return;
+        if(bypass || clean_forwarding || s!=slots::Map || FAILED(static_cast<HRESULT>(result))) return;
         auto* resource=reinterpret_cast<ID3D11Resource*>(args[0]);auto b=constant_buffer(resource,static_cast<UINT>(args[1]));
         if(b && (args[2]==D3D11_MAP_WRITE_DISCARD || args[2]==D3D11_MAP_WRITE_NO_OVERWRITE || args[2]==D3D11_MAP_WRITE)) {
             D3D11_BUFFER_DESC d{};b->GetDesc(&d);auto* map=reinterpret_cast<D3D11_MAPPED_SUBRESOURCE*>(args[4]);if(map) mapped[resource]={std::move(b),map->pData,d.ByteWidth};
@@ -444,6 +520,31 @@ struct Bridge::Impl {
     }
     static void enter(void* p) noexcept {static_cast<Impl*>(p)->api_mutex.lock();}
     static void leave(void* p) noexcept {static_cast<Impl*>(p)->api_mutex.unlock();}
+    static CallTiming start_original(void* p,unsigned slot,const std::uintptr_t* args) noexcept {
+        auto& self=*static_cast<Impl*>(p);
+        if(self.bypass || !self.clean_forwarding || !self.profile_deadline || GetCurrentThreadId()!=self.owner || self.profile_deadline<=GetTickCount64())return {};
+        auto& method=self.stats.context_methods[slot];++method.calls;
+        const bool scoped=self.scope!=0;if(scoped)++method.scoped_calls;
+        if(slot==slots::Map && args) {
+            const auto mode=args[2];if(mode>=D3D11_MAP_READ && mode<=D3D11_MAP_WRITE_NO_OVERWRITE)++self.stats.map_modes[mode-1];
+            if(args[3]&D3D11_MAP_FLAG_DO_NOT_WAIT)++self.stats.map_modes[5];
+        }
+        if((method.calls-1)%self.sample_every)return {0,true,scoped};
+        LARGE_INTEGER tick{};QueryPerformanceCounter(&tick);
+        return {static_cast<std::uint64_t>(tick.QuadPart),true,scoped};
+    }
+    static void finish_original(void* p,unsigned slot,CallTiming timing,std::intptr_t result) noexcept {
+        if(!timing.active)return;LARGE_INTEGER end{};
+        if(timing.started)QueryPerformanceCounter(&end);
+        auto& method=static_cast<Impl*>(p)->stats.context_methods[slot];
+        if(timing.started) {
+            const auto elapsed=static_cast<std::uint64_t>(end.QuadPart)-timing.started;
+            ++method.samples;method.ticks+=elapsed;
+            if(timing.scoped) {++method.scoped_samples;method.scoped_ticks+=elapsed;}
+        }
+        if(slots::hresults[slot] && FAILED(static_cast<HRESULT>(result)))++method.failed;
+        if(slot==slots::GetData && result==S_FALSE)++method.pending;
+    }
     static bool before_call(void* p,unsigned s,const std::uintptr_t* args) noexcept {
         auto& self=*static_cast<Impl*>(p);try {return self.before(s,args);}catch(...) {++self.stats.errors;self.flush(false);self.disabled=true;return false;}
     }
@@ -453,21 +554,50 @@ struct Bridge::Impl {
 };
 Bridge::Bridge(ID3D11Device* d,ID3D11DeviceContext* c,unsigned n):impl_(std::make_unique<Impl>(d,c,n)) {}
 Bridge::~Bridge()=default;
-bool Bridge::attach() {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.attached=attach_context(s.context.Get(),&s,{&Impl::enter,&Impl::leave,&Impl::before_call,&Impl::after_call});return s.attached;}
+bool Bridge::attach() {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.attached=attach_context(s.context.Get(),&s,{&Impl::enter,&Impl::leave,&Impl::before_call,&Impl::after_call,&Impl::start_original,&Impl::finish_original});return s.attached;}
 void Bridge::begin(bool enabled,Recording recording,bool reduce_bindings) noexcept {
     auto& s=*impl_;std::lock_guard lock(s.api_mutex);
     if(!s.scope) {s.owner=GetCurrentThreadId();s.scope_conflict=false;}
-    else if(GetCurrentThreadId()!=s.owner) {++s.stats.foreign_calls;s.flush(false);s.scope_conflict=true;}
-    ++s.scope;s.enabled=enabled;s.recording=recording;s.reduce_bindings=reduce_bindings;++s.stats.scopes;
+    else if(GetCurrentThreadId()!=s.owner) {++s.stats.foreign_calls;s.flush(false,FlushReason::foreign_call);s.scope_conflict=true;}
+    ++s.scope;s.enabled=enabled && !s.clean_forwarding;s.recording=recording;s.reduce_bindings=reduce_bindings;++s.stats.scopes;
 }
-void Bridge::end() noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.flush();if(s.scope) --s.scope;}
+void Bridge::end() noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.flush(true,FlushReason::scope_end);if(s.scope) --s.scope;}
 void Bridge::verify_constants(bool on) noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);if(on && !s.verify_requested)s.verify_remaining=64;if(!on)s.verify_remaining=0;s.verify_requested=on;}
 void Bridge::cache_state(bool on) noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);if(s.cache_enabled!=on) {s.cache_enabled=on;s.dirty_state=all_state;}}
 void Bridge::share_bindings(bool on) noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);if(s.share_bindings!=on) {s.share_bindings=on;s.unpublished_state=all_state;s.published_bindings={};}}
+void Bridge::flat_upload_lookup(bool on) noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.flat_upload_lookup=on;}
+void Bridge::direct_small_batches(bool on) noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);s.direct_small_batches=on;}
+void Bridge::suppress_indexed_draws(std::uint64_t deadline) noexcept {
+    auto& s=*impl_;std::lock_guard lock(s.api_mutex);const auto now=GetTickCount64();
+    if(deadline<=now || deadline-now>10000)deadline=0;
+    if(s.suppression_deadline!=deadline) {s.flush(false,FlushReason::gpu_barrier);s.suppression_deadline=deadline;}
+}
+DeviceCapabilities Bridge::capabilities() const noexcept {return impl_->device_caps;}
+void Bridge::profile_original(bool clean,std::uint64_t deadline,unsigned every) noexcept {
+    auto& s=*impl_;std::lock_guard lock(s.api_mutex);const auto now=GetTickCount64();
+    if(deadline<=now || deadline-now>10000 || (every!=1 && every!=16))deadline=0;
+    if(clean!=s.clean_forwarding) {
+        s.flush(false,FlushReason::gpu_barrier);s.constants.clear();s.mapped.clear();
+        s.dirty_state=all_state;s.unpublished_state=all_state;s.published_bindings={};
+    }
+    s.clean_forwarding=clean;s.profile_deadline=clean?deadline:0;
+    if(every==1 || every==16)s.sample_every=every;
+    if(clean) {s.enabled=false;s.verify_remaining=0;s.suppression_deadline=0;}
+}
 Statistics Bridge::statistics() const noexcept {auto& s=*impl_;std::lock_guard lock(s.api_mutex);auto result=s.stats;result.disabled=s.disabled;
+    result.clean_forwarding=s.clean_forwarding;result.context_profile_active=s.clean_forwarding && s.profile_deadline>GetTickCount64();result.profile_sample_every=s.sample_every;
+    result.draw_suppression_active=s.suppression_deadline>GetTickCount64();
     result.snapshot_binding_sharing=s.share_bindings;
+    result.flat_upload_lookup=s.flat_upload_lookup;
+    result.direct_small_batches=s.direct_small_batches;result.direct_small_available=static_cast<bool>(s.direct_state);
+    result.temporary_upload_map_entries=s.serial.map_entries;result.flat_upload_entries=s.serial.flat_entries;result.draw_upload_duplicates=s.serial.duplicates;
     result.private_uploads=s.serial.uploads;result.private_upload_reuses=s.serial.reuses;result.private_upload_bytes=s.serial.uploaded_bytes;
     result.recording_bindings=s.serial.bindings;result.recording_bindings_skipped=s.serial.bindings_skipped;
-    for(const auto& recorder:s.recorders) {result.private_uploads+=recorder->uploads;result.private_upload_reuses+=recorder->reuses;result.private_upload_bytes+=recorder->uploaded_bytes;result.recording_bindings+=recorder->bindings;result.recording_bindings_skipped+=recorder->bindings_skipped;}
-    for(unsigned i=0;i<s.count;++i) result.worker_ids[i]=GetThreadId(s.workers[i].native_handle());return result;}
+    for(const auto& recorder:s.recorders) {result.private_uploads+=recorder->uploads;result.private_upload_reuses+=recorder->reuses;result.private_upload_bytes+=recorder->uploaded_bytes;result.recording_bindings+=recorder->bindings;result.recording_bindings_skipped+=recorder->bindings_skipped;
+        result.temporary_upload_map_entries+=recorder->map_entries;result.flat_upload_entries+=recorder->flat_entries;result.draw_upload_duplicates+=recorder->duplicates;}
+    result.private_uploads+=s.direct.uploads;result.private_upload_reuses+=s.direct.reuses;result.private_upload_bytes+=s.direct.uploaded_bytes;
+    result.recording_bindings+=s.direct.bindings;result.recording_bindings_skipped+=s.direct.bindings_skipped;
+    result.temporary_upload_map_entries+=s.direct.map_entries;result.flat_upload_entries+=s.direct.flat_entries;result.draw_upload_duplicates+=s.direct.duplicates;
+    for(unsigned i=0;i<s.count;++i) result.worker_ids[i]=GetThreadId(s.workers[i].native_handle());
+    LARGE_INTEGER read_at{};QueryPerformanceCounter(&read_at);result.profile_snapshot_qpc=static_cast<std::uint64_t>(read_at.QuadPart);result.context_owner_thread_id=s.owner;return result;}
 }
