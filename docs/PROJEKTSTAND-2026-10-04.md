@@ -1,5 +1,11 @@
 # Project Progress and Results — October 4, 2026
 
+## Study 015 update
+
+The narrow culling free-ring algorithm is now implemented and validated against actual original instructions: 256 serial plus 256 independent-worker whole-memory comparisons, 11 invalid-state rejection cases and four standalone-wrapper unwind checks. Final laboratory medians are 79.556 / 4.588 microseconds, approximately 17.3× for this seam. No game memory is patched, no new DLL is installed and no Skyrim FPS or mod-capacity improvement is measured.
+
+The independent audit finds no pre-loop publication for the three known fresh stack callers. The next gate is startup integration with original constructor poststate, stack/exception/unwind behavior and fallback preserved. See [the implemented prototype](../research/CULLING-INITIALIZATION-015.md) and [current next step](NEXT-TEST.md). The previous phase description below is historical.
+
 ## Result so far
 
 We have working, version-guarded experimental tools and a substantially better picture of Skyrim's main-thread workload. We do not yet have an accepted multicore performance mod. The goal remains CPU headroom for modded scenes, with correct rendering and bounded latency.

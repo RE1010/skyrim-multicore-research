@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "kind": "owned-culling-init-original-machine-equivalence",
+  "date": "2026-10-04",
+  "executableSHA256": "846EFCCF0C1374D71F892907F46549560F2FCB0A75CB87A3EED438BAA0F1402F",
+  "originalLoopRVA": "0xfed7b0",
+  "originalLoopEndRVA": "0xfed844",
+  "originalLoopSHA256": "A3EB6E9464E9AB54B316CF04B256D010A84637B0F82A9DFE9A7F9B28EF1624F0",
+  "ctest": "culling_init_original_equivalence",
+  "targetedCTestPassed": true,
+  "fullSuiteRerun": false,
+  "validation": {
+    "originalMachineComparisons": 256,
+    "workerOwnedOriginalMachineComparisons": 256,
+    "independentWorkers": 4,
+    "standaloneWrapperUnwindChecks": 4,
+    "invalidStateRejections": 11,
+    "includesRingReset": true,
+    "pairs": 10,
+    "originalMedianUs": 79.5556,
+    "guardedBulkMedianUs": 4.588375,
+    "seamSpeedRatio": 17.3385131,
+    "gamePerformanceMeasured": false
+  },
+  "livePluginInstalled": false,
+  "gameMemoryPatched": false,
+  "engineWorkOffloaded": false,
+  "ownershipScope": {
+    "auditedCallerReturnRVAs": [
+      "0x15394da",
+      "0x516992",
+      "0x43f32c"
+    ],
+    "freshStackConstruction": true,
+    "preLoopPublicationObserved": false,
+    "otherCallersValidated": false,
+    "traversalParallelSafetyEstablished": false
+  },
+  "limitations": [
+    "Isolated seam throughput including ring reset; not frame time or full constructor time.",
+    "Workers initialize independent test-owned storage, not live game objects.",
+    "Startup splice ABI, unwind metadata and fallback integration remain unvalidated.",
+    "No Skyrim or mod-capacity performance gain established."
+  ],
+  "standaloneWrapperUnwindValidated": true,
+  "liveConstructorUnwindValidated": false
+}

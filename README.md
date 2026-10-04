@@ -4,6 +4,8 @@ Research into reducing Skyrim Special Edition's main-thread work and creating CP
 
 ## Current status — October 4, 2026
 
+**Study 015 now implements an owned culling-initialization prototype.** It passes 512 whole-memory comparisons against the exact original machine loop, including 256 on four independent workers, plus 11 invalid-state cases and four standalone-wrapper unwind checks. Final isolated medians are 79.556 versus 4.588 microseconds (approximately 17.3× for the seam). No live Skyrim hook is installed and no game/frame-time gain is claimed. [Implementation and integration gate](research/CULLING-INITIALIZATION-015.md) · [curated results](research/CULLING-INITIALIZATION-LAB-015.json).
+
 The source now includes **V12 diagnostics** and the **Study 013 reference without project diagnostic hooks**. Draw-level worker replay remains an unsuccessful experimental branch: it adds substantial overhead, and later live testing reproduced shadow flicker. The original rendering path is the current reference.
 
 The latest investigation, **Study 014**, identifies concrete engine boundaries before DirectX submission. A repeated `BSCullingProcess` initialization region accounts for 7.1–7.8% of raw main-thread CPU samples in two reference windows. An earlier rendering corridor connects shader selection, constant preparation, uploads and geometry submission. Both require ownership and lifetime proof before any worker implementation. These sample shares are not promised FPS gains.
@@ -16,7 +18,7 @@ The latest investigation, **Study 014**, identifies concrete engine boundaries b
 | Study 013 hook-free reference | Three validated captures; normal view approximately 3.47–3.53 ms/frame; CPU/GPU Busy close |
 | Study 014 engine audit | Concrete culling-initialization and render-preparation candidates, with shared-state blockers identified |
 
-The next step is the culling initialization/lifetime audit and an owned-data equivalence prototype if its assumptions hold. A representative CPU-heavy mod workload is required before claiming mod-capacity relief. A complete DirectX submission proxy is not implemented or justified by the current evidence.
+The initialization/lifetime audit and owned-data equivalence prototype are complete for the narrow seam. The next step is a startup-only integration proof preserving constructor state, stack/unwind behavior and original fallback for the three audited callers. A representative CPU-heavy mod workload is required before claiming mod-capacity relief. A complete DirectX submission proxy is not implemented or justified by the current evidence.
 
 ## Read the evidence
 
